@@ -1,0 +1,26 @@
+.md-grid {
+    max-width: 1800px; 
+  }
+
+.mermaid {
+    text-align: right;
+ }
+
+
+@media print {
+  .md-typeset {
+    font-size: 1rem !important;
+    font-family: "Proxima Nova"
+  }
+  .md-typeset h4,
+  .md-typeset h5,
+  .md-typeset h6 {
+    font-size: 1rem;
+  }
+  .md-typeset td {
+    font-size: 0.8rem;
+  }
+  .md-typeset tr {
+    font-size: 0.8rem;
+  }
+}

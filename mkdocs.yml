@@ -1,0 +1,97 @@
+site_name: NGEN Manual
+theme:
+  name: material
+  # custom_dir: 'cinder'
+  palette:
+    # primary: teal
+    # accent: teal
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: teal
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    # - navigation.tabs
+    - navigation.instant
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - pymdownx.keys
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+nav:
+  - Home: 'index.md'
+  - How to Use: 
+    - Getting Started: 'gettingstarted.md'
+    - Hardware Setup: 'setup.md' 
+    - Hardware Controls: 'hardwarecontrols.md'
+    - Menu Navegation: 'menunavegation.md'
+    - MIDI Mapping: 'midimapping.md'
+  - Features:
+    - Clock Generators: 'clockgen.md'
+    - Generators: 'generators.md'
+    - MIDI FXs: 'midifx.md'
+    - Patterns: 'pattern.md'
+    - Performance Mode: 'perform.md'
+    - Projects: 'projects.md'
+    - Scale: 'scale.md'
+    - Tools : 'tools.md'
+    - Tracks: 'track.md'
+  - System:
+    - Settings: 'settings.md'
+    - Firmware Update: 'firmwareupdate.md'
+  
+extra:
+  social:
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/spektroaudio
+      name: Spektro Audio on Twitter
+    - icon: fontawesome/brands/instagram
+      link: https://instagram.com/spektroaudio
+      name: Spektro Audio on Twitter
+  analytics:
+    provider: google
+    property: G-348677531
+
+
+extra_css:
+  - stylesheets/extra.css
+
+copyright: Copyright &copy; 2013 - 2022 Spektro Audio
+
+
+plugins:
+    - search
+    # - with-pdf
+    - git-revision-date
+    - with-pdf:
+        author: Spektro Audio
+        # copyright: http://spektroaudio.com/acdgen
+        #
+        #cover: false
+        #back_cover: true
+        # cover_title: ACDGEN - AU / VST3 EDITION
+        # cover_subtitle: User Manual
+        # cover_logo: /images/ACDGEN-Screenshot.jpg
+
+        # debug_html: true

@@ -1,0 +1,51 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"grammarly.selectors": [
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/gettingstarted.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/hardwarecontrols.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/generators.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/pattern.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/projects.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/scale.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/tools.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/track.md"
+			}
+		]
+	}
+}
