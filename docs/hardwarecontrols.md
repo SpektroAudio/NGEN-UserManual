@@ -3,6 +3,14 @@
 
 ---
 
+## Hardware Controls on NGEN
+
+The NGEN includes a main clickable encoder (++"MENU ENCODER"++), a return button (++"RETURN"++), 4 parameter knobs (++"PARAM 1"++ through ++"PARAM 4"++), and 4 buttons (++"TRACK/CLK"++, ++"PATTERN"++, ++"FUNCTION"++, and ++"GENERATE"++) that can be used to access and control different features.
+
+![](images/NGEN_Hardware_Controls.jpeg)
+
+---
+
 ## Encoder
 
 The ++"MENU ENCODER"++ can be used for navigating menus, activating patterns, selecting the active track/clock, selecting different parameters and changing their value, and selecting files.
@@ -26,6 +34,8 @@ The default behavior of the 4 parameters is to control the main parameters of th
 Additional parameters can be controlled by turning the 4 knobs while holding down ++"FUNCTION"++.
 
 ![](images/NGEN_MidiClock_Menu.png)
+
+![](images/NGEN_Knob_Icon.png){align=right}
 
 While in the **[MIDI FX](midifx.md)**, **[SCALE](scale.md)** and **[CLOCK](clockgen.md)** menus, the 4 knobs are mapped to parameters related to those features (note the knob icon on the top section of the display). Exiting those menus will revert the knob mapping to the **[Generator](generators.md)** parameters.
 
@@ -54,5 +64,3 @@ The four hardware buttons included in ```NGEN``` perform specific functions when
 * ++"GENERATE"++ : Call the main function of the active **[Generator](generators.md)**, **[MIDI FX](midifx.md)** or **[Clock](clockgen.md)**.
 
 * ++"RETURN"++ : Returns to the previous menu.
-
----

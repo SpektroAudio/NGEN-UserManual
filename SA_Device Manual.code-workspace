@@ -45,6 +45,11 @@
 				"language": "markdown",
 				"scheme": "file",
 				"pattern": "docs/track.md"
+			},
+			{
+				"language": "markdown",
+				"scheme": "file",
+				"pattern": "docs/clockgen.md"
 			}
 		]
 	}

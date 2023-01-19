@@ -367,15 +367,15 @@ Turing is an algorithm inspired by the [Music Thing's Turing Machine](https://mu
 
 **Parameter List:**
 
-| **Parameter** |                         **Description**                         |          ** Hardware Mapping ** |
-|---------------|:---------------------------------------------------------------:|--------------------------------:|
-| Write      |                    Flips the first bit.                    |                  ++"GENERATE"++ |
-| Clear       | Clears the shift register. | ++"FUNCTION"++ + ++"GENERATE"++ |
-| Shift         |              Transposes the sequence diatonically.              |                   ++"PARAM 1"++ |
-| Length        |                Sets the length of the sequence.                 |                   ++"PARAM 2"++ |
-| Probability (```Prob```)       |                Sets the probability of flipping the first bit.                |                   ++"PARAM 3"++ |
-| Loop     |      Sets the probability of copying the last bit back into the first bit.       |                   ++"PARAM 4"++ |
-| Octave        |             Sets the base octave for the sequence.              |  ++"FUNCTION"++ + ++"PARAM 1"++ |
-| Spread      |      Sets the read distance between the different voices.      |  ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Range    |            Sets the pitch range of the sequence (in semitones).             |  ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Voices     |                   Sets the number of voices.                    |  ++"FUNCTION"++ + ++"PARAM 4"++ |
+| **Parameter**            |                            **Description**                            |          ** Hardware Mapping ** |
+|--------------------------|:---------------------------------------------------------------------:|--------------------------------:|
+| Write                    |                         Flips the first bit.                          |                  ++"GENERATE"++ |
+| Clear                    |                      Clears the shift register.                       | ++"FUNCTION"++ + ++"GENERATE"++ |
+| Shift                    |                 Transposes the sequence diatonically.                 |                   ++"PARAM 1"++ |
+| Length                   |                   Sets the length of the sequence.                    |                   ++"PARAM 2"++ |
+| Probability (```Prob```) |            Sets the probability of flipping the first bit.            |                   ++"PARAM 3"++ |
+| Loop                     | Sets the probability of copying the last bit back into the first bit. |                   ++"PARAM 4"++ |
+| Octave                   |                Sets the base octave for the sequence.                 |  ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Spread                   |         Sets the read distance between the different voices.          |  ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Range                    |         Sets the pitch range of the sequence (in semitones).          |  ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Voices                   |                      Sets the number of voices.                       |  ++"FUNCTION"++ + ++"PARAM 4"++ |

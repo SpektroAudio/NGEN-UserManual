@@ -66,7 +66,3 @@ graph LR
 | **Input Channel (```IN CH```) ** | Sets the track MIDI input channel | :material-check: |
 | **Program Change (```PROGRAM```)** | Sets the MIDI Program Change number which gets send to the MIDI output when loading a project or a pattern | :material-check: |
 | **Auto Variate (```AUTO VAR```)** | Enable / disable the [Auto Variate](tools.md#auto-variate-auto-vari8) mode | :material-check: |
-
----
-
-Page last revised on: {{ git_revision_date }}

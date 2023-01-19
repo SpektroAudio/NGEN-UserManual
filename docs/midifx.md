@@ -73,9 +73,9 @@ The Glitch MIDI FX can be used to mangle and glith up sequences via a random rat
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 |------------|:-------------|:--------------|:----------|
-| Probability | Probability of a glitch happening | ++"PARAM 1"++ | |
-| Repeats | Maximum number of note ratchets | ++"PARAM 2"++ | |
-| Note Length | Length of the note ratchets | ++"PARAM 3"++ | |
+| Repeats | Maximum number of note ratchets | ++"PARAM 1"++ | |
+| Gate Length | Length of the note ratchets | ++"PARAM 2"++ | |
+| Probability | Probability of a glitch happening | ++"PARAM 3"++ | |
 | Random | Amount of glitch randomization | ++"PARAM 4"++ | |
 | Pitch Mod | Enables octave randomization | | |
 
@@ -103,7 +103,7 @@ The Modulator FX can be used for modulating MIDI control changes (CC) of externa
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 |------------|:-------------|:--------------|:----------|
 | Generate | Generates a new modulation sequence | ++"GENERATE"++ | |
-| Send | Sends a CC message (for mapping purposes) | | |
+| Send | Sends a CC message (for mapping purposes) | ++"FUNCTION"++ + ++"GENERATE"++ | |
 | Sequence Amount (```SEQ AMOUNT```)| Amount of sequence modulation | ++"PARAM 1"++ | |
 | Length | Length of the modulation sequence | ++"PARAM 2"++ | |
 | CC Out | CC number to send | ||
@@ -139,18 +139,19 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 
 ** List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-|------------|:-------------|:--------------|:----------|
-| Pitch Minimum (```PITCH MIN```) | Lowest possible note (0-127) | ++"PARAM 1"++ | |
-| Pitch Maximum (```PITCH MAX```) | Highest possible note (0-127) | ++"PARAM 2"++ | |
-| Velocity Minimum (```VEL MIN```) | Lowest possible velocity (0-127) | ++"PARAM 3"++ | |
-| Velocity Maximum (```VEL MAX```) | Highest possible velocity (0-127) | ++"PARAM 4"++ | |
-| Length Multiplier (```LEN MULT```) | Multiplies the length of incoming MIDI notes | | |
-| Channel Mapping (```CH Map```) | Maps incoming MIDI notes to different MIDI channels based on their pitch * | | |
-| Map Pitch (```Map Pitch```) | Sets the pitch of converted MIDI notes (while in ```Ch Map```) | | |
+| **Parameter**                      | **Description**                                                            | **Hardware Mapping** | **Advanced** |
+|------------------------------------|:---------------------------------------------------------------------------|:---------------------|:-------------|
+| Pitch Minimum (```PITCH MIN```)    | Lowest possible note (0-127)                                               | ++"PARAM 1"++        |              |
+| Pitch Maximum (```PITCH MAX```)    | Highest possible note (0-127)                                              | ++"PARAM 2"++        |              |
+| Velocity Minimum (```VEL MIN```)   | Lowest possible velocity (0-127)                                           | ++"PARAM 3"++        |              |
+| Velocity Maximum (```VEL MAX```)   | Highest possible velocity (0-127)                                          | ++"PARAM 4"++        |              |
+| Length Multiplier (```LEN MULT```) | Multiplies the length of incoming MIDI notes                               |                      |              |
+| Channel Mapping (```CH Map```)     | Maps incoming MIDI notes to different MIDI channels based on their pitch * |                      |              |
+| Map Pitch (```Map Pitch```)        | Sets the pitch of converted MIDI notes (while in ```Ch Map```)             |                      |              |
 
 
-** C notes are mapped to the Track's Output Channel and all other pitches are mapped according to their distance from C (in semitones), so D notes are mapped to Out Ch + 2, D# to Out CH + 3, and so on. After being mapped to their respective channels, all notes are set to the same pitch (Map Pitch).*
+!!! note "Pitch Based Channel Mapping"
+    C notes are mapped to the Track's Output Channel and all other pitches are mapped according to their distance from C (in semitones), so D notes are mapped to Out Ch + 2, D# to Out CH + 3, and so on. After being mapped to their respective channels, all notes are set to the same pitch (Map Pitch).*
 
 ### SPRAY
 

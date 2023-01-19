@@ -48,5 +48,3 @@ graph LR
   A-->G[TRACK 2] --> H[GENERATOR] --> I[MIDI FX] --> J[TRACK OUTPUT] -->|CH 2| F;
   A-->K[TRACK 3] --> L[GENERATOR] --> M[MIDI FX] --> N[TRACK OUTPUT] -->|CH 3| F;
 ```
-
----

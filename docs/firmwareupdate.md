@@ -14,3 +14,9 @@
 
 6 - Select the firmware file (.hex extension)
 
+
+## Change-Log
+
+### Version 1.0
+
+- Initial Version

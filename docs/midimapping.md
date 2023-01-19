@@ -215,3 +215,103 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | Voices        |         10         |    Scaled     |
 
 ### MIDI FXS
+
+
+#### ACCENT
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Generate      |        101         |    Action     |
+| Length        |        103         |    Scaled     |
+| Intensity     |        104         |    Scaled     |
+
+
+#### CHORD
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Interval 1    |        103         |    Scaled     |
+| Interval 2    |        104         |    Scaled     |
+| Interval 3    |        105         |    Scaled     |
+| Quantize      |        106         |    Scaled     |
+
+#### ECHOES
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Delay Time    |        103         |    Scaled     |
+| Feedback      |        104         |    Scaled     |
+| Probability   |        105         |    Scaled     |
+| Falloff       |        106         |    Scaled     |
+| Octave Random |        107         |    Scaled     |
+
+#### GLITCH
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Repeats       |        103         |    Scaled     |
+| Gate Length   |        104         |    Scaled     |
+| Probability   |        105         |    Scaled     |
+| Random        |        106         |    Scaled     |
+| Pitch Mod     |        107         |    Scaled     |
+
+#### HUMANIZER
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Delay Probability    |        103         |    Scaled     |
+| Velocity Probability      |        104         |    Scaled     |
+| Max Delay   |        105         |    Scaled     |
+| Max Velocity       |        106         |    Scaled     |
+
+#### MODULATOR
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Sequence Amount    |        103         |    Scaled     |
+| Length      |        104         |    Scaled     |
+| Offset   |        105         |    Scaled     |
+| Depth       |        106         |    Scaled     |
+
+#### PROGRAM SEQUENCER
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Generate      |        101         |    Action     |
+| Length        |        103         |    Scaled     |
+| Hits          |        104         |    Scaled     |
+| Max           |        105         |    Scaled     |
+| Step 1        |        106         |    Scaled     |
+| Step 2        |        107         |    Scaled     |
+| Step 3        |        108         |    Scaled     |
+| Step 4        |        109         |    Scaled     |
+| Step 5        |        110         |    Scaled     |
+| Step 6        |        111         |    Scaled     |
+| Step 7        |        112         |    Scaled     |
+| Step 8        |        113         |    Scaled     |
+
+#### SHAPER
+
+| **Parameter**    | **MIDI CC Number** | **Behaviour** |
+|------------------|:------------------:|:-------------:|
+| Pitch Minimum    |        103         |    Scaled     |
+| Pitch Maximum    |        104         |    Scaled     |
+| Velocity Minimum |        105         |    Scaled     |
+| Velocity Maximum |        106         |    Scaled     |
+
+#### SPRAY
+
+| **Parameter**   | **MIDI CC Number** | **Behaviour** |
+|-----------------|:------------------:|:-------------:|
+| Max Delay       |        103         |    Scaled     |
+| Max Repeats     |        104         |    Scaled     |
+| Probability     |        105         |    Scaled     |
+| Falloff         |        106         |    Scaled     |
+| Octave Random   |        107         |    Scaled     |
+| Velocity Random |        108         |    Scaled     |
+
+#### STRUM
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Max Delay     |        103         |    Scaled     |

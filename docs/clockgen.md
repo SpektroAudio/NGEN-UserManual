@@ -9,11 +9,9 @@
 
 NGEN includes 4 clock generators that can be used for clocking all 16 [tracks](track.md). 
 
-Each clock generator has a separate clock count and can trigger all tracks relatively to it. This means multiple clock generators can be active at the same time.
+Each clock generator has a separate clock count and can trigger all tracks relative to it. This means multiple clock generators can be active at the same time.
 
-Some clock generators such as the Free Clock and Bounce Clock offer additional parameters that can be controlled via the CLOCK sub-menu available in the **MAIN MENU**. 
-
-While in the CLOCK sub-menu, the most relevant parameters for selected clock generrator are mapped to the NGEN's potentiometers.
+While in the CLOCK sub-menu, the most relevant parameters for the selected clock generator are mapped to the NGEN's potentiometers.
 
 ---
 
@@ -61,7 +59,7 @@ It also features an 8-stage swing sequencer that can be used to create interesti
 
 ![](images/NGEN_BounceClock_Animation.gif){align=right}
 
-The Bounce Clock is an experimental clock generator that uses virtual balls (dots) enclosed in a box to generate it's clock signal. The clock advances whenever one of the balls collide with box boundaries.
+The Bounce Clock is an experimental clock generator that uses virtual balls (dots) enclosed in a box to generate its clock signal. The clock advances whenever one of the balls collides with box boundaries.
 The number of balls and the shape of the box can be controlled via the available parameters.
 
 <br/>
