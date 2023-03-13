@@ -1,0 +1,1778 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>Generators - NGEN Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-348677531"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-348677531",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-348677531"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#generator" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="NGEN Manual" class="md-header__button md-logo" aria-label="NGEN Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NGEN Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Generators
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="NGEN Manual" class="md-nav__button md-logo" aria-label="NGEN Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    NGEN Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          How to Use
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to Use" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          How to Use
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        Hardware Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardwarecontrols/" class="md-nav__link">
+        Hardware Controls
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../menunavegation/" class="md-nav__link">
+        Menu Navegation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midimapping/" class="md-nav__link">
+        MIDI Mapping
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clockgen/" class="md-nav__link">
+        Clock Generators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Generators
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Generators
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-generators" class="md-nav__link">
+    About Generators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generator-parameters" class="md-nav__link">
+    Generator Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-available-generators" class="md-nav__link">
+    List of Available Generators
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Available Generators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acdgen" class="md-nav__link">
+    ACDGEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arper" class="md-nav__link">
+    ARPER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drumgen" class="md-nav__link">
+    DRUMGEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-sequence-inseq" class="md-nav__link">
+    INPUT SEQUENCE (INSEQ)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marp" class="md-nav__link">
+    MARP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midi-player" class="md-nav__link">
+    MIDI PLAYER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polyform" class="md-nav__link">
+    POLYFORM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop" class="md-nav__link">
+    POP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samba" class="md-nav__link">
+    SAMBA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuffler" class="md-nav__link">
+    SHUFFLER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thru" class="md-nav__link">
+    THRU
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turing" class="md-nav__link">
+    TURING
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midifx/" class="md-nav__link">
+        MIDI FXs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern/" class="md-nav__link">
+        Patterns
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../perform/" class="md-nav__link">
+        Performance Mode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/" class="md-nav__link">
+        Projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scale/" class="md-nav__link">
+        Scale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track/" class="md-nav__link">
+        Tracks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" type="checkbox" id="__nav_4" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_4">
+          System
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="System" data-md-level="1">
+        <label class="md-nav__title" for="__nav_4">
+          <span class="md-nav__icon md-icon"></span>
+          System
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firmwareupdate/" class="md-nav__link">
+        Firmware Update
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#about-generators" class="md-nav__link">
+    About Generators
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generator-parameters" class="md-nav__link">
+    Generator Parameters
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-available-generators" class="md-nav__link">
+    List of Available Generators
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Available Generators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#acdgen" class="md-nav__link">
+    ACDGEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#arper" class="md-nav__link">
+    ARPER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#drumgen" class="md-nav__link">
+    DRUMGEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#input-sequence-inseq" class="md-nav__link">
+    INPUT SEQUENCE (INSEQ)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#marp" class="md-nav__link">
+    MARP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#midi-player" class="md-nav__link">
+    MIDI PLAYER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polyform" class="md-nav__link">
+    POLYFORM
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pop" class="md-nav__link">
+    POP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#samba" class="md-nav__link">
+    SAMBA
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#shuffler" class="md-nav__link">
+    SHUFFLER
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#thru" class="md-nav__link">
+    THRU
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#turing" class="md-nav__link">
+    TURING
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="generator">Generator</h1>
+<hr />
+<h2 id="about-generators">About Generators</h2>
+<p><img align="right" alt="NGEN Generator Sub-menu" src="../images/NGEN_MainMenu_Generator.png" /></p>
+<p>The generators in NGEN are used to generate MIDI notes/sequences to play external MIDI instruments.</p>
+<p>Each generator uses a specific algorithm to create a unique MIDI sequence based on certain ideas, musical styles, and production techniques. These sequences can then be modified and interacted with via the different parameters available in each generator.</p>
+<p>The output of each generator is routed to the <a href="../track/">Track</a>'s both MIDI out and Aux Out (which can be used to send MIDI notes from one track to another).</p>
+<p>Each track can load any of the available generators.</p>
+<hr />
+<h2 id="generator-parameters">Generator Parameters</h2>
+<p>While in the <strong>GENERATOR</strong> sub-menu or the <strong>MAIN MENU</strong>, the main parameters of the selected generator are mapped to the NGEN 4 knobs (<span class="keys"><kbd>PARAM 1</kbd></span>, <span class="keys"><kbd>PARAM 2</kbd></span>, <span class="keys"><kbd>PARAM 3</kbd></span>, and <span class="keys"><kbd>PARAM 4</kbd></span>): </p>
+<ul>
+<li>4 Parameters are mapped to the knobs directly.</li>
+<li>4 Additional parameters are accessible by holding down <span class="keys"><kbd>FUNCTION</kbd></span> while moving the knobs.</li>
+</ul>
+<p>Some parameters such as Length, Shift and Density are available in many of the available generators. These common parameters are always mapped to the same knobs to improve usability and consistency.</p>
+<p>A complete list of parameters available for the selected Generator can be accessed via the <strong>GENERATOR</strong> sub-menu available in the <strong>MAIN MENU</strong>.</p>
+<hr />
+<h2 id="list-of-available-generators">List of Available Generators</h2>
+<hr />
+<h3 id="acdgen">ACDGEN</h3>
+<p><img align="right" alt="" src="../images/ACDGEN.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>ACDGEN is a generator that uses the <a href="http://spektroaudio.com/acdgen">Spektro Audio ACDGEN</a> algorithms to generate melodies and basslines.</p>
+<p>The 8 different algorithms available in ACDGEN can generate sequences that vary in style and purpose:</p>
+<p>• <em>Normal</em>: A straightforward random algorithm.<br />
+• <em>Floor</em>: Uses a smaller selection of notes and has a higher probability of playing the fundamental / base note (great for basslines).<br />
+• <em>FifthOct</em>: Limits the note selection to the fundamental / base note and its fifth.<br />
+• <em>Upwards</em>: Generates a sequence that tends to go up in the active scale.<br />
+• <em>Up-Stepped</em>: Similar to Upwards but it can also alternate between higher notes and the fundamental / base note.<br />
+• <em>Downwards</em>: Generates a sequence that tends to go down in the active scale.<br />
+• <em>Down-Stepped</em>: Similar to Downwards but it can also alternate between lower notes and the fundamental / base note.<br />
+• <em>NEW</em>: Combines different techniques used in the other algorithms and regular arpeggiators.  </p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence.</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Variate</td>
+<td align="center">Generates a new variation of the previously generated sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes the sequence diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's note density.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Algorithm</td>
+<td align="center">Selects the mode used to generate the next sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>KB Shift</td>
+<td align="center">Toggles the keyboard shift feature.</td>
+<td align="right">–</td>
+</tr>
+<tr>
+<td>Note Len</td>
+<td align="center">Sets the proportional note length of generated notes.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Random Vel</td>
+<td align="center">Sets the amount of random MIDI velocity.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Hold Prob</td>
+<td align="center">Sets the hold probability.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Octave</td>
+<td align="center">Sets the base octave for the sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Slide Prob</td>
+<td align="center">Sets the probability of generating slide steps</td>
+<td align="right">–</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="arper">ARPER</h3>
+<p><img align="right" alt="" src="../images/ARPER.gif" /></p>
+<p><strong> Generator Description: </strong></p>
+<p>Arper is a generator designed to generate classic arpeggios using an algorithmically generated chord progression.</p>
+<p><br/><br/><br/></p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong>Hardware Mapping</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence.</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Restart</td>
+<td align="center">Restarts the sequence</td>
+<td align="right">-</td>
+</tr>
+<tr>
+<td>Bass Shift</td>
+<td align="center">Transposes the bass note diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes the additional notes diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Bars</td>
+<td align="center">Sets the length of the total sequence in bars</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Spread</td>
+<td align="center">Sets the distance between intervals</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Octave</td>
+<td align="center">Sets the base octave for the sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Octave Random</td>
+<td align="center">Sets the probability of randomizing the octave of generated notes</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's density.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Bass RPT</td>
+<td align="center">Sets how often the bass note gets played</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Note Len</td>
+<td align="center">Sets the proportional note length of generated notes.</td>
+<td align="right">–</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="drumgen">DRUMGEN</h3>
+<p><img align="right" alt="" src="../images/DRUMGEN.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>DrumGen is a 4-part drum sequencer that uses 3D probability templates to generate sequences based on certain music styles.</p>
+<p>A new template can be selected via the <strong>TEMPLATE</strong> parameter or by pressing <strong>SHIFT</strong> + <strong>Generate</strong>.</p>
+<p>The 4 parts are completely independent and can be set to individual sequence lengths, probability and MIDI notes.</p>
+<p><strong>Parameter List</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Density 1</td>
+<td align="center">Sets part 1's probability</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Density 2</td>
+<td align="center">Sets part 2's probability</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density 3</td>
+<td align="center">Sets part 3's probability</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Density 4</td>
+<td align="center">Sets part 4's probability</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Length 1</td>
+<td align="center">Sets part 1's sequence length</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length 2</td>
+<td align="center">Sets part 2's sequence length</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Length 3</td>
+<td align="center">Sets part 3's sequence length</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Length 4</td>
+<td align="center">Sets part 4's sequence length</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Note 1</td>
+<td align="center">Set part 1's MIDI note</td>
+<td align="right">--</td>
+</tr>
+<tr>
+<td>Note 2</td>
+<td align="center">Set part 2's MIDI note</td>
+<td align="right">--</td>
+</tr>
+<tr>
+<td>Note 3</td>
+<td align="center">Set part 3's MIDI note</td>
+<td align="right">--</td>
+</tr>
+<tr>
+<td>Note 4</td>
+<td align="center">Set part 4's MIDI note</td>
+<td align="right">--</td>
+</tr>
+<tr>
+<td>Template</td>
+<td align="center">Selects a new template</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Random</td>
+<td align="center">Adds randomness to the sequence.</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="input-sequence-inseq">INPUT SEQUENCE (<code>INSEQ</code>)</h3>
+<p><img align="right" alt="" src="../images/INSEQ.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>The Input Sequencer is a non-algorithmic generator that lets you record incoming MIDI notes to it's sequence (up to 32 steps) and play them back.</p>
+<p>Recorded sequences can be manipulated using parameters such as Length, Probability and Note Length.</p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Recording</td>
+<td align="center">Toggles recording</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Direction</td>
+<td align="center">Sets the playback direction</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes the sequence diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Probability (<code>Prob</code>)</td>
+<td align="center">Sets the sequence's probability.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Note Length (<code>Note Len</code>)</td>
+<td align="center">Sets the proportional note length of generated notes.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Quantize</td>
+<td align="center">Toggles quantization of the sequence.</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="marp">MARP</h3>
+<p><img align="right" alt="" src="../images/MARP.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>MARP is designed to generate arpeggios by creating separate note sequences for each of its 4 parts and combining them.</p>
+<p>Each of these four parts is assigned to a different note (the first one is always set to the root note of the select key and scale) and also features individual Length parameters.</p>
+<p>Changing the individual length of each of the 4 parts can result in interesting polyrhythmic sequences. </p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes the sequence diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the total length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's density.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Offset</td>
+<td align="center">Sets the offset of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Length 1</td>
+<td align="center">Sets the length of the first note's sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length 2</td>
+<td align="center">Sets the length of the second note's sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Length 3</td>
+<td align="center">Sets the length of the third note's sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Length 4</td>
+<td align="center">Sets the length of the fourth note's sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="midi-player">MIDI PLAYER</h3>
+<p><img align="right" alt="" src="../images/MIDIPLAYER.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>MIDI PLAYER lets you load MIDI loops from .mid files stored in the MIDI folder of the SD card. It was designed to give users an option to play back specific / pre-recorded MIDI loops during live performances.</p>
+<p>Because it was designed to work with simple MIDI loops, MIDI PLAYER only works with .mid files that contain 1 channel and less than 128 notes.</p>
+<p>Loops can be manipulated in real time by adjusting the Length, Direction, Shift and Density parameters. It's also possible to re-quantize the notes in the loop to the active Key and Scale.</p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Load File</td>
+<td align="center">Loads a new MIDI file.</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Transpose</td>
+<td align="center">Transposes the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the total length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's density.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Offset</td>
+<td align="center">Sets the offset of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="polyform">POLYFORM</h3>
+<p><img align="right" alt="" src="../images/POLYFORM.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>Polyform is a reactive generator based on the <a href="http://spektroaudio.com/polyform">Spektro Audio Polyform</a> Max for Live device. It uses a polyphonic algorithm designed to respond to incoming MIDI notes.</p>
+<p>Because of its responsive nature, Polyform can generate polyphonic sequences based on an incoming monophonic sequence in real-time. Feed it a bassline and it'll automatically generate some chords to go on top of it. If the bassline changes, Polyform will adjust it's own sequences automatically.</p>
+<p>In order to use Polyform, route the output of another <a href="../track/">Track</a> to Polyform's track via the <a href="../track/#auxout">Aux Out</a>.</p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence.</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Variate</td>
+<td align="center">Generates a variation based on the current sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes the sequence diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the total length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's density.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Delay</td>
+<td align="center">Sets the delay for generated note (x/16)</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Pitch Probability (<code>Pitch %</code>)</td>
+<td align="center">Sets the pitch probability.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Gate Probability (<code>Gate %</code>)</td>
+<td align="center">Sets the gate probability.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Chord Probability (<code>Chord %</code>)</td>
+<td align="center">Sets the chord probability.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="pop">POP</h3>
+<p><img align="right" alt="" src="../images/POP.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>POP is designed to generate traditional chord progressions algorithmically. </p>
+<p>When generating a new sequence, POP selects 4 chords and generates a gate sequence to play those chords. POP will advance to the next chord after a certain number of steps determined by the Chord Length parameter.</p>
+<p>POP will generate triads (3-note chords) by default but it can also invert chords and generate different types of chords (+7, +9, +13, sus2, sus4) according to the Inv Prob and Type Prob parameters respectively.</p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes the sequence diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the total length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's density.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Velocity</td>
+<td align="center">Sets the base velocity of generated notes.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Type Probability (<code>Type Prob</code>)</td>
+<td align="center">Sets the probability of different chord types.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Chord Length (<code>Chord Len</code>)</td>
+<td align="center">Sets the length of each chord.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Inversion Probability (<code>Inv Prob</code>)</td>
+<td align="center">Sets the probability of chord inversions.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Balance</td>
+<td align="center">Sets the velocity of short x long notes.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> +              <span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="samba">SAMBA</h3>
+<p><img align="right" alt="" src="../images/SAMBA.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>Samba is a percussive generator inspired by the Brazilian genre and based on a 4-part euclidean sequencer. All four parts are controlled by shared parameters.
+Although named after a specific genre, Samba is capable of generating percussing rhythms/grooves that can be used for all kinds of different genres.</p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Spread</td>
+<td align="center">Offsets all four parts.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the total length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's density.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Random</td>
+<td align="center">Sets the probability of random hits.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Rotate</td>
+<td align="center">Rotates all four sequences forward.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Probability (<code>Prob</code>)</td>
+<td align="center">Sets the probability of all four parts.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Note 1</td>
+<td align="center">Set part 1's MIDI note</td>
+<td align="right">--</td>
+</tr>
+<tr>
+<td>Note 2</td>
+<td align="center">Set part 2's MIDI note</td>
+<td align="right">--</td>
+</tr>
+<tr>
+<td>Note 3</td>
+<td align="center">Set part 3's MIDI note</td>
+<td align="right">--</td>
+</tr>
+<tr>
+<td>Note 4</td>
+<td align="center">Set part 4's MIDI note</td>
+<td align="right">--</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="shuffler">SHUFFLER</h3>
+<p><img align="right" alt="" src="../images/SHUFFLER.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>Shuffler is a generator designed to play and mangle sliced loops. To get the most out of Shuffler, it's recommended that loops are sliced by the grid (preferably 1/16 or 1/8).</p>
+<p>The different modes available in Shuffler are capable of sequencing the slices in different ways: </p>
+<ul>
+<li>Mode 0 (Forward): Mode 0 will use a non-quantized rising note sequence according to the Start note and Length. This mode will play loops sliced in 1/16 in their original form.</li>
+<li>Mode 1 (Backward): Similar to Mode 0 (Forward) except it'll play the slices in reverse/backward.</li>
+<li>Mode 2 (Sequenced): This mode uses a shuffled sequence to play the slices in a different order to create new variations of the loop.</li>
+</ul>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Generate</td>
+<td align="center">Generates a new sequence</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Variate</td>
+<td align="center">Generates a variation based on the current sequence.</td>
+<td align="right">++"FUNCTION++ + <span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Repeat</td>
+<td align="center">Set the number of note repeats.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Density</td>
+<td align="center">Sets the sequence's note density.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Mode</td>
+<td align="center">Sets the playback mode.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Note Length (<code>Note Len</code>)</td>
+<td align="center">Sets the proportional note length of generated notes.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Random Probability (<code>Rnd Prob</code>)</td>
+<td align="center">Sets the probability of playing a random note.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Quantize</td>
+<td align="center">Enables pitch quantization</td>
+<td align="right"></td>
+</tr>
+<tr>
+<td>Start</td>
+<td align="center">Sets the pitch of the first slice</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="thru">THRU</h3>
+<p><img align="right" alt="" src="../images/THRU.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>The Thru generator is a simple pass-through generator that can be used for duplicating notes generated from a different track or further processing sequences through an additional MIDI FX slot (routed via the <a href="../track/">Tracks</a>' Aux Output).</p>
+<p><br><br></p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes incoming MIDI notes.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Max Velocity (<code>Max Vel</code>)</td>
+<td align="center">Sets the max MIDI velocity.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Probability</td>
+<td align="center">Sets the probability of playing back incoming notes.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Random Velocity (<code>Rnd Vel</code>)</td>
+<td align="center">Sets the amount of random velocity.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Quantize</td>
+<td align="center">Enables pitch quantization</td>
+<td align="right"></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h3 id="turing">TURING</h3>
+<p><img align="right" alt="" src="../images/TURING.gif" /></p>
+<p><strong>Generator Description:</strong></p>
+<p>Turing is an algorithm inspired by the <a href="https://musicthing.co.uk/pages/turing.html">Music Thing's Turing Machine</a>. It uses a lockable 16-bit shift register to generate evolving sequences.</p>
+<p><strong>Parameter List:</strong></p>
+<table>
+<thead>
+<tr>
+<th><strong>Parameter</strong></th>
+<th align="center"><strong>Description</strong></th>
+<th align="right"><strong> Hardware Mapping </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Write</td>
+<td align="center">Flips the first bit.</td>
+<td align="right"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Clear</td>
+<td align="center">Clears the shift register.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td>Shift</td>
+<td align="center">Transposes the sequence diatonically.</td>
+<td align="right"><span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Length</td>
+<td align="center">Sets the length of the sequence.</td>
+<td align="right"><span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Probability (<code>Prob</code>)</td>
+<td align="center">Sets the probability of flipping the first bit.</td>
+<td align="right"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Loop</td>
+<td align="center">Sets the probability of copying the last bit back into the first bit.</td>
+<td align="right"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Octave</td>
+<td align="center">Sets the base octave for the sequence.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+</tr>
+<tr>
+<td>Spread</td>
+<td align="center">Sets the read distance between the different voices.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
+<td>Range</td>
+<td align="center">Sets the pitch range of the sequence (in semitones).</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Voices</td>
+<td align="center">Sets the number of voices.</td>
+<td align="right"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+</tbody>
+</table>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2023-01-19
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../clockgen/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Clock Generators" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Clock Generators
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../midifx/" class="md-footer__link md-footer__link--next" aria-label="Next: MIDI FXs" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              MIDI FXs
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2013 - 2022 Spektro Audio
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://twitter.com/spektroaudio" target="_blank" rel="noopener" title="Spektro Audio on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://instagram.com/spektroaudio" target="_blank" rel="noopener" title="Spektro Audio on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+    
+  </body>
+</html>
