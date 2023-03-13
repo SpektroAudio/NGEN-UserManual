@@ -20,13 +20,20 @@ The four columns in the MIDI Monitor represent message type, number (note or CC 
 
 To switch between ```IN``` and ```OUT```, press the ++"GENERATE"++ button.
 
-### SYSEX (```SEND SYSEX```)
-
-NGEN is also capable of sending synth patches/programs stored as .syx files in the microSD's ```SYSEX``` folder.
-
-
 
 ### CV OUT
+
+This sub-menu contains some parameters available for the CV outputs.
+
+!!! note ""
+
+    Keep in mind that these are still experimental settings.
+
+| **Parameter**                   | **Description**                                      |
+|---------------------------------|------------------------------------------------------|
+| **Out 1 Oct**                        | Set the base octave for the CV 1 output |
+| **Out 2 Oct**                        | Set the base octave for the CV 2 output |
+
 
 ### AUTO VARIATE (```AUTO VARI8```)
 

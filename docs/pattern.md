@@ -4,7 +4,7 @@
 
 ##About Patterns
 
-![](images/NGEN_PatternSelector.png){align=right}
+![](images/NGEN_PatternSelector.jpeg){align=right}
 
 The pattern system in NGEN is designed to let users create and perform different sections of a song/project. 
 Patterns can store and recall settings for all tracks (including their Generators and MIDI FX). Global and clock settings are only stored in [**Projects**](projects.md). 

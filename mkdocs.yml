@@ -75,6 +75,8 @@ extra:
   analytics:
     provider: google
     property: G-348677531
+  version:
+    provider: mike
 
 
 extra_css:
