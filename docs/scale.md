@@ -9,6 +9,8 @@ Because NGEN is designed with live performance in mind, most of the Generators p
 
 This approach lets the user change the **Key** and **Scale** of all **[Tracks](track.md)** simultaneously via the **SCALE** sub-menu (available in the **MAIN MENU**).
 
+A global Octave control is also available under the Scale sub-menu.
+
 ---
 
 ## List of Available Scales
@@ -38,6 +40,10 @@ This approach lets the user change the **Key** and **Scale** of all **[Tracks](t
 - Augmented (```AUGM```)
 
 - Wholetone (```WHOLE```)
+
+- Phrygian (```PHRYG```)
+
+- Chromatic (```CHROM```)
 
 
 <!-- 

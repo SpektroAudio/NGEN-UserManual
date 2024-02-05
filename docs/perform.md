@@ -35,3 +35,15 @@ To map a parameter to a macro:
 
 5 - Adjust the minimum and maximum values via the ```Min``` and ```Max``` settings.
 
+---
+
+## Track Muting
+
+![](images/NGEN_PerformMute.jpeg){align=right}
+
+While in the **```PERFORM```** sub-menu, you can use the 4 buttons (++"TRACK | CLK"++, ++"PATTERN"++, ++"FUNCTION"++, and ++"GENERATE"++) to mute/unmute the first 4 tracks.
+
+Muting works by disabling the track instead of affecting the Generator's parameters.
+
+<br><br>
+

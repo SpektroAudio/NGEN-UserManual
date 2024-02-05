@@ -16,6 +16,8 @@ The different behaviours are:
 Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 will only receive MIDI notes.
 
 
+!!! warning
+    In order to receive MIDI CC messages, you must first enable "MIDI CC RX" in [Settings](settings.md) / MIDI sub-menu.
 
 <!-- **Settings and parameters** will convert the 0-127 range of MIDI CC messages to their respective minimum and maximum range.
 
@@ -60,12 +62,15 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 |                  |   Load Next Pattern   |         59         |     Action      |
 |                  |    Load Pattern #     |         60         | Absolute (1-8)  |
 |                  |     Save Pattern      |         61         |     Action      |
+|                  |     Generate Pattern      |         62         |     Action      |
+|                  |     Variate Pattern      |         63         |     Action      |
 | **Tracks**       | Select Previous Track |         70         |     Action      |
 |                  |   Select Next Track   |         71         |     Action      |
 |                  |    Select Track  #    |         72         | Absolute (1-16) |
 | **Menu**         |  Open Track Settings  |         80         |     Actions     |
 |                  |    Open Generator     |         81         |     Actions     |
 |                  |     Open MIDI FX      |         82         |     Actions     |
+|                  |     Open Perform     |         83         |     Actions     |
 
 
 ### GENERATORS
@@ -86,6 +91,24 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | Random Velocity |         10         |    Scaled     |
 
 #### ARPER
+
+| **Parameter** | **MIDI CC Number** | **Behaviour** |
+|---------------|:------------------:|:-------------:|
+| Generate      |         1          |    Action     |
+| Variate       |         2          |    Action     |
+| Shift         |         3          |    Scaled     |
+| Length        |         4          |    Scaled     |
+| Density       |         5          |    Scaled     |
+| Bass Shift    |         6          |    Scaled     |
+| Octave        |         7          |    Scaled     |
+| Note Length   |         8          |    Scaled     |
+| Bass Repeat   |         9          |    Scaled     |
+| Spread        |         10         |    Scaled     |
+| Octave Random |         11         |    Scaled     |
+| Restart       |         12         |    Scaled     |
+| Lock Bass     |         13         |    Scaled     |
+| KB Shift      |         14         |    Scaled     |
+
 
 #### DRUMGEN
 
@@ -132,6 +155,14 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 
 #### MIDI PLAYER
 
+| **Parameter**   | **MIDI CC Number** | **Behaviour** |
+|-----------------|:------------------:|:-------------:|
+| Shift           |         3          |    Scaled     |
+| Length          |         4          |    Scaled     |
+| Density         |         5          |    Scaled     |
+| Direction       |         6          |    Scaled     |
+| Quantize        |         7          |    Scaled     |
+
 #### POLYFORM
 
 | **Parameter**     | **MIDI CC Number** | **Behaviour** |
@@ -145,7 +176,9 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | Pitch Probability |         7          |    Scaled     |
 | Gate Probability  |         8          |    Scaled     |
 | Chord Probability |         9          |    Scaled     |
-| Random Velocity   |         10         |    Scaled     |
+| Inversion         |         10         |    Scaled     |
+| Trigger           |         11         |    Scaled     |
+| Chord Quality     |         12         |    Scaled     |
 
 #### POP
 
@@ -198,6 +231,7 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | Probability     |         5          |    Scaled     |
 | Random Velocity |         6          |    Scaled     |
 | Quantize        |         7          |    Scaled     |
+| Delay           |         8          |    Scaled     |
 
 #### TURING
 
@@ -233,7 +267,8 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | Interval 1    |        103         |    Scaled     |
 | Interval 2    |        104         |    Scaled     |
 | Interval 3    |        105         |    Scaled     |
-| Quantize      |        106         |    Scaled     |
+| Interval 4    |        106         |    Scaled     |
+| Quantize      |        107         |    Scaled     |
 
 #### ECHOES
 
@@ -257,21 +292,21 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 
 #### HUMANIZER
 
-| **Parameter** | **MIDI CC Number** | **Behaviour** |
-|---------------|:------------------:|:-------------:|
+| **Parameter**        | **MIDI CC Number** | **Behaviour** |
+|----------------------|:------------------:|:-------------:|
 | Delay Probability    |        103         |    Scaled     |
-| Velocity Probability      |        104         |    Scaled     |
-| Max Delay   |        105         |    Scaled     |
-| Max Velocity       |        106         |    Scaled     |
+| Velocity Probability |        104         |    Scaled     |
+| Max Delay            |        105         |    Scaled     |
+| Max Velocity         |        106         |    Scaled     |
 
 #### MODULATOR
 
-| **Parameter** | **MIDI CC Number** | **Behaviour** |
-|---------------|:------------------:|:-------------:|
-| Sequence Amount    |        103         |    Scaled     |
-| Length      |        104         |    Scaled     |
-| Offset   |        105         |    Scaled     |
-| Depth       |        106         |    Scaled     |
+| **Parameter**   | **MIDI CC Number** | **Behaviour** |
+|-----------------|:------------------:|:-------------:|
+| Sequence Amount |        103         |    Scaled     |
+| Length          |        104         |    Scaled     |
+| Offset          |        105         |    Scaled     |
+| Depth           |        106         |    Scaled     |
 
 #### PROGRAM SEQUENCER
 

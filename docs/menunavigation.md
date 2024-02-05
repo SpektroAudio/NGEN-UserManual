@@ -1,4 +1,4 @@
-# Menu Mavegation
+# Menu Navigation
 
 ---
 
@@ -7,11 +7,13 @@
 
 ![](images/NGEN_MainMenu.gif){align=right}
 
-The NGEN menu system is designed to be easy to navegate using the ++"MENU ENCODER"++ and the ++"RETURN"++ button.
+The NGEN menu system is designed to be easy to navigate using the ++"MENU ENCODER"++ and the ++"RETURN"++ button.
 
 The unit boots into the Main Menu which lets you access all the different features available in NGEN. We've limited the maximum depth of the menu system to two levels (MAIN MENU > FEATURE SUB-MENU).  
 
 <br/><br/>
+
+
 ``` mermaid
 %%{init: {'flowchart' : {'curve' : 'linear'}}}%%
 flowchart TD
@@ -34,7 +36,7 @@ flowchart TD
 ```
 <br/><br/>
 
-Use the ++"MENU ENCODER"++  to scroll through the list of features and click the ++"MENU ENCODER"++ to navegate to a sub-menu. 
+Use the ++"MENU ENCODER"++  to scroll through the list of features and click the ++"MENU ENCODER"++ to navigate to a sub-menu. 
 To return to the previous menu, press the ++"Return"++ button.
 
 Different sub-menus can contain different menu items such as parameters, toggle switches, and actions which can be selected by scrolling the menu ++"MENU ENCODER"++.
@@ -105,11 +107,13 @@ This idle mode displays a list of the parameters currently mapped to the 4 PARAM
 ## Screensaver
 
 ![](images/NGEN_Screensaver.gif){align=right}
-In order to prevent display burn-in, NGEN's display will go into screensaver mode after 5 minutes of no hadware interaction (unless it's displaying an animation). 
+In order to prevent display burn-in, NGEN's display will go into screensaver mode after a certain period (determined by the [Screensaver Period setting](settings.md#display)) of no hadware interaction (unless it's displaying an animation). 
 The screensaver does not affect other functions so NGEN will continue to work normally while in screensaver mode.
 
 To exit the screensaver mode, move any of the knobs or click on any of the buttons.
 
+
+<br><br>
 
 ---
 
@@ -129,3 +133,5 @@ To exit the screensaver mode, move any of the knobs or click on any of the butto
 | ++"FUNCTION"++ + ++"RETURN"++ + ++"MENU ENCODER (Click)"++  | Delete a pattern (while in the Pattern page)  |
 | ++"PATTERN"++ + ++"GENERATE"++       | Load the next pattern                            |
 | ++"PATTERN"++ + ++"FUNCTION"++ + ++"GENERATE"++       | Load the previous pattern                            |
+| ++"TRACK | CLK"++ + ++"GENERATE"++       | Generate Pattern                            |
+| ++"TRACK | CLK"++ + ++"FUNCTION"++ + ++"GENERATE"++       | Variate Pattern                            |

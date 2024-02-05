@@ -25,7 +25,8 @@ To enable the CV output ports, set the AUX OUT of any of [Tracks](track.md) to C
 
 The CV and GATE outputs on NGEN have a limited range of 3.3V and a resolution of 12bits so we recommend using an external MIDI to CV converter for a wider range and better resolution.
 
-==**ATTENTION:** The CV and Gate jacks are **OUTPUTS** only. **Do not** send any CV signals into them or you may run the risk of damaging your unit.== 
+!!! danger "WARNING"
+    The CV and Gate jacks are **OUTPUTS** only. **Do not** send any CV signals into them or you may run the risk of damaging your unit.
 
 *Please note that NGEN still needs to be powered via USB (check the Powering NGEN section below).*
 
@@ -37,6 +38,18 @@ If you'd like to set up NGEN without a computer, you can power it using a USB po
 NGEN's power consumption is minimal so even a 0.5A charger should work.
 
 ---
+
+## I2C Connection
+
+NGEN features an 1/8 TRS I2C connection on it's left side wired with SDA on the TIP and SCL on RING.
+
+We plan on adding I2C-related features in future NGEN firmware updates.
+
+!!! danger "WARNING"
+    Do not connect any CV outputs or other signals via 1/8 to the I2C connection otherwise you may damage your unit.
+
+---
+
 
 ## Setup Examples
 

@@ -4,7 +4,7 @@
 
 ## About NGEN
 
-NGEN is a unique 16-track MIDI sequencer design in São Paulo / Brazil that lets you combine multiple algorithmic / generative generators and MIDI FXs to sequence multiple hardware or software MIDI instruments.
+NGEN is a unique 16-track MIDI sequencer designed in São Paulo / Brazil that lets you combine multiple algorithmic / generative generators and MIDI FXs to sequence multiple hardware or software MIDI instruments.
 
 It offers a completely new way of creating and performing music by abstracting the composition process. Instead of writing sequences from scratch, NGEN lets you quickly generate a new sequence for your drums, basslines, melodies, and chord progressions with a push of a button.
 
@@ -21,4 +21,4 @@ NGEN also includes a variety of tools to let you explore this world of algorithm
 
 ## Firmware
 
-Current version: 1.0 ([Change-Log](firmwareupdate.md#change-log))
+Current version: 1.1 ([Change-Log](firmwareupdate.md#change-log))

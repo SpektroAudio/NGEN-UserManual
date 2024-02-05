@@ -48,8 +48,10 @@ nav:
     - Getting Started: 'gettingstarted.md'
     - Hardware Setup: 'setup.md' 
     - Hardware Controls: 'hardwarecontrols.md'
-    - Menu Navegation: 'menunavegation.md'
+    - Menu Navigation: 'menunavigation.md'
+    - File Management: 'filemanagement.md'
     - MIDI Mapping: 'midimapping.md'
+    - NSL Programming: 'nsl.md'
   - Features:
     - Clock Generators: 'clockgen.md'
     - Generators: 'generators.md'
@@ -60,6 +62,7 @@ nav:
     - Scale: 'scale.md'
     - Tools : 'tools.md'
     - Tracks: 'track.md'
+  - Tips & Techniques: 'techniques.md'
   - System:
     - Settings: 'settings.md'
     - Firmware Update: 'firmwareupdate.md'
@@ -75,8 +78,8 @@ extra:
   analytics:
     provider: google
     property: G-348677531
-  version:
-    provider: mike
+  # version:
+  #   provider: mike
 
 
 extra_css:
@@ -89,8 +92,9 @@ plugins:
     - search
     # - with-pdf
     - git-revision-date
-    - with-pdf:
-        author: Spektro Audio
+
+    # - with-pdf:
+    #     author: Spektro Audio
         # copyright: http://spektroaudio.com/acdgen
         #
         #cover: false

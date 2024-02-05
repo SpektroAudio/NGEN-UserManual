@@ -4,6 +4,21 @@
             "language": "markdown",
             "scheme": "file",
             "pattern": "docs/hardwarecontrols.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "docs/techniques.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "docs/gettingstarted.md"
+        },
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "docs/track.md"
         }
     ]
 }

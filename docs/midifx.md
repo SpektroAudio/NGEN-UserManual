@@ -11,7 +11,7 @@ NGEN features a number of different MIDI FX's that can be used to manipulate and
 
 ## MIDI FXs Parameters:
 
-As with [Generators](generators.md), each MIDI FXs contains a set of parameters that can be adjusted via the ```MIDI FX``` sub-menu available in the [```MAIN MENU```](menunavegation.md#main-menu). 
+As with [Generators](generators.md), each MIDI FXs contains a set of parameters that can be adjusted via the ```MIDI FX``` sub-menu available in the [```MAIN MENU```](menunavigation.md#main-menu). 
 
 While in the MIDI FX sub-menu, the most relevant parameters for selected MIDI FX are mapped to the NGEN's potentiometers:
 
@@ -39,16 +39,18 @@ Accent changes the MIDI velocity of incoming MIDI notes according to it's intern
 
 ### CHORD
 
-Chords transforms single notes into chords by adding up to 3 notes on top of incoming notes based on specified intervals. There's also an option to quantize those additional notes or leave them unquantized. 
+Chords transforms single notes into chords by adding up to 4 notes on top of incoming notes based on specified intervals. There's also an option to quantize those additional notes or leave them unquantized. 
 
 ** List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-|------------|:-------------|:--------------|:----------|
-| Quantize | Quantizes all intervals to the active key / scale | | |
-| Chord Interval 1 | Interval of the first chord note | ++"PARAM 1"++ | |
-| Chord Interval 2 | Interval of the second chord note | ++"PARAM 2"++ | |
-| Chord Interval 3 | Interval of the third chord note | ++"PARAM 3"++ | |
+| **Parameter**    | **Description**                                   | **Hardware Mapping** | **Advanced** |
+|------------------|:--------------------------------------------------|:---------------------|:-------------|
+| Quantize         | Quantizes all intervals to the active key / scale |                      |              |
+| Chord Interval 1 | Interval of the first chord note                  | ++"PARAM 1"++        |              |
+| Chord Interval 2 | Interval of the second chord note                 | ++"PARAM 2"++        |              |
+| Chord Interval 3 | Interval of the third chord note                  | ++"PARAM 3"++        |              |
+| Chord Interval 4 | Interval of the third chord note                  | ++"PARAM 4"++        |              |
+| Probability      | Probability of triggering a chord                 |                      |              |
 
 
 ### ECHOES
@@ -141,6 +143,7 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 
 | **Parameter**                      | **Description**                                                            | **Hardware Mapping** | **Advanced** |
 |------------------------------------|:---------------------------------------------------------------------------|:---------------------|:-------------|
+| Mode (```MODE```)                  | Sets the mode of the Shaper (Clip / Scale / Drop)                          |                      |              |
 | Pitch Minimum (```PITCH MIN```)    | Lowest possible note (0-127)                                               | ++"PARAM 1"++        |              |
 | Pitch Maximum (```PITCH MAX```)    | Highest possible note (0-127)                                              | ++"PARAM 2"++        |              |
 | Velocity Minimum (```VEL MIN```)   | Lowest possible velocity (0-127)                                           | ++"PARAM 3"++        |              |
@@ -178,3 +181,5 @@ The Strum MIDI FX can be used to create a strumming effect by adding a short ran
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 |------------|:-------------|:--------------|:----------|
 | Max Delay | Maximum delay time (in milliseconds) | ++"PARAM 1"++ | |
+| Velocity Multiplier (```VEL MULT```) | Decreases the delay time according to MIDI velocity | | |
+| Random | Switches between sequence or random order for the delay time |  | |

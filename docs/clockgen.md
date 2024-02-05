@@ -17,8 +17,9 @@ While in the CLOCK sub-menu, the most relevant parameters for the selected clock
 
 ## Selecting a Clock
 
-To select a different clock, return to the **MAIN MENU** and select the **CLOCK** sub-menu.  
-While in the **CLOCK** sub-menu, hold down the ++"TRACK / CLK"++  button and turn the ++"MENU ENCODER"++.
+To select a different clock, navigate to the **CLOCK** sub-menu (from the **MAIN MENU**), hold down the ++"TRACK / CLK"++  button and turn the ++"MENU ENCODER"++.
+
+The name of the selected clock generator will be displayed on the top-left section of the display.
 
 ---
 
