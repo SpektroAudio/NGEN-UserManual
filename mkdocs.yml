@@ -95,12 +95,13 @@ plugins:
 
     # - with-pdf:
     #     author: Spektro Audio
-        # copyright: http://spektroaudio.com/acdgen
-        #
-        #cover: false
-        #back_cover: true
-        # cover_title: ACDGEN - AU / VST3 EDITION
-        # cover_subtitle: User Manual
-        # cover_logo: /images/ACDGEN-Screenshot.jpg
-
-        # debug_html: true
+    #     copyright: http://spektroaudio.com/ngen
+    #     # cover: true
+    #     # back_cover: true
+    #     cover_title: NGEN – Algorithmic MIDI Workstation
+    #     cover_subtitle: User Manual
+    #     cover_logo: /images/NGEN_PromoImage.jpeg
+    #     # debug_html: true
+    #     render_js: true
+    #     headless_chrome_path: chrome
+    

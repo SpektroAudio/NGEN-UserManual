@@ -4,9 +4,9 @@
 
 ## How to update the NGEN firmware
 
-###  NGEN v1.0 (Batch #1 / Micro USB)
+###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - Download the latest version of the NGEN firmware (public link will be available soon)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](https://ngen.spektroaudio.com/firmware/NGEN_FWUpdate_v111_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -26,21 +26,53 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
         If TyUploader is not recognizing NGEN, try a different USB cable. Some USB cables are power-only and will not transmit data between your computer and NGEN.  
         If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 
-### NGEN v1.1 and newer (Batch #2 and newer + / USB-C)
+### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - Connect NGEN to your computer via USB
+1 - [Download the latest version of the NGEN firmware for HW v1.1](https://ngen.spektroaudio.com/firmware/NGEN_FWUpdate_v111_hw11.zip)
 
-2 - Navigate to the [Settings](settings.md) page and select the "FW Update" option.
+2 - Connect NGEN to your computer via USB
 
-3 - NGEN should now appear as a USB flash drive on your computer.
+3- Navigate to the [Settings](settings.md) page and select the "FW Update" option.
 
-4 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.
+4 - NGEN should now appear as a USB flash drive on your computer.
 
-5 - NGEN should automatically apply the update and restart after it's finished.
+5 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.
+
+6 - NGEN should automatically apply the update and restart after it's finished.
 
 ---
 
 ## Change-Log
+
+---
+
+### Version 1.1.1
+
+#### Added
+
+- [CV OUT](setup.md#connecting-via-cv): Added new 4xTrig mode and Trigger 1-4 parameters.
+- The [MENU SYSTEM](menunavigation.md) now retains the position of each menu during navigation.
+- AutoVari8 and CV Out settings are now stored as global settings on the device EEPROM (requires manual save via the Settings sub-menu).
+
+
+#### Improvements
+
+- [SCALE](scale.md): Updated scale engine to improve support for scales of different sizes.
+- [SETTINGS](settings.md): Improved menu order.
+- [TRACK](track.md): Improved Aux Output support.
+- Moved AutoVari8 and CV Out sub-menus to Settings.
+- [POP](generators.md#pop): Improved algorithm.
+
+#### Fixes
+
+- NGEN can now properly boot when powered via external power supplies (rev1 only).
+- Incoming MIDI notes are now properly routed to tracks.
+- [SETTINGS](settings.md): The Firmware Update screen now displays correctly.
+- [TRACK](track.md): Track 1 Aux Out is now disabled by default.
+- [DRUMGEN](generators.md#drumgen): Opening the template selector no longer causes system delays.
+
+
+---
 
 ### Version 1.1
 

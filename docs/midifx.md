@@ -16,7 +16,7 @@ As with [Generators](generators.md), each MIDI FXs contains a set of parameters 
 While in the MIDI FX sub-menu, the most relevant parameters for selected MIDI FX are mapped to the NGEN's potentiometers:
 
 * 4 Parameters mapped to the potentiometers directly.
-* 4 Additional parameters are accesible by holding down **SHIFT** while moving the potentiometers.
+* 4 Additional parameters are accesible by holding down ++"FUNCTION"++ while moving the potentiometers.
 
 Certain MIDI FX's also use the ++"GENERATE"++ button to generate new internal sequences.
 

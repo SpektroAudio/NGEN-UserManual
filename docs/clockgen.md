@@ -52,7 +52,8 @@ It also features an 8-stage swing sequencer that can be used to create interesti
 |---------------|--------------------------------------|:--------------------:|
 | **BPM**       | Sets the BPM for the internal clock   |    ++"PARAM 1"++     |
 | **Length**    | Sets the length of the swing sequence |    ++"PARAM 2"++     |
-| **Amount**    | Sets the amount of swing              |    ++"PARAM 3"++     |
+| **Modulation (```MOD```)**    | Sets the amount of clock modulation (swing)              |    ++"PARAM 3"++     |
+| **Swing**    | Sets the swing amount |    -     |
 | **Generate**  | Generates a new swing sequence       |    ++"GENERATE"++    |
 
 

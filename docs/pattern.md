@@ -16,7 +16,7 @@ To **load a pattern**, press the ++"PATTERN"++ button once to open the **Pattern
 To **save a pattern**, hold down ++"PATTERN"++ and press the ++"MENU ENCODER"++.
 
 
-The **Pattern Selector** displays the active pattern on the left, the selected pattern on the center and the [Generator](generator.md) and [MIDI FX](midifx.md) selected for the first 3 active tracks.
+The **Pattern Selector** displays the active pattern on the left, the selected pattern on the center and the [Generator](generators.md) and [MIDI FX](midifx.md) selected for the first 3 active tracks.
 
 ---
 

@@ -78,7 +78,7 @@ Menu Navigation is the default mode of the display.
 
 When moving one of the PARAM knobs, NGEN will display the name, current value, and range of the parameter currently mapped to that knob.
 
-While in Generator or Clock sub-menus, the display will switch to the selected Idle mode (Animation or Parameter List) after 3 seconds of no hardware interaction unless Idle Mode is set to ```OFF```.
+While in Generator or Clock sub-menus, the display will switch to the selected Idle mode (Animation or Parameter List) after 5 seconds of no hardware interaction unless Idle Mode is set to ```OFF```.
 
 ---
 

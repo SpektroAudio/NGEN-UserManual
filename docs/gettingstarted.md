@@ -13,7 +13,8 @@ By default, all 16 tracks are set up to output MIDI to channels 1 through 16 seq
 
 !!! warning "Attention - ADVANCED MODE"
       Many advanced settings (such as track routing and Clock Rate) are hidden by default to provide a more streamlined experience to new users.   
-      To access these settings, enable the "Advanced Mode" in the [Settings](settings.md) / General page.
+      To access these settings, enable the "Advanced Mode" in the [Settings](settings.md) / General page.  
+      To keep your current settings, save your settings after enabling Advanced Mode.
 
 ---
 
@@ -39,6 +40,8 @@ This guide provides a step-by-step process to initiate NGEN:
 4. NGEN should now begin transmitting MIDI Notes to your instrument.
 
 5. By default, NGEN will load ACDGEN as the [generator](generators.md) for [track #1](track.md). To modify ACDGEN's settings, navigate back to the [Main Menu](menunavigation.md#main-menu) by pressing the ++"RETURN"++ button and proceed to the [Generator](generators.md) sub-menu.
+
+
 ---
 
 ## Flow Diagram

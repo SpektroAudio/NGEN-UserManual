@@ -53,7 +53,9 @@ The 8 different algorithms available in ACDGEN can generate sequences that vary 
 • *Up-Stepped*: Similar to Upwards but it can also alternate between higher notes and the fundamental / base note.  
 • *Downwards*: Generates a sequence that tends to go down in the active scale.  
 • *Down-Stepped*: Similar to Downwards but it can also alternate between lower notes and the fundamental / base note.  
-• *NEW*: Combines different techniques used in the other algorithms and regular arpeggiators.  
+• *ARP3*: Algorithm inspired by arpeggiated sequences.
+• *LEAD*: Generates sequences with longer and more sustained notes that can be used for lead lines and main melodies.
+• *LEGATO*: Generates sequences where all notes are played in legato (each note lasts until the next note)
 
 
 **Parameter List:**
@@ -66,14 +68,15 @@ The 8 different algorithms available in ACDGEN can generate sequences that vary 
 | Length                         |                Sets the length of the sequence.                 |                   ++"PARAM 2"++ |
 | Density                        |                Sets the sequence's note density.                |                   ++"PARAM 3"++ |
 | Algorithm                      |      Selects the mode used to generate the next sequence.       |                   ++"PARAM 4"++ |
-| KB Shift                       |               Toggles the keyboard shift feature.               |                               – |
+| KB Shift                       |               Toggles the keyboard shift feature (transposition via MIDI input).               |                               – |
 | Note Len                       |      Sets the proportional note length of generated notes.      |  ++"FUNCTION"++ + ++"PARAM 2"++ |
 | Random Vel                     |            Sets the amount of random MIDI velocity.             |  ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Hold Prob                      |                   Sets the hold probability.                    |  ++"FUNCTION"++ + ++"PARAM 4"++ |
+| Hold Prob                      |                   Sets the hold probability (for generating notes longer than 1/16).                    |  ++"FUNCTION"++ + ++"PARAM 4"++ |
 | Octave                         |             Sets the base octave for the sequence.              |  ++"FUNCTION"++ + ++"PARAM 1"++ |
 | Slide Prob                     |         Sets the probability of generating slide steps          |                               – |
 | Base Velocity (```Base Vel```) |         Sets the base MIDI velocity of generated notes          |                               - |
 | Accent                         |                     Sets the accent amount                      |                               - |
+| Offset                         |                     Sets a beat offset for the ACDGEN sequence (in 1/16 steps).             |                               - |
 
 ---
 
@@ -103,6 +106,7 @@ Arper is a generator designed to generate classic arpeggios using an algorithmic
 | Density       |                   Sets the sequence's density.                    | ++"FUNCTION"++ + ++"PARAM 3"++ |
 | Bass RPT      |             Sets how often the bass note gets played              | ++"FUNCTION"++ + ++"PARAM 4"++ |
 | Note Len      |       Sets the proportional note length of generated notes.       |                              – |
+| Bass Lock     |             Locks the bass note to the root note of the scale.     |                              – |
 
 
 ---
@@ -115,7 +119,7 @@ Arper is a generator designed to generate classic arpeggios using an algorithmic
 
 DrumGen is a 4-part drum sequencer that uses 3D probability templates to generate sequences based on certain music styles.
 
-A new template can be selected via the **TEMPLATE** parameter or by pressing **SHIFT** + **Generate**.
+A new template can be selected via the **TEMPLATE** parameter or by pressing **SHIFT** + **Generate**. 
 
 The 4 parts are completely independent and can be set to individual sequence lengths, probability and MIDI notes.
 
@@ -160,9 +164,9 @@ Recorded sequences can be manipulated using parameters such as Length, Probabili
 | Direction                    |              Sets the playback direction              |                  ++"PARAM 4"++ |
 | Shift                        |         Transposes the sequence diatonically.         |                  ++"PARAM 1"++ |
 | Length                       |           Sets the length of the sequence.            |                  ++"PARAM 2"++ |
-| Probability (```Prob```)     |           Sets the sequence's probability.            |                  ++"PARAM 3"++ |
+| Probability (```Prob```)     |           Sets the probability of playing back notes in the sequence.            |                  ++"PARAM 3"++ |
 | Note Length (```Note Len```) | Sets the proportional note length of generated notes. | ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Quantize                     |         Toggles quantization of the sequence.         |               -                |
+| Quantize                     |         Toggles pitch quantization of the sequence (based on the active Key and [Scale](scale.md)).         |               -                |
 
 ---
 
@@ -270,7 +274,7 @@ In order to use Polyform, route the output of another [Track](track.md) to Polyf
 | Pitch Probability (```Pitch %```)      |                  Sets the pitch probability.                  |  ++"FUNCTION"++ + ++"PARAM 1"++ |
 | Gate Probability (```Gate %```)        |                  Sets the gate probability.                   |  ++"FUNCTION"++ + ++"PARAM 2"++ |
 | Chord Probability (```Chord %```)      |                  Sets the chord probability.                  |  ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Inversion Probabilit (```Inversion```) |        Sets the probability of random chord inversion         |                               - |
+| Inversion Probability (```Inversion```) |        Sets the probability of random chord inversion         |                               - |
 | Inversion Range (```Inv Range```)      |            Sets the range of the chord inversions             |                               - |
 | Chord Quality (```Chord Q```)          | Selects the preset of chord intervals used to generate chords |                               - |
 | Trigger                                |   Sets the mode for advancing Polyform's internal sequence    |                               - |
@@ -289,6 +293,17 @@ When generating a new sequence, POP selects 4 chords and generates a gate sequen
 
 POP will generate triads (3-note chords) by default but it can also invert chords and generate different types of chords (+7, +9, +13, sus2, sus4) according to the Inv Prob and Type Prob parameters respectively.
 
+The MIDI velocity of generated chords is determined by the Velocity and Balance parameters. Velocity determines the base velocity of the chords and Balance determines the correlation between MIDI velocity and note lenghts.
+At 50, Balance uses the same velocity for short and long notes. At 0, short notes will have a higher velocity and long notes will have a lower velocity. At 100, short notes will have a lower velocity and long notes will have a higher velocity.
+
+
+Modes:
+
+• **STABS**: Generates a sequence of stabs (short chords) that can be used for house, techno, and other dance music genres. In this mode, Density disables certain chords in the sequence based on their density value.
+• **FIXED LEN**: Generates a sequence of chords with a fixed length and a top melody. In this mode, Density controls the density of the top melody.
+• **VARI LEN**: Generates a sequence of chords with variable length. In this mode, Density controls the density of generated chords.
+
+
 **Parameter List:**
 
 
@@ -302,7 +317,8 @@ POP will generate triads (3-note chords) by default but it can also invert chord
 | Type Probability (```Type Prob```)     | Sets the probability of different chord types. |              ++"FUNCTION"++ + ++"PARAM 1"++ |
 | Chord Length (```Chord Len```)         |         Sets the length of each chord.         |              ++"FUNCTION"++ + ++"PARAM 2"++ |
 | Inversion Probability (```Inv Prob```) |   Sets the probability of chord inversions.    |              ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Balance                                |    Sets the velocity of short x long notes.    | ++"FUNCTION"++ +              ++"PARAM 4"++ |
+| Balance                                |    Sets the velocity of short x long notes. | ++"FUNCTION"++ +              ++"PARAM 4"++ |
+| Mode                                   |       Sets the POP mode.      |                                            - |
 
 
 ---
@@ -315,6 +331,12 @@ POP will generate triads (3-note chords) by default but it can also invert chord
 
 Samba is a percussive generator inspired by the Brazilian genre and based on a 4-part euclidean sequencer. All four parts are controlled by shared parameters.
 Although named after a specific genre, Samba is capable of generating percussing rhythms/grooves that can be used for all kinds of different genres.
+
+Note Length Modes:
+
+• **FIXED**: All notes have the same length (1/16).
+• **DYNAMIC 1**: Sets the length of the notes based on the length of each part's sequence.
+• **DYNAMIC 2**: Sets the length of the notes based on the number of notes in each part's sequence.
 
 **Parameter List:**
 
@@ -331,6 +353,7 @@ Although named after a specific genre, Samba is capable of generating percussing
 | Note 2                   |         Set part 2's MIDI note          |                             -- |
 | Note 3                   |         Set part 3's MIDI note          |                             -- |
 | Note 4                   |         Set part 4's MIDI note          |                             -- |
+| Note Len                | Sets the note length mode. |                             -- |
 
 ---
 
@@ -344,16 +367,16 @@ Shuffler is a generator designed to play and mangle sliced loops. To get the mos
 
 The different modes available in Shuffler are capable of sequencing the slices in different ways: 
 
-* Mode 0 (Forward): Mode 0 will use a non-quantized rising note sequence according to the Start note and Length. This mode will play loops sliced in 1/16 in their original form.
-* Mode 1 (Backward): Similar to Mode 0 (Forward) except it'll play the slices in reverse/backward.
-* Mode 2 (Sequenced): This mode uses a shuffled sequence to play the slices in a different order to create new variations of the loop.
+• *Sequenced (```SEQ```): This mode uses a generated sequence to play the slices in a different order to create new variations of the loop.
+• *Forward (```FWWRD```)*: Uses a non-quantized rising note sequence according to the Start note and Length. This mode will play loops sliced in 1/16 in their original form.
+• *Forward (```BCKWRD```)*: Similar to Mode 0 (Forward) except it'll play the slices in reverse/backward.
 
 **Parameter List:**
 
 
 | **Parameter**                       |                    **Description**                    |         ** Hardware Mapping ** |
 |-------------------------------------|:-----------------------------------------------------:|-------------------------------:|
-| Generate                            |               Generates a new sequence                |                 ++"GENERATE"++ |
+| Generate                            |               Generates a new sequence (for SEQ mode)                |                 ++"GENERATE"++ |
 | Variate                             | Generates a variation based on the current sequence.  | ++"FUNCTION"++ + ++"GENERATE"++ |
 | Repeat                              |            Set the number of note repeats.            |                  ++"PARAM 1"++ |
 | Length                              |           Sets the length of the sequence.            |                  ++"PARAM 2"++ |
@@ -396,19 +419,20 @@ The Thru generator is a simple pass-through generator that can be used for dupli
 
 **Generator Description:**
 
-Turing is an algorithm inspired by the [Music Thing's Turing Machine](https://musicthing.co.uk/pages/turing.html). It uses a lockable 16-bit shift register to generate evolving sequences.
+Turing is an algorithm inspired by the [Music Thing's Turing Machine](https://www.musicthing.co.uk/Turing-Machine/). It uses a lockable 16-bit shift register to generate evolving sequences.
 
 **Parameter List:**
 
-| **Parameter**            |                            **Description**                            |          ** Hardware Mapping ** |
-|--------------------------|:---------------------------------------------------------------------:|--------------------------------:|
-| Write                    |                         Flips the first bit.                          |                  ++"GENERATE"++ |
-| Clear                    |                      Clears the shift register.                       | ++"FUNCTION"++ + ++"GENERATE"++ |
-| Shift                    |                 Transposes the sequence diatonically.                 |                   ++"PARAM 1"++ |
-| Length                   |                   Sets the length of the sequence.                    |                   ++"PARAM 2"++ |
-| Probability (```Prob```) |            Sets the probability of flipping the first bit.            |                   ++"PARAM 3"++ |
-| Loop                     | Sets the probability of copying the last bit back into the first bit. |                   ++"PARAM 4"++ |
-| Octave                   |                Sets the base octave for the sequence.                 |  ++"FUNCTION"++ + ++"PARAM 1"++ |
-| Spread                   |         Sets the read distance between the different voices.          |  ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Range                    |         Sets the pitch range of the sequence (in semitones).          |  ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Voices                   |                      Sets the number of voices.                       |  ++"FUNCTION"++ + ++"PARAM 4"++ |
+| **Parameter**                 |                            **Description**                            |          ** Hardware Mapping ** |
+|-------------------------------|:---------------------------------------------------------------------:|--------------------------------:|
+| Write                         |                         Flips the first bit.                          |                  ++"GENERATE"++ |
+| Clear                         |                      Clears the shift register.                       | ++"FUNCTION"++ + ++"GENERATE"++ |
+| Shift                         |                 Transposes the sequence diatonically.                 |                   ++"PARAM 1"++ |
+| Length                        |                   Sets the length of the sequence.                    |                   ++"PARAM 2"++ |
+| Probability (```Prob```)      |            Sets the probability of flipping the first bit.            |                   ++"PARAM 3"++ |
+| Loop                          | Sets the probability of copying the last bit back into the first bit. |                   ++"PARAM 4"++ |
+| Octave                        |                Sets the base octave for the sequence.                 |  ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Spread                        |         Spreads the shift register read position between the different voices.          |  ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Range                         |         Sets the pitch range of the sequence (in semitones).          |  ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Clock Shift (```Clk Shift```) | Sets the clock shift (offset) for the shift register (in 1/16 steps). |                               - |
+| Voices                        |                      Sets the number of voices.                       |  ++"FUNCTION"++ + ++"PARAM 4"++ |

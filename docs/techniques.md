@@ -8,14 +8,14 @@ NGEN can be used in a variety of different ways and this section is designed to 
 
 ---
 
-## Tips & Tecniques
+## Tips & Techniques
 
 
 ### Tips for Live Performance
 
 Here's a list of some tips that can help you get the most out of NGEN when performing live:
 
-#### Organizing your songs:
+#### Organizing your songs
 
 One way to organize song ideas is by utilizing the 8 available patterns within each project to store distinct sections of a song. For instance, you can use pattern 1 for the intro, pattern 2 for the verse, pattern 3 for the chorus, and so on.
 
@@ -23,15 +23,15 @@ Additionally, projects can be used to store different songs. For example, you ca
 
 NGEN is capable of loading projects and patterns while playing so you can use this to switch between songs and sections of a song while performing. Switching between different projects and patterns is always done in sync with the clock and it's designed to be as smooth as possible.
 
-#### Using shortcuts:
+#### Using shortcuts
 NGEN includes several shortcuts that can help you during your performance. A list of all shortcuts can be found in the [Menu Navigation](menunavigation.md#shortcuts) section of the manual.
 
-#### Using the Performance Mode:
+#### Using the Performance Mode
 
 The [Performance Mode](perform.md) is a powerful tool for live performances. You can use it to control multiple parameters of different tracks at the same time.
 You could use the Performance Mode, for example, to control the density, octave, and mode of multiple tracks at once. 
 
-#### Using an external MIDI controller for NGEN:
+#### Using an external MIDI controller for NGEN
 
 While NGEN may only feature 4 hardware knobs, it's possible to control most of its parameters and features via MIDI CC. This means that you can use an external MIDI controller to control NGEN's parameters and expand the number of real-time hardware controls available.
 
@@ -41,7 +41,7 @@ Because NGEN works as a USB client, USB MIDI Controller can only be used with a 
 
 A full list of NGEN's MIDI CC mappings can be found in the [MIDI Mapping](midimapping.md) section of the manual.
 
-#### Automating parameter changes via MIDI CC:
+#### Automating parameter changes via MIDI CC
 
 The MIDI CC mappings can also be used to automate parameter changes via a DAW or other MIDI-capable device. 
 This can be used to perform programmatic/automatic changes to NGEN's parameters (such as Key and Scale) according to the needs of your performance.
@@ -58,7 +58,7 @@ Here's a list of some great combinations that we've found during our testing:
 
 - [POP](generators.md#pop) + [Arper](generators.md#arper): In this combination, POP can be used to generate the main chord progression while Arper can be used to add a repeating arpeggio pattern on top of it.
 
-- 2X [ACDGEN](generators.md#acdgen): Two ACDGEN tracks can be combined to create more intricate sequences. Try setting the 2 ACDGEN tracks to different modes and/or octaves for more interesting results.
+- 2X [ACDGEN](generators.md#acdgen): Two ACDGEN tracks can be combined to create more intricate sequences. Try setting the 2 ACDGEN tracks to different algorithms and/or octaves for more interesting results.
 
 Extra tips for combining multiple tracks:
 
