@@ -19,7 +19,7 @@ To save your current settings, select the "Save" option.
 |---------------------------------------|-----------------------------------------------------|
 | **Advanced**                          | Enable or disables advanced parameters and settings |
 | **Variation Amount (```Var Amount```)** | Sets the global variation amount for all generators |
-| **Randomize State (```Randomize```)** | When enabled, NGEN will randomize the states of all tracks when generating new patterns. |
+| **Randomize State (```Rndmize State```)** | When enabled, NGEN will randomize the states of all tracks when generating new patterns. |
 
 ### Display
 
@@ -89,5 +89,5 @@ Auto Variate does not affect the following [Generators](generators.md): Input Se
 | **Save**       | Saves the current settings to the device's internal memory                                                                                                                                                                      |
 | **Firmware Upgrade (```FW Upgrade```)** | Upgrades the device's firmware                                                                                                                                                                                                |
 | **Factory Reset** | Resets the device to factory settings                                                                                                                                                                                        |
-| **Restart**    | Restarts the device                                                                                                                                                                                                             |
+| **Reboot**    | Reboots the device                                                                                                                                                                                                             |
 | **Info**       | Shows device information                                                                                                                                                                                                        |

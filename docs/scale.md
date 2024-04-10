@@ -45,19 +45,15 @@ A global Octave control is also available under the Scale sub-menu.
 
 - Chromatic (```CHROM```)
 
+---
 
-<!-- 
+## Scale Editor
 
-	const byte MINOR_SCALE[12]  = {0, 0, 2, 3, 3, 5, 5, 7, 8, 8, 10, 10};
-	const byte MAJOR_SCALE[12]  = {0, 0, 2, 2, 4, 5, 5, 7, 7, 9, 9, 11};
-	const byte HARMONIC_SCALE[12]  = {0, 0, 2, 3, 3, 5, 5, 7, 8, 8, 11, 11};
-	const byte MELODIC_SCALE[12]  = {0, 0, 2, 3, 3, 5, 5, 7, 7, 9, 11, 11};
-	const byte MAJORPENT_SCALE[12]  = {0, 0, 2, 2, 4, 4, 7, 7, 7, 9, 9, 9};
-	const byte MINORPENT_SCALE[12]  = {0, 0, 0, 3, 3, 5, 5, 7, 7, 7, 10, 10};
-	const byte BLUES_SCALE[12]  = {0, 0, 3, 3, 3, 5, 6, 7, 7, 7, 10, 10};
-	const byte DORIAN_SCALE[12]  = {0, 0, 2, 3, 3, 5, 5, 7, 7, 9, 10, 10};
-	const byte LYDIAN_SCALE[12]  = {0, 0, 2, 2, 4, 4, 6, 7, 7, 9, 9, 11};
-	const byte LOCRIAN_SCALE[12]  = {0, 1, 3, 3, 4, 4, 7, 7, 8, 8, 10, 10};
-	const byte ARABIC_SCALE[12]  = {0, 1, 1, 4, 4, 5, 7, 7, 8, 8, 11, 11};
-	const byte AUGMENTED_SCALE[12]  = {0, 0, 3, 3, 4, 4, 7, 7, 8, 8, 11, 11};
-	const byte WHOLETONE_SCALE[12]  = {0,  -->
+The Scale Editor allows you edit the currently selected scale by enabling or disabling notes.
+
+Use the ++"MENU ENCODE"++ to select a note and press the ++"MENU ENCODE"++ to toggle it on or off.
+
+To return to the Scale menu, press the ++"RETURN"++ button.
+
+!!! warning
+	The Scale Editor is a beta feature and subject to change. Changes made in the Scale Editor are only temporary. Selecting a different scale will reset the changes made in the Scale Editor.

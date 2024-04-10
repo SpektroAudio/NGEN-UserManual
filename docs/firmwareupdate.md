@@ -46,6 +46,34 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 
 ---
 
+### Version 1.1.2
+
+#### Added
+
+- Updated internal framework for apps / tools that require custom UI / controls.
+- New list selector based on the updated framework.
+- [PERFORM](perform.md): Added option for removing a mapping.
+- [MENU SYSTEM](menunavigation.md): Added new confirmation modal for important actions.
+- [SCALE](scale.md): Added new Scale Editor (beta).
+
+#### Improvements
+- Improved potentiometer readings for better accuracy and smoother operation.
+- Improved list scrolling / selection.
+- Upgraded the Name Editor to new framework.
+- Upgraded the Info view to new framework.
+- [SETTINGS](settings.md): Renamed "Restart" to "Reboot".
+- [MENU SYSTEM](menunavigation.md): Improved navigation during Idle Mode.
+- [PROJECTS](projects.md): Improved project management for forward and backwards compatibility.
+
+#### Fixes
+- NGEN can now output to MIDI Channel #16 correctly
+- The MIDI channel of incoming MIDI notes via 3.5mm MIDI IN is now properly detected.
+- [SETTINGS](settings.md): MIDI CC RX now properly saves and loads.
+- [MENU SYSTEM](menunavigation.md): When receiving MIDI CC values, the UI now updates to display the correct values.
+- [PATTERNS](pattern.md): NGEN no longer re-loads the previous pattern when saving a new one.
+- [POP](generators.md#pop): Balance parameter now works correctly.
+- [THRU](generators.md#thru): Delay now works after loading a pattern / project.
+
 ### Version 1.1.1
 
 #### Added

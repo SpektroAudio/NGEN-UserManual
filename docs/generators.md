@@ -123,6 +123,8 @@ A new template can be selected via the **TEMPLATE** parameter or by pressing **S
 
 The 4 parts are completely independent and can be set to individual sequence lengths, probability and MIDI notes.
 
+New DrumGen templates can be created using the open-source [DrumGen Template Editor](https://github.com/SpektroAudio/DrumGenTemplateEditor).
+
 **Parameter List**
 
 | **Parameter** |         **Description**          |          ** Hardware Mapping ** |
@@ -293,15 +295,15 @@ When generating a new sequence, POP selects 4 chords and generates a gate sequen
 
 POP will generate triads (3-note chords) by default but it can also invert chords and generate different types of chords (+7, +9, +13, sus2, sus4) according to the Inv Prob and Type Prob parameters respectively.
 
-The MIDI velocity of generated chords is determined by the Velocity and Balance parameters. Velocity determines the base velocity of the chords and Balance determines the correlation between MIDI velocity and note lenghts.
+The MIDI velocity of generated chords is determined by the Velocity and Balance parameters. Velocity determines the base velocity of the chords and Balance determines the correlation between MIDI velocity and note lenghts.  
 At 50, Balance uses the same velocity for short and long notes. At 0, short notes will have a higher velocity and long notes will have a lower velocity. At 100, short notes will have a lower velocity and long notes will have a higher velocity.
 
 
 Modes:
 
-• **STABS**: Generates a sequence of stabs (short chords) that can be used for house, techno, and other dance music genres. In this mode, Density disables certain chords in the sequence based on their density value.
-• **FIXED LEN**: Generates a sequence of chords with a fixed length and a top melody. In this mode, Density controls the density of the top melody.
-• **VARI LEN**: Generates a sequence of chords with variable length. In this mode, Density controls the density of generated chords.
+• **STABS**: Generates a sequence of stabs (short chords) that can be used for house, techno, and other dance music genres. In this mode, Density disables certain chords in the sequence based on their density value.  
+• **FIXED LEN**: Generates a sequence of chords with a fixed length and a top melody. In this mode, Density controls the density of the top melody.  
+• **VARI LEN**: Generates a sequence of chords with variable length. In this mode, Density controls the density of generated chords.  
 
 
 **Parameter List:**
