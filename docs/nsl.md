@@ -14,6 +14,15 @@ The engine also includes 32 registers (Memory Buffer) that can be used to store 
     The NSL Engine is still in beta and it's not fully documented and implemented yet. This section of the manual will be updated as we continue to develop the NSL Engine.
     Faulty scripts can cause the NSL Engine to crash and require a reboot.
 
+---
+
+## ngen_nsl Rust Library
+
+[ngen_nsl](https://github.com/spektroaudio/ngen_nsl) is a custom Rust library available via [cargo / crates.io](https://crates.io/crates/ngen_nsl) that make it easier to create and parse NSL scripts for the NSL Engine.
+
+To add it to your Rust project, run the command ```cargo add ngen_nsl``` in your project's directory.
+
+Documentation for ngen_nsl is available at [https://docs.rs/ngen_nsl](https://docs.rs/ngen_nsl).
 
 ---
 
