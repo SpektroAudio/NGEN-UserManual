@@ -1,0 +1,1200 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>NSL Programming - NGEN Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-348677531"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-348677531",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-348677531"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#nsl-ngen-scripting-language" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="NGEN Manual" class="md-header__button md-logo" aria-label="NGEN Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NGEN Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NSL Programming
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="NGEN Manual" class="md-nav__button md-logo" aria-label="NGEN Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    NGEN Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          How to Use
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to Use" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          How to Use
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        Hardware Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardwarecontrols/" class="md-nav__link">
+        Hardware Controls
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../menunavigation/" class="md-nav__link">
+        Menu Navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filemanagement/" class="md-nav__link">
+        File Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midimapping/" class="md-nav__link">
+        MIDI Mapping
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          NSL Programming
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        NSL Programming
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ngen_nsl-rust-library" class="md-nav__link">
+    ngen_nsl Rust Library
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nsl-programming-reference" class="md-nav__link">
+    NSL Programming Reference
+  </a>
+  
+    <nav class="md-nav" aria-label="NSL Programming Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameter-types" class="md-nav__link">
+    Parameter Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameter Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    VALUE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-source" class="md-nav__link">
+    DESTINATION / SOURCE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int16" class="md-nav__link">
+    INT16
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-commands" class="md-nav__link">
+    List of Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0xa1-set" class="md-nav__link">
+    0xA1 SET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xb0-add" class="md-nav__link">
+    0xB0 ADD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xb1-subtract" class="md-nav__link">
+    0xB1 SUBTRACT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xc0-loop-set" class="md-nav__link">
+    0xC0 LOOP SET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xc1-loop-end" class="md-nav__link">
+    0xC1 LOOP END
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xc2-jump" class="md-nav__link">
+    0xC2 JUMP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xff-end" class="md-nav__link">
+    0xFF END
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clockgen/" class="md-nav__link">
+        Clock Generators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generators/" class="md-nav__link">
+        Generators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midifx/" class="md-nav__link">
+        MIDI FXs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern/" class="md-nav__link">
+        Patterns
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../perform/" class="md-nav__link">
+        Performance Mode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/" class="md-nav__link">
+        Projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scale/" class="md-nav__link">
+        Scale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track/" class="md-nav__link">
+        Tracks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../techniques/" class="md-nav__link">
+        Tips & Techniques
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          System
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="System" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          System
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../firmwareupdate/" class="md-nav__link">
+        Firmware Update
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#ngen_nsl-rust-library" class="md-nav__link">
+    ngen_nsl Rust Library
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nsl-programming-reference" class="md-nav__link">
+    NSL Programming Reference
+  </a>
+  
+    <nav class="md-nav" aria-label="NSL Programming Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#parameter-types" class="md-nav__link">
+    Parameter Types
+  </a>
+  
+    <nav class="md-nav" aria-label="Parameter Types">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#value" class="md-nav__link">
+    VALUE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#destination-source" class="md-nav__link">
+    DESTINATION / SOURCE
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int16" class="md-nav__link">
+    INT16
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-commands" class="md-nav__link">
+    List of Commands
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Commands">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#0xa1-set" class="md-nav__link">
+    0xA1 SET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xb0-add" class="md-nav__link">
+    0xB0 ADD
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xb1-subtract" class="md-nav__link">
+    0xB1 SUBTRACT
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xc0-loop-set" class="md-nav__link">
+    0xC0 LOOP SET
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xc1-loop-end" class="md-nav__link">
+    0xC1 LOOP END
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xc2-jump" class="md-nav__link">
+    0xC2 JUMP
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#0xff-end" class="md-nav__link">
+    0xFF END
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="nsl-ngen-scripting-language">NSL - NGEN SCRIPTING LANGUAGE</h1>
+<p>The NSL Engine <a href="../generators/#nsl">Generator</a> is a powerful tool that lets you create your own custom algorithms using a simple scripting language.</p>
+<p>At it's core, the NSL Engine features a 32-step sequence (with individual pitch, velocity, length (in beats) and density per step) and standard parameters such Shift, Length and Density to control playback.</p>
+<p>Instead of using a pre-defined algorithm to fill the 32-step sequence, the NSL Engine lets you load a script to generate it using your own custom algorithm. </p>
+<p>Each NSL script consists of a series of hex values that are parsed into commands and values. Hex values above 160 (0xA0) trigger new commands and values below 160 are assigned as values / parameters for these commands.
+The engine also includes 32 registers (Memory Buffer) that can be used to store values and use them later in the script and 4 generic parameters (Param 1-4) with ranges from 0-100.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The NSL Engine is still in beta and it's not fully documented and implemented yet. This section of the manual will be updated as we continue to develop the NSL Engine.
+Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
+</div>
+<hr />
+<h2 id="ngen_nsl-rust-library">ngen_nsl Rust Library</h2>
+<p><a href="https://github.com/spektroaudio/ngen_nsl">ngen_nsl</a> is a custom Rust library available via <a href="https://crates.io/crates/ngen_nsl">cargo / crates.io</a> that make it easier to create and parse NSL scripts for the NSL Engine.</p>
+<p>To add it to your Rust project, run the command <code>cargo add ngen_nsl</code> in your project's directory.</p>
+<p>Documentation for ngen_nsl is available at <a href="https://docs.rs/ngen_nsl">https://docs.rs/ngen_nsl</a>.</p>
+<hr />
+<h2 id="nsl-programming-reference">NSL Programming Reference</h2>
+<h3 id="parameter-types">Parameter Types</h3>
+<p>NSL commands require set of different parameters to execute correctly and each parameter's value is used according to the list below:</p>
+<h4 id="value">VALUE</h4>
+<p>The VALUE parameter type returns a constant values from <code>0x00</code> to <code>0x7F</code> (0-127) and values stored in the NSL Engine's memory buffer from <code>0x80</code> to <code>0x9F</code> (128-159). </p>
+<h4 id="destination-source">DESTINATION / SOURCE</h4>
+<p>The DESTINATION / SOURCE parameters consists of 2 x <code>VALUE</code> parameters that are used in pair to retrieve values from different parts and features of the NSL Engine.</p>
+<p>SOURCE parameters are used to retrieve data while DESTINATION parameters are used to set data.</p>
+<p>The first <code>VALUE</code> in the pair (aka <code>VALUE 1</code>) is used to indicate the type / location of the value that follows it (<code>VALUE 2</code>) according to the table below:</p>
+<table>
+<thead>
+<tr>
+<th align="center"><strong> PART / FEATURE </strong></th>
+<th align="center"><strong> VALUE 1 (Address) </strong></th>
+<th align="center"><strong> VALUE 2 (Value / Index) </strong></th>
+<th align="center"><strong> VALUE 2 RANGE </strong></th>
+<th align="center"><strong> SOURCE </strong></th>
+<th align="center"><strong> DESTINATION </strong></th>
+<th align="center"><strong> DESTINATION RANGE </strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center"><strong> Constant Value </strong></td>
+<td align="center">0x00</td>
+<td align="center">Value</td>
+<td align="center">0-127</td>
+<td align="center">✔︎</td>
+<td align="center">✕</td>
+<td align="center">N/A</td>
+</tr>
+<tr>
+<td align="center"><strong> Random Value </strong></td>
+<td align="center">0x01</td>
+<td align="center">Random Range</td>
+<td align="center">0-127</td>
+<td align="center">✔︎</td>
+<td align="center">✕</td>
+<td align="center">N/A</td>
+</tr>
+<tr>
+<td align="center"><strong> Step Pitch </strong></td>
+<td align="center">0x02</td>
+<td align="center">Step Number (Zero-Indexed)</td>
+<td align="center">0-31</td>
+<td align="center">✔︎</td>
+<td align="center">✔︎</td>
+<td align="center">0-127 (MIDI PITCH)</td>
+</tr>
+<tr>
+<td align="center"><strong> Step Velocity </strong></td>
+<td align="center">0x03</td>
+<td align="center">Step Number (Zero-Indexed)</td>
+<td align="center">0-31</td>
+<td align="center">✔︎</td>
+<td align="center">✔︎</td>
+<td align="center">0-127 (MIDI VELOCITY)</td>
+</tr>
+<tr>
+<td align="center"><strong> Step Length </strong></td>
+<td align="center">0x04</td>
+<td align="center">Step Number (Zero-Indexed)</td>
+<td align="center">0-31</td>
+<td align="center">✔︎</td>
+<td align="center">✔︎</td>
+<td align="center">0-32 (BEATS)</td>
+</tr>
+<tr>
+<td align="center"><strong> Step Density </strong></td>
+<td align="center">0x05</td>
+<td align="center">Step Number (Zero-Indexed)</td>
+<td align="center">0-31</td>
+<td align="center">✔︎</td>
+<td align="center">✔︎</td>
+<td align="center">0-49</td>
+</tr>
+<tr>
+<td align="center"><strong> Memory Buffer </strong></td>
+<td align="center">0x06</td>
+<td align="center">Step Number (Zero-Indexed)</td>
+<td align="center">0-31</td>
+<td align="center">✔︎</td>
+<td align="center">✔︎</td>
+<td align="center">0-255</td>
+</tr>
+<tr>
+<td align="center"><strong> Params 1-4 </strong></td>
+<td align="center">0x07</td>
+<td align="center">Parameter Number (Zero-Indexed)</td>
+<td align="center">0-3</td>
+<td align="center">✔︎</td>
+<td align="center">✔︎</td>
+<td align="center">0-100</td>
+</tr>
+<tr>
+<td align="center"><strong> Scale </strong></td>
+<td align="center">0x08</td>
+<td align="center">Note position in scale</td>
+<td align="center">0-127</td>
+<td align="center">✔︎</td>
+<td align="center">✕</td>
+<td align="center">N/A</td>
+</tr>
+<tr>
+<td align="center"><strong> Scale (Quantized) </strong></td>
+<td align="center">0x09</td>
+<td align="center">Note position in scale</td>
+<td align="center">0-127</td>
+<td align="center">✔︎</td>
+<td align="center">✕</td>
+<td align="center">N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Some features such as Constant and Random use the second <code>VALUE</code> in the pair (<code>VALUE 2</code>) as the actual value while the other types use it as an index to indicate the location of the value in the NSL Engine's memory.</p>
+<p>Examples:</p>
+<ul>
+<li><code>0x00 0x05</code> : Returns a constant value (<code>ORIGIN</code> = <code>0x00</code>) of 5 (<code>VALUE</code> = <code>0x05</code>).</li>
+<li><code>0x02 0x10</code> : Returns the step pitch (<code>ORIGIN</code> = <code>0x02</code>) at index 16 (<code>VALUE</code> = <code>0x10</code>).</li>
+<li><code>0x07 0x20</code> : Returns a random value (<code>ORIGIN</code> = <code>0x07</code>) between 0 and 32 (VALUE = <code>0x20</code>).</li>
+</ul>
+<h4 id="int16">INT16</h4>
+<p>The INT16 parameter type uses a pair (x and y) of 8-bit values (0-255) to create a 16-bit value (0-65535) by shifting the first value 8 bits to the left and adding the second value to it (<code>(x &lt;&lt; 8) + y</code>).</p>
+<hr />
+<h3 id="list-of-commands">List of Commands</h3>
+<h4 id="0xa1-set"><strong><code>0xA1</code> SET</strong></h4>
+<p><strong>Description:</strong> Sets the value of a destination to the value of a source.  </p>
+<p><strong>Parameters:</strong> <code>DESTINATION</code> <code>SOURCE</code></p>
+<p><strong>Examples:</strong> </p>
+<ul>
+<li>
+<p><code>0xA1 0x02 0x00 0x01 0x10</code> : Sets the pitch of step 1 to a random value between 0 and 16.</p>
+</li>
+<li>
+<p><code>0xA1 0x03 0x00 0x03 0x01</code> : Sets the velocity of step 1 to the velocity of step 1.</p>
+</li>
+<li>
+<p><code>0xA1 0x06 0x00 0x05 0x04</code> : Sets the value of the memory buffer at index 0 to the density of step 5.</p>
+</li>
+</ul>
+<h4 id="0xb0-add"><strong><code>0xB0</code> ADD</strong></h4>
+<p><strong>Description:</strong> Adds the value of a source to a destionation.</p>
+<p><strong>Parameters:</strong> <code>DESTINATION</code> <code>SOURCE</code> </p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xB0 0x02 0x00 0x00 0x2</code> : Add 2 (<code>0x00 0x02</code>) to the pitch of the first step (<code>0x02 0x00</code>).</li>
+</ul>
+<h4 id="0xb1-subtract"><strong><code>0xB1</code> SUBTRACT</strong></h4>
+<p><strong>Description:</strong> Subtracts the value of a source from a destination.</p>
+<p><strong>Parameters:</strong> <code>DESTINATION</code> <code>SOURCE</code></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xB1 0x02 0x00 0x01 0x10</code> : Subtract a random value between 0 - 16 (<code>0x01 0x10</code>) from the pitch of the first step (<code>0x02 0x00</code>).</li>
+</ul>
+<h4 id="0xc0-loop-set"><strong><code>0xC0</code> LOOP SET</strong></h4>
+<p><strong>Description:</strong> Enables looping and set the loop count to the value of a source.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Loop Count)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xC0 0x00 0x03</code> : Enables looping and set the loop count to 3.</li>
+</ul>
+<h4 id="0xc1-loop-end"><strong><code>0xC1</code> LOOP END</strong></h4>
+<p><strong>Description:</strong> Ends the current loop.</p>
+<p><strong>Parameters:</strong> None</p>
+<h4 id="0xc2-jump"><strong><code>0xC2</code> JUMP</strong></h4>
+<p><strong>Description:</strong> Jumps to a specific position in the program.</p>
+<p><strong>Parameters:</strong> <code>INT16</code> (Jump Position)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xC2 0x02 0x24</code> : Jumps to position 548.</li>
+</ul>
+<h4 id="0xff-end"><strong><code>0xFF</code> END</strong></h4>
+<p><strong>Description:</strong> Ends the program.</p>
+<p><strong>Parameters:</strong> None</p>
+<p>[ MORE INFORMATION COMING SOON ]</p>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2024-04-10
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../midimapping/" class="md-footer__link md-footer__link--prev" aria-label="Previous: MIDI Mapping" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              MIDI Mapping
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../clockgen/" class="md-footer__link md-footer__link--next" aria-label="Next: Clock Generators" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Clock Generators
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2013 - 2022 Spektro Audio
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://twitter.com/spektroaudio" target="_blank" rel="noopener" title="Spektro Audio on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://instagram.com/spektroaudio" target="_blank" rel="noopener" title="Spektro Audio on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+    
+  </body>
+</html>

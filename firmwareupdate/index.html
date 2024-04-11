@@ -1,0 +1,1281 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.6">
+    
+    
+      
+        <title>Firmware Update - NGEN Manual</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.4a0965b7.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+      
+      
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+
+  <script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-348677531"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&gtag("event","search",{search_term:this.value})}),"undefined"!=typeof location$&&location$.subscribe(function(e){gtag("config","G-348677531",{page_path:e.pathname})})})</script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-348677531"></script>
+
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#firmware-update" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="NGEN Manual" class="md-header__button md-logo" aria-label="NGEN Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            NGEN Manual
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Firmware Update
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      <form class="md-header__option" data-md-component="palette">
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="slate" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+          
+            <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+          
+          
+          <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="default" data-md-color-primary="teal" data-md-color-accent="teal"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+          
+            <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+            </label>
+          
+        
+      </form>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="NGEN Manual" class="md-nav__button md-logo" aria-label="NGEN Manual" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    NGEN Manual
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_2" type="checkbox" id="__nav_2" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2">
+          How to Use
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="How to Use" data-md-level="1">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          How to Use
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gettingstarted/" class="md-nav__link">
+        Getting Started
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../setup/" class="md-nav__link">
+        Hardware Setup
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../hardwarecontrols/" class="md-nav__link">
+        Hardware Controls
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../menunavigation/" class="md-nav__link">
+        Menu Navigation
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../filemanagement/" class="md-nav__link">
+        File Management
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midimapping/" class="md-nav__link">
+        MIDI Mapping
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nsl/" class="md-nav__link">
+        NSL Programming
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_3" type="checkbox" id="__nav_3" >
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_3">
+          Features
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="Features" data-md-level="1">
+        <label class="md-nav__title" for="__nav_3">
+          <span class="md-nav__icon md-icon"></span>
+          Features
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../clockgen/" class="md-nav__link">
+        Clock Generators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../generators/" class="md-nav__link">
+        Generators
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../midifx/" class="md-nav__link">
+        MIDI FXs
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pattern/" class="md-nav__link">
+        Patterns
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../perform/" class="md-nav__link">
+        Performance Mode
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../projects/" class="md-nav__link">
+        Projects
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../scale/" class="md-nav__link">
+        Scale
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tools/" class="md-nav__link">
+        Tools
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../track/" class="md-nav__link">
+        Tracks
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../techniques/" class="md-nav__link">
+        Tips & Techniques
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5" type="checkbox" id="__nav_5" checked>
+      
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5">
+          System
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" aria-label="System" data-md-level="1">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          System
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../settings/" class="md-nav__link">
+        Settings
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Firmware Update
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        Firmware Update
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-update-the-ngen-firmware" class="md-nav__link">
+    How to update the NGEN firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="How to update the NGEN firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ngen-hw-v10-batch-1-micro-usb-serial-0001-0020" class="md-nav__link">
+    NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngen-hw-v11-and-newer-batch-2-and-newer-usb-c" class="md-nav__link">
+    NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-log" class="md-nav__link">
+    Change-Log
+  </a>
+  
+    <nav class="md-nav" aria-label="Change-Log">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-112" class="md-nav__link">
+    Version 1.1.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.1.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-111" class="md-nav__link">
+    Version 1.1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements_1" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_1" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-11" class="md-nav__link">
+    Version 1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements_2" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_2" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-101" class="md-nav__link">
+    Version 1.01
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements_3" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-10" class="md-nav__link">
+    Version 1.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-update-the-ngen-firmware" class="md-nav__link">
+    How to update the NGEN firmware
+  </a>
+  
+    <nav class="md-nav" aria-label="How to update the NGEN firmware">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ngen-hw-v10-batch-1-micro-usb-serial-0001-0020" class="md-nav__link">
+    NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ngen-hw-v11-and-newer-batch-2-and-newer-usb-c" class="md-nav__link">
+    NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#change-log" class="md-nav__link">
+    Change-Log
+  </a>
+  
+    <nav class="md-nav" aria-label="Change-Log">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-112" class="md-nav__link">
+    Version 1.1.2
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.1.2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-111" class="md-nav__link">
+    Version 1.1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_1" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements_1" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_1" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-11" class="md-nav__link">
+    Version 1.1
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_2" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements_2" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_2" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-101" class="md-nav__link">
+    Version 1.01
+  </a>
+  
+    <nav class="md-nav" aria-label="Version 1.01">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#added_3" class="md-nav__link">
+    Added
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#improvements_3" class="md-nav__link">
+    Improvements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fixes_3" class="md-nav__link">
+    Fixes
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#version-10" class="md-nav__link">
+    Version 1.0
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<h1 id="firmware-update">Firmware Update</h1>
+<hr />
+<h2 id="how-to-update-the-ngen-firmware">How to update the NGEN firmware</h2>
+<h3 id="ngen-hw-v10-batch-1-micro-usb-serial-0001-0020">NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)</h3>
+<p>1 - <a href="https://ngen.spektroaudio.com/firmware/NGEN_FWUpdate_v111_hw10.zip">Download the latest version of the NGEN firmware for HW v1.0</a></p>
+<p>2 - Download and install TyTools: <a href="https://github.com/Koromix/tytools/releases/">https://github.com/Koromix/tytools/releases/</a></p>
+<p>3 - Connect the NGEN to your computer via USB</p>
+<p>4 - Open the TyUploader application</p>
+<p>5 - Select the NGEN from the drop-down menu and click on the Upload button</p>
+<p>6 - Select the firmware file (.hex extension)</p>
+<p>TyUploader will then upload then new firmware to your NGEN units and restart it after it's finished. </p>
+<p>We highly recommend that you perform a Factory Reset (available in Settings) after updating.</p>
+<div class="admonition warning">
+<p class="admonition-title">Attention<p>If TyUploader is not recognizing NGEN, try a different USB cable. Some USB cables are power-only and will not transmit data between your computer and NGEN.<br />
+If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.</p>
+</p>
+</div>
+<h3 id="ngen-hw-v11-and-newer-batch-2-and-newer-usb-c">NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)</h3>
+<p>1 - <a href="https://ngen.spektroaudio.com/firmware/NGEN_FWUpdate_v111_hw11.zip">Download the latest version of the NGEN firmware for HW v1.1</a></p>
+<p>2 - Connect NGEN to your computer via USB</p>
+<p>3- Navigate to the <a href="../settings/">Settings</a> page and select the "FW Update" option.</p>
+<p>4 - NGEN should now appear as a USB flash drive on your computer.</p>
+<p>5 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.</p>
+<p>6 - NGEN should automatically apply the update and restart after it's finished.</p>
+<hr />
+<h2 id="change-log">Change-Log</h2>
+<hr />
+<h3 id="version-112">Version 1.1.2</h3>
+<h4 id="added">Added</h4>
+<ul>
+<li>Updated internal framework for apps / tools that require custom UI / controls.</li>
+<li>New list selector based on the updated framework.</li>
+<li><a href="../perform/">PERFORM</a>: Added option for removing a mapping.</li>
+<li><a href="../menunavigation/">MENU SYSTEM</a>: Added new confirmation modal for important actions.</li>
+<li><a href="../scale/">SCALE</a>: Added new Scale Editor (beta).</li>
+</ul>
+<h4 id="improvements">Improvements</h4>
+<ul>
+<li>Improved potentiometer readings for better accuracy and smoother operation.</li>
+<li>Improved list scrolling / selection.</li>
+<li>Upgraded the Name Editor to new framework.</li>
+<li>Upgraded the Info view to new framework.</li>
+<li><a href="../settings/">SETTINGS</a>: Renamed "Restart" to "Reboot".</li>
+<li><a href="../menunavigation/">MENU SYSTEM</a>: Improved navigation during Idle Mode.</li>
+<li><a href="../projects/">PROJECTS</a>: Improved project management for forward and backwards compatibility.</li>
+</ul>
+<h4 id="fixes">Fixes</h4>
+<ul>
+<li>NGEN can now output to MIDI Channel #16 correctly</li>
+<li>The MIDI channel of incoming MIDI notes via 3.5mm MIDI IN is now properly detected.</li>
+<li><a href="../settings/">SETTINGS</a>: MIDI CC RX now properly saves and loads.</li>
+<li><a href="../menunavigation/">MENU SYSTEM</a>: When receiving MIDI CC values, the UI now updates to display the correct values.</li>
+<li><a href="../pattern/">PATTERNS</a>: NGEN no longer re-loads the previous pattern when saving a new one.</li>
+<li><a href="../generators/#pop">POP</a>: Balance parameter now works correctly.</li>
+<li><a href="../generators/#thru">THRU</a>: Delay now works after loading a pattern / project.</li>
+</ul>
+<h3 id="version-111">Version 1.1.1</h3>
+<h4 id="added_1">Added</h4>
+<ul>
+<li><a href="../setup/#connecting-via-cv">CV OUT</a>: Added new 4xTrig mode and Trigger 1-4 parameters.</li>
+<li>The <a href="../menunavigation/">MENU SYSTEM</a> now retains the position of each menu during navigation.</li>
+<li>AutoVari8 and CV Out settings are now stored as global settings on the device EEPROM (requires manual save via the Settings sub-menu).</li>
+</ul>
+<h4 id="improvements_1">Improvements</h4>
+<ul>
+<li><a href="../scale/">SCALE</a>: Updated scale engine to improve support for scales of different sizes.</li>
+<li><a href="../settings/">SETTINGS</a>: Improved menu order.</li>
+<li><a href="../track/">TRACK</a>: Improved Aux Output support.</li>
+<li>Moved AutoVari8 and CV Out sub-menus to Settings.</li>
+<li><a href="../generators/#pop">POP</a>: Improved algorithm.</li>
+</ul>
+<h4 id="fixes_1">Fixes</h4>
+<ul>
+<li>NGEN can now properly boot when powered via external power supplies (rev1 only).</li>
+<li>Incoming MIDI notes are now properly routed to tracks.</li>
+<li><a href="../settings/">SETTINGS</a>: The Firmware Update screen now displays correctly.</li>
+<li><a href="../track/">TRACK</a>: Track 1 Aux Out is now disabled by default.</li>
+<li><a href="../generators/#drumgen">DRUMGEN</a>: Opening the template selector no longer causes system delays.</li>
+</ul>
+<hr />
+<h3 id="version-11">Version 1.1</h3>
+<h4 id="added_2">Added</h4>
+<ul>
+<li>New NGEN Framework: The entire NGEN's internal framework has been re-factored to improve performance and make it easier to add new features.</li>
+<li>Pattern Generation: algorithmically generate or variate an entire pattern.</li>
+<li><a href="../tools/#template">TEMPLATES</a>: Use templates to quickly set up multiple tracks in your current pattern.</li>
+<li>Pattern &amp; Track reloading: Quickly reload a pattern or track from their last saved state in a project (<span class="keys"><kbd>TRACK|CLK</kbd></span> or <span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>RETURN</kbd></span>).</li>
+<li><a href="../generators/#acdgen">ACDGEN</a>: Added new Base Velocity and Accent parameter new Lead and Legato algorithms.</li>
+<li><a href="../generators/#polyform">POLYFORM</a>: Added new Inversion, Inversion Range, Chord Quality and Trigger parameters.</li>
+<li><a href="../generators/#thru">THRU</a>: Added new Delay parameter.</li>
+<li><a href="../midifx/#chords">CHORDS</a>: Added 1 more interval (4 in total now) and a new Probability parameter.</li>
+<li><a href="../midifx/#shaper">SHAPER</a>: new Mode parameter (Clip / Scale / Drop).</li>
+<li><a href="../midifx/#strum">STRUM</a>: Added a new Probability parameter.</li>
+<li><a href="../scale/">SCALE</a>: 2 new scales (Phrygian and Chromatic) and new global Octave parameter.</li>
+<li><a href="../track/">TRACK</a>: New Clock-rate options: 4, 2, 1, 1/2, 1/4, 1/6, 1/8, 1/12, 1/16, 1/24, 1/32.</li>
+<li><a href="../track/">TRACK</a>: New modal menu for managing tracks (save / copy / paste / delete).</li>
+<li><a href="../pattern/#pattern-menu">PATTERN</a>: New modal menu for managing patterns (save / copy / paste / delete).</li>
+<li><a href="../pattern/">PATTERN</a>: Quickly queue a <a href="../pattern/">Pattern</a> by holding down the <span class="keys"><kbd>PATTERN</kbd></span> button and turning the the <span class="keys"><kbd>MENU ENCODER</kbd></span> .</li>
+<li><a href="../perform/">PERFORM</a>: Use the 4 NGEN buttons (<span class="keys"><kbd>TRACK|CLK</kbd></span>, <span class="keys"><kbd>PATTERN</kbd></span>, <span class="keys"><kbd>FUNCTION</kbd></span>, and <span class="keys"><kbd>GENERATE</kbd></span>) to mute / unmute the first 4 tracks while in the Perform sub-menu.</li>
+<li><a href="../settings/">SETTINGS</a>: New Global Variation Amount (<code>Var Amount</code>) parameter.</li>
+<li><a href="../settings/">SETTINGS</a>: New settings for Screensaver time (<code>Screensaver</code>), Idle Mode time (<code>Idle Time</code>), and Factory Reset.</li>
+</ul>
+<h4 id="improvements_2">Improvements</h4>
+<ul>
+<li>Updated user interface design: The entire NGEN UI has been update with new designs for pages(Pattern Selector), notifications, modals (Pattern / Track edit), animations, list view, and more.</li>
+<li>Parameter course control: Parameters can now be adjusted in larger increments by holding down the <span class="keys"><kbd>MENU ENCODER</kbd></span> or <span class="keys"><kbd>FUNCTION</kbd></span> while turning it (coarse step determined by the parameter type).</li>
+<li>Re-designed settings page: NGEN's settings are now organized into separate pages for easier navigation.</li>
+<li><a href="../generators/#midi-player">MIDIPLAYER</a>: Updated MIDI SMF file parsing and parameters.</li>
+<li><a href="../pattern/">PATTERN</a>: The Pattern Selector view now shows the active Generator and MIDI FX for the first 3 active tracks of the selected pattern.</li>
+<li><a href="../clockgen/#midi-clock">MIDI CLOCK</a>: Swing now works with both 1/16 and 1/8 clock-rates.</li>
+<li><a href="../clockgen/#free-clock">FREE CLOCK</a> now outputs MIDI Clock.</li>
+<li>Active project in memory: The active project now remains entirely in memory to improve performance and to allow users to modify the project's settings while playing without affecting the save file.</li>
+<li>Multi-core <a href="../projects/">Project</a> management: NGEN now saves and loads projects using it's second-core to improve performance and avoid glitches while playing (pcb v1.1 and newer).</li>
+<li>When saving <a href="../projects/">projects</a>, NGEN will now check if there's enough space available.</li>
+<li>When loading <a href="../projects/">projects</a>, NGEN will now check if the project version is compatible with the current firmware version.</li>
+<li>New <a href="../projects/">Project</a> file format with support for dynamic file size.</li>
+<li>Updated MIDI CC assignments for <a href="../clockgen/#free-clock">Free Clock</a>, <a href="../clockgen/#bounce-clock">Bounce Clock</a>, <a href="../generators/#arper">Arper</a>, <a href="../generators/#midi-player">MIDI Player</a>, <a href="../midifx/#chord">Chord</a> </li>
+<li>Improved potentiometer readings (better accuracy and less jitter).</li>
+<li>Updated screensaver design.</li>
+</ul>
+<h4 id="fixes_2">Fixes</h4>
+<ul>
+<li>Major improvements to Project's saving and loading.</li>
+<li>Various minor bug fixes across the entire firmware.</li>
+<li>MIDI Player's Direction parameter now displays the correct values.</li>
+</ul>
+<h3 id="version-101">Version 1.01</h3>
+<h4 id="added_3">Added</h4>
+<ul>
+<li><a href="../generators/#polyform">POLYFORM</a>: Polyform now adjusts the length of generated notes based on the length of incoming MIDI notes.</li>
+<li><a href="../generators/#samba">SAMBA</a>: New Note Length parameter.</li>
+<li><a href="../generators/#samba">SHUFFLER</a>: New Offset parameter.</li>
+<li>New "MIDI CC Rx" setting for enabling / disabling MIDI CC input.</li>
+</ul>
+<h4 id="improvements_3">Improvements</h4>
+<ul>
+<li>The <a href="../hardwarecontrols/#encoder"><span class="keys"><kbd>MENU ENCODER</kbd></span></a> should now be more responsive and less prone to skips.</li>
+<li>Beta features will now show a "BETA" warning in the bottom-right corner.</li>
+<li>The <a href="../tools/#midi-monitor-monitor">MIDI Monitor</a> will now promptly display the monitor view when selected.</li>
+<li>Improvements to the SAMBA generator.</li>
+<li>Improvements to the menu system.</li>
+<li>Minor UI design improvements.</li>
+</ul>
+<h4 id="fixes_3">Fixes</h4>
+<ul>
+<li>Selecting the currently active Generator / MIDI FX in Track's settings will no longer reset the active Generator / MIDI FX.</li>
+<li>The display's header now gets properly re-drawn when exiting the selected Idle Mode and screensaver.</li>
+<li><a href="../menunavigation/#screensaver">Screensaver</a> now properly activates after 5 minutes of no hardware interaction.</li>
+<li><a href="../menunavigation/#idle-modes">Idle Mode (Animation / Param List)</a> now activates after 5 seconds of no hardware interaction while in the Generator and Clock sub-menus.</li>
+</ul>
+<h3 id="version-10">Version 1.0</h3>
+<ul>
+<li>Initial Version</li>
+</ul>
+
+  <hr>
+<div class="md-source-file">
+  <small>
+    
+      Last update:
+      2024-04-10
+    
+  </small>
+</div>
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../settings/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Settings" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              Settings
+            </div>
+          </div>
+        </a>
+      
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2013 - 2022 Spektro Audio
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://twitter.com/spektroaudio" target="_blank" rel="noopener" title="Spektro Audio on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg>
+    </a>
+  
+    
+    
+    <a href="https://instagram.com/spektroaudio" target="_blank" rel="noopener" title="Spektro Audio on Twitter" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant"], "search": "../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.a877e258.min.js"></script>
+      
+    
+  </body>
+</html>
