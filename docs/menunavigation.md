@@ -132,9 +132,9 @@ To exit the screensaver mode, move any of the knobs or click on any of the butto
 | ++"TRACK/CLK"++ + ++"MENU ENCODER"++       | Select a Track                            |
 | ++"TRACK/CLK"++ + ++"MENU ENCODER"++       | Select a Clock Generator (while in Clock sub-menu)                           |
 | ++"PATTERN"++ + ++"MENU ENCODER"++       | Load a pattern                            |
-| ++"FUNCTION"++ + ++"MENU ENCODER (Click)"++         | Save a pattern (while in the Pattern page)                            |
-| ++"FUNCTION"++ + ++"RETURN"++ + ++"MENU ENCODER (Click)"++  | Delete a pattern (while in the Pattern page)  |
+| ++"FUNCTION"++ + ++"MENU ENCODER (Click)"++         | Save a pattern (while in the Pattern selector)                            |
+| ++"FUNCTION"++ + ++"RETURN"++ + ++"MENU ENCODER (Click)"++  | Delete a pattern (while in the Pattern selector)  |
 | ++"PATTERN"++ + ++"GENERATE"++       | Load the next pattern                            |
 | ++"PATTERN"++ + ++"FUNCTION"++ + ++"GENERATE"++       | Load the previous pattern                            |
-| ++"TRACK | CLK"++ + ++"GENERATE"++       | Generate Pattern                            |
-| ++"TRACK | CLK"++ + ++"FUNCTION"++ + ++"GENERATE"++       | Variate Pattern                            |
+| ++"TRACK / CLK"++ + ++"GENERATE"++       | Generate Pattern                            |
+| ++"TRACK / CLK"++ + ++"FUNCTION"++ + ++"GENERATE"++       | Variate Pattern                            |
