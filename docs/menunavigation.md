@@ -45,6 +45,9 @@ Different sub-menus can contain different menu items such as parameters, toggle 
 
 * **Parameters** (indicated by the parameter name on top and value at the bottom) can be controlled by clicking the ++"MENU ENCODER"++ to access the parameter's value and scrolling the ++"MENU ENCODER"++ to change it's value.
 
+!!! Note
+    Most parameter values are adjusted in real-time as you turn the encode but some (such as the Generator and MIDI FX selection in the Track sub-menu) require you to click the encoder to confirm the new value.
+
 ![](images/NGEN_ACDGEN_Length1.jpeg) ![](images/NGEN_ACDGEN_Length2.jpeg)  
 *Clicking the encoder on parameters switches between parameter selector and value*
 
