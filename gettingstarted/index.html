@@ -305,6 +305,54 @@
     Step-By-Step Guide
   </a>
   
+    <nav class="md-nav" aria-label="Step-By-Step Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-connecting-ngen-to-your-setup" class="md-nav__link">
+    1 - Connecting NGEN to your setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-generating-and-modifying-sequences-using-acdgen" class="md-nav__link">
+    2 - Generating and Modifying Sequences Using ACDGEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-activating-a-midi-fx" class="md-nav__link">
+    3 - Activating a MIDI FX
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adding-more-tracks" class="md-nav__link">
+    4 - Adding More Tracks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-using-patterns" class="md-nav__link">
+    5 - Using Patterns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-saving-your-project" class="md-nav__link">
+    6 - Saving Your Project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -688,6 +736,54 @@
     Step-By-Step Guide
   </a>
   
+    <nav class="md-nav" aria-label="Step-By-Step Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-connecting-ngen-to-your-setup" class="md-nav__link">
+    1 - Connecting NGEN to your setup
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-generating-and-modifying-sequences-using-acdgen" class="md-nav__link">
+    2 - Generating and Modifying Sequences Using ACDGEN
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-activating-a-midi-fx" class="md-nav__link">
+    3 - Activating a MIDI FX
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-adding-more-tracks" class="md-nav__link">
+    4 - Adding More Tracks
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-using-patterns" class="md-nav__link">
+    5 - Using Patterns
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-saving-your-project" class="md-nav__link">
+    6 - Saving Your Project
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
@@ -726,6 +822,8 @@
 <hr />
 <h2 id="step-by-step-guide">Step-By-Step Guide</h2>
 <p>This guide provides a step-by-step process to initiate NGEN:</p>
+<h3 id="1-connecting-ngen-to-your-setup">1 - Connecting NGEN to your setup</h3>
+<p>In this first section, you'll learn how to connect NGEN to your setup and use it to sequence 1 instrument using the ACDGEN generator.</p>
 <ol>
 <li>
 <p>Establish a connection between NGEN and a <a href="../setup/#connecting-via-usb">computer</a> or a <a href="../setup/#connecting-via-midi">MIDI</a>-enabled hardware instrument. If you do not intend to use NGEN with a computer, you can <a href="../setup/#powering-ngen-externally">power the unit externally</a>.</p>
@@ -756,9 +854,76 @@
 <p>NGEN should now begin transmitting MIDI Notes to your instrument.</p>
 </li>
 <li>
-<p>By default, NGEN will load ACDGEN as the <a href="../generators/">generator</a> for <a href="../track/">track #1</a>. To modify ACDGEN's settings, navigate back to the <a href="../menunavigation/#main-menu">Main Menu</a> by pressing the <span class="keys"><kbd>RETURN</kbd></span> button and proceed to the <a href="../generators/">Generator</a> sub-menu.</p>
+<p>By default, NGEN will load ACDGEN as the <a href="../generators/">generator</a> for <a href="../track/">track #1</a> so you should hear a sequence being played on your instrument.</p>
 </li>
 </ol>
+<h3 id="2-generating-and-modifying-sequences-using-acdgen">2 - Generating and Modifying Sequences Using ACDGEN</h3>
+<p>Now that NGEN is connected and transmitting MIDI notes to your instrument, let's see how to generate and modify sequences using the ACDGEN generator.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The first 3 sub-menus available in the <strong><a href="../menunavigation/#main-menu">Main Menu</a></strong> (Generator, MIDI FX and Track) are related to <a href="../track/">selected track</a> while the other sub-menus contain global settings.</p>
+</div>
+<ol>
+<li>Return to the <strong><a href="../menunavigation/#main-menu">Main Menu</a></strong> using the <span class="keys"><kbd>RETURN</kbd></span> button and navigate to the <strong><a href="../generators/">Generator</a> sub-menu</strong>. This sub-menu contains all the parameters available for the active generator in the selected track (in this case, ACDGEN).</li>
+</ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>While in the Generator sub-menu, the NGEN displays the name of the active generator on the top-left corner and the selected track number in the right corner.</p>
+</div>
+<ol>
+<li>Use the <span class="keys"><kbd>MENU ENCODER</kbd></span> to scroll through the <strong>parameter list</strong>. </li>
+<li>To modify the value of the selected parameter, <strong>click the <span class="keys"><kbd>MENU ENCODER</kbd></span></strong> to select the value, scroll to adjust it, and click the encoder to return to the parameter selection.</li>
+<li>The <strong>main 4 parameters</strong> of the active generator can also be accessed through the <strong> <span class="keys"><kbd>PARAM 1-4</kbd></span> potentiometers</strong> (except while in certain sub-menus). Additional 4 parameters can be accessed by holding the <span class="keys"><kbd>FUNCTION</kbd></span> button and turning the <span class="keys"><kbd>PARAM 1-4</kbd></span> potentiometers. More information about the behavior of the potentiometers can be found in the <a href="../hardwarecontrols/#knobs">Hardware Controls</a> section.</li>
+<li>To <strong>generate</strong> a new sequence, click the <span class="keys"><kbd>GENERATE</kbd></span> button.</li>
+</ol>
+<p>For more information about Generators, check the <a href="../generators/">Generators</a> section.</p>
+<h3 id="3-activating-a-midi-fx">3 - Activating a MIDI FX</h3>
+<p>Let's try adding a MIDI FX to the active track to modify the sequence generated by ACDGEN in real time.</p>
+<ol>
+<li>From the <a href="../menunavigation/#main-menu">Main Menu</a>, navigate to the <strong><a href="../track/">Track</a> sub-menu</strong> to access the track's parameters. This sub-menu lets you activate/deactivate the track, select the active generator and MIDI FX, and adjust settings related to MIDI routing, clock division, and more.</li>
+<li>Navigate to the <strong>MIDI FX</strong> parameter and click the <span class="keys"><kbd>MENU ENCODER</kbd></span> to select the desired MIDI FX.</li>
+<li>Scroll through the list of available MIDI FXs using the <span class="keys"><kbd>MENU ENCODER</kbd></span>, select the Glitch MIDI FX, and click the encoder to confirm.</li>
+<li>Return to the <strong><a href="../menunavigation/#main-menu">Main Menu</a></strong> and navigate to the <strong><a href="../midifx/">MIDI FX</a> sub-menu</strong> to access the parameters of the active MIDI FX.</li>
+</ol>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>While in the MIDI FX sub-menu, <span class="keys"><kbd>PARAM 1-4</kbd></span> potentiometers control the parameters of the active MIDI FX as indicated by the knob icon on the top of the screen.</p>
+</div>
+<p>For more information about MIDI FXs, check the <a href="../midifx/">MIDI FX</a> section.</p>
+<h3 id="4-adding-more-tracks">4 - Adding More Tracks</h3>
+<p>Because NGEN is a multi-track sequencer, you can switch between tracks to edit their parameters and sequences.
+Let's add a new track and configure it to output MIDI notes to Channel 2.</p>
+<ol>
+<li>To open the track selector, click the <span class="keys"><kbd>TRACK|CLK</kbd></span> button from <a href="../menunavigation/#main-menu">Main Menu</a> or any sub-menu.</li>
+<li>Use the <span class="keys"><kbd>MENU ENCODER</kbd></span> to scroll through the list of available tracks, select track #2, and click the encoder to confirm.</li>
+<li>Use the shortcut <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>TRACK</kbd></span> to jump to the <strong><a href="../track/">Track</a> sub-menu</strong>.</li>
+<li>Only track 1 is active by default, so activate track 2 by scrolling to the <strong>Active</strong> parameter and clicking the <span class="keys"><kbd>MENU ENCODER</kbd></span> to toggle it on.</li>
+<li>Navigate to the <strong>Generator</strong> parameter and select a different generator for track 2.</li>
+<li>By default, the 16 tracks available in NGEN are set to output MIDI notes to channels 1 through 16 sequentially. To access the parameters related to MIDI routing, clock division, and more, enable the <strong><a href="../settings/">Advanced Mode</a></strong> in the <strong><a href="../settings/">Settings</a></strong> / General page.</li>
+</ol>
+<p>For more information about tracks, check the <a href="../track/">Track</a> section.</p>
+<h3 id="5-using-patterns">5 - Using Patterns</h3>
+<p>NGEN allows you to create and store 8 patterns per project. In this section, you'll learn how to save and load patterns.</p>
+<ol>
+<li>Click the <span class="keys"><kbd>PATTERN</kbd></span> button to open the <strong><a href="../pattern/">Pattern</a></strong> selector.</li>
+<li>Use the <span class="keys"><kbd>MENU ENCODER</kbd></span> to scroll through the list of available pattern slots.</li>
+<li>To quickly save your active sequence to a pattern slot, press <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PATTERN</kbd></span>.</li>
+<li>To load a pattern, scroll to the desired pattern slot and click the <span class="keys"><kbd>MENU ENCODER</kbd></span>.</li>
+<li>To access the pattern slot settings, click <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PATTERN</kbd></span> while in the pattern selector. This sub-menu lets you save, delete, copy and paste patterns.</li>
+</ol>
+<p>For more information about patterns, check the <a href="../pattern/">Pattern</a> section.</p>
+<h3 id="6-saving-your-project">6 - Saving Your Project</h3>
+<p>In this final section, you'll learn how to save your project for future use.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Projects can be stored in the internal memory of NGEN or on an external microSD card. To save your project to the internal memory, ensure that the microSD card is not inserted.</p>
+</div>
+<ol>
+<li>Return to the <strong><a href="../menunavigation/#main-menu">Main Menu</a></strong> and navigate to the <strong><a href="../projects/">Project</a></strong> sub-menu.</li>
+<li>Scroll to the <strong>Save</strong> parameter and click the <span class="keys"><kbd>MENU ENCODER</kbd></span> to save your project.</li>
+<li>Edit the project name using the <span class="keys"><kbd>MENU ENCODER</kbd></span> and confirm.</li>
+</ol>
+<p>For more information about projects, check the <a href="../projects/">Project</a> section.</p>
 <hr />
 <h2 id="flow-diagram">Flow Diagram</h2>
 <p>The NGEN sequencing engine works by having a clock generator trigger the tracks' generators and MIDI FXs.</p>
@@ -773,7 +938,7 @@
   <small>
     
       Last update:
-      2024-03-13
+      2024-04-24
     
   </small>
 </div>
