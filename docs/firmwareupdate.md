@@ -10,7 +10,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](https://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -32,7 +32,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](https://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.1](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip)
 
 2 - Connect NGEN to your computer via USB
 
