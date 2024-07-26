@@ -565,6 +565,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#track-states" class="md-nav__link">
+    Track States
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -711,6 +718,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#track-states" class="md-nav__link">
+    Track States
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -814,13 +828,49 @@ The auxiliary output, on the other hand, can be used to send a copy of the MIDI 
 </tr>
 </tbody>
 </table>
+<hr />
+<h2 id="track-states">Track States</h2>
+<p>To create more dynamic patterns, NGEN can control the prominence of each track in new patterns via the Track State feature.<br />
+When generating new patterns (<span class="keys"><kbd>TRACK</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span>), NGEN can assign a random state to each track (according to the <a href="../settings/#randomize-state-rndmize-state">Randomize State</a> setting).<br />
+When a new state is assigned to a track, it randomizes key parameters of the active <a href="../generators/">Generator</a> within ranges defined by the state.</p>
+<p>Available states:</p>
+<table>
+<thead>
+<tr>
+<th><strong>State</strong></th>
+<th><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Standard</strong></td>
+<td>Medium intensity and sequence length</td>
+</tr>
+<tr>
+<td><strong>Low</strong></td>
+<td>Low intensity and medium sequence length</td>
+</tr>
+<tr>
+<td><strong>Mute</strong></td>
+<td>Mutes the track (via Density or Probability parameters)</td>
+</tr>
+<tr>
+<td><strong>Fill</strong></td>
+<td>High intensity and shorter sequence lengths</td>
+</tr>
+<tr>
+<td><strong>Sparse</strong></td>
+<td>Lowest intensity and longer sequence lenghts</td>
+</tr>
+</tbody>
+</table>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       Last update:
-      2024-03-13
+      2024-07-26
     
   </small>
 </div>

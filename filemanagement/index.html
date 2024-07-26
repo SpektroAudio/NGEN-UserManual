@@ -351,14 +351,28 @@
       
         <li class="md-nav__item">
   <a href="#about-file-management" class="md-nav__link">
-    About File Management:
+    About File Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ngen-with-a-microsd-card" class="md-nav__link">
+    Using NGEN with a microSD card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factory-content" class="md-nav__link">
+    Factory Content
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#list-of-file-types" class="md-nav__link">
-    List of File Types:
+    List of File Types
   </a>
   
 </li>
@@ -671,14 +685,28 @@
       
         <li class="md-nav__item">
   <a href="#about-file-management" class="md-nav__link">
-    About File Management:
+    About File Management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-ngen-with-a-microsd-card" class="md-nav__link">
+    Using NGEN with a microSD card
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#factory-content" class="md-nav__link">
+    Factory Content
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#list-of-file-types" class="md-nav__link">
-    List of File Types:
+    List of File Types
   </a>
   
 </li>
@@ -699,18 +727,30 @@
 
 <h1 id="file-management">File Management</h1>
 <hr />
-<h2 id="about-file-management">About File Management:</h2>
+<h2 id="about-file-management">About File Management</h2>
 <p>NGEN can use external files to store and load data for <a href="../projects/">Projects</a>, <a href="../generators/#midi-player">MIDI files</a>, <a href="../generators/#drumgen">DrumGen templates</a>, and <a href="../nsl/">NSL scripts</a>.
 These files can be either be stored in the microSD card or in NGEN's internal memory.</p>
 <p>During it's boot process, NGEN checks if a microSD card is inserted. If no microSD card is inserted, NGEN will use its internal memory instead.</p>
 <p>NGEN currently doens't offer a way of transferring files between its internal memory and the microSD card (coming soon).</p>
-<h2 id="list-of-file-types">List of File Types:</h2>
+<h2 id="using-ngen-with-a-microsd-card">Using NGEN with a microSD card</h2>
+<p>We recommend using microSD cards with a capacity of 32GB or less, formatted as FAT32.</p>
+<p>Before inserting a microSD card into NGEN, we recommend that you copy the Factory Content to the microSD card in order to have the necessary folders for MIDI files, DrumGen templates, and NSL scripts.</p>
+<h2 id="factory-content">Factory Content</h2>
+<p>The Factory Content for NGEN (including MIDI files, DrumGen templates, and NSL scripts) is available on the <a href="https://github.com/SpektroAudio/NGEN-Resources/">NGEN Resources repository on Github</a>.</p>
+<p>If you'd like to download or update the Factory Content, follow these steps:</p>
+<p>1 - Download a copy of the Factory Content <a href="https://github.com/SpektroAudio/NGEN-Resources/archive/refs/heads/main.zip">available on the NGEN repository on Github</a>.</p>
+<p>2 - Navigate into the Factory Content folder and copy the contents to the root of your microSD card.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>It's currently not possible to copy new files into NGEN's internal memory. If you'd like to use new files available in the Factory Content, you'll need to use a microSD card.</p>
+</div>
+<h2 id="list-of-file-types">List of File Types</h2>
 <table>
 <thead>
 <tr>
 <th align="center"><strong>File Type</strong></th>
 <th align="center"><strong>Description</strong></th>
-<th align="center">**Sub-Folder</th>
+<th align="center"><strong>Sub-Folder</strong></th>
 <th align="center"><strong>Extension</strong></th>
 </tr>
 </thead>
@@ -747,7 +787,7 @@ These files can be either be stored in the microSD card or in NGEN's internal me
   <small>
     
       Last update:
-      2024-02-05
+      2024-07-26
     
   </small>
 </div>

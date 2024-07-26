@@ -475,6 +475,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loading-queuing-patterns" class="md-nav__link">
+    Loading / Queuing Patterns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-patterns" class="md-nav__link">
+    Saving Patterns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pattern-generation" class="md-nav__link">
     Pattern Generation
   </a>
@@ -705,6 +719,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#loading-queuing-patterns" class="md-nav__link">
+    Loading / Queuing Patterns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#saving-patterns" class="md-nav__link">
+    Saving Patterns
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pattern-generation" class="md-nav__link">
     Pattern Generation
   </a>
@@ -759,15 +787,31 @@
 <p><img align="right" alt="" src="../images/NGEN_PatternSelector_v2.jpeg" /></p>
 <p>The pattern system in NGEN is designed to let users create and perform different sections of a song/project. 
 Patterns can store and recall settings for all tracks (including their Generators and MIDI FX). Global and clock settings are only stored in <a href="../projects/"><strong>Projects</strong></a>. </p>
-<p>Each <a href="../projects/">Project</a> can store up to 8 patterns.</p>
-<p>To <strong>load a pattern</strong>, press the <span class="keys"><kbd>PATTERN</kbd></span> button once to open the <strong>Pattern Selector</strong>, select the pattern using the <span class="keys"><kbd>MENU ENCODER</kbd></span>, and click on the encoder to load.  </p>
-<p>To <strong>save a pattern</strong>, hold down <span class="keys"><kbd>PATTERN</kbd></span> and press the <span class="keys"><kbd>MENU ENCODER</kbd></span>.</p>
-<p>The <strong>Pattern Selector</strong> displays the active pattern on the left, the selected pattern on the center and the <a href="../generators/">Generator</a> and <a href="../midifx/">MIDI FX</a> selected for the first 3 active tracks.</p>
+<p>Each <a href="../projects/">Project</a> contains 8 pattern slots that can be saved, copied, pasted, and deleted from the Pattern Selector menu (accessible via the <strong>PATTERN</strong> button).</p>
+<p>The <strong>Pattern Selector</strong> displays the active pattern on the left (<code>ACTIVE</code>), the selected pattern on the center (<code>NEXT</code>) and the <a href="../generators/">Generator</a> and <a href="../midifx/">MIDI FX</a> selected for the first 3 active tracks.</p>
+<hr />
+<h2 id="loading-queuing-patterns">Loading / Queuing Patterns</h2>
+<p>NGEN offer 3 methods for loading / queuing patterns:</p>
+<p>1 - Press the <span class="keys"><kbd>PATTERN</kbd></span> button to open the Pattern Selector, select the pattern using the <span class="keys"><kbd>MENU ENCODER</kbd></span> and click on the encoder to load.</p>
+<p>2 - Turn the <span class="keys"><kbd>MENU ENCODER</kbd></span> while holding down the <span class="keys"><kbd>PATTERN</kbd></span> button to select a pattern, release the button to load the selected pattern.</p>
+<p>3 - Use the shortcuts <span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span> to load the next pattern in the sequence or <span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span> to load the previous pattern in the sequence.</p>
+<p>Patterns are queued and loaded at the beginning of the next bar if NGEN is playing or immediately if NGEN is stopped.</p>
+<hr />
+<h2 id="saving-patterns">Saving Patterns</h2>
+<p>The changes you make in NGEN are not automatically saved to the current pattern to avoid accidental overwriting of patterns.</p>
+<p>To save the current pattern to one of the available slots, follow these steps:</p>
+<p>1 - Open the Pattern Selector by pressing the <span class="keys"><kbd>PATTERN</kbd></span> button.</p>
+<p>2 - Select which pattern slot you'd like to save the current pattern to by turning the <span class="keys"><kbd>MENU ENCODER</kbd></span>.</p>
+<p>3 - Open the Pattern Edit menu by holding down the <span class="keys"><kbd>FUNCTION</kbd></span> button and pressing the <span class="keys"><kbd>PATTERN</kbd></span> button.</p>
+<p>4 - Select the <code>Save</code> option to save the current pattern to the selected slot.</p>
+<p>It's also possible to use the shortcut <span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span> to save the current pattern to the selected slot while in the Pattern Selector.</p>
 <hr />
 <h2 id="pattern-generation">Pattern Generation</h2>
 <p><img align="right" alt="" src="../images/NGEN_PatternGeneration.jpeg" /></p>
 <p>NGEN includes a new Pattern Generation feature that lets users generate an entire pattern at once by holding down <span class="keys"><kbd>TRACK | CLK</kbd></span> and pressing the <span class="keys"><kbd>GENERATE</kbd></span> button.
 This shortcut will generate new sequences for all active tracks.</p>
+<p>If the <a href="../settings/#general">Randomize State setting</a> is enabled, NGEN will also assign random states to all tracks when generating a new pattern.<br />
+For more information about track states, check out the <a href="../track/#track-states">Track States</a> section in the Track documentation.</p>
 <p>It's also possible to generate variations of the current pattern by holding down <span class="keys"><kbd>TRACK | CLK</kbd></span> + <span class="keys"><kbd>FUNCTION</kbd></span> and pressing the <span class="keys"><kbd>GENERATE</kbd></span> button.</p>
 <p><br>
 <br>
@@ -783,7 +827,7 @@ This shortcut will generate new sequences for all active tracks.</p>
 <hr />
 <h2 id="generate-all-variate-all">Generate All / Variate All</h2>
 <p><img align="right" alt="" src="../images/NGEN_PatternGenerateAll.jpeg" /></p>
-<p>The last 2 options in the Pattern menu are <strong>Generate All</strong> and <strong>Variate All</strong>. These options let you explore NGEN's algorithmic pattern generation capabilities by generating or variating all patterns at once starting from the selected pattern.
+<p>The last 2 options in the Pattern menu are <strong>Generate All</strong> and <strong>Variate All</strong>. These options let you explore NGEN's algorithmic pattern generation capabilities by generating or variating all patterns at once starting from the selected pattern.<br />
 These features can be used to create all 8 patterns in a project at once or to fill subsequent empty patterns.</p>
 <p><strong>Generate All</strong> generates 8 unique patterns and automatically saves them to the current project.</p>
 <p><strong>Variate All</strong> generates 8 variations of the current pattern and automatically saves them to the current project.</p>
@@ -813,7 +857,7 @@ You can then create different variations by tweaking the different parameters an
   <small>
     
       Last update:
-      2024-03-13
+      2024-07-26
     
   </small>
 </div>

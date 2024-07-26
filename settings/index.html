@@ -797,8 +797,8 @@
 <hr />
 <h2 id="about-settings">About Settings</h2>
 <p>NGEN features a number of settings that let you customize your unit to better suit your needs. </p>
-<p>Settings are stored in the device's internal memory and are retained even after the device is powered off.
-To save your current settings, select the "Save" option.</p>
+<p>Settings are stored in the device's internal memory and are retained even after the device is powered off.<br />
+To save your current settings, select the <code>Save</code> option.</p>
 <hr />
 <h2 id="list-of-available-settings">List of Available Settings</h2>
 <h3 id="general">General</h3>
@@ -820,7 +820,7 @@ To save your current settings, select the "Save" option.</p>
 </tr>
 <tr>
 <td><strong>Randomize State (<code>Rndmize State</code>)</strong></td>
-<td>When enabled, NGEN will randomize the states of all tracks when generating new patterns.</td>
+<td>When enabled, NGEN will randomize the states of all tracks when generating new patterns (<a href="../track/#track-states">Track States</a>).</td>
 </tr>
 </tbody>
 </table>
@@ -880,8 +880,16 @@ To save your current settings, select the "Save" option.</p>
 <td>MIDI CC Rx</td>
 <td>Enables or disables MIDI CC input</td>
 </tr>
+<tr>
+<td>MIDI Thru</td>
+<td>Enables or disables Soft MIDI Thru</td>
+</tr>
 </tbody>
 </table>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>When using the MIDI Thru feature, make sure to check your MIDI routing to avoid MIDI feedback loops.</p>
+</div>
 <h3 id="cv-out">CV OUT</h3>
 <p>This sub-menu contains some parameters available for the CV outputs.</p>
 <p>NGEN currently offers 2 CV outputs that can be used to sequence 1V/OCT synthesizers / modules:</p>
@@ -956,16 +964,20 @@ This feature works on a per-track basis and can be enabled or disabled for each 
 <td>Saves the current settings to the device's internal memory</td>
 </tr>
 <tr>
-<td><strong>Firmware Upgrade (<code>FW Upgrade</code>)</strong></td>
-<td>Upgrades the device's firmware</td>
+<td><strong>Reboot</strong></td>
+<td>Reboots the device</td>
 </tr>
 <tr>
 <td><strong>Factory Reset</strong></td>
 <td>Resets the device to factory settings</td>
 </tr>
 <tr>
-<td><strong>Reboot</strong></td>
-<td>Reboots the device</td>
+<td><strong>Firmware Upgrade (<code>FW Upgrade</code>)</strong></td>
+<td>Upgrades the device's firmware</td>
+</tr>
+<tr>
+<td><strong>User Manual</strong></td>
+<td>Displays a QR code for the NGEN User Manual</td>
 </tr>
 <tr>
 <td><strong>Info</strong></td>
@@ -979,7 +991,7 @@ This feature works on a per-track basis and can be enabled or disabled for each 
   <small>
     
       Last update:
-      2024-04-10
+      2024-07-26
     
   </small>
 </div>
