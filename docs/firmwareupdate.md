@@ -4,9 +4,13 @@
 
 ## How to update the NGEN firmware
 
+To update the firmware on your NGEN, you'll need to download the latest firmware version from the links below and follow the instructions for your hardware version.
+
+If you have any questions or need help updating your NGEN, don't hesitate to get in touch with us via the [Contact page on our website](https://spektroaudio.com/contact).
+
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](https://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v112_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](https://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -28,7 +32,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](https://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v112_hw11.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.1](https://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip)
 
 2 - Connect NGEN to your computer via USB
 
@@ -45,6 +49,51 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 ## Change-Log
 
 ---
+
+### Version 1.2
+
+#### Added 
+
+- New internal framework for better threading / multicore processing (HW 1.1).
+- New internal framework for generating and manipulating chords.
+- New internal framework for managing available chords based on the active [Key / Scale](scale.md) (for polyphonic Generators).
+- [MENU SYSTEM](menunavigation.md): Added fast scrolling for List Selector (Function + Menu Encoder).
+- [MENU SYSTEM](menunavigation.md): The list selector now sorts items alphabetically.
+- [PROJECTS](projects.md): Added "New" option under Projects.
+- [PROJECTS](projects.md): Project changes are now quantized to 1 bar (while NGEN is playing).
+- [SETTINGS](settings.md): Added viewable QR code for User Manual.
+- [SETTINGS](settings.md): Added new MIDI Thru setting.
+
+#### Improvements 
+- Improved display response.
+- Improved Param 1-4 response on all hardware versions.
+- [DRUMGEN](generators.md#drumgen): Improved Random.
+- [MENU SYSTEM](menunavigation.md): Track number indicator now displays active status of the selected track.
+- [MENU SYSTEM](menunavigation.md): Improved rendering of OS notifications.
+- [MENU SYSTEM](menunavigation.md): Improved display refresh rate when showing parameter values during animations.
+- [MENU SYSTEM](menunavigation.md): The confirmation dialog now shows the active project name when saving projects.
+- [PERFORM](perform.md): Macro mapping will now only get cancelled from the Main Menu (Return button).
+- [POP](generators.md#pop): Integrated support for the new chord frameworks.
+- [POP](generators.md#pop): Improved state randomization.
+- [PROJECTS](projects.md): Updated project file format to include support for upcoming features.
+- [PROJECTS](projects.md): Reduced glitches and stutters when processing projects (saving / loading / deleting) during playback (using the new threading framework).
+- [PROJECTS](projects.md): Improve support for loading projects saved with previous firmware versions (projects are now automatically updated to the new format).
+- [TRACK](track.md): Disabled tracks are now properly restored when loading patterns / projects.
+- [TRACK](track.md): Tracks will now send MIDI note-offs for all active notes when disabled.
+- Update display transmission for HW v1.1.
+- General performance improvements and optimizations.
+
+#### Fixes 
+- [DRUMGEN](generators.md#drumgen): Templates are now properly reloaded when loading projects / patterns.
+- [GENERATORS](generators.md): Param 1-4 are now properly mapped when selecting a new Generator from the Track sub-menu.
+- [GLITCH](midifx.md#glitch): Fixed bug that caused the Glitch MFX to output MIDI notes to incorrect MIDI channels.
+- [MENU SYSTEM](menunavigation.md): Fixed a bug that caused the hardware controls to stop working when entering Track or Pattern selection immediately after a notification.
+- [MENU SYSTEM](menunavigation.md): The Param List Idle Mode now renders correctly when entering Idle Mode.
+- [FREE CLOCK](clockgen.md#free-clock): Fixed bug that caused Free Clock to drop MIDI notes.
+- [PERFORM](perform.md): Macro 5-8 control via Function + Param 1-4 now work correctly.
+- [SCALE](scale.md): Key and Scale can now be properly controlled via Param 1 and 2 while in the Scale sub-menu.
+- [PROJECTS](projects): Project > Save now properly overwrites the currently active project.
+
 
 ### Version 1.1.2
 

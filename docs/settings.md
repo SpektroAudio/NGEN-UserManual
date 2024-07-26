@@ -6,8 +6,8 @@
 
 NGEN features a number of settings that let you customize your unit to better suit your needs. 
 
-Settings are stored in the device's internal memory and are retained even after the device is powered off.
-To save your current settings, select the "Save" option.
+Settings are stored in the device's internal memory and are retained even after the device is powered off.  
+To save your current settings, select the ```Save``` option.
 
 ---
 
@@ -19,7 +19,7 @@ To save your current settings, select the "Save" option.
 |---------------------------------------|-----------------------------------------------------|
 | **Advanced**                          | Enable or disables advanced parameters and settings |
 | **Variation Amount (```Var Amount```)** | Sets the global variation amount for all generators |
-| **Randomize State (```Rndmize State```)** | When enabled, NGEN will randomize the states of all tracks when generating new patterns. |
+| **Randomize State (```Rndmize State```)** | When enabled, NGEN will randomize the states of all tracks when generating new patterns ([Track States](track.md#track-states)). |
 
 ### Display
 
@@ -40,7 +40,10 @@ To save your current settings, select the "Save" option.
 | **Setting**                           | **Description**                                     |
 |---------------------------------------|-----------------------------------------------------|
 | MIDI CC Rx                            | Enables or disables MIDI CC input                   | 
+| MIDI Thru                             | Enables or disables Soft MIDI Thru                  | 
 
+!!! attention
+    When using the MIDI Thru feature, make sure to check your MIDI routing to avoid MIDI feedback loops.
 
 ### CV OUT
 
@@ -84,10 +87,11 @@ Auto Variate does not affect the following [Generators](generators.md): Input Se
 
 ### Device
 
-| **Setting**                           | **Description**                                     |
-|---------------------------------------|-----------------------------------------------------|
-| **Save**       | Saves the current settings to the device's internal memory                                                                                                                                                                      |
-| **Firmware Upgrade (```FW Upgrade```)** | Upgrades the device's firmware                                                                                                                                                                                                |
-| **Factory Reset** | Resets the device to factory settings                                                                                                                                                                                        |
-| **Reboot**    | Reboots the device                                                                                                                                                                                                             |
-| **Info**       | Shows device information                                                                                                                                                                                                        |
+| **Setting**                             | **Description**                                            |
+|-----------------------------------------|------------------------------------------------------------|
+| **Save**                                | Saves the current settings to the device's internal memory |
+| **Reboot**                              | Reboots the device                                         |
+| **Factory Reset**                       | Resets the device to factory settings                      |
+| **Firmware Upgrade (```FW Upgrade```)** | Upgrades the device's firmware                             |
+| **User Manual**                         | Displays a QR code for the NGEN User Manual                |
+| **Info**                                | Shows device information                                   |

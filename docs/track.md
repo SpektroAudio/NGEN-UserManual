@@ -1,8 +1,8 @@
-#Tracks
+# Tracks
 
 ---
 
-##About Tracks
+## About Tracks
 
 ![](images/NGEN_MainMenu_Track.png){align=right}
 
@@ -13,7 +13,7 @@ These settings can be accessed via the **TRACK** sub-menu (available in the **MA
 
 --- 
 
-##Track Selection
+## Track Selection
 
 ![Track Selector](images/NGEN_TrackSelector.png){ align=right }
 
@@ -27,7 +27,7 @@ To quickly select a track, turn the ++"MENU ENCODER"++ while holding down the ++
 
 ---
 
-##Tracks Internal Routing
+## Tracks Internal Routing
 
 When triggered by a [Clock Generator](clockgen.md), a track will advance the active [Generator](generators.md). The MIDI output of the Generator is then sent to the input of the active [MIDI FX](midifx.md).
 
@@ -56,7 +56,7 @@ graph LR
 ---
 
 
-##Track Settings
+## Track Settings
 
 | **Setting** | **Description** | **[Advanced](menunavigation.md#advanced-parameters-and-settings) ** |
 |---|---|:--:|
@@ -69,3 +69,24 @@ graph LR
 | **Input Channel (```IN CH```) ** | Sets the track MIDI input channel | :material-check: |
 | **Program Change (```PROGRAM```)** | Sets the MIDI Program Change number which gets send to the MIDI output when loading a project or a pattern | :material-check: |
 | **Auto Variate (```AUTO VAR```)** | Enable / disable the [Auto Variate](settings.md#auto-variate-auto-vari8) mode | :material-check: |
+
+
+---
+
+## Track States
+
+To create more dynamic patterns, NGEN can control the prominence of each track in new patterns via the Track State feature.  
+When generating new patterns (++"TRACK"++ + ++"GENERATE"++), NGEN can assign a random state to each track (according to the [Randomize State](settings.md#randomize-state-rndmize-state) setting).  
+When a new state is assigned to a track, it randomizes key parameters of the active [Generator](generators.md) within ranges defined by the state.
+
+Available states:
+
+| **State**    | **Description**                                         |
+|--------------|---------------------------------------------------------|
+| **Standard** | Medium intensity and sequence length                    |
+| **Low**      | Low intensity and medium sequence length                |
+| **Mute**     | Mutes the track (via Density or Probability parameters) |
+| **Fill**     | High intensity and shorter sequence lengths             |
+| **Sparse**   | Lowest intensity and longer sequence lenghts            |
+
+

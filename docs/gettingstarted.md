@@ -50,11 +50,11 @@ In this first section, you'll learn how to connect NGEN to your setup and use it
 Now that NGEN is connected and transmitting MIDI notes to your instrument, let's see how to generate and modify sequences using the ACDGEN generator.
 
 !!! Attention
-      The first 3 sub-menus available in the **[Main Menu](menunavigation.md#main-menu)** (Generator, MIDI FX and Track) are related to [selected track](track.md) while the other sub-menus contain global settings.
+      The first 3 sub-menus available in the **[Main Menu](menunavigation.md#main-menu)** (Generator, MIDI FX and Track) are related to the [selected track](track.md) while the other sub-menus contain global settings.
 
 1. Return to the **[Main Menu](menunavigation.md#main-menu)** using the ++"RETURN"++ button and navigate to the **[Generator](generators.md) sub-menu**. This sub-menu contains all the parameters available for the active generator in the selected track (in this case, ACDGEN).
 !!! note
-      While in the Generator sub-menu, the NGEN displays the name of the active generator on the top-left corner and the selected track number in the right corner.
+      While in the Generator sub-menu, the NGEN displays the name of the active generator in the top-left corner and the selected track number in the right corner.
 1. Use the ++"MENU ENCODER"++ to scroll through the **parameter list**. 
 2. To modify the value of the selected parameter, **click the ++"MENU ENCODER"++** to select the value, scroll to adjust it, and click the encoder to return to the parameter selection.
 3. The **main 4 parameters** of the active generator can also be accessed through the ** ++"PARAM 1-4"++ potentiometers** (except while in certain sub-menus). Additional 4 parameters can be accessed by holding the ++"FUNCTION"++ button and turning the ++"PARAM 1-4"++ potentiometers. More information about the behavior of the potentiometers can be found in the [Hardware Controls](hardwarecontrols.md#knobs) section.
@@ -81,7 +81,7 @@ For more information about MIDI FXs, check the [MIDI FX](midifx.md) section.
 Because NGEN is a multi-track sequencer, you can switch between tracks to edit their parameters and sequences.
 Let's add a new track and configure it to output MIDI notes to Channel 2.
 
-1. To open the track selector, click the ++"TRACK|CLK"++ button from [Main Menu](menunavigation.md#main-menu) or any sub-menu.
+1. To open the track selector, click the ++"TRACK|CLK"++ button from the [Main Menu](menunavigation.md#main-menu) or any sub-menu.
 2. Use the ++"MENU ENCODER"++ to scroll through the list of available tracks, select track #2, and click the encoder to confirm.
 3. Use the shortcut ++"FUNCTION"++ + ++"TRACK"++ to jump to the **[Track](track.md) sub-menu**.
 4. Only track 1 is active by default, so activate track 2 by scrolling to the **Active** parameter and clicking the ++"MENU ENCODER"++ to toggle it on.

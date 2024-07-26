@@ -21,6 +21,8 @@ To select a different clock, navigate to the **CLOCK** sub-menu (from the **MAIN
 
 The name of the selected clock generator will be displayed on the top-left section of the display.
 
+Each clock also has a unique animation that can be used to visualize its current state (if [Idle Mode](menunavigation.md#idle-modes) is set to ```ANIMATION```).
+
 ---
 
 ## List of Available Clock Generators

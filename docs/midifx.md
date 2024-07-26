@@ -96,7 +96,7 @@ It's great for making polyphonic sequences sound less mechanical and static.
 | Max Delay | Maximum delay length | ++"PARAM 3"++ | |
 | Velocity Modulation (```VEL MOD```) | Depth of velocity modulation | ++"PARAM 4"++ | |
 
-###MODULATOR
+### MODULATOR
 
 The Modulator FX can be used for modulating MIDI control changes (CC) of external instruments. A common use-case would be to use it to modulate a filter cutoff frequency of a synthesizer via MIDI CC.
 

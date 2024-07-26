@@ -37,6 +37,9 @@ The CV and GATE outputs on NGEN have a limited range of 3.3V and a resolution of
 If you'd like to set up NGEN without a computer, you can power it using a USB power bank / battery or a standard USB wall charger.  
 NGEN's power consumption is minimal so even a 0.5A charger should work.
 
+!!! note
+    Because of NGEN's low power consumption, certain USB power banks can dismiss it as an actively charging device and may turn off after a certain period. If this happens, try using a different power bank or a USB wall charger.
+
 ---
 
 ## I2C Connection

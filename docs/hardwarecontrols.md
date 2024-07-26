@@ -13,7 +13,7 @@ The NGEN includes a main clickable encoder (++"MENU ENCODER"++), a return button
 
 ## Encoder
 
-The ++"MENU ENCODER"++ can be used for navigating menus, activating patterns, selecting the active track/clock, selecting different parameters and changing their value, and selecting files.
+The ++"MENU ENCODER"++ can be used for navigating menus, activating patterns, selecting the active track/clock, selecting different parameters, changing their value, and selecting files.
 
 Turn the ++"MENU ENCODER"++ to select a different sub-menu, file or parameter.  
 Press/Click the ++"MENU ENCODER"++ to select a sub-menu or file or switch between parameter selection and value adjustment.
@@ -64,3 +64,18 @@ The four hardware buttons included in ```NGEN``` perform specific functions when
 * ++"GENERATE"++ : Call the main function of the active **[Generator](generators.md)**, **[MIDI FX](midifx.md)** or **[Clock](clockgen.md)**.
 
 * ++"RETURN"++ : Returns to the previous menu.
+
+
+---
+
+## Shortcuts
+
+A list of shortcuts available is available on the [Menu Navigation](menunavigation.md#shortcuts) page.
+
+---
+
+## Special Behavior
+
+Certain NGEN features (such as the scale editor, name editor, and file selector) can have more control over NGEN's hardware controls and, as such, can use the available hardware controls in different ways.  
+
+The standard behavior for NGEN's controls should be restored once you complete the operation or exit the feature (e.g. by pressing the ++"RETURN"++ button).
