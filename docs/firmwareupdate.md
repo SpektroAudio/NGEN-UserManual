@@ -32,9 +32,9 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.1](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip).
 
-2 - Connect NGEN to your computer via USB
+2 - Connect NGEN to your computer via USB.
 
 3- Navigate to the [Settings](settings.md) page and select the "FW Update" option.
 
@@ -43,6 +43,29 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 5 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.
 
 6 - NGEN should automatically apply the update and restart after it's finished.
+
+7 - After rebooting, apply a Factory Reset (files will not be deleted).
+
+#### Alternative method
+
+NGEN HW v1.1 also features a backup method for updating the firmware that can be used in case of issues with the primary method or failed updates.
+
+This method does require some minor disassembling so we only recommend using it as a backup method.
+
+1 - Remove the 4 screws on the side of the unit and the microSD card if present.
+
+2 - Detach the bottom panel of the case. It should come off without removing any knobs or screws from the top panel.
+
+3 - Locate the BOOT button on the back side of the PCB (visible). It should be located on the center of the PCB.
+
+4 - Connect the unit via USB while holding down the BOOT button.
+
+5 - NGEN should mount as a USB drive on your computer. Once mounted, release the BOOT button.
+
+6 - Follow steps 5-7 of the primary method to update the firmware.
+
+7 - Disconnect the USB and re-assemble the case.
+
 
 ---
 
