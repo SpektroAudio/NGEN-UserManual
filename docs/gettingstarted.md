@@ -117,6 +117,9 @@ For more information about projects, check the [Project](projects.md) section.
 
 ---
 
+
+<div class="forced-pb"></div>
+
 ## Flow Diagram
 
 The NGEN sequencing engine works by having a clock generator trigger the tracks' generators and MIDI FXs.

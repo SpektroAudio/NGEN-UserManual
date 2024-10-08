@@ -41,7 +41,7 @@ Accent changes the MIDI velocity of incoming MIDI notes according to it's intern
 
 Chords transforms single notes into chords by adding up to 4 notes on top of incoming notes based on specified intervals. There's also an option to quantize those additional notes or leave them unquantized. 
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter**    | **Description**                                   | **Hardware Mapping** | **Advanced** |
 |------------------|:--------------------------------------------------|:---------------------|:-------------|
@@ -57,7 +57,7 @@ Chords transforms single notes into chords by adding up to 4 notes on top of inc
 
 Echoes is a MIDI delay effect that creates additional notes that are delayed by the specified delay time.
 
-** List Of Parameters:**
+**List of Parameters:**
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 | ------------ |: ------------- |: -------------- |: ---------- |
@@ -71,7 +71,7 @@ Echoes is a MIDI delay effect that creates additional notes that are delayed by 
 
 The Glitch MIDI FX can be used to mangle and glith up sequences via a random ratcheting processor and pitch / velocity modulation. It's great for spicing up sequences and adding some IDM-style glitches to a performance.
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 |------------|:-------------|:--------------|:----------|
@@ -87,7 +87,7 @@ Humanizer is designed to make sequences sound more natural as if it was played b
 
 It's great for making polyphonic sequences sound less mechanical and static.
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 |------------|:-------------|:--------------|:----------|
@@ -100,7 +100,7 @@ It's great for making polyphonic sequences sound less mechanical and static.
 
 The Modulator FX can be used for modulating MIDI control changes (CC) of external instruments. A common use-case would be to use it to modulate a filter cutoff frequency of a synthesizer via MIDI CC.
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 |------------|:-------------|:--------------|:----------|
@@ -115,7 +115,7 @@ The Modulator FX can be used for modulating MIDI control changes (CC) of externa
 
 The Program Sequencer MIDI FX offer a way of sequencing MIDI Program Changes creatively. When used with synthesizer / drum machines that respond quickly to program changes, these program change sequences will make it sound as if there're multiple different instruments being played sequentially.
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 | ------------ |: ------------- |: -------------- |: ---------- |
@@ -139,7 +139,7 @@ The Program Sequencer MIDI FX offer a way of sequencing MIDI Program Changes cre
 The Shaper MIDI FX scales incoming MIDI notes based on an adjustable pitch and velocity range.
 It also includes options to multiply note lengths and to map MIDI notes to different MIDI channels based on their pitch (useful for triggering certain drum machines / samplers such as the Elektron Digitakt and Octatrack).
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter**                      | **Description**                                                            | **Hardware Mapping** | **Advanced** |
 |------------------------------------|:---------------------------------------------------------------------------|:---------------------|:-------------|
@@ -160,7 +160,7 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 
 The Spray MIDI FX creates a delay-like effect by generating copies of incoming MIDI notes based on probability and random delay time.
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 | ------------ |: ------------- |: -------------- |: ---------- |
@@ -176,7 +176,7 @@ The Spray MIDI FX creates a delay-like effect by generating copies of incoming M
 
 The Strum MIDI FX can be used to create a strumming effect by adding a short random delay between notes received within the same 1/16 clock step.
 
-** List of Parameters:**
+**List of Parameters:**
 
 | **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
 |------------|:-------------|:--------------|:----------|

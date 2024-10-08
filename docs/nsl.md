@@ -46,18 +46,18 @@ SOURCE parameters are used to retrieve data while DESTINATION parameters are use
 
 The first ```VALUE``` in the pair (aka ```VALUE 1```) is used to indicate the type / location of the value that follows it (```VALUE 2```) according to the table below:
 
-| ** PART / FEATURE ** | ** VALUE 1 (Address) ** |  ** VALUE 2 (Value / Index) **  | ** VALUE 2 RANGE ** | ** SOURCE ** | ** DESTINATION ** | ** DESTINATION RANGE ** |
+|**PART / FEATURE**|**VALUE 1 (Address)**| **VALUE 2 (Value / Index)** |**VALUE 2 RANGE**|**SOURCE**|**DESTINATION**|**DESTINATION RANGE**|
 |:--------------------:|:-----------------------:|:-------------------------------:|:-------------------:|:------------:|:-----------------:|:-----------------------:|
-| ** Constant Value ** |          0x00           |              Value              |        0-127        |      ✔︎      |         ✕         |           N/A           |
-|  ** Random Value **  |          0x01           |          Random Range           |        0-127        |      ✔︎      |         ✕         |           N/A           |
-|   ** Step Pitch **   |          0x02           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |   0-127 (MIDI PITCH)    |
-| ** Step Velocity **  |          0x03           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |  0-127 (MIDI VELOCITY)  |
-|  ** Step Length **   |          0x04           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |      0-32 (BEATS)       |
-|  ** Step Density **  |          0x05           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |          0-49           |
-| ** Memory Buffer **  |          0x06           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |          0-255          |
-|   ** Params 1-4 **   |          0x07           | Parameter Number (Zero-Indexed) |         0-3         |      ✔︎      |        ✔︎         |          0-100          |
-|     ** Scale **      |          0x08           |     Note position in scale      |        0-127         |      ✔︎      |         ✕         |           N/A           |
-|     ** Scale (Quantized) **      |          0x09           |     Note position in scale      |        0-127         |      ✔︎      |         ✕         |           N/A           |
+|**Constant Value**|          0x00           |              Value              |        0-127        |      ✔︎      |         ✕         |           N/A           |
+| **Random Value** |          0x01           |          Random Range           |        0-127        |      ✔︎      |         ✕         |           N/A           |
+|  **Step Pitch**  |          0x02           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |   0-127 (MIDI PITCH)    |
+|**Step Velocity** |          0x03           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |  0-127 (MIDI VELOCITY)  |
+| **Step Length**  |          0x04           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |      0-32 (BEATS)       |
+| **Step Density** |          0x05           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |          0-49           |
+|**Memory Buffer** |          0x06           |   Step Number (Zero-Indexed)    |        0-31         |      ✔︎      |        ✔︎         |          0-255          |
+|  **Params 1-4**  |          0x07           | Parameter Number (Zero-Indexed) |         0-3         |      ✔︎      |        ✔︎         |          0-100          |
+|    **Scale**     |          0x08           |     Note position in scale      |        0-127         |      ✔︎      |         ✕         |           N/A           |
+|    **Scale (Quantized)**     |          0x09           |     Note position in scale      |        0-127         |      ✔︎      |         ✕         |           N/A           |
 
 
 Some features such as Constant and Random use the second ```VALUE``` in the pair (```VALUE 2```) as the actual value while the other types use it as an index to indicate the location of the value in the NSL Engine's memory.

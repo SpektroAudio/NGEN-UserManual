@@ -29,7 +29,7 @@ Available templates:
 
 #### House:
 
-| ** Track Number ** | ** Generator ** | ** MIDI FX ** | **Input Channel** | **Output Channel** | **Aux Output** | **Clock Rate** |        **Note**        |
+|**Track Number**|**Generator**|**MIDI FX**| **Input Channel** | **Output Channel** | **Aux Output** | **Clock Rate** |        **Note**        |
 |:------------------:|:---------------:|:-------------:|:-----------------:|:------------------:|:--------------:|:--------------:|:----------------------:|
 |         1          |     DRUMGEN     |       -       |         1         |         1          |       -        |      1/16      |       Main drums       |
 |         2          |     ACDGEN      |       -       |         2         |         2          |       3        |      1/16      |          Bass          |
@@ -41,7 +41,7 @@ Available templates:
 
 #### Jungle:
 
-| ** Track Number ** | ** Generator ** | ** MIDI FX ** | **Input Channel** | **Output Channel** | **Aux Output** | **Clock Rate** |      ** Note **       |
+|**Track Number**|**Generator**|**MIDI FX**| **Input Channel** | **Output Channel** | **Aux Output** | **Clock Rate** |     **Note**      |
 |:------------------:|:---------------:|:-------------:|:-----------------:|:------------------:|:--------------:|:--------------:|:---------------------:|
 |         1          |    SHUFFLER     |       -       |         1         |         1          |       -        |      1/8       | 1/8 Sliced Drum Break |
 |         2          |     ACDGEN      |       -       |         2         |         2          |       -        |       1        |  Pads / Legato Synth  |
@@ -52,7 +52,7 @@ Available templates:
 #### Gen Demo:
 
 
-| ** Track Number ** | ** Generator ** | ** MIDI FX ** | **Input Channel** | **Output Channel** | **Aux Output** | **Clock Rate** | ** Note ** |
+|**Track Number**|**Generator**|**MIDI FX**| **Input Channel** | **Output Channel** | **Aux Output** | **Clock Rate** |**Note**|
 |:------------------:|:---------------:|:-------------:|:-----------------:|:------------------:|:--------------:|:--------------:|:----------:|
 |         1          |     ACDGEN      |       -       |         1         |         1          |       -        |      1/16      |            |
 |         2          |      ARPER      |       -       |         2         |         2          |       -        |      1/16      |            |

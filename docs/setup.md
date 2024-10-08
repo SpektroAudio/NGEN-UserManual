@@ -74,6 +74,8 @@ graph LR
   A["POWER SUPPLY / COMPUTER"] ---| USB | B[NGEN] -->|MIDI| C[SYNTH];
 ```
 
+<div class="forced-pb"></div>
+
 ---
 
 ### NGEN + Modular Synthesizer
@@ -83,6 +85,7 @@ graph LR
   A["POWER SUPPLY / COMPUTER"] ---| USB | B[NGEN] --->|CV| C[MODULAR SYNTH];
   B --->|GATE| C;
 ```
+
 
 ---
 

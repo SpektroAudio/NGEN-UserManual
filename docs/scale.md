@@ -47,6 +47,8 @@ A global Octave control is also available under the Scale sub-menu.
 
 ---
 
+<div class="forced-pb"></div>
+
 ## Scale Editor
 
 The Scale Editor allows you edit the currently selected scale by enabling or disabling notes.

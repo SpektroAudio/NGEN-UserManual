@@ -98,7 +98,7 @@ plugins:
     - git-revision-date
     - print-site:
         toc_title: 'Table of Contents'
-        toc_depth: 2
+        toc_depth: 1
         include_css: false
 
     # - with-pdf:

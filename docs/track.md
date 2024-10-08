@@ -56,9 +56,11 @@ graph LR
 ---
 
 
+<div class="forced-pb"></div>
+
 ## Track Settings
 
-| **Setting** | **Description** | **[Advanced](menunavigation.md#advanced-parameters-and-settings) ** |
+| **Setting** | **Description** | **[Advanced](menunavigation.md#advanced-parameters-and-settings) |
 |---|---|:--:|
 |**Status**|The Status toggle lets you enable or disable certain tracks. Disabled tracks will not be processed and will not generate any MIDI notes| |
 | **[Generator](generators.md)** | Selects one of the available generators for the track||
@@ -66,7 +68,7 @@ graph LR
 | **Clock Rate** | Sets the clock rate used by the Generator and MIDI FX ([MIDI Clock](clockgen.md#midi-clock) only) |:material-check:| 
 | **Auxiliary Output (```AUX OUT```)** | Sets the track's auxiliary output (for routing the track's output to another track's input) |:material-check:| 
 | **Output Channel (```OUT CH```)** | Sets the track MIDI output channel |:material-check: |
-| **Input Channel (```IN CH```) ** | Sets the track MIDI input channel | :material-check: |
+| **Input Channel (```IN CH```)** | Sets the track MIDI input channel | :material-check: |
 | **Program Change (```PROGRAM```)** | Sets the MIDI Program Change number which gets send to the MIDI output when loading a project or a pattern | :material-check: |
 | **Auto Variate (```AUTO VAR```)** | Enable / disable the [Auto Variate](settings.md#auto-variate-auto-vari8) mode | :material-check: |
 
@@ -82,6 +84,10 @@ The **Copy** and **Paste** options let you quickly copy the settings of one or m
 The **Clear** option resets the track's settings to their default values.
 
 ---
+
+
+
+<div class="forced-pb"></div>
 
 ## Track States
 

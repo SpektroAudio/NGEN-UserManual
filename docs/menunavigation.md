@@ -53,6 +53,8 @@ Different sub-menus can contain different menu items such as parameters, toggle 
 
 <br/>
 
+<div class="forced-pb"></div>
+
 * **Switches** can be toggled by clicking the ++"MENU ENCODER"++.
 
 ![](images/NGEN_ACDGEN_KBShift1.jpeg) ![](images/NGEN_ACDGEN_KBShift2.jpeg)
@@ -121,6 +123,7 @@ To exit the screensaver mode, move any of the knobs or click on any of the butto
 ---
 
 
+<div class="forced-pb"></div>
 
 
 ## Shortcuts

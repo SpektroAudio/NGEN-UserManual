@@ -33,9 +33,9 @@ The default behavior of the 4 parameters is to control the main parameters of th
 
 Additional parameters can be controlled by turning the 4 knobs while holding down ++"FUNCTION"++.
 
-![](images/NGEN_MidiClock_Menu.png)
+![](images/NGEN_MidiClock_Menu.png){}
 
-![](images/NGEN_Knob_Icon.png){align=right}
+<img src="images/NGEN_Knob_Icon.png" alt="NGEN Knob Icon" class="no-print" style="float:right;">
 
 While in the **[MIDI FX](midifx.md)**, **[SCALE](scale.md)** and **[CLOCK](clockgen.md)** menus, the 4 knobs are mapped to parameters related to those features (note the knob icon on the top section of the display). Exiting those menus will revert the knob mapping to the **[Generator](generators.md)** parameters.
 

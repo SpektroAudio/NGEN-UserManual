@@ -60,7 +60,7 @@ The 8 different algorithms available in ACDGEN can generate sequences that vary 
 
 **Parameter List:**
 
-| **Parameter**                  |                         **Description**                         |          ** Hardware Mapping ** |
+| **Parameter**                  |                         **Description**                         |         **Hardware Mapping**|
 |--------------------------------|:---------------------------------------------------------------:|--------------------------------:|
 | Generate                       |                    Generates a new sequence.                    |                  ++"GENERATE"++ |
 | Variate                        | Generates a new variation of the previously generated sequence. | ++"FUNCTION"++ + ++"GENERATE"++ |
@@ -84,7 +84,7 @@ The 8 different algorithms available in ACDGEN can generate sequences that vary 
 
 ![](images/ARPER.gif){align=right}
 
-** Generator Description: **
+**Generator Description:**
 
 Arper is a generator designed to generate classic arpeggios using an algorithmically generated chord progression.
 
@@ -127,7 +127,7 @@ New DrumGen templates can be created using the open-source [DrumGen Template Edi
 
 **Parameter List**
 
-| **Parameter** |         **Description**          |          ** Hardware Mapping ** |
+| **Parameter** |         **Description**          |         **Hardware Mapping**|
 |---------------|:--------------------------------:|--------------------------------:|
 | Generate      |     Generates a new sequence     |                  ++"GENERATE"++ |
 | Density 1     |    Sets part 1's probability     |                   ++"PARAM 1"++ |
@@ -160,7 +160,7 @@ Recorded sequences can be manipulated using parameters such as Length, Probabili
 
 **Parameter List:**
 
-| **Parameter**                |                    **Description**                    |         ** Hardware Mapping ** |
+| **Parameter**                |                    **Description**                    |        **Hardware Mapping**|
 |------------------------------|:-----------------------------------------------------:|-------------------------------:|
 | Recording                    |                   Toggles recording                   |                                |
 | Direction                    |              Sets the playback direction              |                  ++"PARAM 4"++ |
@@ -186,7 +186,7 @@ Changing the individual length of each of the 4 parts can result in interesting 
 
 **Parameter List:**
 
-| **Parameter** |                **Description**                 |         ** Hardware Mapping ** |
+| **Parameter** |                **Description**                 |        **Hardware Mapping**|
 |---------------|:----------------------------------------------:|-------------------------------:|
 | Generate      |            Generates a new sequence            |                 ++"GENERATE"++ |
 | Shift         |     Transposes the sequence diatonically.      |                  ++"PARAM 1"++ |
@@ -215,7 +215,7 @@ Loops can be manipulated in real time by adjusting the Length, Direction, Shift 
 **Parameter List:**
 
 
-| **Parameter** |                **Description**                 |         ** Hardware Mapping ** |
+| **Parameter** |                **Description**                 |        **Hardware Mapping**|
 |---------------|:----------------------------------------------:|-------------------------------:|
 | Load File      |            Loads a new MIDI file.            |                 ++"GENERATE"++ |
 | Transpose         |     Transposes the sequence.      |                  ++"PARAM 1"++ |
@@ -235,7 +235,7 @@ For more information about NSL (NGEN Scripting Language), check out the [NSL doc
 
 **Parameter List:**
 
-| **Parameter** |                   **Description**                    |          ** Hardware Mapping ** |
+| **Parameter** |                   **Description**                    |         **Hardware Mapping**|
 |---------------|:----------------------------------------------------:|--------------------------------:|
 | Generate      |              Generates a new sequence.               |                  ++"GENERATE"++ |
 | Variate       | Generates a variation based on the current sequence. | ++"FUNCTION"++ + ++"GENERATE"++ |
@@ -265,7 +265,7 @@ In order to use Polyform, route the output of another [Track](track.md) to Polyf
 **Parameter List:**
 
 
-| **Parameter**                          |                        **Description**                        |          ** Hardware Mapping ** |
+| **Parameter**                          |                        **Description**                        |         **Hardware Mapping**|
 |----------------------------------------|:-------------------------------------------------------------:|--------------------------------:|
 | Generate                               |                   Generates a new sequence.                   |                  ++"GENERATE"++ |
 | Variate                                |     Generates a variation based on the current sequence.      | ++"FUNCTION"++ + ++"GENERATE"++ |
@@ -309,7 +309,7 @@ Modes:
 **Parameter List:**
 
 
-| **Parameter**                          |                **Description**                 |                      ** Hardware Mapping ** |
+| **Parameter**                          |                **Description**                 |                     **Hardware Mapping**|
 |----------------------------------------|:----------------------------------------------:|--------------------------------------------:|
 | Generate                               |            Generates a new sequence            |                              ++"GENERATE"++ |
 | Shift                                  |     Transposes the sequence diatonically.      |                               ++"PARAM 1"++ |
@@ -337,12 +337,14 @@ Although named after a specific genre, Samba is capable of generating percussing
 Note Length Modes:
 
 • **FIXED**: All notes have the same length (1/16).
+
 • **DYNAMIC 1**: Sets the length of the notes based on the length of each part's sequence.
+
 • **DYNAMIC 2**: Sets the length of the notes based on the number of notes in each part's sequence.
 
 **Parameter List:**
 
-| **Parameter**            |             **Description**             |         ** Hardware Mapping ** |
+| **Parameter**            |             **Description**             |        **Hardware Mapping**|
 |--------------------------|:---------------------------------------:|-------------------------------:|
 | Generate                 |        Generates a new sequence         |                 ++"GENERATE"++ |
 | Spread                   |         Offsets all four parts.         |                  ++"PARAM 1"++ |
@@ -376,7 +378,7 @@ The different modes available in Shuffler are capable of sequencing the slices i
 **Parameter List:**
 
 
-| **Parameter**                       |                    **Description**                    |         ** Hardware Mapping ** |
+| **Parameter**                       |                    **Description**                    |        **Hardware Mapping**|
 |-------------------------------------|:-----------------------------------------------------:|-------------------------------:|
 | Generate                            |               Generates a new sequence (for SEQ mode)                |                 ++"GENERATE"++ |
 | Variate                             | Generates a variation based on the current sequence.  | ++"FUNCTION"++ + ++"GENERATE"++ |
@@ -404,7 +406,7 @@ The Thru generator is a simple pass-through generator that can be used for dupli
 **Parameter List:**
 
 
-| **Parameter**                   |                   **Description**                    | ** Hardware Mapping ** |
+| **Parameter**                   |                   **Description**                    |**Hardware Mapping**|
 |---------------------------------|:----------------------------------------------------:|-----------------------:|
 | Shift                           |           Transposes incoming MIDI notes.            |          ++"PARAM 1"++ |
 | Max Velocity (```Max Vel```)    |             Sets the max MIDI velocity.              |          ++"PARAM 2"++ |
@@ -425,7 +427,7 @@ Turing is an algorithm inspired by the [Music Thing's Turing Machine](https://ww
 
 **Parameter List:**
 
-| **Parameter**                 |                            **Description**                            |          ** Hardware Mapping ** |
+| **Parameter**                 |                            **Description**                            |         **Hardware Mapping**|
 |-------------------------------|:---------------------------------------------------------------------:|--------------------------------:|
 | Write                         |                         Flips the first bit.                          |                  ++"GENERATE"++ |
 | Clear                         |                      Clears the shift register.                       | ++"FUNCTION"++ + ++"GENERATE"++ |

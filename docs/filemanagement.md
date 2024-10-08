@@ -30,6 +30,9 @@ If you'd like to download or update the Factory Content, follow these steps:
 !!! attention
     It's currently not possible to copy new files into NGEN's internal memory. If you'd like to use new files available in the Factory Content, you'll need to use a microSD card.
 
+
+<div class="forced-pb"></div>
+
 ## List of File Types
 
 |  **File Type**   |                    **Description**                     | **Sub-Folder** | **Extension** |
