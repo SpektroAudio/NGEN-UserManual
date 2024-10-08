@@ -4,9 +4,9 @@
 
 ## Getting Started with NGEN
 
-To get started with NGEN, simply connect it to a computer or another USB-host device via USB or to a MIDI-capable device via the MIDI Out jack.
+To get started with NGEN, simply connect it to a computer or another USB-host device via USB, or to a MIDI-capable device via the MIDI Out jack.
 
-The [MIDI Clock](clockgen.md#midi-clock) generator is active by default so NGEN should be ready to receive MIDI Clock from a DAW or external gear to NGEN. 
+The [MIDI Clock](clockgen.md#midi-clock) generator is active by default, so NGEN should be ready to receive MIDI Clock from a DAW or external gear to NGEN. 
 
 By default, all 16 tracks are set up to output MIDI to channels 1 through 16 sequentially however only the first track is active when the device is turned on (more tracks can be enabled via the [Track Settings](track.md#track-settings)). 
 

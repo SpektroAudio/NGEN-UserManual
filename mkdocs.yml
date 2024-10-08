@@ -90,7 +90,7 @@ copyright: Copyright &copy; 2013 - 2022 Spektro Audio
 
 plugins:
     - search
-    # - with-pdf
+    - with-pdf
     - git-revision-date
 
     # - with-pdf:

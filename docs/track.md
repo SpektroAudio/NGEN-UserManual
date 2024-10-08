@@ -73,6 +73,16 @@ graph LR
 
 ---
 
+## Track Edit
+
+The Track Edit sub-menu can be accessed via the shortcut ++"FUNCTION"++ + ++"TRACK | CLK"++ from the Track sub-menu and it contains options for copying, pasting and clearing the track.
+
+The **Copy** and **Paste** options let you quickly copy the settings of one or more tracks and paste them into another track. Keep in mind that internal data for the selected Generator and MIDI FXs (including sequences and parameter settings) are not copied.
+
+The **Clear** option resets the track's settings to their default values.
+
+---
+
 ## Track States
 
 To create more dynamic patterns, NGEN can control the prominence of each track in new patterns via the Track State feature.  

@@ -50,7 +50,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 
 NGEN HW v1.1 also features a backup method for updating the firmware that can be used in case of issues with the primary method or failed updates.
 
-This method does require some minor disassembling so we only recommend using it as a backup method.
+This method does require some minor disassembling so we only recommend using it as a backup.
 
 1 - Remove the 4 screws on the side of the unit and the microSD card if present.
 

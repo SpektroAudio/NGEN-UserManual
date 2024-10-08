@@ -7,7 +7,7 @@
 
 ![NGEN Generator Sub-menu](images/NGEN_MainMenu_Clock.png){align=right}
 
-NGEN includes 4 clock generators that can be used for clocking all 16 [tracks](track.md). 
+NGEN includes 3 clock generators that can be used for clocking all 16 [tracks](track.md). 
 
 Each clock generator has a separate clock count and can trigger all tracks relative to it. This means multiple clock generators can be active at the same time.
 

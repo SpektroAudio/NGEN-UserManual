@@ -50,6 +50,10 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 |                  |        Macro 2        |         41         |     Scaled      |
 |                  |        Macro 3        |         42         |     Scaled      |
 |                  |        Macro 4        |         43         |     Scaled      |
+|                  |        Macro 5        |         44         |     Scaled      |
+|                  |        Macro 6        |         45         |     Scaled      |
+|                  |        Macro 7        |         46         |     Scaled      |
+|                  |        Macro 8        |         47         |     Scaled      |
 | **Patterns**     |    Load Pattern 1     |         50         |     Action      |
 |                  |    Load Pattern 2     |         51         |     Action      |
 |                  |    Load Pattern 3     |         52         |     Action      |
@@ -350,3 +354,5 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | **Parameter** | **MIDI CC Number** | **Behaviour** |
 |---------------|:------------------:|:-------------:|
 | Max Delay     |        103         |    Scaled     |
+| Velocity      |        104         |    Scaled     |
+| Random        |        105         |    Scaled     |
