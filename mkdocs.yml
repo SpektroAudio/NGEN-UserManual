@@ -1,6 +1,7 @@
 site_name: NGEN Manual
 theme:
   name: material
+  custom_dir: overrides
   # custom_dir: 'cinder'
   palette:
     # primary: teal
@@ -34,6 +35,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - toc:
+      toc_depth: 3
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -84,6 +87,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/print.css
 
 copyright: Copyright &copy; 2013 - 2022 Spektro Audio
 
@@ -92,6 +96,10 @@ plugins:
     - search
     - with-pdf
     - git-revision-date
+    - print-site:
+        toc_title: 'Table of Contents'
+        toc_depth: 2
+        include_css: false
 
     # - with-pdf:
     #     author: Spektro Audio
@@ -100,8 +108,8 @@ plugins:
     #     # back_cover: true
     #     cover_title: NGEN – Algorithmic MIDI Workstation
     #     cover_subtitle: User Manual
-    #     cover_logo: /images/NGEN_PromoImage.jpeg
+    #     # cover_logo: /images/NGEN_PromoImage.jpeg
     #     # debug_html: true
     #     render_js: true
-    #     headless_chrome_path: chrome
+    #     headless_chrome_path: chromedriver
     

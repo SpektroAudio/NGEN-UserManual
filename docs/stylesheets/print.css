@@ -1,0 +1,41 @@
+@media print {
+
+      /* Resize all images to 50% of their original width */
+  .md-typeset img {
+    width: 30%;
+    height: auto; /* Maintain aspect ratio */
+  }
+    .md-typeset h1 {
+
+      page-break-before: always;
+      font-size: 18pt; /* Adjust to your preferred size */
+    }
+  
+    .md-typeset h2 {
+      font-size: 16pt;
+    }
+  
+    h3 {
+      font-size: 14pt;
+    }
+  
+    h4 {
+      font-size: 12pt;
+    }
+  
+    h5 {
+      font-size: 12pt;
+    }
+  
+    h6 {
+      font-size: 12pt;
+    }
+
+    .md-typeset p, 
+    .md-typeset li,
+    .md-typeset blockquote {
+        font-size: 8pt; /* Adjust body text font size */
+        line-height: 1.5; /* Adjust line height for better readability */
+    }
+  }
+  
