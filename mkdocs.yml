@@ -87,6 +87,7 @@ extra:
 
 extra_css:
   - stylesheets/extra.css
+  - stylesheets/print.css
 
 copyright: Copyright &copy; 2013 - 2022 Spektro Audio
 
@@ -95,7 +96,11 @@ plugins:
     - search
     # - with-pdf
     - git-revision-date
-    - pdf-with-js
+    - print-site:
+        toc_title: 'Table of Contents'
+        toc_depth: 2
+        include_css: false
+
     # - with-pdf:
     #     author: Spektro Audio
     #     copyright: http://spektroaudio.com/ngen
@@ -103,8 +108,8 @@ plugins:
     #     # back_cover: true
     #     cover_title: NGEN – Algorithmic MIDI Workstation
     #     cover_subtitle: User Manual
-    #     cover_logo: /images/NGEN_PromoImage.jpeg
+    #     # cover_logo: /images/NGEN_PromoImage.jpeg
     #     # debug_html: true
     #     render_js: true
-    #     headless_chrome_path: /Users/icaroferre/chromedriver
+    #     headless_chrome_path: chromedriver
     
