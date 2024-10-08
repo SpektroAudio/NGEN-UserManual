@@ -1,6 +1,7 @@
 site_name: NGEN Manual
 theme:
   name: material
+  custom_dir: overrides
   # custom_dir: 'cinder'
   palette:
     # primary: teal
@@ -34,6 +35,8 @@ markdown_extensions:
   - admonition
   - pymdownx.details
   - pymdownx.superfences
+  - toc:
+      toc_depth: 3
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji
       emoji_generator: !!python/name:materialx.emoji.to_svg
@@ -92,7 +95,7 @@ plugins:
     - search
     # - with-pdf
     - git-revision-date
-
+    - pdf-with-js
     # - with-pdf:
     #     author: Spektro Audio
     #     copyright: http://spektroaudio.com/ngen
@@ -103,5 +106,5 @@ plugins:
     #     cover_logo: /images/NGEN_PromoImage.jpeg
     #     # debug_html: true
     #     render_js: true
-    #     headless_chrome_path: chrome
+    #     headless_chrome_path: /Users/icaroferre/chromedriver
     
