@@ -30,11 +30,11 @@ Accent changes the MIDI velocity of incoming MIDI notes according to it's intern
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-|: ------------ |: ------------- |: -------------- |: ---------- |
-| Generate | Generates a new accent sequence | ++"GENERATE"++ |   |
-| Length | Length of the accent sequence | ++"PARAM 2"++ |   |
-| Intensity | Increases the velocity of all MIDI notes to 127 | ++"PARAM 3"++ |   |
+| **Parameter** | **Description** | **Hardware Mapping** |
+|: ------------ |: -------------: | -------------- :|
+| Generate | Generates a new accent sequence | ++"GENERATE"++ |
+| Length | Length of the accent sequence | ++"PARAM 2"++ |
+| Intensity | Increases the velocity of all MIDI notes to 127 | ++"PARAM 3"++ |
 
 
 ### CHORD
@@ -43,29 +43,29 @@ Chords transforms single notes into chords by adding up to 4 notes on top of inc
 
 **List of Parameters:**
 
-| **Parameter**    | **Description**                                   | **Hardware Mapping** | **Advanced** |
-|------------------|:--------------------------------------------------|:---------------------|:-------------|
-| Quantize         | Quantizes all intervals to the active key / scale |                      |              |
-| Chord Interval 1 | Interval of the first chord note                  | ++"PARAM 1"++        |              |
-| Chord Interval 2 | Interval of the second chord note                 | ++"PARAM 2"++        |              |
-| Chord Interval 3 | Interval of the third chord note                  | ++"PARAM 3"++        |              |
-| Chord Interval 4 | Interval of the third chord note                  | ++"PARAM 4"++        |              |
-| Probability      | Probability of triggering a chord                 |                      |              |
+| **Parameter**    |                  **Description**                  |           **Hardware Mapping** |
+|------------------|:-------------------------------------------------:|-------------------------------:|
+| Quantize         | Quantizes all intervals to the active key / scale |                              – |
+| Chord Interval 1 |         Interval of the first chord note          |                  ++"PARAM 1"++ |
+| Chord Interval 2 |         Interval of the second chord note         |                  ++"PARAM 2"++ |
+| Chord Interval 3 |         Interval of the third chord note          |                  ++"PARAM 3"++ |
+| Chord Interval 4 |         Interval of the third chord note          |                  ++"PARAM 4"++ |
+| Probability      |         Probability of triggering a chord         | ++"FUNCTION"++ + ++"PARAM 3"++ |
 
 
 ### ECHOES
 
-Echoes is a MIDI delay effect that creates additional notes that are delayed by the specified delay time.
+Echoes is a MIDI delay effect that creates additional notes delayed by the specified delay time. 
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-| ------------ |: ------------- |: -------------- |: ---------- |
-| Delay Time | Delay time in milliseconds | ++"PARAM 1"++ | |
-| Feedback | Feedback amount | ++"PARAM 2"++ | |
-| Probability (```PROB```) | Probability of the echoes | ++"PARAM 3"++ | |
-| Falloff (```FALLOFF```) | MIDI Velocity falloff of the echoes | ++"PARAM 4"++ | |
-| Octave Random (```OCT RND```) | Randomizes the octave of the echoes |  ++"FUNCTION"++ + ++"PARAM 1"++ | |
+| **Parameter** | **Description** | **Hardware Mapping** |
+| ------------ |: -------------: | --------------: |
+| Delay Time | Delay time in milliseconds | ++"PARAM 1"++ |
+| Feedback | Feedback amount | ++"PARAM 2"++ |
+| Probability (```PROB```) | Probability of the echoes | ++"PARAM 3"++ |
+| Falloff (```FALLOFF```) | MIDI Velocity falloff of the echoes | ++"PARAM 4"++ |
+| Octave Random (```OCT RND```) | Randomizes the octave of the echoes |  ++"FUNCTION"++ + ++"PARAM 1"++ |
 
 ### GLITCH
 
@@ -73,13 +73,13 @@ The Glitch MIDI FX can be used to mangle and glith up sequences via a random rat
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-|------------|:-------------|:--------------|:----------|
-| Repeats | Maximum number of note ratchets | ++"PARAM 1"++ | |
-| Gate Length | Length of the note ratchets | ++"PARAM 2"++ | |
-| Probability | Probability of a glitch happening | ++"PARAM 3"++ | |
-| Random | Amount of glitch randomization | ++"PARAM 4"++ | |
-| Pitch Mod | Enables octave randomization | | |
+| **Parameter** |          **Description**          | **Hardware Mapping** |
+|---------------|:---------------------------------:|---------------------:|
+| Repeats       |  Maximum number of note ratchets  |        ++"PARAM 1"++ |
+| Gate Length   |    Length of the note ratchets    |        ++"PARAM 2"++ |
+| Probability   | Probability of a glitch happening |        ++"PARAM 3"++ |
+| Random        |  Amount of glitch randomization   |        ++"PARAM 4"++ |
+| Pitch Mod     |   Enables octave randomization    |                    – |
 
 ### HUMANIZER
 
@@ -89,12 +89,12 @@ It's great for making polyphonic sequences sound less mechanical and static.
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-|------------|:-------------|:--------------|:----------|
-| Delay Probability (```DLY PROB```) | Probability of delaying a MIDI note | ++"PARAM 1"++ | |
-| Velocity Probability (```VEL PROB```) | Probability of a modulating a note's velocity | ++"PARAM 2"++ | |
-| Max Delay | Maximum delay length | ++"PARAM 3"++ | |
-| Velocity Modulation (```VEL MOD```) | Depth of velocity modulation | ++"PARAM 4"++ | |
+| **Parameter**                         |                **Description**                | **Hardware Mapping** |
+|---------------------------------------|:---------------------------------------------:|---------------------:|
+| Delay Probability (```DLY PROB```)    |      Probability of delaying a MIDI note      |        ++"PARAM 1"++ |
+| Velocity Probability (```VEL PROB```) | Probability of a modulating a note's velocity |        ++"PARAM 2"++ |
+| Max Delay                             |             Maximum delay length              |        ++"PARAM 3"++ |
+| Velocity Modulation (```VEL MOD```)   |         Depth of velocity modulation          |        ++"PARAM 4"++ |
 
 ### MODULATOR
 
@@ -102,37 +102,38 @@ The Modulator FX can be used for modulating MIDI control changes (CC) of externa
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-|------------|:-------------|:--------------|:----------|
-| Generate | Generates a new modulation sequence | ++"GENERATE"++ | |
-| Send | Sends a CC message (for mapping purposes) | ++"FUNCTION"++ + ++"GENERATE"++ | |
-| Sequence Amount (```SEQ AMOUNT```)| Amount of sequence modulation | ++"PARAM 1"++ | |
-| Length | Length of the modulation sequence | ++"PARAM 2"++ | |
-| CC Out | CC number to send | ||
-| Depth | 
+| **Parameter**                      |              **Description**              |            **Hardware Mapping** |
+|------------------------------------|:-----------------------------------------:|--------------------------------:|
+| Generate                           |    Generates a new modulation sequence    |                  ++"GENERATE"++ |
+| Send                               | Sends a CC message (for mapping purposes) | ++"FUNCTION"++ + ++"GENERATE"++ |
+| Sequence Amount (```SEQ AMOUNT```) |       Amount of sequence modulation       |                   ++"PARAM 1"++ |
+| Length                             |     Length of the modulation sequence     |                   ++"PARAM 2"++ |
+| Offset                             |   Sets the offset value (minimum value)   |                   ++"PARAM 3"++ |
+| Depth                              | Sets the modulation depth (maximum value) |                   ++"PARAM 4"++ |
+| CC Out                             |             CC number to send             |                               – |
 
 ### PROGRAM SEQUENCER (PROG SEQ)
 
-The Program Sequencer MIDI FX offer a way of sequencing MIDI Program Changes creatively. When used with synthesizer / drum machines that respond quickly to program changes, these program change sequences will make it sound as if there're multiple different instruments being played sequentially.
+The Program Sequencer MIDI FX offer a way of sequencing MIDI Program Changes creatively. When used with synthesizer / drum machines that respond quickly to program changes, these program change sequences will make it sound as if there are multiple different instruments being played sequentially.
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-| ------------ |: ------------- |: -------------- |: ---------- |
-| Generate | Generates a new program change sequence | ++"GENERATE"++ |   |
-| Length | Length of the program change sequence | ++"PARAM 2"++ |   |
-| Hits | Number of MIDI notes needed to advance the sequence | ++"PARAM 3"++ |   |
-| Max Program (```MAX PROG```) | Maximum program change number | ++"PARAM 4"++ |   |
-| Sync | Waits for the next clock pulse to send the next program change | | |
-| Delay | | | |
-| Step 1 | Sets the program change number of the first step | | | |
-| Step 2 | Sets the program change number of the second step | | | |
-| Step 3 | Sets the program change number of the third step | | | |
-| Step 4 | Sets the program change number of the fourth step | | | |
-| Step 5 | Sets the program change number of the fifth step | | | |
-| Step 6 | Sets the program change number of the sixth step | | | |
-| Step 7 | Sets the program change number of the seventh step | | | |
-| Step 8 | Sets the program change number of the eighth step | | | |
+| **Parameter** | **Description** | **Hardware Mapping** |
+| ------------ |: -------------: | --------------: |
+| Generate | Generates a new program change sequence | ++"GENERATE"++ |
+| Length | Length of the program change sequence | ++"PARAM 2"++ |
+| Hits | Number of MIDI notes needed to advance the sequence | ++"PARAM 3"++ |
+| Max Program (```MAX PROG```) | Maximum program change number | ++"PARAM 4"++ |
+| Sync | Waits for the next clock pulse to send the next program change | – |
+| Delay | | – |
+| Step 1 | Sets the program change number of the first step | ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Step 2 | Sets the program change number of the second step | ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Step 3 | Sets the program change number of the third step | ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Step 4 | Sets the program change number of the fourth step | ++"FUNCTION"++ + ++"PARAM 4"++ |
+| Step 5 | Sets the program change number of the fifth step | – |
+| Step 6 | Sets the program change number of the sixth step | – |
+| Step 7 | Sets the program change number of the seventh step | – |
+| Step 8 | Sets the program change number of the eighth step | – |
 
 ### SHAPER
 
@@ -141,20 +142,20 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 
 **List of Parameters:**
 
-| **Parameter**                      | **Description**                                                            | **Hardware Mapping** | **Advanced** |
-|------------------------------------|:---------------------------------------------------------------------------|:---------------------|:-------------|
-| Mode (```MODE```)                  | Sets the mode of the Shaper (Clip / Scale / Drop)                          |                      |              |
-| Pitch Minimum (```PITCH MIN```)    | Lowest possible note (0-127)                                               | ++"PARAM 1"++        |              |
-| Pitch Maximum (```PITCH MAX```)    | Highest possible note (0-127)                                              | ++"PARAM 2"++        |              |
-| Velocity Minimum (```VEL MIN```)   | Lowest possible velocity (0-127)                                           | ++"PARAM 3"++        |              |
-| Velocity Maximum (```VEL MAX```)   | Highest possible velocity (0-127)                                          | ++"PARAM 4"++        |              |
-| Length Multiplier (```LEN MULT```) | Multiplies the length of incoming MIDI notes                               |                      |              |
-| Channel Mapping (```CH Map```)     | Maps incoming MIDI notes to different MIDI channels based on their pitch * |                      |              |
-| Map Pitch (```Map Pitch```)        | Sets the pitch of converted MIDI notes (while in ```Ch Map```)             |                      |              |
+| **Parameter**                      |                              **Description**                               | **Hardware Mapping** |
+|------------------------------------|:--------------------------------------------------------------------------:|---------------------:|
+| Mode (```MODE```)                  |             Sets the mode of the Shaper (Clip / Scale / Drop)              |                    – |
+| Pitch Minimum (```PITCH MIN```)    |                        Lowest possible note (0-127)                        |        ++"PARAM 1"++ |
+| Pitch Maximum (```PITCH MAX```)    |                       Highest possible note (0-127)                        |        ++"PARAM 2"++ |
+| Velocity Minimum (```VEL MIN```)   |                      Lowest possible velocity (0-127)                      |        ++"PARAM 3"++ |
+| Velocity Maximum (```VEL MAX```)   |                     Highest possible velocity (0-127)                      |        ++"PARAM 4"++ |
+| Length Multiplier (```LEN MULT```) |                Multiplies the length of incoming MIDI notes                |                    – |
+| Channel Mapping (```CH Map```)     | Maps incoming MIDI notes to different MIDI channels based on their pitch * |                    – |
+| Map Pitch (```Map Pitch```)        |       Sets the pitch of converted MIDI notes (while in ```Ch Map```)       |                    – |
 
 
-!!! note "Pitch Based Channel Mapping"
-    C notes are mapped to the Track's Output Channel and all other pitches are mapped according to their distance from C (in semitones), so D notes are mapped to Out Ch + 2, D# to Out CH + 3, and so on. After being mapped to their respective channels, all notes are set to the same pitch (Map Pitch).*
+!!! note "* Pitch Based Channel Mapping"
+    C notes are mapped to the Track's Output Channel and all other pitches are mapped according to their distance from C (in semitones), so D notes are mapped to Out Ch + 2, D# to Out CH + 3, and so on. After being mapped to their respective channels, all notes are set to the same pitch (Map Pitch).
 
 ### SPRAY
 
@@ -162,14 +163,14 @@ The Spray MIDI FX creates a delay-like effect by generating copies of incoming M
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-| ------------ |: ------------- |: -------------- |: ---------- |
-| Max Delay | Maximum delay time (in milliseconds) | ++"PARAM 1"++ | |
-| Max Repeats | Maximum number of repetitions of delayed notes (similarto feedback) | ++"PARAM 2"++ | |
-| Probability (```PROB```) | Probability of spraying a note | ++"PARAM 3"++ | |
-| Falloff (```FALLOFF```) | MIDI Velocity falloff of sprayed notes | ++"PARAM 4"++ | |
-| Octave Random (```OCT RND```) | Randomizes the octave of the sprayed notes | ++"FUNCTION"++ + ++"PARAM 1"++| |
-| Velocity Random (```VEL RND```) | Randomizes the velocity of the sprayed notes | ++"FUNCTION"++ + ++"PARAM 2"++ | |
+| **Parameter** | **Description** | **Hardware Mapping** |
+| ------------ |: -------------: | --------------: |
+| Max Delay | Maximum delay time (in milliseconds) | ++"PARAM 1"++ |
+| Max Repeats | Maximum number of repetitions of delayed notes (similarto feedback) | ++"PARAM 2"++ |
+| Probability (```PROB```) | Probability of spraying a note | ++"PARAM 3"++ |
+| Falloff (```FALLOFF```) | MIDI Velocity falloff of sprayed notes | ++"PARAM 4"++ |
+| Octave Random (```OCT RND```) | Randomizes the octave of the sprayed notes | ++"FUNCTION"++ + ++"PARAM 1"++|
+| Velocity Random (```VEL RND```) | Randomizes the velocity of the sprayed notes | ++"FUNCTION"++ + ++"PARAM 2"++ |
 
 
 ### STRUM
@@ -178,8 +179,8 @@ The Strum MIDI FX can be used to create a strumming effect by adding a short ran
 
 **List of Parameters:**
 
-| **Parameter** | **Description** | **Hardware Mapping** | **Advanced** |
-|------------|:-------------|:--------------|:----------|
-| Max Delay | Maximum delay time (in milliseconds) | ++"PARAM 1"++ | |
-| Velocity Multiplier (```VEL MULT```) | Decreases the delay time according to MIDI velocity | | |
-| Random | Switches between sequence or random order for the delay time |  | |
+| **Parameter**                        |                       **Description**                        | **Hardware Mapping** |
+|--------------------------------------|:------------------------------------------------------------:|---------------------:|
+| Max Delay                            |             Maximum delay time (in milliseconds)             |        ++"PARAM 1"++ |
+| Velocity Multiplier (```VEL MULT```) |     Decreases the delay time according to MIDI velocity      |                    – |
+| Random                               | Switches between sequence or random order for the delay time |                    – |

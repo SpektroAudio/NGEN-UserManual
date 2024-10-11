@@ -47,12 +47,13 @@ To save your current settings, select the ```Save``` option.
 
 ### CV OUT
 
-This sub-menu contains some parameters available for the CV outputs.
+This sub-menu contains parameters available for the CV outputs.
 
-NGEN currently offers 2 CV outputs that can be used to sequence 1V/OCT synthesizers / modules:
+**Modes:**
 
-- CV 1-2: convert MIDI notes from the CV Out 1 and 2 aux tracks to 1V/OCT signals.
-- 4xTrig: convert selected MIDI notes (based on parameters Note Trg 1-4) to 4 gate outputs. This mode is designed to be used with drum / percussive generators such as [DrumGen](generators.md#drumgen) and [Samba](generators.md#samba).
+- **CV 1-2**: converts MIDI notes from the CV Out 1 and 2 aux tracks to 1V/OCT signals.
+
+- **4xTrig**: converts selected MIDI notes (based on parameters Note Trg 1-4) to 4 gate outputs. This mode is designed to be used with drum / percussive generators such as [DrumGen](generators.md#drumgen) and [Samba](generators.md#samba).
 
 !!! note ""
 

@@ -20,10 +20,28 @@ NGEN can also be connected to other gear via the MIDI IN and MIDI OUT 3.5mm TRS 
 
 ### Connecting via CV
 
-NGEN also features 2 pairs of CV + Gate outputs that can be used to sequence 1V/OCT synthesizers / modules.  
-To enable the CV output ports, set the AUX OUT of any of [Tracks](track.md) to CV1 or CV2.
+NGEN also features 2 pairs of CV + Gate outputs that can be used to sequence other hardware instruments (such as modular synthesizers).
 
-The CV and GATE outputs on NGEN have a limited range of 3.3V and a resolution of 12bits so we recommend using an external MIDI to CV converter for a wider range and better resolution.
+More information about the available CV modes is available in the [Settings section](settings.md#cv-out).
+
+The four outputs are available as two pairs of additional outputs available via the ```Aux Out``` parameter in the [Track](track.md) sub-menu. 
+
+To route the output of a [track](track.md) to one of the CV outputs:
+
+1 - Enable Advanced Mode ([Settings / General](settings.md#general)).
+
+2 - Select one of the available CV modes ([Settings / CV Out](settings.md#cv-out)).
+
+3 - [Select the track](track.md#track-selection) you'd like to route to one of the CV output.
+
+4 - Open the [Track](track.md) sub-menu, navigate to the ```Aux Out``` parameter and set it to ```CV 1``` or ```CV 2```.
+
+
+
+
+<!-- To enable the CV output ports, set the AUX OUT of any of [Tracks](track.md) to CV1 or CV2. -->
+
+<!-- The CV and GATE outputs on NGEN have a limited range of 3.3V and a resolution of 12bits so we recommend using an external MIDI to CV converter for a wider range and better resolution. -->
 
 !!! danger "WARNING"
     The CV and Gate jacks are **OUTPUTS** only. **Do not** send any CV signals into them or you may run the risk of damaging your unit.

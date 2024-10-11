@@ -1,6 +1,6 @@
 # NSL - NGEN SCRIPTING LANGUAGE
 
-The NSL Engine [Generator](generators.md#nsl) is a powerful tool that lets you create your own custom algorithms using a simple scripting language.
+The NSL Engine [Generator](generators.md#nsl-engine) is a powerful tool that lets you create your own custom algorithms using a simple scripting language.
 
 At it's core, the NSL Engine features a 32-step sequence (with individual pitch, velocity, length (in beats) and density per step) and standard parameters such Shift, Length and Density to control playback.
 

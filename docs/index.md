@@ -18,6 +18,10 @@ NGEN also includes a variety of tools to let you explore this world of algorithm
 
 **Video Tutorials:** [NGEN Playlist on Youtube](http://spektroaudio.com/ngen)
 
+[Download PDF](http://files.spektroaudio.com/ngen/usermanual/NGENUserManual1.2.pdf){ .md-button }
+
+[Print Current Version](https://ngen.spektroaudio.com/print_page/){ .md-button}
+
 
 ## Firmware
 

@@ -1,4 +1,8 @@
-site_name: NGEN Manual
+site_name: NGEN User Manual
+site_description: User Manual for the Spektro Audio NGEN - Algorithmic MIDI Workstation
+site_author: Spektro Audio
+site_url: https://ngen.spektroaudio.com
+repo_url: https://github.com/SpektroAudio/NGEN-UserManual
 theme:
   name: material
   custom_dir: overrides
@@ -38,8 +42,8 @@ markdown_extensions:
   - toc:
       toc_depth: 3
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
@@ -100,6 +104,10 @@ plugins:
         toc_title: 'Table of Contents'
         toc_depth: 1
         include_css: false
+        enumerate_headings: true
+        enumerate_figures: true
+        add_cover_page: true
+        cover_page_template: "docs/assets/cover_page.tpl"
 
     # - with-pdf:
     #     author: Spektro Audio

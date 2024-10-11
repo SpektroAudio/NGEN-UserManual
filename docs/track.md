@@ -19,11 +19,15 @@ These settings can be accessed via the **TRACK** sub-menu (available in the **MA
 
 Because NGEN's controls are mapped to the active track by default, it's important to be able to quickly switch between tracks.
 
-To select a different track, press the ++"TRACK / CLK"++ button to open the track selection screen, use the ++"MENU ENCODER"++ to scroll through the different tracks and press the ++"MENU ENCODER"++ so select a track.
+To select a different track:
 
+1. Press the ++"TRACK / CLK"++ button to open the track selection screen.
 
-To quickly select a track, turn the ++"MENU ENCODER"++ while holding down the ++"TRACK / CLK"++ button.
+2. Use the ++"MENU ENCODER"++ to scroll through the available tracks.
 
+3. Press the ++"MENU ENCODER"++ to select a track.
+
+For quicker selection, turn the ++"MENU ENCODER"++ while holding down the ++"TRACK / CLK"++ button.
 
 ---
 
@@ -92,7 +96,7 @@ The **Clear** option resets the track's settings to their default values.
 ## Track States
 
 To create more dynamic patterns, NGEN can control the prominence of each track in new patterns via the Track State feature.  
-When generating new patterns (++"TRACK"++ + ++"GENERATE"++), NGEN can assign a random state to each track (according to the [Randomize State](settings.md#randomize-state-rndmize-state) setting).  
+When generating new patterns (++"TRACK"++ + ++"GENERATE"++), NGEN can assign a random state to each track (according to the [Randomize State](settings.md#general) setting).  
 When a new state is assigned to a track, it randomizes key parameters of the active [Generator](generators.md) within ranges defined by the state.
 
 Available states:

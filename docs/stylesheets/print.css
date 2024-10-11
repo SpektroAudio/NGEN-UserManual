@@ -33,6 +33,10 @@
         display: none;
         }
 
+        .md-button{
+          display: none;
+        }
+
         .md-typeset table {
         margin-left: auto;
         margin-right: auto;

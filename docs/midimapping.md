@@ -19,9 +19,6 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 !!! warning
     In order to receive MIDI CC messages, you must first enable "MIDI CC RX" in [Settings](settings.md) / MIDI sub-menu.
 
-<!-- **Settings and parameters** will convert the 0-127 range of MIDI CC messages to their respective minimum and maximum range.
-
-**Actions** are triggered if a value greater than 0 (zero) is received. -->
 
 ---
 
@@ -50,10 +47,6 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 |                  |        Macro 2        |         41         |     Scaled      |
 |                  |        Macro 3        |         42         |     Scaled      |
 |                  |        Macro 4        |         43         |     Scaled      |
-|                  |        Macro 5        |         44         |     Scaled      |
-|                  |        Macro 6        |         45         |     Scaled      |
-|                  |        Macro 7        |         46         |     Scaled      |
-|                  |        Macro 8        |         47         |     Scaled      |
 | **Patterns**     |    Load Pattern 1     |         50         |     Action      |
 |                  |    Load Pattern 2     |         51         |     Action      |
 |                  |    Load Pattern 3     |         52         |     Action      |
@@ -76,6 +69,11 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 |                  |     Open MIDI FX      |         82         |     Actions     |
 |                  |     Open Perform     |         83         |     Actions     |
 
+
+<!-- |                  |        Macro 5        |         44         |     Scaled      |
+|                  |        Macro 6        |         45         |     Scaled      |
+|                  |        Macro 7        |         46         |     Scaled      |
+|                  |        Macro 8        |         47         |     Scaled      | -->
 
 ### GENERATORS
 
@@ -354,5 +352,5 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | **Parameter** | **MIDI CC Number** | **Behaviour** |
 |---------------|:------------------:|:-------------:|
 | Max Delay     |        103         |    Scaled     |
-| Velocity      |        104         |    Scaled     |
-| Random        |        105         |    Scaled     |
+<!-- | Velocity      |        104         |    Scaled     |
+| Random        |        105         |    Scaled     | -->

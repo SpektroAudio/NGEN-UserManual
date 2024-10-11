@@ -36,7 +36,7 @@ This section contains step-by-step instructions on how to troubleshoot common is
 
 - If you're using a [**Generator**](generators.md) that requires an **external file** to operate (MIDI Player / NSL Engine), check if a file is currently loaded.
 
--  If you're using a [**Generator**](generators.md) that requires a **live input** (Polyform / Thru), check if the track is receiving MIDI on the selected MIDI input channel or from another track (via [Aux Out](tracks.md)).
+-  If you're using a [**Generator**](generators.md) that requires a **live input** (Polyform / Thru), check if the track is receiving MIDI on the selected MIDI input channel or from another track (via [Aux Out](track.md)).
 
 #### Step 4: Check NGEN's MIDI output
 
@@ -66,10 +66,10 @@ This section contains step-by-step instructions on how to troubleshoot common is
 
 - When loading a file in NGEN (project, DrumGen template, etc), NGEN displays the location of the file on the right side of the display (```INTERNAL``` or ```MICROSD```). This can be used to check if NGEN has successfully identified the microSD card.
 
----
+<!-- ---
 
 ## CV Outputs
 
 ### NGEN not sending any CV
 
-- From the Main Menu, navigate to [Settings / CV Out](settings.md#cv-out), 
+- From the Main Menu, navigate to [Settings / CV Out](settings.md#cv-out),  -->

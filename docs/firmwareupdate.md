@@ -115,7 +115,7 @@ This method does require some minor disassembling so we only recommend using it 
 - [FREE CLOCK](clockgen.md#free-clock): Fixed bug that caused Free Clock to drop MIDI notes.
 - [PERFORM](perform.md): Macro 5-8 control via Function + Param 1-4 now work correctly.
 - [SCALE](scale.md): Key and Scale can now be properly controlled via Param 1 and 2 while in the Scale sub-menu.
-- [PROJECTS](projects): Project > Save now properly overwrites the currently active project.
+- [PROJECTS](projects.md): Project > Save now properly overwrites the currently active project.
 
 
 ### Version 1.1.2
@@ -184,7 +184,7 @@ This method does require some minor disassembling so we only recommend using it 
 - [ACDGEN](generators.md#acdgen): Added new Base Velocity and Accent parameter new Lead and Legato algorithms.
 - [POLYFORM](generators.md#polyform): Added new Inversion, Inversion Range, Chord Quality and Trigger parameters.
 - [THRU](generators.md#thru): Added new Delay parameter.
-- [CHORDS](midifx.md#chords): Added 1 more interval (4 in total now) and a new Probability parameter.
+- [CHORDS](midifx.md#chord): Added 1 more interval (4 in total now) and a new Probability parameter.
 - [SHAPER](midifx.md#shaper): new Mode parameter (Clip / Scale / Drop).
 - [STRUM](midifx.md#strum): Added a new Probability parameter.
 - [SCALE](scale.md): 2 new scales (Phrygian and Chromatic) and new global Octave parameter.
