@@ -6,7 +6,11 @@
     text-align: right;
  }
 
+ /* .forced-pb {
+  display: none;
+ } */
 
+/* 
 @media print {
   .md-typeset {
     font-size: 1rem !important;
@@ -23,4 +27,4 @@
   .md-typeset tr {
     font-size: 0.8rem;
   }
-}
+} */

@@ -1,103 +1,87 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/clockgen/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/filemanagement/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/firmwareupdate/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/generators/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/gettingstarted/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/hardwarecontrols/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/menunavigation/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/midifx/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/midimapping/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/nsl/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/pattern/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/perform/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/projects/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/scale/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/settings/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/setup/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/techniques/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/tools/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2024-07-29</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://ngen.spektroaudio.com/track/</loc>
+         <lastmod>2024-10-11</lastmod>
+    </url>
+    <url>
+         <loc>https://ngen.spektroaudio.com/troubleshooting/</loc>
+         <lastmod>2024-10-11</lastmod>
     </url>
 </urlset>
