@@ -89,6 +89,3 @@ Repeat these steps for each MIDI FX you'd like to chain.
 
 !!! warning "Attention"
     Keep in mind that each track will continue to output MIDI to the selected Output Channel so, to avoid sending duplicate MIDI messages, set the Output Channel of each track to a different value.
-
-### Creating longer sequences
-
