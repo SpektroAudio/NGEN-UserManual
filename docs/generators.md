@@ -229,6 +229,8 @@ Loops can be manipulated in real time by adjusting the Length, Direction, Shift 
 
 ### NSL ENGINE
 
+![](images/NSL.gif){align=right}
+
 **Generator Description:**
 
 The NSL Engine is a programmable generator that can run NSL files and features a 32-step sequencer.
@@ -309,6 +311,10 @@ Modes:
 
 • **VARI LEN**: Generates a sequence of chords with variable length. In this mode, Density controls the density of generated chords.  
 
+• **DUAL ESEQ**: Uses a dual euclidean algorithm to generate a rythmic chord pattern.
+
+For better results, we recommend generating a new pattern after changing modes. 
+
 
 **Parameter List:**
 
@@ -325,6 +331,7 @@ Modes:
 | Inversion Probability (```Inv Prob```) |   Sets the probability of chord inversions.    |              ++"FUNCTION"++ + ++"PARAM 3"++ |
 | Balance                                |    Sets the velocity of short x long notes.    | ++"FUNCTION"++ +              ++"PARAM 4"++ |
 | Mode                                   |               Sets the POP mode.               |                                           – |
+| Express                                |   Enables chord articulations / expressions.   |                                           – |
 
 
 ---
@@ -356,12 +363,12 @@ Note Length Modes:
 | Density                  |      Sets the sequence's density.       |                  ++"PARAM 3"++ |
 | Random                   |  Sets the probability of random hits.   |                  ++"PARAM 4"++ |
 | Rotate                   |   Rotates all four sequences forward.   | ++"FUNCTION"++ + ++"PARAM 1"++ |
-| Probability (```Prob```) | Sets the probability of all four parts. | ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Note Len                 |       Sets the note length mode.        | ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Probability (```Prob```) | Sets the probability of all four parts. | ++"FUNCTION"++ + ++"PARAM 3"++ |
 | Note 1                   |         Set part 1's MIDI note          |                              – |
 | Note 2                   |         Set part 2's MIDI note          |                              – |
 | Note 3                   |         Set part 3's MIDI note          |                              – |
 | Note 4                   |         Set part 4's MIDI note          |                              – |
-| Note Len                 |       Sets the note length mode.        |                              – |
 
 ---
 
@@ -412,14 +419,14 @@ The Thru generator is a simple pass-through generator that can be used for dupli
 **Parameter List:**
 
 
-| **Parameter**                   |                   **Description**                    | **Hardware Mapping** |
-|---------------------------------|:----------------------------------------------------:|---------------------:|
-| Shift                           |           Transposes incoming MIDI notes.            |        ++"PARAM 1"++ |
-| Max Velocity (```Max Vel```)    |             Sets the max MIDI velocity.              |        ++"PARAM 2"++ |
-| Probability                     | Sets the probability of playing back incoming notes. |        ++"PARAM 3"++ |
-| Random Velocity (```Rnd Vel```) |         Sets the amount of random velocity.          |        ++"PARAM 4"++ |
-| Quantize                        |              Enables pitch quantization              |                    – |
-| Delay                           |           Delays incoming note by x beats            |                    – |
+| **Parameter**                   |                   **Description**                    |            **Hardware Mapping** |
+|---------------------------------|:----------------------------------------------------:|--------------------------------:|
+| Shift                           |           Transposes incoming MIDI notes.            |                   ++"PARAM 1"++ |
+| Max Velocity (```Max Vel```)    |             Sets the max MIDI velocity.              |                   ++"PARAM 2"++ |
+| Probability                     | Sets the probability of playing back incoming notes. |                   ++"PARAM 3"++ |
+| Random Velocity (```Rnd Vel```) |         Sets the amount of random velocity.          |                   ++"PARAM 4"++ |
+| Quantize                        |              Enables pitch quantization              |                               – |
+| Delay                           |           Delays incoming note by x beats            | ++"FUNCTION"++ +  ++"PARAM 4"++ |
 
 ---
 

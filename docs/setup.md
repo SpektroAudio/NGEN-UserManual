@@ -18,6 +18,13 @@ NGEN can also be connected to other gear via the MIDI IN and MIDI OUT 3.5mm TRS 
 
 *Please note that NGEN still needs to be powered via USB (check the Powering NGEN section below).*
 
+The **[Test MIDI](settings.md#midi)** feature (available under Settings / MIDI) sends a short MIDI sequence to each of the 16 MIDI channels available sequentially and it can be used to check your MIDI routings when setting up NGEN with other gear.
+
+<figure markdown="span">
+  ![Test MIDI feature](images/NGEN_MIDI_Test.gif){ width="300"; align="left"}
+  <figcaption>Test MIDI feature</figcaption>
+</figure>
+
 ### Connecting via CV
 
 NGEN also features 2 pairs of CV + Gate outputs that can be used to sequence other hardware instruments (such as modular synthesizers).
@@ -37,6 +44,13 @@ To route the output of a [track](track.md) to one of the CV outputs:
 4 - Open the [Track](track.md) sub-menu, navigate to the ```Aux Out``` parameter and set it to ```CV 1``` or ```CV 2```.
 
 
+**Test CV 1** and **Test CV 2** are also available (Main Menu / Settings / CV) and can be used to trigger a 2-second long C2 note to the desired CV output pair.
+
+
+<figure markdown="span">
+  ![Test CV 1 and 2 feature](images/NGEN_CV_Test.gif){ width="300"; align="left"}
+  <figcaption>Test CV 1 and 2</figcaption>
+</figure>
 
 
 <!-- To enable the CV output ports, set the AUX OUT of any of [Tracks](track.md) to CV1 or CV2. -->
@@ -85,6 +99,8 @@ graph LR
 
 ---
 
+<div class="forced-pb"></div>
+
 ### NGEN + Hardware MIDI Synthesizer
 
 ``` mermaid
@@ -92,7 +108,6 @@ graph LR
   A["POWER SUPPLY / COMPUTER"] ---| USB | B[NGEN] -->|MIDI| C[SYNTH];
 ```
 
-<div class="forced-pb"></div>
 
 ---
 

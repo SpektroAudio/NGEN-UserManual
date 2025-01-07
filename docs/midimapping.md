@@ -329,12 +329,15 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 
 #### SHAPER
 
-| **Parameter**    | **MIDI CC Number** | **Behaviour** |
-|------------------|:------------------:|:-------------:|
-| Pitch Minimum    |        103         |    Scaled     |
-| Pitch Maximum    |        104         |    Scaled     |
-| Velocity Minimum |        105         |    Scaled     |
-| Velocity Maximum |        106         |    Scaled     |
+| **Parameter**     | **MIDI CC Number** | **Behaviour** |
+|-------------------|:------------------:|:-------------:|
+| Pitch Minimum     |        103         |    Scaled     |
+| Pitch Maximum     |        104         |    Scaled     |
+| Velocity Minimum  |        105         |    Scaled     |
+| Velocity Maximum  |        106         |    Scaled     |
+| Length Multiplier |        107         |    Scaled     |
+| Channel Mapping   |        108         |    Scaled     |
+| Map Pitch         |        109         |    Scaled     |
 
 #### SPRAY
 
@@ -352,5 +355,5 @@ Because NGEN uses MIDI Channel 16 for global settings, tracks set to IN CH 16 wi
 | **Parameter** | **MIDI CC Number** | **Behaviour** |
 |---------------|:------------------:|:-------------:|
 | Max Delay     |        103         |    Scaled     |
-<!-- | Velocity      |        104         |    Scaled     |
-| Random        |        105         |    Scaled     | -->
+| Velocity      |        104         |    Scaled     |
+| Random        |        105         |    Scaled     |

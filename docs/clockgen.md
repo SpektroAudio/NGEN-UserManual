@@ -43,6 +43,8 @@ The MIDI Clock is the default clock generator used by NGEN. While active, the MI
 
 ### Free Clock
 
+![Free Clock Animation](images/NGEN_Freeclock_Animation.gif){align=right}
+
 The Free Clock is the NGEN's internal clock and it can be used to generate an internal clock when no external MIDI Clock is available.
 It also features an 8-stage swing sequencer that can be used to create interesting swing patterns.
 

@@ -109,6 +109,18 @@ This idle mode displays a list of the parameters currently mapped to the 4 PARAM
 
 ---
 
+## UI Visual Effects
+
+![](images/NGEN_UIVfx_Glitch.gif){align=right}
+
+By default, NGEN uses certain display visual effects such as glitch transitions (after boot sequence and before entering Idle Mode) and display inversions (when generating a new sequence using the ++"GENERATE"++ button).
+
+These effects can be disabled via the ```UI Visual FXs``` setting available in [Settings / Display](settings.md#display).
+
+</br>
+
+---
+
 ## Screensaver
 
 ![](images/NGEN_Screensaver.gif){align=right}
@@ -127,17 +139,61 @@ To exit the screensaver mode, move any of the knobs or click on any of the butto
 
 
 ## Shortcuts
+ 
+### Track Shortcuts
 
-| **Shortcut**                       | **Description**                               |
-|: ---------------------------------- |: --------------------------------------------- |
-| ++"FUNCTION"++ + ++"TRACK/CLK"++      | Open Track Settings                           |
-| ++"FUNCTION"++ + ++"GENERATE"++      | Secondary Action (for Generators and MIDI FX) |
-| ++"TRACK/CLK"++ + ++"MENU ENCODER"++       | Select a Track                            |
-| ++"TRACK/CLK"++ + ++"MENU ENCODER"++       | Select a Clock Generator (while in Clock sub-menu)                           |
-| ++"PATTERN"++ + ++"MENU ENCODER"++       | Load a pattern                            |
-| ++"FUNCTION"++ + ++"MENU ENCODER (Click)"++         | Save a pattern (while in the Pattern selector)                            |
-| ++"FUNCTION"++ + ++"RETURN"++ + ++"MENU ENCODER (Click)"++  | Delete a pattern (while in the Pattern selector)  |
-| ++"PATTERN"++ + ++"GENERATE"++       | Load the next pattern                            |
-| ++"PATTERN"++ + ++"FUNCTION"++ + ++"GENERATE"++       | Load the previous pattern                            |
-| ++"TRACK / CLK"++ + ++"GENERATE"++       | Generate Pattern                            |
-| ++"TRACK / CLK"++ + ++"FUNCTION"++ + ++"GENERATE"++       | Variate Pattern                            |
+| **Action**                                            | **Shortcut**                                 |
+|:------------------------------------------------------|:---------------------------------------------|
+| Open Track Selector                                   | ++"TRACK/CLK"++                              |
+| Quick Track Selection                                 | ++"TRACK/CLK (hold)"++  + ++"MENU ENCODER"++ |
+| Open Track Settings                                   | ++"FUNCTION"++ + ++"TRACK/CLK"++             |
+| Open Track Edit (while in Track sub-menu)             | ++"FUNCTION"++ + ++"TRACK/CLK"++             |
+| Toggle Track Active (while in Track Selector)         | ++"FUNCTION"++ + ++"MENU ENCODER (click)"++  |
+| Reload Track settings from active pattern             | ++"TRACK/CLK"++ + ++"MENU ENCODER (click)"++ |
+| Trigger the Generate action for the active Generator  | ++"GENERATE"++                               |
+| Trigger the secondary action for the active Generator | ++"FUNCTION"++ + ++"GENERATE"++              |
+
+
+### Pattern Shortcuts
+
+| **Action**                                                             | **Shortcut**                                       |
+|:-----------------------------------------------------------------------|:---------------------------------------------------|
+| Open Pattern Selector                                                  | ++"PATTERN"++                                      |
+| Quick Pattern Selection                                                | ++"PATTERN (hold)"++  + ++"MENU ENCODER"++         |
+| Save current pattern to selected pattern slot                          | ++"FUNCTION"++ + ++"MENU ENCODER (click)"++        |
+| Open Pattern Edit (while in Pattern sub-menu)                          | ++"FUNCTION"++ + ++"PATTERN"++                     |
+| Queue / Load next pattern                                              | ++"PATTERN"++ + ++"GENERATE"++                     |
+| Queue / Load previous pattern                                          | ++"PATTERN"++ + ++"FUNCTION"++ + ++"GENERATE"++    |
+| Reload active pattern                                                  | ++"PATTERN"++ + ++"RETURN"++                       |
+| Generate Pattern ([Pattern Generation](pattern.md#pattern-generation)) | ++"TRACK/CLK"++  + ++"GENERATE"++                  |
+| Variate Pattern                                                        | ++"TRACK/CLK"++  + ++"FUNCTION"++ + ++"GENERATE"++ |
+
+### Clock Shortcuts
+
+| **Action**                                      | **Shortcut**                                 |
+|:------------------------------------------------|:---------------------------------------------|
+| Quick Clock Selection (while in Clock sub-menu) | ++"TRACK/CLK (hold)"++  + ++"MENU ENCODER"++ |
+
+### Perform Shortcuts
+
+| **Action**                                        | **Shortcut**    |
+|:--------------------------------------------------|:----------------|
+| Toggle Track 1 Active (while in Perform sub-menu) | ++"TRACK/CLK"++ |
+| Toggle Track 2 Active (while in Perform sub-menu) | ++"PATTERN"++   |
+| Toggle Track 3 Active (while in Perform sub-menu) | ++"FUNCTION"++  |
+| Toggle Track 4 Active (while in Perform sub-menu) | ++"GENERATE"++  |
+
+### Song Mode Shortcuts
+
+| **Action**         | **Shortcut**                                |
+|:-------------------|:--------------------------------------------|
+| Open Track Mutes   | ++"TRACK/CLK"++                             |
+| Select next column | ++"MENU ENCODER (click)"++                  |
+| Select next row    | ++"FUNCTION"++ + ++"MENU ENCODER (click)"++ |
+| Move vertically (Column 1)<br>or Adjust Value    | ++"MENU ENCODER"++                          |
+| Move horizontally  | ++"FUNCTION"++ + ++"MENU ENCODER"++         |
+| Copy Event         | ++"FUNCTION"++ + ++"TRACK/CLK"++            |
+| Paste Event        | ++"FUNCTION"++ + ++"PATTERN"++              |
+| Clear Event        | ++"FUNCTION"++ + ++"RETURN"++               |
+| Insert Blank Event       | ++"FUNCTION"++ + ++"GENERATE"++             |
+

@@ -15,32 +15,37 @@ To save your current settings, select the ```Save``` option.
 
 ### General
 
-| **Setting**                           | **Description**                                     |
-|---------------------------------------|-----------------------------------------------------|
-| **Advanced**                          | Enable or disables advanced parameters and settings |
-| **Variation Amount (```Var Amount```)** | Sets the global variation amount for all generators |
-| **Randomize State (```Rndmize State```)** | When enabled, NGEN will randomize the states of all tracks when generating new patterns ([Track States](track.md#track-states)). |
+| **Setting**                               | **Description**                                                                                                                               |
+|-------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------|
+| **Advanced**                              | Enable or disables advanced parameters and settings                                                                                           |
+| **Variation Amount (```Var Amount```)**   | Sets the global variation amount for all generators                                                                                           |
+| **Randomize State (```Rndmize State```)** | When enabled, NGEN will randomize the states of all tracks when generating new patterns ([Track States](track.md#track-states)).              |
+| **Storage**                               | Switches between internal memory (```INT MEM```) and external storage (```SD CARD```) when a microSD is inserted and detected (HW v1.1+ only) |
+
 
 ### Display
 
-| **Setting**                              | **Description**                                                                                                                                                                                                                |
-|------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Menu List**                            | Enables list mode for menus (except for the Generator sub-menu)                                                                                                                                                                |
-| **Menu Wrap**                            | When enabled, scrolling past the last item in menu                                                                                                                                                                             |
-| **Show Icons**                           | Enables or disables graphical icons on the Main Menu                                                                                                                                                                           |
-| **Show Value**                           | When enabled, parameters mapped to the knobs will be displayed on the screen while being modified                                                                                                                              |
-| **Idle Mode**                            | Determines what is displayed when the display goes idle (5 seconds):<br> **OFF**<br>**ANIMATION**: display's the active Generator's animation<br> **PARAM**: displays a list of the parameters currently mapped to the 4 knobs |
-| **Idle Time**                            | Sets the amount of time before the display goes idle                                                                                                                                                                           |
+| **Setting**                               | **Description**                                                                                                                                                                                                                |
+|-------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Menu List**                             | Enables list mode for menus (except for the Generator sub-menu)                                                                                                                                                                |
+| **Menu Wrap**                             | When enabled, scrolling past the last item in menu                                                                                                                                                                             |
+| **Show Value**                            | When enabled, parameters mapped to the knobs will be displayed on the screen while being modified                                                                                                                              |
+| **Show Icons**                            | Enables or disables graphical icons on the Main Menu                                                                                                                                                                           |
+| **UI Visual FX**                          | Enables or disables visual effects for the menu system (glitch transitions and display flashes)                                                                                                                                |
+| **Idle Mode**                             | Determines what is displayed when the display goes idle (5 seconds):<br> **OFF**<br>**ANIMATION**: display's the active Generator's animation<br> **PARAM**: displays a list of the parameters currently mapped to the 4 knobs |
+| **Idle Time**                             | Sets the amount of time before the display goes idle                                                                                                                                                                           |
 | **Screensaver Period (```Screensavr```)** | Sets the amount of time before the screensaver is activated                                                                                                                                                                    |
-| **Brightness**                           | Sets the display's brightness level                                                                                                                                                                                            |
+| **Brightness**                            | Sets the display's brightness level                                                                                                                                                                                            |
 
 
 ### MIDI
 
-| **Setting**                           | **Description**                                     |
-|---------------------------------------|-----------------------------------------------------|
-| MIDI CC Rx                            | Enables or disables MIDI CC input                   | 
-| MIDI Thru                             | Enables or disables Soft MIDI Thru                  | 
+| **Setting** | **Description**                                                                     |
+|-------------|-------------------------------------------------------------------------------------|
+| MIDI CC Rx  | Enables or disables MIDI CC input                                                   |
+| MIDI Thru   | Enables or disables Soft MIDI Thru                                                  |
+| Test MIDI   | Tests the MIDI output by sending a short sequence to each MIDI channel sequentially |
+
 
 !!! attention
     When using the MIDI Thru feature, make sure to check your MIDI routing to avoid MIDI feedback loops.
@@ -59,11 +64,13 @@ This sub-menu contains parameters available for the CV outputs.
 
     Keep in mind that these are still experimental settings.
 
-| **Parameter**                   | **Description**                                      |
-|---------------------------------|------------------------------------------------------|
-| **Mode**                             | Set the mode for the CV outputs (CV 1-2 / 4xTrig) |
-| **Octave**                        | Set the base octave for the CV output (CV 1-2 mode) |
-| **Note Trg 1-4**                         | Select a MIDI note to be converted to a gate signal (4xTrig mode) |
+| **Parameter**    | **Description**                                                   |
+|------------------|-------------------------------------------------------------------|
+| **Mode**         | Set the mode for the CV outputs (CV 1-2 / 4xTrig)                 |
+| **Octave**       | Set the base octave for the CV output (CV 1-2 mode)               |
+| **Note Trg 1-4** | Select a MIDI note to be converted to a gate signal (4xTrig mode) |
+| **Test Out 1**   | Sends a 1 second C3 note to the CV + Gate 1                       |
+| **Test Out 2**   | Sends a 1 second C3 note to the CV + Gate 2                       |
 
 
 ### AUTO VARIATE (```AUTO VARI8```)

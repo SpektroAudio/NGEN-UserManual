@@ -77,15 +77,22 @@ The Note Length parameter in Samba allows you to switch between different length
 
 While NGEN only allows one MIDI FX per track, it's possible to chain multiple MIDI FXs by using the Aux Output of a track and the [Thru](generators.md#thru) Generator.
 
+The Aux Output will send a copy of that track's output to the input of another track. By using the Thru generator, we can pass through the incoming notes from our first track (post MIDI FX) and add a second MIDI FX on top.
+The parameters available in the Thru generator (such as Shift, Probability and Delay) can also be used to achieve different effects.
+
+Both MIDI effects will be applied in real time and the output of both tracks can be used to monitor and record the output before and after the second effect separately.
+
 To chain MIDI FXs, follow these steps:
 
 - Select the track you'd like to chain MIDI FXs to.
 - Set the MIDI FX of that track to the first MIDI FX you'd like to use.
 - Set the Aux Output to another available track.
-- Select the track that you set the Aux Output to and set its Generator to Thru.
-- Set the MIDI FX of the Thru track to the next MIDI FX you'd like to use.
+- Select the track that you set the Aux Output to and select the Thru Generator. 
+- Add a MIDI FX to the track containing the Thru generator to further process the incoming notes.
+
 
 Repeat these steps for each MIDI FX you'd like to chain.
 
 !!! warning "Attention"
     Keep in mind that each track will continue to output MIDI to the selected Output Channel so, to avoid sending duplicate MIDI messages, set the Output Channel of each track to a different value.
+

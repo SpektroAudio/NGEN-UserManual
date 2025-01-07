@@ -142,16 +142,16 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 
 **List of Parameters:**
 
-| **Parameter**                      |                              **Description**                               | **Hardware Mapping** |
-|------------------------------------|:--------------------------------------------------------------------------:|---------------------:|
-| Mode (```MODE```)                  |             Sets the mode of the Shaper (Clip / Scale / Drop)              |                    – |
-| Pitch Minimum (```PITCH MIN```)    |                        Lowest possible note (0-127)                        |        ++"PARAM 1"++ |
-| Pitch Maximum (```PITCH MAX```)    |                       Highest possible note (0-127)                        |        ++"PARAM 2"++ |
-| Velocity Minimum (```VEL MIN```)   |                      Lowest possible velocity (0-127)                      |        ++"PARAM 3"++ |
-| Velocity Maximum (```VEL MAX```)   |                     Highest possible velocity (0-127)                      |        ++"PARAM 4"++ |
-| Length Multiplier (```LEN MULT```) |                Multiplies the length of incoming MIDI notes                |                    – |
-| Channel Mapping (```CH Map```)     | Maps incoming MIDI notes to different MIDI channels based on their pitch * |                    – |
-| Map Pitch (```Map Pitch```)        |       Sets the pitch of converted MIDI notes (while in ```Ch Map```)       |                    – |
+| **Parameter**                      |                              **Description**                               |           **Hardware Mapping** |
+|------------------------------------|:--------------------------------------------------------------------------:|-------------------------------:|
+| Mode (```MODE```)                  |             Sets the mode of the Shaper (Clip / Scale / Drop)              | ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Pitch Minimum (```PITCH MIN```)    |                        Lowest possible note (0-127)                        |                  ++"PARAM 1"++ |
+| Pitch Maximum (```PITCH MAX```)    |                       Highest possible note (0-127)                        |                  ++"PARAM 2"++ |
+| Velocity Minimum (```VEL MIN```)   |                      Lowest possible velocity (0-127)                      |                  ++"PARAM 3"++ |
+| Velocity Maximum (```VEL MAX```)   |                     Highest possible velocity (0-127)                      |                  ++"PARAM 4"++ |
+| Length Multiplier (```LEN MULT```) |                Multiplies the length of incoming MIDI notes                | ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Channel Mapping (```CH Map```)     | Maps incoming MIDI notes to different MIDI channels based on their pitch * |                              – |
+| Map Pitch (```Map Pitch```)        |       Sets the pitch of converted MIDI notes (while in ```Ch Map```)       | ++"FUNCTION"++ + ++"PARAM 3"++ |
 
 
 !!! note "* Pitch Based Channel Mapping"
@@ -182,5 +182,5 @@ The Strum MIDI FX can be used to create a strumming effect by adding a short ran
 | **Parameter**                        |                       **Description**                        | **Hardware Mapping** |
 |--------------------------------------|:------------------------------------------------------------:|---------------------:|
 | Max Delay                            |             Maximum delay time (in milliseconds)             |        ++"PARAM 1"++ |
-| Velocity Multiplier (```VEL MULT```) |     Decreases the delay time according to MIDI velocity      |                    – |
-| Random                               | Switches between sequence or random order for the delay time |                    – |
+| Velocity Multiplier (```VEL MULT```) |     Decreases the delay time according to MIDI velocity      |        ++"PARAM 2"++ |
+| Random                               | Switches between sequence or random order for the delay time |        ++"PARAM 3"++ |

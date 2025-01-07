@@ -22,11 +22,11 @@ This section contains step-by-step instructions on how to troubleshoot common is
 
 #### Step 2: Check NGEN's MIDI input
 
-- **MIDI Clock**: Check if your DAW (or other MIDI Clock source) is set to output MIDI Clock to NGEN (via USB or 3.5mm TRS) 
+- When syncing via **MIDI Clock**: Check if your DAW (or other MIDI Clock source) is set to output MIDI Clock to NGEN (via USB or 3.5mm TRS) 
 
-- **Free Clock**: Check if the Free Clock is Active
+- When using **Free Clock** (internal clock): Check if the Free Clock is Active
 
-- From the Main Menu, go to Tools and open the **[MIDI Monitor](tools.md#midi-monitor-monitor) (```Monitor```)**. Check if NGEN is receiving Start, Stop and Tick messages.
+- From the Main Menu, go to Tools and open the **[MIDI Monitor](tools.md#midi-monitor-monitor) (```Monitor```)**, scroll to the Status view and check if NGEN is receiving clock and sending notes.
 
 #### Step 3: Check NGEN's tracks and generators
 
@@ -42,7 +42,7 @@ This section contains step-by-step instructions on how to troubleshoot common is
 
 - Use the **```Test MIDI```** feature available in [**Settings / MIDI**](settings.md#midi)
 
-- Open the **MIDI Monitor** and press the ++"GENERATE"++ button to switch to the Output view. Check if NGEN is generating MIDI notes and what channels it's sending MIDI notes to (fourth / last column).
+- Open the **MIDI Monitor** and press the ++"MENU ENCODER"++ to switch to the Status view to check if NGEN is receiving Clock and generating notes.
 
 - Check if your destination (synthesizer, drum machine, or DAW instrument) is set to receive MIDI on the correct **MIDI channel**.
 

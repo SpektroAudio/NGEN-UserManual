@@ -51,6 +51,8 @@ A global Octave control is also available under the Scale sub-menu.
 
 ## Scale Editor
 
+![](images/NGEN_Scale_Editor.gif){align=right}
+
 The Scale Editor allows you edit the currently selected scale by enabling or disabling notes.
 
 Use the ++"MENU ENCODE"++ to select a note and press the ++"MENU ENCODE"++ to toggle it on or off.

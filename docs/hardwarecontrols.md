@@ -5,7 +5,15 @@
 
 ## Hardware Controls on NGEN
 
-The NGEN includes a main clickable encoder (++"MENU ENCODER"++), a return button (++"RETURN"++), 4 parameter knobs (++"PARAM 1"++ through ++"PARAM 4"++), and 4 buttons (++"TRACK/CLK"++, ++"PATTERN"++, ++"FUNCTION"++, and ++"GENERATE"++) that can be used to access and control different features.
+The NGEN includes:
+
+- 1 Main clickable encoder (++"MENU ENCODER"++)
+
+- 1 Return button (++"RETURN"++)
+
+- 4 Parameter knobs (++"PARAM 1"++ through ++"PARAM 4"++)
+
+- 4 Mechanical Buttons (++"TRACK/CLK"++, ++"PATTERN"++, ++"FUNCTION"++, and ++"GENERATE"++)
 
 ![](images/NGEN_Hardware_Controls.jpeg)
 

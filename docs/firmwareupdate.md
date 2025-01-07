@@ -8,9 +8,49 @@ To update the firmware on your NGEN, you'll need to download the latest firmware
 
 If you have any questions or need help updating your NGEN, don't hesitate to get in touch with us via the [Contact page on our website](https://spektroaudio.com/contact).
 
+### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
+
+1 - [Download the latest version of the NGEN firmware for HW v1.1](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v13_hw11.zip).
+
+2 - Connect NGEN to your computer via USB.
+
+3- Navigate to the [Settings](settings.md) page and select the "FW Update" option.
+
+4 - NGEN should now appear as a USB flash drive on your computer.
+
+5 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.
+
+6 - NGEN should automatically apply the update and restart after it's finished.
+
+7 - After rebooting, apply a Factory Reset (files will not be deleted).
+
+??? "Firmware Archive for NGEN HW v1.1+"       
+      - [1.2 Update for NGEN HW v1.1](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip)
+      - [1.1.2 Update for NGEN HW v1.1](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v112_hw11.zip)
+
+??? "Alternative Flashing Method"
+        NGEN HW v1.1 also features a backup method for updating the firmware that can be used in case of issues with the primary method or failed updates.
+
+        This method does require some minor disassembling so we only recommend using it as a backup.
+
+        1 - Remove the 4 screws on the side of the unit and the microSD card if present.
+
+        2 - Detach the bottom panel of the case. It should come off without removing any knobs or screws from the top panel.
+
+        3 - Locate the BOOT button on the back side of the PCB (visible). It should be located on the center of the PCB.
+
+        4 - Connect the unit via USB while holding down the BOOT button.
+
+        5 - NGEN should mount as a USB drive on your computer. Once mounted, release the BOOT button.
+
+        6 - Follow steps 5-7 of the primary method to update the firmware.
+
+        7 - Disconnect the USB and re-assemble the case.
+
+
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v13_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -30,41 +70,9 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
         If TyUploader is not recognizing NGEN, try a different USB cable. Some USB cables are power-only and will not transmit data between your computer and NGEN.  
         If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 
-### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
-
-1 - [Download the latest version of the NGEN firmware for HW v1.1](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip).
-
-2 - Connect NGEN to your computer via USB.
-
-3- Navigate to the [Settings](settings.md) page and select the "FW Update" option.
-
-4 - NGEN should now appear as a USB flash drive on your computer.
-
-5 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.
-
-6 - NGEN should automatically apply the update and restart after it's finished.
-
-7 - After rebooting, apply a Factory Reset (files will not be deleted).
-
-#### Alternative method
-
-NGEN HW v1.1 also features a backup method for updating the firmware that can be used in case of issues with the primary method or failed updates.
-
-This method does require some minor disassembling so we only recommend using it as a backup.
-
-1 - Remove the 4 screws on the side of the unit and the microSD card if present.
-
-2 - Detach the bottom panel of the case. It should come off without removing any knobs or screws from the top panel.
-
-3 - Locate the BOOT button on the back side of the PCB (visible). It should be located on the center of the PCB.
-
-4 - Connect the unit via USB while holding down the BOOT button.
-
-5 - NGEN should mount as a USB drive on your computer. Once mounted, release the BOOT button.
-
-6 - Follow steps 5-7 of the primary method to update the firmware.
-
-7 - Disconnect the USB and re-assemble the case.
+??? "Firmware Archive for NGEN HW v1.0"       
+      - [1.2 Update for NGEN HW v1.0](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw10.zip)
+      - [1.1.2 Update for NGEN HW v1.0](http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v112_hw10.zip)
 
 
 ---
@@ -72,6 +80,64 @@ This method does require some minor disassembling so we only recommend using it 
 ## Change-Log
 
 ---
+
+### Version 1.3
+
+#### Added 
+- **New Song Mode (under [Tools](tools.md))**
+- [FILE MANAGEMENT](filemanagement.md): Added support for file transfer via serial.
+- [FILE MANAGEMENT](filemanagement.md): New file operations (load / copy to microSD or Internal Memory / delete) while in file selector (Function + Menu Encoder).
+- [NSL](generators.md#nsl-engine) Added new Animation.
+- [MENU SYSTEM](menunavigation.md#menu-navigation): Added support for menu transitions / visual effects.
+- [MENU SYSTEM](menunavigation.md#menu-navigation): New glitch transition UI VFX when entering Idle Mode.
+- [STRUM](midifx.md#strum) Added MIDI mapping for Velocity and Random.
+- [POP](generators.md#pop): Added new Expression parameter.
+- [POP](generators.md#pop): Added new "DUAL ESEQ" mode.
+- [SCALE](scale.md): Added support for chord expressions to the Chord builder framework.
+- [SETTINGS](settings.md#midi): Added "Test MIDI Out".
+- [SETTINGS](settings.md#cv-out): Added "Test CV Out".
+- [SETTINGS](settings.md#display): New setting (```UI Visual FX```) for enabling / disabling UI Visual Effects.
+- [SETTINGS](settings.md#general): New setting (```Storage```) for switching between internal and microSD storage (HW v1.1 or newer).
+- [SHAPER](midifx.md#shaper): Added missing MIDI Mapping for parameters.
+- [SHORTCUT](menunavigation.md#shortcuts): New Active (track mute) shortcut from Track Selector (Function + Menu Encoder).
+- [TRACK](track.md): New Clear option in the Track Edit sub-menu.
+- [TRACK](track.md): New Clock Source selector in the Track sub-menu.
+
+#### Improved 
+- [ACDGEN](generators.md#acdgen): Reduced memory usage (saving and loading ~30% faster).
+- [FREE CLOCK](clockgen.md#free-clock): Improved animation.
+- [FREE CLOCK](clockgen.md#free-clock): Improved BPM accuracy.
+- [MIDI CLOCK](clockgen.md#midi-clock): Improved sync accuracy and stability.
+- [MIDI FX](midifx.md): Improved chord handling
+- [PATTERNS](pattern.md): Improved pattern switching
+- [POP](generators.md#pop): Optimized data model and memory usage
+- [POP](generators.md#pop): Increase Octave parameter range
+- [PROJECTS](projects.md): Improved support for backwards compatibility 
+- [SAMBA](generators.md#samba): Note Len mapped to FN + Param 2
+- [SCALE](scale.md): Octave mapped to Param 3
+- [SHAPER](midifx.md#shaper): Mode mapped to FN + Param 1, Length Multiplier mapped to FN + Param 2, Map Pitch mapped to FN + Param 3
+- [STRUM](midifx.md#strum) Max Delay re-mapped to Param 1, Velocity Multiplier mapped to Param 2, Random mapped to Param 3
+- [THRU](generators.md#thru): Add MIDI mappings for Delay and Quantize
+- [THRU](generators.md#thru): Delay parameter mapped to FN + Param 4
+- Improved handling of larger files
+- Updated CV out implementation
+- Animation now updates correctly while all clocks are stopped
+
+#### Fixed 
+- [ACDGEN](generators.md#acdgen): Fixed glitched line on the top-left corner of the display during animation
+- [ACDGEN](generators.md#acdgen): First note is now properly draw during animation
+- [ACDGEN](generators.md#acdgen): Fixed a bug that caused the first note of the sequence to not be rendered correctly
+- [MIDI MAPPINGS](midimapping.md): Fixed MIDI Mappings for Track Selection and Perform Macros
+- [PATTERNS](pattern.md): The pattern edit modal (++"FUNCTION"++ + ++"PATTERN"++) can now only be opened from the pattern selector.
+- [PATTERNS](pattern.md): Pattern Edit modal now properly returns to the Pattern sub-menu
+- [PROJECTS](projects.md): Creating a new project now disables all tracks except for Track 1
+- [SCALE](scale.md): Scale Editor now works correctly when Key is other than C.
+- [SHAPER](midifx.md#shaper): Pitch min/max values not visible when using parameter knob
+- [TRACK](track.md): Fixed Track Reloading in empty patterns
+- [TRACK](track.md): Track Edit modal now properly returns to the to Track sub-menu
+- Exiting Track selection (via the Return button) now properly returns to the previously active track
+- NGEN now properly re-activates the Idle Mode after a Parameter knob pick-up.
+
 
 ### Version 1.2
 

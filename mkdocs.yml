@@ -70,6 +70,8 @@ nav:
     - Tools : 'tools.md'
     - Tracks: 'track.md'
   - Tips & Techniques: 'techniques.md'
+  - Extra Guides:
+    - Using NGEN with Elektron devices: 'guides/elektron.md'
   - System:
     - Settings: 'settings.md'
     - Firmware Update: 'firmwareupdate.md'
@@ -98,7 +100,7 @@ copyright: Copyright &copy; 2013 - 2022 Spektro Audio
 
 plugins:
     - search
-    - with-pdf
+    # - with-pdf
     - git-revision-date
     - print-site:
         toc_title: 'Table of Contents'
