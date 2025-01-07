@@ -747,7 +747,7 @@
             
   
   <span class="md-ellipsis">
-    System
+    Extra Guides
   </span>
   
 
@@ -756,6 +756,69 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Extra Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/elektron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using NGEN with Elektron devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             System
           </label>
@@ -1099,22 +1162,52 @@
   </li>
       
         <li class="md-nav__item">
-    <a href="#section-system" class="md-nav__link">
+    <a href="#section-extra-guides" class="md-nav__link">
       <span class="md-ellipsis">
-        III. System
+        III. Extra Guides
       </span>
     </a>
   
     <!-- Table of contents list -->
     
-      <nav class="md-nav" aria-label="III. System">
+      <nav class="md-nav" aria-label="III. Extra Guides">
+        <ul class="md-nav__list">
+          
+          
+            <li class="md-nav__item">
+    <a href="#guides-elektron" class="md-nav__link">
+      <span class="md-ellipsis">
+        19. Using NGEN with Elektron devices
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+        </ul>
+      </nav>
+    
+  </li>
+      
+        <li class="md-nav__item">
+    <a href="#section-system" class="md-nav__link">
+      <span class="md-ellipsis">
+        IV. System
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+      <nav class="md-nav" aria-label="IV. System">
         <ul class="md-nav__list">
           
           
             <li class="md-nav__item">
     <a href="#settings" class="md-nav__link">
       <span class="md-ellipsis">
-        19. Settings
+        20. Settings
       </span>
     </a>
   
@@ -1127,7 +1220,7 @@
             <li class="md-nav__item">
     <a href="#firmwareupdate" class="md-nav__link">
       <span class="md-ellipsis">
-        20. Firmware Update
+        21. Firmware Update
       </span>
     </a>
   
@@ -1182,10 +1275,10 @@
 <p>NGEN also includes a variety of tools to let you explore this world of algorithmic sequencing such as assignable CV outputs, a built-in MIDI monitor, different clock generators, and much more.</p>
 <p><strong>Product Page:</strong> <a href="http://spektroaudio.com/ngen">http://spektroaudio.com/ngen</a></p>
 <p><strong>Video Tutorials:</strong> <a href="http://spektroaudio.com/ngen">NGEN Playlist on Youtube</a></p>
-<p><a class="md-button" href="http://files.spektroaudio.com/ngen/usermanual/NGENUserManual1.2.pdf">Download PDF</a></p>
+<p><a class="md-button" href="http://files.spektroaudio.com/ngen/usermanual/NGENUserManual1.3.pdf">Download PDF</a></p>
 <p><a class="md-button" href="https://ngen.spektroaudio.com/print_page/">Print Current Version</a></p>
 <h2 id="index-firmware">Firmware</h2>
-<p>Current version: 1.2 (<a href="#firmwareupdate-change-log">Change-Log</a>)</p></section>
+<p>Current version: 1.3 (<a href="#firmwareupdate-change-log">Change-Log</a>)</p></section>
                         <h1 class='nav-section-title' id='section-how-to-use'>
                             How to Use <a class='headerlink' href='#section-how-to-use' title='Permanent link'>↵</a>
                         </h1>
@@ -1325,6 +1418,11 @@ Let's add a new track and configure it to output MIDI notes to Channel 2.</p>
 <h3 id="setup-connecting-via-midi">Connecting via MIDI</h3>
 <p>NGEN can also be connected to other gear via the MIDI IN and MIDI OUT 3.5mm TRS jacks (Type-A).</p>
 <p><em>Please note that NGEN still needs to be powered via USB (check the Powering NGEN section below).</em></p>
+<p>The <strong><a href="#settings-midi">Test MIDI</a></strong> feature (available under Settings / MIDI) sends a short MIDI sequence to each of the 16 MIDI channels available sequentially and it can be used to check your MIDI routings when setting up NGEN with other gear.</p>
+<figure>
+  <img _=";" align="left" alt="Test MIDI feature" src="../images/NGEN_MIDI_Test.gif" width="300" />
+  <figcaption>Test MIDI feature</figcaption>
+</figure>
 <h3 id="setup-connecting-via-cv">Connecting via CV</h3>
 <p>NGEN also features 2 pairs of CV + Gate outputs that can be used to sequence other hardware instruments (such as modular synthesizers).</p>
 <p>More information about the available CV modes is available in the <a href="#settings-cv-out">Settings section</a>.</p>
@@ -1334,6 +1432,11 @@ Let's add a new track and configure it to output MIDI notes to Channel 2.</p>
 <p>2 - Select one of the available CV modes (<a href="#settings-cv-out">Settings / CV Out</a>).</p>
 <p>3 - <a href="#track-track-selection">Select the track</a> you'd like to route to one of the CV output.</p>
 <p>4 - Open the <a href="#track">Track</a> sub-menu, navigate to the <code>Aux Out</code> parameter and set it to <code>CV 1</code> or <code>CV 2</code>.</p>
+<p><strong>Test CV 1</strong> and <strong>Test CV 2</strong> are also available (Main Menu / Settings / CV) and can be used to trigger a 2-second long C2 note to the desired CV output pair.</p>
+<figure>
+  <img _=";" align="left" alt="Test CV 1 and 2 feature" src="../images/NGEN_CV_Test.gif" width="300" />
+  <figcaption>Test CV 1 and 2</figcaption>
+</figure>
 <!-- To enable the CV output ports, set the AUX OUT of any of [Tracks](track.md) to CV1 or CV2. -->
 
 <!-- The CV and GATE outputs on NGEN have a limited range of 3.3V and a resolution of 12bits so we recommend using an external MIDI to CV converter for a wider range and better resolution. -->
@@ -1366,11 +1469,11 @@ NGEN's power consumption is minimal so even a 0.5A charger should work.</p>
 <pre class="mermaid"><code>graph LR
   A[NGEN] ----- | USB | B[COMPUTER];</code></pre>
 <hr />
+<div class="forced-pb"></div>
+
 <h3 id="setup-ngen-hardware-midi-synthesizer">NGEN + Hardware MIDI Synthesizer</h3>
 <pre class="mermaid"><code>graph LR
   A["POWER SUPPLY / COMPUTER"] ---| USB | B[NGEN] --&gt;|MIDI| C[SYNTH];</code></pre>
-<div class="forced-pb"></div>
-
 <hr />
 <h3 id="setup-ngen-modular-synthesizer">NGEN + Modular Synthesizer</h3>
 <pre class="mermaid"><code>graph LR
@@ -1394,7 +1497,21 @@ flowchart LR
   E --&gt;|MIDI| G[SYNTH 2];</code></pre></section><section class="print-page" id="hardwarecontrols"><h1 id="hardwarecontrols-hardware-controls">Hardware Controls</h1>
 <hr />
 <h2 id="hardwarecontrols-hardware-controls-on-ngen">Hardware Controls on NGEN</h2>
-<p>The NGEN includes a main clickable encoder (<span class="keys"><kbd>MENU ENCODER</kbd></span>), a return button (<span class="keys"><kbd>RETURN</kbd></span>), 4 parameter knobs (<span class="keys"><kbd>PARAM 1</kbd></span> through <span class="keys"><kbd>PARAM 4</kbd></span>), and 4 buttons (<span class="keys"><kbd>TRACK/CLK</kbd></span>, <span class="keys"><kbd>PATTERN</kbd></span>, <span class="keys"><kbd>FUNCTION</kbd></span>, and <span class="keys"><kbd>GENERATE</kbd></span>) that can be used to access and control different features.</p>
+<p>The NGEN includes:</p>
+<ul>
+<li>
+<p>1 Main clickable encoder (<span class="keys"><kbd>MENU ENCODER</kbd></span>)</p>
+</li>
+<li>
+<p>1 Return button (<span class="keys"><kbd>RETURN</kbd></span>)</p>
+</li>
+<li>
+<p>4 Parameter knobs (<span class="keys"><kbd>PARAM 1</kbd></span> through <span class="keys"><kbd>PARAM 4</kbd></span>)</p>
+</li>
+<li>
+<p>4 Mechanical Buttons (<span class="keys"><kbd>TRACK/CLK</kbd></span>, <span class="keys"><kbd>PATTERN</kbd></span>, <span class="keys"><kbd>FUNCTION</kbd></span>, and <span class="keys"><kbd>GENERATE</kbd></span>)</p>
+</li>
+</ul>
 <p><img alt="" src="../images/NGEN_Hardware_Controls.jpeg" /></p>
 <hr />
 <h2 id="hardwarecontrols-encoder">Encoder</h2>
@@ -1513,6 +1630,12 @@ To return to the previous menu, press the <span class="keys"><kbd>Return</kbd></
 <p><img alt="" src="../images/NGEN_ACDGEN_ParamList.jpeg" /></p>
 <p>This idle mode displays a list of the parameters currently mapped to the 4 PARAM knobs and it's designed to help users get used to different mappings.</p>
 <hr />
+<h2 id="menunavigation-ui-visual-effects">UI Visual Effects</h2>
+<p><img align="right" alt="" src="../images/NGEN_UIVfx_Glitch.gif" /></p>
+<p>By default, NGEN uses certain display visual effects such as glitch transitions (after boot sequence and before entering Idle Mode) and display inversions (when generating a new sequence using the <span class="keys"><kbd>GENERATE</kbd></span> button).</p>
+<p>These effects can be disabled via the <code>UI Visual FXs</code> setting available in <a href="#settings-display">Settings / Display</a>.</p>
+<p></br></p>
+<hr />
 <h2 id="menunavigation-screensaver">Screensaver</h2>
 <p><img align="right" alt="" src="../images/NGEN_Screensaver.gif" />
 In order to prevent display burn-in, NGEN's display will go into screensaver mode after a certain period (determined by the <a href="#settings-display">Screensaver Period setting</a>) of no hadware interaction (unless it's displaying an animation). 
@@ -1523,57 +1646,182 @@ The screensaver does not affect other functions so NGEN will continue to work no
 <div class="forced-pb"></div>
 
 <h2 id="menunavigation-shortcuts">Shortcuts</h2>
+<h3 id="menunavigation-track-shortcuts">Track Shortcuts</h3>
 <table>
 <thead>
 <tr>
+<th style="text-align: left;"><strong>Action</strong></th>
 <th style="text-align: left;"><strong>Shortcut</strong></th>
-<th style="text-align: left;"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+<td style="text-align: left;">Open Track Selector</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Quick Track Selection</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK (hold)</kbd></span>  + <span class="keys"><kbd>MENU ENCODER</kbd></span></td>
+</tr>
+<tr>
 <td style="text-align: left;">Open Track Settings</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>TRACK/CLK</kbd></span></td>
 </tr>
 <tr>
+<td style="text-align: left;">Open Track Edit (while in Track sub-menu)</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Toggle Track Active (while in Track Selector)</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER (click)</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Reload Track settings from active pattern</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span> + <span class="keys"><kbd>MENU ENCODER (click)</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trigger the Generate action for the active Generator</td>
+<td style="text-align: left;"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Trigger the secondary action for the active Generator</td>
 <td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
-<td style="text-align: left;">Secondary Action (for Generators and MIDI FX)</td>
+</tr>
+</tbody>
+</table>
+<h3 id="menunavigation-pattern-shortcuts">Pattern Shortcuts</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Action</strong></th>
+<th style="text-align: left;"><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Open Pattern Selector</td>
+<td style="text-align: left;"><span class="keys"><kbd>PATTERN</kbd></span></td>
 </tr>
 <tr>
-<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span></td>
-<td style="text-align: left;">Select a Track</td>
+<td style="text-align: left;">Quick Pattern Selection</td>
+<td style="text-align: left;"><span class="keys"><kbd>PATTERN (hold)</kbd></span>  + <span class="keys"><kbd>MENU ENCODER</kbd></span></td>
 </tr>
 <tr>
-<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span></td>
-<td style="text-align: left;">Select a Clock Generator (while in Clock sub-menu)</td>
+<td style="text-align: left;">Save current pattern to selected pattern slot</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER (click)</kbd></span></td>
 </tr>
 <tr>
-<td style="text-align: left;"><span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span></td>
-<td style="text-align: left;">Load a pattern</td>
+<td style="text-align: left;">Open Pattern Edit (while in Pattern sub-menu)</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PATTERN</kbd></span></td>
 </tr>
 <tr>
-<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER (Click)</kbd></span></td>
-<td style="text-align: left;">Save a pattern (while in the Pattern selector)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>RETURN</kbd></span> + <span class="keys"><kbd>MENU ENCODER (Click)</kbd></span></td>
-<td style="text-align: left;">Delete a pattern (while in the Pattern selector)</td>
-</tr>
-<tr>
+<td style="text-align: left;">Queue / Load next pattern</td>
 <td style="text-align: left;"><span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
-<td style="text-align: left;">Load the next pattern</td>
 </tr>
 <tr>
+<td style="text-align: left;">Queue / Load previous pattern</td>
 <td style="text-align: left;"><span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
-<td style="text-align: left;">Load the previous pattern</td>
 </tr>
 <tr>
-<td style="text-align: left;"><span class="keys"><kbd>TRACK / CLK</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
-<td style="text-align: left;">Generate Pattern</td>
+<td style="text-align: left;">Reload active pattern</td>
+<td style="text-align: left;"><span class="keys"><kbd>PATTERN</kbd></span> + <span class="keys"><kbd>RETURN</kbd></span></td>
 </tr>
 <tr>
-<td style="text-align: left;"><span class="keys"><kbd>TRACK / CLK</kbd></span> + <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
+<td style="text-align: left;">Generate Pattern (<a href="#pattern-pattern-generation">Pattern Generation</a>)</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span>  + <span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+<tr>
 <td style="text-align: left;">Variate Pattern</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span>  + <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="menunavigation-clock-shortcuts">Clock Shortcuts</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Action</strong></th>
+<th style="text-align: left;"><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Quick Clock Selection (while in Clock sub-menu)</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK (hold)</kbd></span>  + <span class="keys"><kbd>MENU ENCODER</kbd></span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="menunavigation-perform-shortcuts">Perform Shortcuts</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Action</strong></th>
+<th style="text-align: left;"><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Toggle Track 1 Active (while in Perform sub-menu)</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Toggle Track 2 Active (while in Perform sub-menu)</td>
+<td style="text-align: left;"><span class="keys"><kbd>PATTERN</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Toggle Track 3 Active (while in Perform sub-menu)</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Toggle Track 4 Active (while in Perform sub-menu)</td>
+<td style="text-align: left;"><span class="keys"><kbd>GENERATE</kbd></span></td>
+</tr>
+</tbody>
+</table>
+<h3 id="menunavigation-song-mode-shortcuts">Song Mode Shortcuts</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"><strong>Action</strong></th>
+<th style="text-align: left;"><strong>Shortcut</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Open Track Mutes</td>
+<td style="text-align: left;"><span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Select next column</td>
+<td style="text-align: left;"><span class="keys"><kbd>MENU ENCODER (click)</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Select next row</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER (click)</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Move vertically (Column 1)<br>or Adjust Value</td>
+<td style="text-align: left;"><span class="keys"><kbd>MENU ENCODER</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Move horizontally</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Copy Event</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Paste Event</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PATTERN</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Clear Event</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>RETURN</kbd></span></td>
+</tr>
+<tr>
+<td style="text-align: left;">Insert Blank Event</td>
+<td style="text-align: left;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
 </tr>
 </tbody>
 </table></section><section class="print-page" id="filemanagement"><h1 id="filemanagement-file-management">File Management</h1>
@@ -1582,7 +1830,6 @@ The screensaver does not affect other functions so NGEN will continue to work no
 <p>NGEN can use external files to store and load data for <a href="#projects">Projects</a>, <a href="#generators-midi-player">MIDI files</a>, <a href="#generators-drumgen">DrumGen templates</a>, and <a href="#nsl">NSL scripts</a>.
 These files can be either be stored in the microSD card or in NGEN's internal memory.</p>
 <p>During it's boot process, NGEN checks if a microSD card is inserted. If no microSD card is inserted, NGEN will use its internal memory instead.</p>
-<p>NGEN currently doens't offer a way of transferring files between its internal memory and the microSD card (coming soon).</p>
 <h2 id="filemanagement-using-ngen-with-a-microsd-card">Using NGEN with a microSD card</h2>
 <p>We recommend using microSD cards with a capacity of 32GB or less, formatted as FAT32.</p>
 <p>Before inserting a microSD card into NGEN, we recommend that you copy the Factory Content to the microSD card in order to have the necessary folders for MIDI files, DrumGen templates, and NSL scripts.</p>
@@ -1633,7 +1880,66 @@ These files can be either be stored in the microSD card or in NGEN's internal me
 <td style="text-align: center;">.NSL</td>
 </tr>
 </tbody>
-</table></section><section class="print-page" id="midimapping"><h1 id="midimapping-midi-mapping">MIDI Mapping</h1>
+</table>
+<h2 id="filemanagement-storage-file-tree">Storage File Tree</h2>
+<p>The file tree for the microSD card should match the following:</p>
+<div class="highlight"><pre><span></span><code>/DRUMGEN (folder)
+    /HOUSE.HEX (template)
+    /DNB.HEX
+    /ELECTRO.HEX
+    ...
+/MIDI (folder)
+    /CHORDS.MID (midi file)
+    ...
+/NSL (folder)
+    /EBASS.HEX (nsl script)
+    ...
+FILE_01.HEX (project)
+FILE_02.HEX (project)
+FILE_03.HEX (project)
+...
+</code></pre></div>
+<hr />
+<h2 id="filemanagement-file-list-selector">File / List Selector</h2>
+<p>NGEN uses a custom file / list selection screen to let users select and load different files such as projects and templates.</p>
+<p>The list is automatically populated with the files available in the active storage (internal or microSD) according to the relevant sub-folder (see table above) and can be navigated using the <span class="keys"><kbd>MENU ENCODER</kbd></span>.</p>
+<p>To select an option from the list, click the <span class="keys"><kbd>MENU ENCODER</kbd></span>.</p>
+<p>Additional options can be accessed by pressing <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span>.</p>
+<p>The right side of the display indicates the location of file and the number of files available at the bottom right corner. </p>
+<hr />
+<h2 id="filemanagement-file-copying">File Copying</h2>
+<p>To copy files between different storage locations (internal x microSD):</p>
+<ol>
+<li>
+<p>Select the source storage location via the <a href="#settings-general">Storage parameter (Settings / General)</a>.</p>
+</li>
+<li>
+<p>Open the file selector according to the file type:</p>
+<ol>
+<li>
+<p><strong>Projects:</strong> Navigate to <code>Projects</code> / <code>Load</code></p>
+</li>
+<li>
+<p><strong>DrumGen Templates:</strong> Load <a href="#generators-drumgen">DrumGen generator</a> and nagivate to <code>Generator</code> / <code>Template</code></p>
+</li>
+<li>
+<p><strong>MIDI Files:</strong> Load <a href="#generators-midi-player">MIDI Player generator</a> and nagivate to <code>Generator</code> / <code>Load File</code></p>
+</li>
+<li>
+<p><strong>NSL Engine Scripts:</strong> Load <a href="#generators-drumgen">NSL generator</a> and nagivate to <code>Generator</code> / <code>Load</code></p>
+</li>
+</ol>
+</li>
+<li>
+<p>Scroll to the file to be copied using the <span class="keys"><kbd>MENU ENCODER (Scroll)</kbd></span></p>
+</li>
+<li>
+<p>Press <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span> to the open additional options.</p>
+</li>
+<li>
+<p>Select the <code>Copy To [...]</code> option</p>
+</li>
+</ol></section><section class="print-page" id="midimapping"><h1 id="midimapping-midi-mapping">MIDI Mapping</h1>
 <hr />
 <h2 id="midimapping-about-midi-mapping">About MIDI Mapping</h2>
 <p>Most of the settings, parameters, and actions available in NGEN can be controlled, modulated, and automated via MIDI CC. This lets you automate parameters during a live set or even use an external MIDI controller to access certain parameters directly.</p>
@@ -2919,6 +3225,21 @@ The different behaviours are:</p>
 <td style="text-align: center;">106</td>
 <td style="text-align: center;">Scaled</td>
 </tr>
+<tr>
+<td>Length Multiplier</td>
+<td style="text-align: center;">107</td>
+<td style="text-align: center;">Scaled</td>
+</tr>
+<tr>
+<td>Channel Mapping</td>
+<td style="text-align: center;">108</td>
+<td style="text-align: center;">Scaled</td>
+</tr>
+<tr>
+<td>Map Pitch</td>
+<td style="text-align: center;">109</td>
+<td style="text-align: center;">Scaled</td>
+</tr>
 </tbody>
 </table>
 <h4 id="midimapping-spray">SPRAY</h4>
@@ -2978,10 +3299,18 @@ The different behaviours are:</p>
 <td style="text-align: center;">103</td>
 <td style="text-align: center;">Scaled</td>
 </tr>
+<tr>
+<td>Velocity</td>
+<td style="text-align: center;">104</td>
+<td style="text-align: center;">Scaled</td>
+</tr>
+<tr>
+<td>Random</td>
+<td style="text-align: center;">105</td>
+<td style="text-align: center;">Scaled</td>
+</tr>
 </tbody>
-</table>
-<!-- | Velocity      |        104         |    Scaled     |
-| Random        |        105         |    Scaled     | --></section><section class="print-page" id="nsl"><h1 id="nsl-nsl-ngen-scripting-language">NSL - NGEN SCRIPTING LANGUAGE</h1>
+</table></section><section class="print-page" id="nsl"><h1 id="nsl-nsl-ngen-scripting-language">NSL - NGEN SCRIPTING LANGUAGE</h1>
 <p>The NSL Engine <a href="#generators-nsl-engine">Generator</a> is a powerful tool that lets you create your own custom algorithms using a simple scripting language.</p>
 <p>At it's core, the NSL Engine features a 32-step sequence (with individual pitch, velocity, length (in beats) and density per step) and standard parameters such Shift, Length and Density to control playback.</p>
 <p>Instead of using a pre-defined algorithm to fill the 32-step sequence, the NSL Engine lets you load a script to generate it using your own custom algorithm. </p>
@@ -3212,6 +3541,7 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 </tbody>
 </table>
 <h3 id="clockgen-free-clock">Free Clock</h3>
+<p><img align="right" alt="Free Clock Animation" src="../images/NGEN_Freeclock_Animation.gif" /></p>
 <p>The Free Clock is the NGEN's internal clock and it can be used to generate an internal clock when no external MIDI Clock is available.
 It also features an 8-stage swing sequencer that can be used to create interesting swing patterns.</p>
 <p><br/></p>
@@ -3756,6 +4086,7 @@ The number of balls and the shape of the box can be controlled via the available
 </table>
 <hr />
 <h3 id="generators-nsl-engine">NSL ENGINE</h3>
+<p><img align="right" alt="" src="../images/NSL.gif" /></p>
 <p><strong>Generator Description:</strong></p>
 <p>The NSL Engine is a programmable generator that can run NSL files and features a 32-step sequencer.</p>
 <p>For more information about NSL (NGEN Scripting Language), check out the <a href="#nsl">NSL documentation</a>.</p>
@@ -3918,6 +4249,8 @@ At 50, Balance uses the same velocity for short and long notes. At 0, short note
 <p>• <strong>STABS</strong>: Generates a sequence of stabs (short chords) that can be used for house, techno, and other dance music genres. In this mode, Density disables certain chords in the sequence based on their density value.  </p>
 <p>• <strong>FIXED LEN</strong>: Generates a sequence of chords with a fixed length and a top melody. In this mode, Density controls the density of the top melody.  </p>
 <p>• <strong>VARI LEN</strong>: Generates a sequence of chords with variable length. In this mode, Density controls the density of generated chords.  </p>
+<p>• <strong>DUAL ESEQ</strong>: Uses a dual euclidean algorithm to generate a rythmic chord pattern.</p>
+<p>For better results, we recommend generating a new pattern after changing modes. </p>
 <p><strong>Parameter List:</strong></p>
 <table>
 <thead>
@@ -3978,6 +4311,11 @@ At 50, Balance uses the same velocity for short and long notes. At 0, short note
 <td style="text-align: center;">Sets the POP mode.</td>
 <td style="text-align: right;">–</td>
 </tr>
+<tr>
+<td>Express</td>
+<td style="text-align: center;">Enables chord articulations / expressions.</td>
+<td style="text-align: right;">–</td>
+</tr>
 </tbody>
 </table>
 <hr />
@@ -4031,9 +4369,14 @@ Although named after a specific genre, Samba is capable of generating percussing
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
+<td>Note Len</td>
+<td style="text-align: center;">Sets the note length mode.</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+</tr>
+<tr>
 <td>Probability (<code>Prob</code>)</td>
 <td style="text-align: center;">Sets the probability of all four parts.</td>
-<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 <tr>
 <td>Note 1</td>
@@ -4053,11 +4396,6 @@ Although named after a specific genre, Samba is capable of generating percussing
 <tr>
 <td>Note 4</td>
 <td style="text-align: center;">Set part 4's MIDI note</td>
-<td style="text-align: right;">–</td>
-</tr>
-<tr>
-<td>Note Len</td>
-<td style="text-align: center;">Sets the note length mode.</td>
 <td style="text-align: right;">–</td>
 </tr>
 </tbody>
@@ -4177,7 +4515,7 @@ Although named after a specific genre, Samba is capable of generating percussing
 <tr>
 <td>Delay</td>
 <td style="text-align: center;">Delays incoming note by x beats</td>
-<td style="text-align: right;">–</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> +  <span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 </tbody>
 </table>
@@ -4602,7 +4940,7 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 <tr>
 <td>Mode (<code>MODE</code>)</td>
 <td style="text-align: center;">Sets the mode of the Shaper (Clip / Scale / Drop)</td>
-<td style="text-align: right;">–</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
 <td>Pitch Minimum (<code>PITCH MIN</code>)</td>
@@ -4627,7 +4965,7 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 <tr>
 <td>Length Multiplier (<code>LEN MULT</code>)</td>
 <td style="text-align: center;">Multiplies the length of incoming MIDI notes</td>
-<td style="text-align: right;">–</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
 </tr>
 <tr>
 <td>Channel Mapping (<code>CH Map</code>)</td>
@@ -4637,7 +4975,7 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 <tr>
 <td>Map Pitch (<code>Map Pitch</code>)</td>
 <td style="text-align: center;">Sets the pitch of converted MIDI notes (while in <code>Ch Map</code>)</td>
-<td style="text-align: right;">–</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 </tbody>
 </table>
@@ -4709,12 +5047,12 @@ It also includes options to multiply note lengths and to map MIDI notes to diffe
 <tr>
 <td>Velocity Multiplier (<code>VEL MULT</code>)</td>
 <td style="text-align: center;">Decreases the delay time according to MIDI velocity</td>
-<td style="text-align: right;">–</td>
+<td style="text-align: right;"><span class="keys"><kbd>PARAM 2</kbd></span></td>
 </tr>
 <tr>
 <td>Random</td>
 <td style="text-align: center;">Switches between sequence or random order for the delay time</td>
-<td style="text-align: right;">–</td>
+<td style="text-align: right;"><span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 </tbody>
 </table></section><section class="print-page" id="pattern"><h1 id="pattern-patterns">Patterns</h1>
@@ -4891,6 +5229,7 @@ Because NGEN is designed with live performance in mind, most of the Generators p
 <div class="forced-pb"></div>
 
 <h2 id="scale-scale-editor">Scale Editor</h2>
+<p><img align="right" alt="" src="../images/NGEN_Scale_Editor.gif" /></p>
 <p>The Scale Editor allows you edit the currently selected scale by enabling or disabling notes.</p>
 <p>Use the <span class="keys"><kbd>MENU ENCODE</kbd></span> to select a note and press the <span class="keys"><kbd>MENU ENCODE</kbd></span> to toggle it on or off.</p>
 <p>To return to the Scale menu, press the <span class="keys"><kbd>RETURN</kbd></span> button.</p>
@@ -4902,17 +5241,31 @@ Because NGEN is designed with live performance in mind, most of the Generators p
 <h2 id="tools-about-tools">About Tools</h2>
 <p>The Tools sub-menu contains different features that can be used to monitor, control, and configure NGEN's settings.</p>
 <hr />
-<h2 id="tools-list-of-available-tools">List of Available Tools</h2>
-<h3 id="tools-midi-monitor-monitor">MIDI MONITOR (<code>MONITOR</code>)</h3>
-<p><img align="right" alt="" src="../images/NGEN_MIDIMonitor.gif" />
-The built-in MIDI Monitor lets you track incoming and outgoing MIDI messages.
+<h2 id="tools-midi-monitor-monitor">MIDI Monitor (<code>Monitor</code>)</h2>
+<p><img align="right" alt="" src="../images/NGEN_MIDIMonitor.gif" /></p>
+<p>The built-in MIDI Monitor lets you track incoming and outgoing MIDI messages.
 It can be used to make sure that NGEN is receiving MIDI clock, notes, and control changes from other devices and that it's also sending MIDI messages appropriately.</p>
 <p>The four columns in the MIDI Monitor represent message type, number (note or CC number), value, and channel.</p>
-<p>To switch between <code>IN</code> and <code>OUT</code>, press the <span class="keys"><kbd>GENERATE</kbd></span> button.</p>
-<h3 id="tools-template">TEMPLATE</h3>
+<p>To switch between the different views (<code>INPUT</code>, <code>OUTPUT</code>, and <code>STATUS</code>), turn the <span class="keys"><kbd>MENU ENCODER</kbd></span> or press the <span class="keys"><kbd>GENERATE</kbd></span> button.</p>
+<h3 id="tools-status-view">Status View</h3>
+<p><img align="right" alt="" src="../images/NGEN_MIDIMonitor_Status.gif" /></p>
+<p>The <code>STATUS</code> view contains 3 indicators that can be used to quickly monitor if NGEN is receiving and sending MIDI.</p>
+<ul>
+<li>
+<p><code>CLK IN</code> indicates if NGEN is actively receiving MIDI Clock</p>
+</li>
+<li>
+<p><code>NOTE IN</code> indicates if NGEN is actively receiving MIDI note messages</p>
+</li>
+<li>
+<p><code>NOTE OUT</code> indicates if NGEN is actively sending MIDI note messages</p>
+</li>
+</ul>
+<hr />
+<h2 id="tools-template">Template</h2>
 <p>The Template tool lets you load different track setup templates (Generator / MIDI FX / Clock Rate / Routings) to your current pattern.</p>
 <p>Available templates:</p>
-<h4 id="tools-house">House:</h4>
+<h3 id="tools-house">House:</h3>
 <table>
 <thead>
 <tr>
@@ -4999,7 +5352,7 @@ It can be used to make sure that NGEN is receiving MIDI clock, notes, and contro
 </tr>
 </tbody>
 </table>
-<h4 id="tools-jungle">Jungle:</h4>
+<h3 id="tools-jungle">Jungle:</h3>
 <table>
 <thead>
 <tr>
@@ -5066,7 +5419,7 @@ It can be used to make sure that NGEN is receiving MIDI clock, notes, and contro
 </tr>
 </tbody>
 </table>
-<h4 id="tools-gen-demo">Gen Demo:</h4>
+<h3 id="tools-gen-demo">Gen Demo:</h3>
 <table>
 <thead>
 <tr>
@@ -5212,6 +5565,143 @@ It can be used to make sure that NGEN is receiving MIDI clock, notes, and contro
 <td style="text-align: center;"></td>
 </tr>
 </tbody>
+</table>
+<hr />
+<h2 id="tools-song-mode">Song Mode</h2>
+<p>The Song Mode available in NGEN works as 64-step event sequencer that can be used not only to sequence patterns, but also to sequence and automate actions like [Pattern] and [Track] generation, variation, and reloading.</p>
+<p>When active, Song Mode will advance through the event list and trigger actions according to the settings of each event, without blocking any other user actions.</p>
+<p>Besides it's primary use-case (to arrange patterns in to a song), Song Mode can also be used an automation tool for sequencing different actions like track muting, pattern / track generation, and track state randomization.</p>
+<p>The Song Mode settings and data are stored in <a href="#projects">Projects</a>.</p>
+<h3 id="tools-song-editor">Song Editor</h3>
+<p><img align="right" alt="" src="../images/NGEN_SongMode_Editor.gif" /></p>
+<p>The Song Mode Editor view consists of a grid of 4 columns and 4 rows. 
+Each row represents an event slot and each column represents a value associated with that event: slot number, event type, value, and duration (in bars).</p>
+<p>Turning the <span class="keys"><kbd>MENU ENCODER</kbd></span> adjusts the selected column and clicking it advances to the next column.</p>
+<p>It's also possible to `move between columns by holding down <span class="keys"><kbd>FUNCTION</kbd></span> while turning the <span class="keys"><kbd>MENU ENCODER</kbd></span>.</p>
+<p>To scroll through the event slot list, select the first column (slot number) and turn the <span class="keys"><kbd>MENU ENCODER</kbd></span>.</p>
+<h3 id="tools-events">Events</h3>
+<p>Each event slot can be set to a different event <strong>type</strong>, event <strong>value</strong>, and <strong>length</strong> (0 to 32 bars).</p>
+<p><img alt="" src="../images/NGEN_SongMode_Editor_Event.gif" /></p>
+<p>The currently available event types are:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Event Type</strong></th>
+<th style="text-align: center;"><strong>Description</strong></th>
+<th style="text-align: center;"><strong>Value</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Empty (<code>Empty</code>)</td>
+<td style="text-align: center;">Empty event slot (idle)</td>
+<td style="text-align: center;">N/A</td>
+</tr>
+<tr>
+<td style="text-align: center;">Play Pattern (<code>PTRN</code>)</td>
+<td style="text-align: center;">Loads a pattern (with optional track mutes)</td>
+<td style="text-align: center;">Pattern to be loaded</td>
+</tr>
+<tr>
+<td style="text-align: center;">Generate Pattern (<code>G.PTN</code>)</td>
+<td style="text-align: center;">Triggers a <a href="#pattern-pattern-generation"><strong>Pattern Generation</strong></a></td>
+<td style="text-align: center;">Probability (0-100%)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Generate Track (<code>G.TRK</code>)</td>
+<td style="text-align: center;">Triggers the "<strong>Generate</strong>" action in the selected track (1 through 16)</td>
+<td style="text-align: center;">Track Number</td>
+</tr>
+<tr>
+<td style="text-align: center;">Variate Pattern (<code>V.PTN</code>)</td>
+<td style="text-align: center;">Generates a <strong>variation</strong> of the current pattern</td>
+<td style="text-align: center;">Probability (0-100%)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Variate Track (<code>V.TRK</code>)</td>
+<td style="text-align: center;">Triggers the "<strong>Variate</strong>" action in the selected track (1 through 16)</td>
+<td style="text-align: center;">Track Number</td>
+</tr>
+<tr>
+<td style="text-align: center;">Reload Pattern (<code>R.PTN</code>)</td>
+<td style="text-align: center;">Reloads the active pattern</td>
+<td style="text-align: center;">Probability (0-100%)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Reload Track (<code>R.TRK</code>)</td>
+<td style="text-align: center;">Reloads the selected track</td>
+<td style="text-align: center;">Track Number</td>
+</tr>
+<tr>
+<td style="text-align: center;">Randomize Pattern State (<code>S.PTN</code>)</td>
+<td style="text-align: center;">Randomizes the Track State of all tracks</td>
+<td style="text-align: center;">Probability (0-100%)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Randomize Track State (<code>S.TRK</code>)</td>
+<td style="text-align: center;">Randomizes the Track State of the selected track</td>
+<td style="text-align: center;">Track Number</td>
+</tr>
+<tr>
+<td style="text-align: center;">Jump (<code>JUMP</code>)</td>
+<td style="text-align: center;">Move the song position to the selected event</td>
+<td style="text-align: center;">Event Slot Number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="tools-track-mutes">Track Mutes</h3>
+<p><img align="right" alt="" src="../images/NGEN_SongMode_TrackMute.gif" /></p>
+<p>Event Slots also include optional track mutes (per slot) that can be used to create further variations of existing patterns. 
+When loading a pattern, NGEN will automatically turn off the "Active" parameter of the muted tracks.</p>
+<p>To open the Track Mute UI, navigate to the third column (value) and press <span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span> (click).</p>
+<p>Turn the <span class="keys"><kbd>MENU ENCODER</kbd></span> to select between the 16 available tracks and click the <span class="keys"><kbd>MENU ENCODER</kbd></span> to mute / unmute the selected track.</p>
+<p>Press the <span class="keys"><kbd>RETURN</kbd></span> button to return to the main Song Editor view.</p>
+<h3 id="tools-shortcuts">Shortcuts</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Shortcut</strong></th>
+<th style="text-align: center;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>MENU ENCODER</kbd></span> (Scroll)</td>
+<td style="text-align: center;">Adjusts the selected value / Scroll vertically (1st column)</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span> (Scroll)</td>
+<td style="text-align: center;">Scroll horizontally</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>MENU ENCODER</kbd></span> (Click)</td>
+<td style="text-align: center;">Selects the next column</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>MENU ENCODER</kbd></span> (Click)</td>
+<td style="text-align: center;">Selects the next row</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+<td style="text-align: center;">Opens the Track Mute UI</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>TRACK/CLK</kbd></span></td>
+<td style="text-align: center;">Copies the selected event</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PATTERN</kbd></span></td>
+<td style="text-align: center;">Pastes event into the selected event slot</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>RETURN</kbd></span></td>
+<td style="text-align: center;">Removes the selected event</td>
+</tr>
+<tr>
+<td style="text-align: center;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
+<td style="text-align: center;">Inserts an empty event at the selected event slot</td>
+</tr>
+</tbody>
 </table></section><section class="print-page" id="track"><h1 id="track-tracks">Tracks</h1>
 <hr />
 <h2 id="track-about-tracks">About Tracks</h2>
@@ -5283,32 +5773,37 @@ The auxiliary output, on the other hand, can be used to send a copy of the MIDI 
 <td style="text-align: center;"></td>
 </tr>
 <tr>
-<td><strong>Clock Rate</strong></td>
-<td>Sets the clock rate used by the Generator and MIDI FX (<a href="#clockgen-midi-clock">MIDI Clock</a> only)</td>
-<td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
-</tr>
-<tr>
-<td><strong>Auxiliary Output (<code>AUX OUT</code>)</strong></td>
+<td><strong>Auxiliary Output (<code>Aux Out</code>)</strong></td>
 <td>Sets the track's auxiliary output (for routing the track's output to another track's input)</td>
 <td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
 </tr>
 <tr>
-<td><strong>Output Channel (<code>OUT CH</code>)</strong></td>
+<td><strong>Output Channel (<code>Output Ch</code>)</strong></td>
 <td>Sets the track MIDI output channel</td>
 <td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
 </tr>
 <tr>
-<td><strong>Input Channel (<code>IN CH</code>)</strong></td>
+<td><strong>Input Channel (<code>Input Ch</code>)</strong></td>
 <td>Sets the track MIDI input channel</td>
 <td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
 </tr>
 <tr>
-<td><strong>Program Change (<code>PROGRAM</code>)</strong></td>
+<td><strong>Program Change (<code>Program</code>)</strong></td>
 <td>Sets the MIDI Program Change number which gets send to the MIDI output when loading a project or a pattern</td>
 <td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
 </tr>
 <tr>
-<td><strong>Auto Variate (<code>AUTO VAR</code>)</strong></td>
+<td><strong>Clock Rate (<code>Clk Rate</code>)</strong></td>
+<td>Sets the clock rate used by the Generator and MIDI FX (<a href="#clockgen-midi-clock">MIDI Clock</a> only)</td>
+<td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+</tr>
+<tr>
+<td><strong>Clock Source (<code>Clk Src</code>)</strong></td>
+<td>Selects / locks the clock source for the track</td>
+<td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
+</tr>
+<tr>
+<td><strong>Auto Variate (<code>Auto Vari8</code>)</strong></td>
 <td>Enable / disable the <a href="#settings-auto-variate-auto-vari8">Auto Variate</a> mode</td>
 <td style="text-align: center;"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 7 9 19l-5.5-5.5 1.41-1.41L9 16.17 19.59 5.59z"/></svg></span></td>
 </tr>
@@ -5408,19 +5903,106 @@ Use the Note 1 through 4 parameters to set them to any other 4-note chord.</p>
 <p>The Note Length parameter in Samba allows you to switch between different length modes, which can have a significant impact when used with melodic instruments.</p>
 <h3 id="techniques-chaining-midi-fxs">Chaining MIDI FXs</h3>
 <p>While NGEN only allows one MIDI FX per track, it's possible to chain multiple MIDI FXs by using the Aux Output of a track and the <a href="#generators-thru">Thru</a> Generator.</p>
+<p>The Aux Output will send a copy of that track's output to the input of another track. By using the Thru generator, we can pass through the incoming notes from our first track (post MIDI FX) and add a second MIDI FX on top.
+The parameters available in the Thru generator (such as Shift, Probability and Delay) can also be used to achieve different effects.</p>
+<p>Both MIDI effects will be applied in real time and the output of both tracks can be used to monitor and record the output before and after the second effect separately.</p>
 <p>To chain MIDI FXs, follow these steps:</p>
 <ul>
 <li>Select the track you'd like to chain MIDI FXs to.</li>
 <li>Set the MIDI FX of that track to the first MIDI FX you'd like to use.</li>
 <li>Set the Aux Output to another available track.</li>
-<li>Select the track that you set the Aux Output to and set its Generator to Thru.</li>
-<li>Set the MIDI FX of the Thru track to the next MIDI FX you'd like to use.</li>
+<li>Select the track that you set the Aux Output to and select the Thru Generator. </li>
+<li>Add a MIDI FX to the track containing the Thru generator to further process the incoming notes.</li>
 </ul>
 <p>Repeat these steps for each MIDI FX you'd like to chain.</p>
 <div class="admonition warning">
 <p class="admonition-title">Attention</p>
 <p>Keep in mind that each track will continue to output MIDI to the selected Output Channel so, to avoid sending duplicate MIDI messages, set the Output Channel of each track to a different value.</p>
 </div></section>
+                        <h1 class='nav-section-title' id='section-extra-guides'>
+                            Extra Guides <a class='headerlink' href='#section-extra-guides' title='Permanent link'>↵</a>
+                        </h1>
+                        <section class="print-page" id="guides-elektron"><h1 id="guides-elektron-using-ngen-with-elektron-devices">Using NGEN with Elektron Devices</h1>
+<h2 id="guides-elektron-description">Description</h2>
+<p>Some drum machines / samplers like the Elektron devices use a different method for MIDI input: instead of using different pitches (like C1, C#1, etc) to trigger the different parts, these devices use separate MIDI Channels per part.</p>
+<p>In order to make the drum-related <a href="#generators">Generators</a> work with these devices, we've included a special feature to the <a href="#midifx"><strong>Shaper MIDI FX</strong></a> called <strong>Channel Mapping</strong>.  </p>
+<p>When enabled, Shaper splits incoming MIDI notes to different channels and changes the pitch value (set via the Map Pitch parameter).<br />
+The Pitch of each incoming note is used to indicate a different offset (C = 0, C#1 = 1, D = 2 ... B = 11) which is added to the <a href="#track"><strong>Track</strong></a> <strong>Output Channel</strong> to calculate the final note MIDI channel.</p>
+<div class="no-print">
+
+Example diagram:
+
+
+<pre class="mermaid"><code>%%{init: {'flowchart' : {'curve' : 'linear'}}}%%
+flowchart LR
+  A[Track 1&lt;br&gt;DRUMGEN&lt;br&gt;Note 1: C1&lt;br&gt;Note 2: C#1&lt;br&gt;Note 3: D1&lt;br&gt; Note 4: D#1];
+  S[Track 2&lt;br&gt;SAMBA&lt;br&gt;Note 1: C1&lt;br&gt;Note 2: C#1&lt;br&gt;Note 3: D1&lt;br&gt; Note 4: D#1]
+
+  subgraph Shaper CH MAP 
+    Z[Map Pitch: C3&lt;br&gt;Track Out Channel: 1];
+    B[Channel Offset: 0];
+    C[Channel offset: +1];
+    D[Channel offset: +2];
+    E[Channel offset: +3];
+  end
+
+  subgraph Shaper CH MAP 
+    N[Map Pitch: C3&lt;br&gt;Track Out Channel: 5];
+    J[Channel Offset: 0];
+    K[Channel offset: +1];
+    L[Channel offset: +2];
+    M[Channel offset: +3];
+  end
+
+  subgraph Destination MIDI IN
+    F[Channel 1];
+    G[Channel 2];
+    H[Channel 3];
+    I[Channel 4];
+
+    O[Channel 5];
+    P[Channel 6]
+    Q[Channel 7];
+    R[Channel 8];
+  end
+
+
+  A -- C1 --&gt; B;
+  A -- C#1 --&gt; C;
+  A -- D1 --&gt; D;
+  A -- D#1 --&gt; E;
+
+  S -- C1 --&gt; J;
+  S -- C#1 --&gt; K;
+  S -- D1 --&gt; L;
+  S -- D#1 --&gt; M;
+
+  B -- C3 (Ch: 1) --&gt; F;
+  C -- C3 (Ch: 2) --&gt; G;
+  D -- C3 (Ch: 3) --&gt; H;
+  E -- C3 (Ch: 4) --&gt; I;
+
+  J -- C3 (Ch: 5) --&gt; O;
+  K -- C3 (Ch: 6) --&gt; P;
+  L -- C3 (Ch: 7) --&gt; Q;
+  M -- C3 (Ch: 8) --&gt; R;
+
+</code></pre>
+</div>
+
+<hr />
+<h2 id="guides-elektron-step-by-step-instructions">Step-by-step Instructions</h2>
+<p>To use NGEN with an Elektron device, follow these steps:</p>
+<p>1 - Connect NGEN's MIDI output to your Elektron device.</p>
+<p>2 - Configure the Elektron device to listen to MIDI Channels 1-8. In this example, we'll use parts 1-4 for drums (kick, snare, hihat, percussion) and parts 5-8 for tonal instruments.</p>
+<p>3 - In <strong>NGEN</strong>, select <strong>Track 1</strong>, open the Track sub-menu, and select the <strong>DrumGen</strong> Generator.</p>
+<p>4 - Select the <strong>Shaper MIDI FX</strong> for Track 1.</p>
+<p>5 - Return to the <strong>Main Menu</strong> and navigate to the <strong>MIDI FX</strong> sub-menu.</p>
+<p>6 - Enable the <strong><code>Ch Map</code></strong> feature.</p>
+<p>7 - Return to the <strong>Main Menu</strong> and navigate in to the <strong>Generator</strong> sub-menu.</p>
+<p>8 - Set <strong>DrumGen's Note 1-4</strong> parameters to C1, C#1, D1, and D#1. With Ch Map enabled, the 4 DrumGen parts will output to the MIDI Channels 1, 2, 3, and 4. Using different pitches for these parameters will change the MIDI Channels used for DrumGen.</p>
+<p>9 - Activate Track 2 in NGEN, set it's Output Channel to 5, and select an appropriate Generator / MIDI FX.</p>
+<p>10 - Repeat step #9 for Tracks 3 and 4.</p></section><h1 class='nav-section-title-end'>Ended: Extra Guides</h1>
                         <h1 class='nav-section-title' id='section-system'>
                             System <a class='headerlink' href='#section-system' title='Permanent link'>↵</a>
                         </h1>
@@ -5453,6 +6035,10 @@ To save your current settings, select the <code>Save</code> option.</p>
 <td><strong>Randomize State (<code>Rndmize State</code>)</strong></td>
 <td>When enabled, NGEN will randomize the states of all tracks when generating new patterns (<a href="#track-track-states">Track States</a>).</td>
 </tr>
+<tr>
+<td><strong>Storage</strong></td>
+<td>Switches between internal memory (<code>INT MEM</code>) and external storage (<code>SD CARD</code>) when a microSD is inserted and detected (HW v1.1+ only)</td>
+</tr>
 </tbody>
 </table>
 <h3 id="settings-display">Display</h3>
@@ -5473,12 +6059,16 @@ To save your current settings, select the <code>Save</code> option.</p>
 <td>When enabled, scrolling past the last item in menu</td>
 </tr>
 <tr>
+<td><strong>Show Value</strong></td>
+<td>When enabled, parameters mapped to the knobs will be displayed on the screen while being modified</td>
+</tr>
+<tr>
 <td><strong>Show Icons</strong></td>
 <td>Enables or disables graphical icons on the Main Menu</td>
 </tr>
 <tr>
-<td><strong>Show Value</strong></td>
-<td>When enabled, parameters mapped to the knobs will be displayed on the screen while being modified</td>
+<td><strong>UI Visual FX</strong></td>
+<td>Enables or disables visual effects for the menu system (glitch transitions and display flashes)</td>
 </tr>
 <tr>
 <td><strong>Idle Mode</strong></td>
@@ -5514,6 +6104,10 @@ To save your current settings, select the <code>Save</code> option.</p>
 <tr>
 <td>MIDI Thru</td>
 <td>Enables or disables Soft MIDI Thru</td>
+</tr>
+<tr>
+<td>Test MIDI</td>
+<td>Tests the MIDI output by sending a short sequence to each MIDI channel sequentially</td>
 </tr>
 </tbody>
 </table>
@@ -5554,6 +6148,14 @@ To save your current settings, select the <code>Save</code> option.</p>
 <tr>
 <td><strong>Note Trg 1-4</strong></td>
 <td>Select a MIDI note to be converted to a gate signal (4xTrig mode)</td>
+</tr>
+<tr>
+<td><strong>Test Out 1</strong></td>
+<td>Sends a 1 second C3 note to the CV + Gate 1</td>
+</tr>
+<tr>
+<td><strong>Test Out 2</strong></td>
+<td>Sends a 1 second C3 note to the CV + Gate 2</td>
 </tr>
 </tbody>
 </table>
@@ -5624,8 +6226,44 @@ This feature works on a per-track basis and can be enabled or disabled for each 
 <h2 id="firmwareupdate-how-to-update-the-ngen-firmware">How to update the NGEN firmware</h2>
 <p>To update the firmware on your NGEN, you'll need to download the latest firmware version from the links below and follow the instructions for your hardware version.</p>
 <p>If you have any questions or need help updating your NGEN, don't hesitate to get in touch with us via the <a href="https://spektroaudio.com/contact">Contact page on our website</a>.</p>
+<h3 id="firmwareupdate-ngen-hw-v11-and-newer-batch-2-and-newer-usb-c">NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)</h3>
+<p>1 - <a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v13_hw11.zip">Download the latest version of the NGEN firmware for HW v1.1</a>.</p>
+<p>2 - Connect NGEN to your computer via USB.</p>
+<p>3- Navigate to the <a href="#settings">Settings</a> page and select the "FW Update" option.</p>
+<p>4 - NGEN should now appear as a USB flash drive on your computer.</p>
+<p>5 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.</p>
+<p>6 - NGEN should automatically apply the update and restart after it's finished.</p>
+<p>7 - After rebooting, apply a Factory Reset (files will not be deleted).</p>
+<details>
+<summary>Firmware Archive for NGEN HW v1.1+</summary>
+<ul>
+<li><a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip">1.2 Update for NGEN HW v1.1</a></li>
+<li><a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v112_hw11.zip">1.1.2 Update for NGEN HW v1.1</a></li>
+</ul>
+</details>
+<details>
+<summary>Alternative Flashing Method</summary>
+<pre><code>NGEN HW v1.1 also features a backup method for updating the firmware that can be used in case of issues with the primary method or failed updates.
+
+This method does require some minor disassembling so we only recommend using it as a backup.
+
+1 - Remove the 4 screws on the side of the unit and the microSD card if present.
+
+2 - Detach the bottom panel of the case. It should come off without removing any knobs or screws from the top panel.
+
+3 - Locate the BOOT button on the back side of the PCB (visible). It should be located on the center of the PCB.
+
+4 - Connect the unit via USB while holding down the BOOT button.
+
+5 - NGEN should mount as a USB drive on your computer. Once mounted, release the BOOT button.
+
+6 - Follow steps 5-7 of the primary method to update the firmware.
+
+7 - Disconnect the USB and re-assemble the case.
+</code></pre>
+</details>
 <h3 id="firmwareupdate-ngen-hw-v10-batch-1-micro-usb-serial-0001-0020">NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)</h3>
-<p>1 - <a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw10.zip">Download the latest version of the NGEN firmware for HW v1.0</a></p>
+<p>1 - <a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v13_hw10.zip">Download the latest version of the NGEN firmware for HW v1.0</a></p>
 <p>2 - Download and install TyTools: <a href="https://github.com/Koromix/tytools/releases/">https://github.com/Koromix/tytools/releases/</a></p>
 <p>3 - Connect the NGEN to your computer via USB</p>
 <p>4 - Open the TyUploader application</p>
@@ -5639,29 +6277,77 @@ This feature works on a per-track basis and can be enabled or disabled for each 
 If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 </code></pre>
 </div>
-<h3 id="firmwareupdate-ngen-hw-v11-and-newer-batch-2-and-newer-usb-c">NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)</h3>
-<p>1 - <a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw11.zip">Download the latest version of the NGEN firmware for HW v1.1</a>.</p>
-<p>2 - Connect NGEN to your computer via USB.</p>
-<p>3- Navigate to the <a href="#settings">Settings</a> page and select the "FW Update" option.</p>
-<p>4 - NGEN should now appear as a USB flash drive on your computer.</p>
-<p>5 - Drag the latest version of the firmware (.uf2) to the NGEN's USB flash drive.</p>
-<p>6 - NGEN should automatically apply the update and restart after it's finished.</p>
-<p>7 - After rebooting, apply a Factory Reset (files will not be deleted).</p>
-<h4 id="firmwareupdate-alternative-method">Alternative method</h4>
-<p>NGEN HW v1.1 also features a backup method for updating the firmware that can be used in case of issues with the primary method or failed updates.</p>
-<p>This method does require some minor disassembling so we only recommend using it as a backup.</p>
-<p>1 - Remove the 4 screws on the side of the unit and the microSD card if present.</p>
-<p>2 - Detach the bottom panel of the case. It should come off without removing any knobs or screws from the top panel.</p>
-<p>3 - Locate the BOOT button on the back side of the PCB (visible). It should be located on the center of the PCB.</p>
-<p>4 - Connect the unit via USB while holding down the BOOT button.</p>
-<p>5 - NGEN should mount as a USB drive on your computer. Once mounted, release the BOOT button.</p>
-<p>6 - Follow steps 5-7 of the primary method to update the firmware.</p>
-<p>7 - Disconnect the USB and re-assemble the case.</p>
+<details>
+<summary>Firmware Archive for NGEN HW v1.0</summary>
+<ul>
+<li><a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v12_hw10.zip">1.2 Update for NGEN HW v1.0</a></li>
+<li><a href="http://files.spektroaudio.com/ngen/firmware/NGEN_FWUpdate_v112_hw10.zip">1.1.2 Update for NGEN HW v1.0</a></li>
+</ul>
+</details>
 <hr />
 <h2 id="firmwareupdate-change-log">Change-Log</h2>
 <hr />
-<h3 id="firmwareupdate-version-12">Version 1.2</h3>
+<h3 id="firmwareupdate-version-13">Version 1.3</h3>
 <h4 id="firmwareupdate-added">Added</h4>
+<ul>
+<li><strong>New Song Mode (under <a href="#tools">Tools</a>)</strong></li>
+<li><a href="#filemanagement">FILE MANAGEMENT</a>: Added support for file transfer via serial.</li>
+<li><a href="#filemanagement">FILE MANAGEMENT</a>: New file operations (load / copy to microSD or Internal Memory / delete) while in file selector (Function + Menu Encoder).</li>
+<li><a href="#generators-nsl-engine">NSL</a> Added new Animation.</li>
+<li><a href="#menunavigation-menu-navigation">MENU SYSTEM</a>: Added support for menu transitions / visual effects.</li>
+<li><a href="#menunavigation-menu-navigation">MENU SYSTEM</a>: New glitch transition UI VFX when entering Idle Mode.</li>
+<li><a href="#midifx-strum">STRUM</a> Added MIDI mapping for Velocity and Random.</li>
+<li><a href="#generators-pop">POP</a>: Added new Expression parameter.</li>
+<li><a href="#generators-pop">POP</a>: Added new "DUAL ESEQ" mode.</li>
+<li><a href="#scale">SCALE</a>: Added support for chord expressions to the Chord builder framework.</li>
+<li><a href="#settings-midi">SETTINGS</a>: Added "Test MIDI Out".</li>
+<li><a href="#settings-cv-out">SETTINGS</a>: Added "Test CV Out".</li>
+<li><a href="#settings-display">SETTINGS</a>: New setting (<code>UI Visual FX</code>) for enabling / disabling UI Visual Effects.</li>
+<li><a href="#settings-general">SETTINGS</a>: New setting (<code>Storage</code>) for switching between internal and microSD storage (HW v1.1 or newer).</li>
+<li><a href="#midifx-shaper">SHAPER</a>: Added missing MIDI Mapping for parameters.</li>
+<li><a href="#menunavigation-shortcuts">SHORTCUT</a>: New Active (track mute) shortcut from Track Selector (Function + Menu Encoder).</li>
+<li><a href="#track">TRACK</a>: New Clear option in the Track Edit sub-menu.</li>
+<li><a href="#track">TRACK</a>: New Clock Source selector in the Track sub-menu.</li>
+</ul>
+<h4 id="firmwareupdate-improved">Improved</h4>
+<ul>
+<li><a href="#generators-acdgen">ACDGEN</a>: Reduced memory usage (saving and loading ~30% faster).</li>
+<li><a href="#clockgen-free-clock">FREE CLOCK</a>: Improved animation.</li>
+<li><a href="#clockgen-free-clock">FREE CLOCK</a>: Improved BPM accuracy.</li>
+<li><a href="#clockgen-midi-clock">MIDI CLOCK</a>: Improved sync accuracy and stability.</li>
+<li><a href="#midifx">MIDI FX</a>: Improved chord handling</li>
+<li><a href="#pattern">PATTERNS</a>: Improved pattern switching</li>
+<li><a href="#generators-pop">POP</a>: Optimized data model and memory usage</li>
+<li><a href="#generators-pop">POP</a>: Increase Octave parameter range</li>
+<li><a href="#projects">PROJECTS</a>: Improved support for backwards compatibility </li>
+<li><a href="#generators-samba">SAMBA</a>: Note Len mapped to FN + Param 2</li>
+<li><a href="#scale">SCALE</a>: Octave mapped to Param 3</li>
+<li><a href="#midifx-shaper">SHAPER</a>: Mode mapped to FN + Param 1, Length Multiplier mapped to FN + Param 2, Map Pitch mapped to FN + Param 3</li>
+<li><a href="#midifx-strum">STRUM</a> Max Delay re-mapped to Param 1, Velocity Multiplier mapped to Param 2, Random mapped to Param 3</li>
+<li><a href="#generators-thru">THRU</a>: Add MIDI mappings for Delay and Quantize</li>
+<li><a href="#generators-thru">THRU</a>: Delay parameter mapped to FN + Param 4</li>
+<li>Improved handling of larger files</li>
+<li>Updated CV out implementation</li>
+<li>Animation now updates correctly while all clocks are stopped</li>
+</ul>
+<h4 id="firmwareupdate-fixed">Fixed</h4>
+<ul>
+<li><a href="#generators-acdgen">ACDGEN</a>: Fixed glitched line on the top-left corner of the display during animation</li>
+<li><a href="#generators-acdgen">ACDGEN</a>: First note is now properly draw during animation</li>
+<li><a href="#generators-acdgen">ACDGEN</a>: Fixed a bug that caused the first note of the sequence to not be rendered correctly</li>
+<li><a href="#midimapping">MIDI MAPPINGS</a>: Fixed MIDI Mappings for Track Selection and Perform Macros</li>
+<li><a href="#pattern">PATTERNS</a>: The pattern edit modal (<span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PATTERN</kbd></span>) can now only be opened from the pattern selector.</li>
+<li><a href="#pattern">PATTERNS</a>: Pattern Edit modal now properly returns to the Pattern sub-menu</li>
+<li><a href="#projects">PROJECTS</a>: Creating a new project now disables all tracks except for Track 1</li>
+<li><a href="#scale">SCALE</a>: Scale Editor now works correctly when Key is other than C.</li>
+<li><a href="#midifx-shaper">SHAPER</a>: Pitch min/max values not visible when using parameter knob</li>
+<li><a href="#track">TRACK</a>: Fixed Track Reloading in empty patterns</li>
+<li><a href="#track">TRACK</a>: Track Edit modal now properly returns to the to Track sub-menu</li>
+<li>Exiting Track selection (via the Return button) now properly returns to the previously active track</li>
+<li>NGEN now properly re-activates the Idle Mode after a Parameter knob pick-up.</li>
+</ul>
+<h3 id="firmwareupdate-version-12">Version 1.2</h3>
+<h4 id="firmwareupdate-added_1">Added</h4>
 <ul>
 <li>New internal framework for better threading / multicore processing (HW 1.1).</li>
 <li>New internal framework for generating and manipulating chords.</li>
@@ -5706,7 +6392,7 @@ If you have any problems updating your unit, don't hesitate to get in touch with
 <li><a href="#projects">PROJECTS</a>: Project &gt; Save now properly overwrites the currently active project.</li>
 </ul>
 <h3 id="firmwareupdate-version-112">Version 1.1.2</h3>
-<h4 id="firmwareupdate-added_1">Added</h4>
+<h4 id="firmwareupdate-added_2">Added</h4>
 <ul>
 <li>Updated internal framework for apps / tools that require custom UI / controls.</li>
 <li>New list selector based on the updated framework.</li>
@@ -5735,7 +6421,7 @@ If you have any problems updating your unit, don't hesitate to get in touch with
 <li><a href="#generators-thru">THRU</a>: Delay now works after loading a pattern / project.</li>
 </ul>
 <h3 id="firmwareupdate-version-111">Version 1.1.1</h3>
-<h4 id="firmwareupdate-added_2">Added</h4>
+<h4 id="firmwareupdate-added_3">Added</h4>
 <ul>
 <li><a href="#setup-connecting-via-cv">CV OUT</a>: Added new 4xTrig mode and Trigger 1-4 parameters.</li>
 <li>The <a href="#menunavigation">MENU SYSTEM</a> now retains the position of each menu during navigation.</li>
@@ -5759,7 +6445,7 @@ If you have any problems updating your unit, don't hesitate to get in touch with
 </ul>
 <hr />
 <h3 id="firmwareupdate-version-11">Version 1.1</h3>
-<h4 id="firmwareupdate-added_3">Added</h4>
+<h4 id="firmwareupdate-added_4">Added</h4>
 <ul>
 <li>New NGEN Framework: The entire NGEN's internal framework has been re-factored to improve performance and make it easier to add new features.</li>
 <li>Pattern Generation: algorithmically generate or variate an entire pattern.</li>
@@ -5805,7 +6491,7 @@ If you have any problems updating your unit, don't hesitate to get in touch with
 <li>MIDI Player's Direction parameter now displays the correct values.</li>
 </ul>
 <h3 id="firmwareupdate-version-101">Version 1.01</h3>
-<h4 id="firmwareupdate-added_4">Added</h4>
+<h4 id="firmwareupdate-added_5">Added</h4>
 <ul>
 <li><a href="#generators-polyform">POLYFORM</a>: Polyform now adjusts the length of generated notes based on the length of incoming MIDI notes.</li>
 <li><a href="#generators-samba">SAMBA</a>: New Note Length parameter.</li>

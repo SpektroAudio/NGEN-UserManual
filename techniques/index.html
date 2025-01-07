@@ -18,7 +18,7 @@
         <link rel="prev" href="../track/">
       
       
-        <link rel="next" href="../settings/">
+        <link rel="next" href="../guides/elektron/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -865,7 +865,7 @@
             
   
   <span class="md-ellipsis">
-    System
+    Extra Guides
   </span>
   
 
@@ -874,6 +874,69 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Extra Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/elektron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using NGEN with Elektron devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             System
           </label>
@@ -1104,13 +1167,16 @@ Use the Note 1 through 4 parameters to set them to any other 4-note chord.</p>
 <p>The Note Length parameter in Samba allows you to switch between different length modes, which can have a significant impact when used with melodic instruments.</p>
 <h3 id="chaining-midi-fxs">Chaining MIDI FXs</h3>
 <p>While NGEN only allows one MIDI FX per track, it's possible to chain multiple MIDI FXs by using the Aux Output of a track and the <a href="../generators/#thru">Thru</a> Generator.</p>
+<p>The Aux Output will send a copy of that track's output to the input of another track. By using the Thru generator, we can pass through the incoming notes from our first track (post MIDI FX) and add a second MIDI FX on top.
+The parameters available in the Thru generator (such as Shift, Probability and Delay) can also be used to achieve different effects.</p>
+<p>Both MIDI effects will be applied in real time and the output of both tracks can be used to monitor and record the output before and after the second effect separately.</p>
 <p>To chain MIDI FXs, follow these steps:</p>
 <ul>
 <li>Select the track you'd like to chain MIDI FXs to.</li>
 <li>Set the MIDI FX of that track to the first MIDI FX you'd like to use.</li>
 <li>Set the Aux Output to another available track.</li>
-<li>Select the track that you set the Aux Output to and set its Generator to Thru.</li>
-<li>Set the MIDI FX of the Thru track to the next MIDI FX you'd like to use.</li>
+<li>Select the track that you set the Aux Output to and select the Thru Generator. </li>
+<li>Add a MIDI FX to the track containing the Thru generator to further process the incoming notes.</li>
 </ul>
 <p>Repeat these steps for each MIDI FX you'd like to chain.</p>
 <div class="admonition warning">
@@ -1137,7 +1203,7 @@ Use the Note 1 through 4 parameters to set them to any other 4-note chord.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2024-10-11
+    2025-01-07
   </span>
 
     

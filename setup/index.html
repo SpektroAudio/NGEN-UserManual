@@ -934,7 +934,7 @@
             
   
   <span class="md-ellipsis">
-    System
+    Extra Guides
   </span>
   
 
@@ -943,6 +943,69 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Extra Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/elektron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using NGEN with Elektron devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             System
           </label>
@@ -1198,6 +1261,11 @@
 <h3 id="connecting-via-midi">Connecting via MIDI</h3>
 <p>NGEN can also be connected to other gear via the MIDI IN and MIDI OUT 3.5mm TRS jacks (Type-A).</p>
 <p><em>Please note that NGEN still needs to be powered via USB (check the Powering NGEN section below).</em></p>
+<p>The <strong><a href="../settings/#midi">Test MIDI</a></strong> feature (available under Settings / MIDI) sends a short MIDI sequence to each of the 16 MIDI channels available sequentially and it can be used to check your MIDI routings when setting up NGEN with other gear.</p>
+<figure>
+  <img _=";" align="left" alt="Test MIDI feature" src="../images/NGEN_MIDI_Test.gif" width="300" />
+  <figcaption>Test MIDI feature</figcaption>
+</figure>
 <h3 id="connecting-via-cv">Connecting via CV</h3>
 <p>NGEN also features 2 pairs of CV + Gate outputs that can be used to sequence other hardware instruments (such as modular synthesizers).</p>
 <p>More information about the available CV modes is available in the <a href="../settings/#cv-out">Settings section</a>.</p>
@@ -1207,6 +1275,11 @@
 <p>2 - Select one of the available CV modes (<a href="../settings/#cv-out">Settings / CV Out</a>).</p>
 <p>3 - <a href="../track/#track-selection">Select the track</a> you'd like to route to one of the CV output.</p>
 <p>4 - Open the <a href="../track/">Track</a> sub-menu, navigate to the <code>Aux Out</code> parameter and set it to <code>CV 1</code> or <code>CV 2</code>.</p>
+<p><strong>Test CV 1</strong> and <strong>Test CV 2</strong> are also available (Main Menu / Settings / CV) and can be used to trigger a 2-second long C2 note to the desired CV output pair.</p>
+<figure>
+  <img _=";" align="left" alt="Test CV 1 and 2 feature" src="../images/NGEN_CV_Test.gif" width="300" />
+  <figcaption>Test CV 1 and 2</figcaption>
+</figure>
 <!-- To enable the CV output ports, set the AUX OUT of any of [Tracks](track.md) to CV1 or CV2. -->
 
 <!-- The CV and GATE outputs on NGEN have a limited range of 3.3V and a resolution of 12bits so we recommend using an external MIDI to CV converter for a wider range and better resolution. -->
@@ -1239,11 +1312,11 @@ NGEN's power consumption is minimal so even a 0.5A charger should work.</p>
 <pre class="mermaid"><code>graph LR
   A[NGEN] ----- | USB | B[COMPUTER];</code></pre>
 <hr />
+<div class="forced-pb"></div>
+
 <h3 id="ngen-hardware-midi-synthesizer">NGEN + Hardware MIDI Synthesizer</h3>
 <pre class="mermaid"><code>graph LR
   A["POWER SUPPLY / COMPUTER"] ---| USB | B[NGEN] --&gt;|MIDI| C[SYNTH];</code></pre>
-<div class="forced-pb"></div>
-
 <hr />
 <h3 id="ngen-modular-synthesizer">NGEN + Modular Synthesizer</h3>
 <pre class="mermaid"><code>graph LR
@@ -1285,7 +1358,7 @@ flowchart LR
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2024-10-11
+    2025-01-07
   </span>
 
     

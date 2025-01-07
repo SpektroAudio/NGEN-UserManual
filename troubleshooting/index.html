@@ -741,7 +741,7 @@
             
   
   <span class="md-ellipsis">
-    System
+    Extra Guides
   </span>
   
 
@@ -750,6 +750,69 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            Extra Guides
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../guides/elektron/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Using NGEN with Elektron devices
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    System
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
             System
           </label>
@@ -925,13 +988,13 @@
 <h4 id="step-2-check-ngens-midi-input">Step 2: Check NGEN's MIDI input</h4>
 <ul>
 <li>
-<p><strong>MIDI Clock</strong>: Check if your DAW (or other MIDI Clock source) is set to output MIDI Clock to NGEN (via USB or 3.5mm TRS) </p>
+<p>When syncing via <strong>MIDI Clock</strong>: Check if your DAW (or other MIDI Clock source) is set to output MIDI Clock to NGEN (via USB or 3.5mm TRS) </p>
 </li>
 <li>
-<p><strong>Free Clock</strong>: Check if the Free Clock is Active</p>
+<p>When using <strong>Free Clock</strong> (internal clock): Check if the Free Clock is Active</p>
 </li>
 <li>
-<p>From the Main Menu, go to Tools and open the <strong><a href="../tools/#midi-monitor-monitor">MIDI Monitor</a> (<code>Monitor</code>)</strong>. Check if NGEN is receiving Start, Stop and Tick messages.</p>
+<p>From the Main Menu, go to Tools and open the <strong><a href="../tools/#midi-monitor-monitor">MIDI Monitor</a> (<code>Monitor</code>)</strong>, scroll to the Status view and check if NGEN is receiving clock and sending notes.</p>
 </li>
 </ul>
 <h4 id="step-3-check-ngens-tracks-and-generators">Step 3: Check NGEN's tracks and generators</h4>
@@ -955,7 +1018,7 @@
 <p>Use the <strong><code>Test MIDI</code></strong> feature available in <a href="../settings/#midi"><strong>Settings / MIDI</strong></a></p>
 </li>
 <li>
-<p>Open the <strong>MIDI Monitor</strong> and press the <span class="keys"><kbd>GENERATE</kbd></span> button to switch to the Output view. Check if NGEN is generating MIDI notes and what channels it's sending MIDI notes to (fourth / last column).</p>
+<p>Open the <strong>MIDI Monitor</strong> and press the <span class="keys"><kbd>MENU ENCODER</kbd></span> to switch to the Status view to check if NGEN is receiving Clock and generating notes.</p>
 </li>
 <li>
 <p>Check if your destination (synthesizer, drum machine, or DAW instrument) is set to receive MIDI on the correct <strong>MIDI channel</strong>.</p>
@@ -1008,7 +1071,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2024-10-11
+    2025-01-07
   </span>
 
     
