@@ -104,7 +104,7 @@ Each row represents an event slot and each column represents a value associated 
 
 Turning the ++"MENU ENCODER"++ adjusts the selected column and clicking it advances to the next column.
 
-It's also possible to `move between columns by holding down ++"FUNCTION"++ while turning the ++"MENU ENCODER"++.
+It's also possible to move between columns by holding down ++"FUNCTION"++ while turning the ++"MENU ENCODER"++.
 
 To scroll through the event slot list, select the first column (slot number) and turn the ++"MENU ENCODER"++.
 
@@ -138,7 +138,7 @@ The currently available event types are:
 Event Slots also include optional track mutes (per slot) that can be used to create further variations of existing patterns. 
 When loading a pattern, NGEN will automatically turn off the "Active" parameter of the muted tracks.
 
-To open the Track Mute UI, navigate to the third column (value) and press ++"FUNCTION"++ + ++"MENU ENCODER"++ (click).
+To open the Track Mute UI, press ++"TRACK | CLK"++ button.
 
 Turn the ++"MENU ENCODER"++ to select between the 16 available tracks and click the ++"MENU ENCODER"++ to mute / unmute the selected track.
 
