@@ -138,7 +138,7 @@ The currently available event types are:
 Event Slots also include optional track mutes (per slot) that can be used to create further variations of existing patterns. 
 When loading a pattern, NGEN will automatically turn off the "Active" parameter of the muted tracks.
 
-To open the Track Mute UI, press ++"TRACK | CLK"++ button.
+To open the Track Mute UI, press the ++"TRACK | CLK"++ button.
 
 Turn the ++"MENU ENCODER"++ to select between the 16 available tracks and click the ++"MENU ENCODER"++ to mute / unmute the selected track.
 
