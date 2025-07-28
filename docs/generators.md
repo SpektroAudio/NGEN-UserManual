@@ -53,9 +53,9 @@ The 8 different algorithms available in ACDGEN can generate sequences that vary 
 • *Up-Stepped*: Similar to Upwards but it can also alternate between higher notes and the fundamental / base note.  
 • *Downwards*: Generates a sequence that tends to go down in the active scale.  
 • *Down-Stepped*: Similar to Downwards but it can also alternate between lower notes and the fundamental / base note.  
-• *ARP3*: Algorithm inspired by arpeggiated sequences.
-• *LEAD*: Generates sequences with longer and more sustained notes that can be used for lead lines and main melodies.
-• *LEGATO*: Generates sequences where all notes are played in legato (each note lasts until the next note)
+• *ARP3*: Algorithm inspired by arpeggiated sequences.  
+• *Lead*: Generates sequences with longer and more sustained notes that can be used for lead lines and main melodies.  
+• *Legato*: Generates sequences where all notes are played in legato (each note lasts until the next note).  
 
 
 **Parameter List:**
