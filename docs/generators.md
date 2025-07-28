@@ -217,13 +217,15 @@ Loops can be manipulated in real time by adjusting the Length, Direction, Shift 
 **Parameter List:**
 
 
-| **Parameter** |            **Description**             | **Hardware Mapping** |
-|---------------|:--------------------------------------:|---------------------:|
-| Load File     |         Loads a new MIDI file.         |       ++"GENERATE"++ |
-| Transpose     |        Transposes the sequence.        |        ++"PARAM 1"++ |
-| Length        | Sets the total length of the sequence. |        ++"PARAM 2"++ |
-| Density       |      Sets the sequence's density.      |        ++"PARAM 3"++ |
-| Offset        |    Sets the offset of the sequence.    |        ++"PARAM 4"++ |
+| **Parameter** |                   **Description**                   | **Hardware Mapping** |
+|---------------|:---------------------------------------------------:|---------------------:|
+| Load File     |                Loads a new MIDI file.               |       ++"GENERATE"++ |
+| Length        |        Sets the total length of the sequence.       |        ++"PARAM 2"++ |
+| Density       |             Sets the sequence's density.            |        ++"PARAM 3"++ |
+| Transpose     |               Transposes the sequence.              |        ++"PARAM 1"++ |
+| Direction     | Sets the playback direction: FRWRD, BCKWRD, RANDOM. |        ++"PARAM 4"++ |
+| Quantize      |        Shifts notes to active Key and Scale.        |                   -  |
+
 
 ---
 
