@@ -45,19 +45,25 @@ A global Octave control is also available under the Scale sub-menu.
 
 - Chromatic (```CHROM```)
 
+- User Scale (```USER```)
+
 ---
 
 <div class="forced-pb"></div>
+
+## User Scale
+
+The User Scale is a custom 12-note scale that can saved to individual Projects and can be edited using the Scale Editor.
 
 ## Scale Editor
 
 ![](images/NGEN_Scale_Editor.gif){align=right}
 
-The Scale Editor allows you edit the currently selected scale by enabling or disabling notes.
+The Scale Editor allows you edit the [User Scale](#user-scale) by enabling or disabling notes.
 
 Use the ++"MENU ENCODE"++ to select a note and press the ++"MENU ENCODE"++ to toggle it on or off.
 
 To return to the Scale menu, press the ++"RETURN"++ button.
 
 !!! warning
-	The Scale Editor is a beta feature and subject to change. Changes made in the Scale Editor are only temporary. Selecting a different scale will reset the changes made in the Scale Editor.
+	The Scale Editor is a beta feature and subject to change.

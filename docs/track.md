@@ -17,7 +17,7 @@ These settings can be accessed via the **TRACK** sub-menu (available in the **MA
 
 ![Track Selector](images/NGEN_TrackSelector.png){ align=right }
 
-Because NGEN's controls are mapped to the active track by default, it's important to be able to quickly switch between tracks.
+Because NGEN's controls are mapped to the selected track by default, it's important to be able to quickly switch between tracks.
 
 To select a different track:
 
@@ -25,7 +25,7 @@ To select a different track:
 
 2. Use the ++"MENU ENCODER"++ to scroll through the available tracks.
 
-3. Press the ++"MENU ENCODER"++ to select a track.
+3. Press the ++"MENU ENCODER"++ to confirm and select a track.
 
 For quicker selection, turn the ++"MENU ENCODER"++ while holding down the ++"TRACK / CLK"++ button.
 

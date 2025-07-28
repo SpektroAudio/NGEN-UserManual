@@ -27,11 +27,17 @@ flowchart TD
   A --> I[PROJECT];
   A --> J[SETTINGS];
 
-  B --> K[GENERATOR PARAMETERS];
+  subgraph GEN [ ]
+    direction LR
+    P[PARAM VIEW] <--> K[GENERATOR PARAMETERS]
+  end
+  B --> GEN
+  
   C --> L[MIDIFX PARAMETERS];
   F --> M[MACRO];
   M --> N[MACRO MAPPING];
   G --> O[TOOL SETTINGS];
+
 
 ```
 <br/><br/>
@@ -67,6 +73,20 @@ Different sub-menus can contain different menu items such as parameters, toggle 
 
 ---
 
+## Extra Parameter Symbols
+
+Some menu items and parameters can display additional symbols on the bottom right corner such as:
+
+- **Beta** - The Beta label is used to indicate features that are still in beta / under development.
+
+![](images/BetaIcon.jpeg)
+
+- **Next** - The Next label (represented by ```>>```) is used to indicate parameters that only affect the next pattern generation (non real-time).
+  
+![](images/NextIcon.jpeg)
+
+---
+
 ## Advanced Parameters and Settings
 
 NGEN includes a variety of different features, settings and parameters that lets you use it in a variety of different ways but, to make it easier for you to get started, certain advanced parameters and settings are hidden by default.
@@ -86,6 +106,19 @@ When moving one of the PARAM knobs, NGEN will display the name, current value, a
 While in Generator or Clock sub-menus, the display will switch to the selected Idle mode (Animation or Parameter List) after 5 seconds of no hardware interaction unless Idle Mode is set to ```OFF```.
 
 ---
+
+## Param View
+
+![](images/NGEN_ParamView.jpeg){align=right}
+
+The Param View provides an overview of the parameters currently mapped to the [4 Param knobs](hardwarecontrols.md#knobs).
+
+To enter this view, navigate to any sub-menu that displays the knob icon in its header (such as Generator, MIDI FX, Scale, or Clock) and scroll the ++"MENU ENCODER"++ counter-clockwise (left). To exit, either press the ++"RETURN"++ button or scroll the ++"MENU ENCODER"++ clockwise (right).
+
+The Param View dedicates a quadrant of the display to each of the first four parameter mappings, showing the knob number, the parameter name, and its current value. To view the mappings for the additional four parameters, press and hold the ++"FUNCTION"++ button.
+
+When a Param knob is adjusted in this view, its corresponding quadrant is highlighted for immediate visual feedback. Note that while the Param View is active, NGEN temporarily disables other displays, such as the standard Parameter view and any Idle Mode animations.
+
 
 ## Idle Modes
 
@@ -146,10 +179,11 @@ To exit the screensaver mode, move any of the knobs or click on any of the butto
 |:------------------------------------------------------|:---------------------------------------------|
 | Open Track Selector                                   | ++"TRACK/CLK"++                              |
 | Quick Track Selection                                 | ++"TRACK/CLK (hold)"++  + ++"MENU ENCODER"++ |
+| Toggle Track Active                                   | ++"TRACK/CLK"++ +  ++"MENU ENCODER (click)"++|
 | Open Track Settings                                   | ++"FUNCTION"++ + ++"TRACK/CLK"++             |
 | Open Track Edit (while in Track sub-menu)             | ++"FUNCTION"++ + ++"TRACK/CLK"++             |
 | Toggle Track Active (while in Track Selector)         | ++"FUNCTION"++ + ++"MENU ENCODER (click)"++  |
-| Reload Track settings from active pattern             | ++"TRACK/CLK"++ + ++"MENU ENCODER (click)"++ |
+| Reload Track settings from active pattern             | ++"TRACK/CLK"++ + ++"RETURN"++ |
 | Trigger the Generate action for the active Generator  | ++"GENERATE"++                               |
 | Trigger the secondary action for the active Generator | ++"FUNCTION"++ + ++"GENERATE"++              |
 
@@ -173,6 +207,8 @@ To exit the screensaver mode, move any of the knobs or click on any of the butto
 | **Action**                                      | **Shortcut**                                 |
 |:------------------------------------------------|:---------------------------------------------|
 | Quick Clock Selection (while in Clock sub-menu) | ++"TRACK/CLK (hold)"++  + ++"MENU ENCODER"++ |
+| Reset Clock                                     | ++"FUNCTION"++  + ++"GENERATE"++             |
+
 
 ### Perform Shortcuts
 

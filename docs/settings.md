@@ -60,9 +60,18 @@ This sub-menu contains parameters available for the CV outputs.
 
 - **4xTrig**: converts selected MIDI notes (based on parameters Note Trg 1-4) to 4 gate outputs. This mode is designed to be used with drum / percussive generators such as [DrumGen](generators.md#drumgen) and [Samba](generators.md#samba).
 
-!!! note ""
+- **CV1 +**:  converts MIDI notes from the CV Out 1 with additional velocity and random outputs.
 
-    Keep in mind that these are still experimental settings.
+- **CV1+CLK**: converts MIDI notes from the CV Out 1 and outputs clock / reset.
+
+**Mode Outputs:**
+
+|         | CV 1            | GATE 1         | CV 2              | GATE 2         |
+|---------|-----------------|----------------|-------------------|----------------|
+| CV 1-2  | CV Out 1 Pitch  | CV Out 1 Gate  | CV Out 2 Pitch    | CV Out 2 Gate  |
+| 4xTrig  | Note Trigger 1  | Note Trigger 2 | Note Trigger 3    | Note Trigger 4 |
+| CV1 +   | CV Out 1 Pitch  | CV Out 1 Gate  | CV Out 1 Velocity | Random         |
+| CV1+CLK | CV Out 1 Pitch  | CV Out 1 Gate  | Clock (1/16th)    | Reset (2 bars) |
 
 | **Parameter**    | **Description**                                                   |
 |------------------|-------------------------------------------------------------------|

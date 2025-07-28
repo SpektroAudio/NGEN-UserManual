@@ -5,13 +5,13 @@
 ## About Generators
 ![NGEN Generator Sub-menu](images/NGEN_MainMenu_Generator.png){align=right}
 
-The generators in NGEN are used to generate MIDI notes/sequences to play external MIDI instruments.
+The generators in NGEN are designed to produce MIDI notes and sequences for external MIDI instruments.  
+Each generator employs a distinct algorithm to generate unique MIDI sequences based on specific musical concepts, styles, and production techniques. 
 
-Each generator uses a specific algorithm to create a unique MIDI sequence based on certain ideas, musical styles, and production techniques. These sequences can then be modified and interacted with via the different parameters available in each generator.
+The output from each generator is simultaneously routed to the [Track](track.md)'s MIDI Out and Aux Out ports. This dual routing capability allows MIDI notes to be transmitted from one track to another, enabling complex signal chaining and inter-track interaction.
 
-The output of each generator is routed to the [Track](track.md)'s both MIDI out and Aux Out (which can be used to send MIDI notes from one track to another).
+Each track within the system can independently load any available generator, providing flexibility in configuring individual tracks for different musical tasks.
 
-Each track can load any of the available generators.
 
 !!! info 
     The animations for each generator are displayed via the Idle Mode feature while in the Generator sub-menu. To see the animations, set  Idle Mode is set to ```Animation``` in the [Settings](settings.md#display), navigate to the Generator sub-menu and leave the machine idle until the display switch to the Idle Mode.
@@ -28,6 +28,16 @@ While in the **GENERATOR** sub-menu or the **MAIN MENU**, the main parameters of
 Some parameters such as Length, Shift and Density are available in many of the available generators. These common parameters are always mapped to the same knobs to improve usability and consistency.
 
 A complete list of parameters available for the selected Generator can be accessed via the **GENERATOR** sub-menu available in the **MAIN MENU**.
+
+---
+
+## Generating New Sequences
+
+Most Generators in NGEN are capable of generating an endless number of sequences according to their internal algorithms. 
+
+To generate a new sequence for the active Track / Generator, press the ++"GENERATE"++ button.
+
+It's also possible to generate a variation of the current pattern by holding ++"GENERATE"++, adjusting the variation amount using ++"MENU ENCODER (Scroll)"++, and releasing the  ++"GENERATE"++ button.
 
 -----
 
@@ -171,6 +181,64 @@ During recording, the ++"GENERATE"++ button adds a silent / mute step and the ++
 | Probability (```Prob```)     |                 Sets the probability of playing back notes in the sequence.                 |                  ++"PARAM 3"++ |
 | Note Length (```Note Len```) |                    Sets the proportional note length of generated notes.                    | ++"FUNCTION"++ + ++"PARAM 2"++ |
 | Quantize                     | Toggles pitch quantization of the sequence (based on the active Key and [Scale](scale.md)). |                              – |
+
+---
+
+### LUAR
+
+![](images/MARP.gif){align=right}
+
+**Generator Description:**
+
+Luar is a hybrid (mono / poly) generator that combines different techniques to create rhythmic polyphonic sequences.
+It uses two gate sequences (low and high) that, when combined, generate a chord.
+
+**Parameter List:**
+
+| **Parameter** |                    **Description**                     |           **Hardware Mapping** |
+|---------------|:------------------------------------------------------:|-------------------------------:|
+| Generate      |                Generates a new sequence                |                 ++"GENERATE"++ |
+| Transpose     |               Transposes the sequence .                |                  ++"PARAM 1"++ |
+| Length        |         Sets the total length of the sequence.         |                  ++"PARAM 2"++ |
+| Density       |              Sets the sequence's density.              |                  ++"PARAM 3"++ |
+| Balance       |      Sets the balance between low and high notes.      |                  ++"PARAM 4"++ |
+| Octave        |                    Sets the octave.                    | ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Interval      |          Sets the accent and pitch interval.           | ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Random        | Sets the random amount for step types (note x chords). | ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Bass Offset   |      Sets the beat offset for the bass sequence.       | ++"FUNCTION"++ + ++"PARAM 4"++ |
+| Express       |       Enables chord articulations / expressions.       |                              – |
+
+---
+### LOOPER
+
+![](images/LOOPER.gif){align=right}
+
+**Generator Description:**
+
+The Looper is a utility Generator that functions as a polyphonic MIDI looper, capable of recording loops up to 4 bars (32 steps) in length with a maximum of 32 MIDI notes. 
+It receives MIDI notes from an external source via a [Track's](track.md) MIDI Input Channel or from other [Tracks](track.md) using an Aux Out. 
+The Looper operates with an internal resolution of 24 PPQN, which is the standard for MIDI clock.
+
+To record a loop:
+
+1.  Route the desired MIDI notes to the Looper's track.
+   
+2.  Press the ++"GENERATE"++ button to clear the buffer and begin recording.
+
+3.  Wait for the buffer to fill completely, or press ++"GENERATE"++ a second time to stop the recording process.
+
+Once recording is complete, the Looper automatically filters out any duplicate notes and assigns a Density value to each note in the sequence.
+
+**Parameter List:**
+
+| **Parameter** |             **Description**              | **Hardware Mapping** |
+|---------------|:----------------------------------------:|---------------------:|
+| Record        |          Start / Stop Recording          |       ++"GENERATE"++ |
+| Shift         |  Transposes the sequence diatonically.   |        ++"PARAM 1"++ |
+| Length        |      Sets the playback loop length.      |        ++"PARAM 2"++ |
+| Density       |         Sets the density amount.         |        ++"PARAM 3"++ |
+| Quantize      |       Toggles pitch quantization.        |                      |
+| Beat Quant    | Toggles tempo / beat quantization (1/16) |                      |
 
 ---
 

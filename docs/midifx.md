@@ -36,6 +36,37 @@ Accent changes the MIDI velocity of incoming MIDI notes according to it's intern
 | Length | Length of the accent sequence | ++"PARAM 2"++ |
 | Intensity | Increases the velocity of all MIDI notes to 127 | ++"PARAM 3"++ |
 
+### CALL
+
+Call is a MIDI FX that uses the "call and response" technique. It separates incoming MIDI notes into two groups based on different modes and processes them separately.  
+Notes in the first group are sent directly to the output, while notes in the second group are modified according to the selected target.  
+Each group's note probability can be adjusted using the two separate Probability parameters.
+
+Modes:
+
+- **PITCH**: Separates notes based on pitch
+
+- **BEATS**: Separates notes based on beat count
+
+- **NOTES**: Separates notes based on note count
+
+Targets:
+
+- **CHANNEL**: Directs notes from the second group to the next MIDI channel (after the main channel set via [Track Channel Out](track.md#track-settings))
+
+- **OCTAVE**: Transposes notes in the second group by one octave
+
+**List of Parameters:**
+
+| **Parameter** |               **Description**               | **Hardware Mapping** |
+|---------------|:-------------------------------------------:|---------------------:|
+| Mode          |     Sets the mode for separating notes      |        ++"PARAM 1"++ |
+| Target        |    Sets the target for the second group     |        - |
+| Threshold     |  Sets the threshold for the selected mode   |        ++"PARAM 2"++ |
+| Probability 1 |             Group 1 Probability             |        ++"PARAM 3"++ |
+| Probability 2 |             Group 2 Probability             |        ++"PARAM 4"++ |
+| Offset        |      Interval of the third chord note       |        - |
+| Random        | Sets the random amount for group separation |        ++"FUNCTION"++ + ++"PARAM 2"++ |
 
 ### CHORD
 
@@ -51,6 +82,7 @@ Chords transforms single notes into chords by adding up to 4 notes on top of inc
 | Chord Interval 3 |         Interval of the third chord note          |                  ++"PARAM 3"++ |
 | Chord Interval 4 |         Interval of the third chord note          |                  ++"PARAM 4"++ |
 | Probability      |         Probability of triggering a chord         | ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Expression       |             Set the chord expression              | ++"FUNCTION"++ + ++"PARAM 4"++ |
 
 
 ### ECHOES

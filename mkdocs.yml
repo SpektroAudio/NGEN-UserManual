@@ -71,6 +71,7 @@ nav:
     - Tracks: 'track.md'
   - Tips & Techniques: 'techniques.md'
   - Extra Guides:
+    - Additional NGEN Resources: 'guides/resources.md'
     - Using NGEN with Elektron devices: 'guides/elektron.md'
   - System:
     - Settings: 'settings.md'

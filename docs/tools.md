@@ -116,20 +116,30 @@ Each event slot can be set to a different event **type**, event **value**, and *
 
 The currently available event types are:
 
-|            **Event Type**             |                             **Description**                             |      **Value**       |
-|:-------------------------------------:|:-----------------------------------------------------------------------:|:--------------------:|
-|          Empty (```Empty```)          |                         Empty event slot (idle)                         |         N/A          |
-|       Play Pattern (```PTRN```)       |               Loads a pattern (with optional track mutes)               | Pattern to be loaded |
-|    Generate Pattern (```G.PTN```)     |   Triggers a [**Pattern Generation**](pattern.md#pattern-generation)    | Probability (0-100%) |
-|     Generate Track (```G.TRK```)      | Triggers the "**Generate**" action in the selected track (1 through 16) |     Track Number     |
-|     Variate Pattern (```V.PTN```)     |            Generates a **variation** of the current pattern             | Probability (0-100%) |
-|      Variate Track (```V.TRK```)      | Triggers the "**Variate**" action in the selected track (1 through 16)  |     Track Number     |
-|     Reload Pattern (```R.PTN```)      |                       Reloads the active pattern                        | Probability (0-100%) |
-|      Reload Track (```R.TRK```)       |                       Reloads the selected track                        |     Track Number     |
-| Randomize Pattern State (```S.PTN```) |                Randomizes the Track State of all tracks                 | Probability (0-100%) |
-|  Randomize Track State (```S.TRK```)  |            Randomizes the Track State of the selected track             |     Track Number     |
-|           Jump (```JUMP```)           |              Move the song position to the selected event               |  Event Slot Number   |
-
+|            **Event Type**             |                             **Description**                             |       **Value**       |
+|:-------------------------------------:|:-----------------------------------------------------------------------:|:---------------------:|
+|          Empty (```Empty```)          |                         Empty event slot (idle)                         |          N/A          |
+|       Play Pattern (```PTRN```)       |               Loads a pattern (with optional track mutes)               | Pattern to be loaded  |
+|    Generate Pattern (```G.PTN```)     |   Triggers a [**Pattern Generation**](pattern.md#pattern-generation)    | Probability (0-100%)  |
+|     Generate Track (```G.TRK```)      | Triggers the "**Generate**" action in the selected track (1 through 16) |     Track Number      |
+|     Variate Pattern (```V.PTN```)     |            Generates a **variation** of the current pattern             | Probability (0-100%)  |
+|      Variate Track (```V.TRK```)      | Triggers the "**Variate**" action in the selected track (1 through 16)  |     Track Number      |
+|     Reload Pattern (```R.PTN```)      |                       Reloads the active pattern                        | Probability (0-100%)  |
+|      Reload Track (```R.TRK```)       |                       Reloads the selected track                        |     Track Number      |
+| Randomize Pattern State (```S.PTN```) |                Randomizes the Track State of all tracks                 | Probability (0-100%)  |
+|  Randomize Track State (```S.TRK```)  |            Randomizes the Track State of the selected track             |     Track Number      |
+|           Jump (```JUMP```)           |              Move the song position to the selected event               |   Event Slot Number   |
+|       Scale - Key (```SCL.K```)       |                           Set the global key                            |          Key          |
+|      Scale - Scale (```SCL.S```)      |                          Set the global scale                           |         Scale         |
+|     Scale - Octave (```SCL.O```)      |                          Set the global octave                          |        Octave         |
+|    MIDI Clock Swing (```M.SWG```)     |                     Set the MIDI Clock Swing amount                     | Swing Amount (0-100%) |
+|     Free Clock BPM (```F.BPM```)      |                         Set the Free Clock BPM                          |          BPM          |
+|     Free Clock Mod (```F.MOD```)      |                         Set the Free Clock Mod                          |  Mod Amount (0-100%)  |
+|     Free Clock Len (```F.LEN```)      |                        Set the Free Clock Length                        |        Length         |
+|    Bounce Clock Width (```BC.W```)    |                       Set the Bounce Clock Width                        |     Width (0-60)      |
+|   Bounce Clock Height (```BC.H```)    |                       Set the Bounce Clock Height                       |     Height (0-18)     |
+|    Bounce Clock Balls (```BC.B```)    |                       Set the Bounce Clock Balls                        |      Balls (1-6)      |
+|    Bounce Clock Speed (```BC.S```)    |                       Set the Bounce Clock Speed                        |     Speed (0-32)      |
 
 ###  Track Mutes
 
