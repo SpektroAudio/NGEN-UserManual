@@ -63,9 +63,9 @@ The 8 different algorithms available in ACDGEN can generate sequences that vary 
 • *Up-Stepped*: Similar to Upwards but it can also alternate between higher notes and the fundamental / base note.  
 • *Downwards*: Generates a sequence that tends to go down in the active scale.  
 • *Down-Stepped*: Similar to Downwards but it can also alternate between lower notes and the fundamental / base note.  
-• *ARP3*: Algorithm inspired by arpeggiated sequences.
-• *LEAD*: Generates sequences with longer and more sustained notes that can be used for lead lines and main melodies.
-• *LEGATO*: Generates sequences where all notes are played in legato (each note lasts until the next note)
+• *ARP3*: Algorithm inspired by arpeggiated sequences.  
+• *Lead*: Generates sequences with longer and more sustained notes that can be used for lead lines and main melodies.  
+• *Legato*: Generates sequences where all notes are played in legato (each note lasts until the next note).  
 
 
 **Parameter List:**
@@ -285,13 +285,15 @@ Loops can be manipulated in real time by adjusting the Length, Direction, Shift 
 **Parameter List:**
 
 
-| **Parameter** |            **Description**             | **Hardware Mapping** |
-|---------------|:--------------------------------------:|---------------------:|
-| Load File     |         Loads a new MIDI file.         |       ++"GENERATE"++ |
-| Transpose     |        Transposes the sequence.        |        ++"PARAM 1"++ |
-| Length        | Sets the total length of the sequence. |        ++"PARAM 2"++ |
-| Density       |      Sets the sequence's density.      |        ++"PARAM 3"++ |
-| Offset        |    Sets the offset of the sequence.    |        ++"PARAM 4"++ |
+| **Parameter** |                   **Description**                   | **Hardware Mapping** |
+|---------------|:---------------------------------------------------:|---------------------:|
+| Load File     |                Loads a new MIDI file.               |       ++"GENERATE"++ |
+| Length        |        Sets the total length of the sequence.       |        ++"PARAM 2"++ |
+| Density       |             Sets the sequence's density.            |        ++"PARAM 3"++ |
+| Transpose     |               Transposes the sequence.              |        ++"PARAM 1"++ |
+| Direction     | Sets the playback direction: FRWRD, BCKWRD, RANDOM. |        ++"PARAM 4"++ |
+| Quantize      |        Shifts notes to active Key and Scale.        |                   -  |
+
 
 ---
 
