@@ -4,7 +4,7 @@
 
 ## About Scale
 
-![](images/NGEN_Scale.png){align=right}
+![](images/NGEN_Scale.jpeg){align=right}
 Because NGEN is designed with live performance in mind, most of the Generators process notes in terms of musical intervals rather than specific notes. Therefore these Generators use the selected **Key** and **Scale** in the **SCALE** sub-menu to translate those intervals to the appropriate notes.
 
 This approach lets the user change the **Key** and **Scale** of all **[Tracks](track.md)** simultaneously via the **SCALE** sub-menu (available in the **MAIN MENU**).

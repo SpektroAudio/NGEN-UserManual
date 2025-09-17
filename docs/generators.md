@@ -3,7 +3,7 @@
 ---
 
 ## About Generators
-![NGEN Generator Sub-menu](images/NGEN_MainMenu_Generator.png){align=right}
+![NGEN Generator Sub-menu](images/NGEN_MainMenu_Generator.jpeg){align=right}
 
 The generators in NGEN are designed to produce MIDI notes and sequences for external MIDI instruments.  
 Each generator employs a distinct algorithm to generate unique MIDI sequences based on specific musical concepts, styles, and production techniques. 
@@ -18,6 +18,22 @@ Each track within the system can independently load any available generator, pro
 
 ---
 
+## Generating New Sequences
+
+![Dynamic Variations](images/NGEN_DynamicVariation.gif){align=right}
+
+Most generators in NGEN can produce an unlimited number of sequences based on their internal algorithms. 
+
+To **generate a new sequence** for the active Track/Generator, press the ++"GENERATE"++ button.
+
+To **generate a variation** of the current pattern, hold ++"GENERATE"++, turn the ++"MENU ENCODER"++ **counterclockwise** to adjust the variation amount, and then release ++"GENERATE"++.
+
+To **[randomize the state](track.md#track-states)** of the current track, hold ++"GENERATE"++, turn the ++"MENU ENCODER"++ **clockwise**, and release ++"GENERATE"++.
+
+
+
+---
+
 ## Generator Parameters
 
 While in the **GENERATOR** sub-menu or the **MAIN MENU**, the main parameters of the selected generator are mapped to the NGEN 4 knobs (++"PARAM 1"++, ++"PARAM 2"++, ++"PARAM 3"++, and ++"PARAM 4"++): 
@@ -29,18 +45,7 @@ Some parameters such as Length, Shift and Density are available in many of the a
 
 A complete list of parameters available for the selected Generator can be accessed via the **GENERATOR** sub-menu available in the **MAIN MENU**.
 
----
-
-## Generating New Sequences
-
-Most Generators in NGEN are capable of generating an endless number of sequences according to their internal algorithms. 
-
-To generate a new sequence for the active Track / Generator, press the ++"GENERATE"++ button.
-
-It's also possible to generate a variation of the current pattern by holding ++"GENERATE"++, adjusting the variation amount using ++"MENU ENCODER (Scroll)"++, and releasing the  ++"GENERATE"++ button.
-
 -----
-
 
 ## List of Available Generators
 
@@ -158,7 +163,9 @@ New DrumGen templates can be created using the open-source [DrumGen Template Edi
 ---
 
 
-### INPUT SEQUENCE (```INSEQ```)
+<br><br>
+
+### INPUT SEQUENCER (```INSEQ```)
 
 ![](images/INSEQ.gif){align=right}
 
@@ -186,7 +193,7 @@ During recording, the ++"GENERATE"++ button adds a silent / mute step and the ++
 
 ### LUAR
 
-![](images/MARP.gif){align=right}
+![](images/LUAR.gif){align=right}
 
 **Generator Description:**
 

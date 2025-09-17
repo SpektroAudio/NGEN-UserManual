@@ -42,14 +42,14 @@ flowchart TD
 ```
 <br/><br/>
 
-Use the ++"MENU ENCODER"++  to scroll through the list of features and click the ++"MENU ENCODER"++ to navigate to a sub-menu. 
+Use the ++"MENU ENCODER"++ to scroll through the list of features and click the ++"MENU ENCODER"++ to navigate to a sub-menu. 
 To return to the previous menu, press the ++"Return"++ button.
 
 Different sub-menus can contain different menu items such as parameters, toggle switches, and actions which can be selected by scrolling the menu ++"MENU ENCODER"++.
 
 <br/>
 
-* **Parameters** (indicated by the parameter name on top and value at the bottom) can be controlled by clicking the ++"MENU ENCODER"++ to access the parameter's value and scrolling the ++"MENU ENCODER"++ to change it's value.
+* **Parameters** (indicated by the parameter name on top and value at the bottom) can be controlled by clicking the ++"MENU ENCODER"++ to access the parameter's value and scrolling the ++"MENU ENCODER"++ to change its value
 
 !!! Note
     Most parameter values are adjusted in real-time as you turn the encode but some (such as the Generator and MIDI FX selection in the Track sub-menu) require you to click the encoder to confirm the new value.
@@ -61,13 +61,13 @@ Different sub-menus can contain different menu items such as parameters, toggle 
 
 <div class="forced-pb"></div>
 
-* **Switches** can be toggled by clicking the ++"MENU ENCODER"++.
+* **Switches** can be toggled by clicking the ++"MENU ENCODER"++
 
 ![](images/NGEN_ACDGEN_KBShift1.jpeg) ![](images/NGEN_ACDGEN_KBShift2.jpeg)
 
 <br/>
 
-* **Actions** (indicated by the action name displayed on the center of the screen) can be called by clicking the ++"MENU ENCODER"++.
+* **Actions** (indicated by the action name displayed on the center of the screen) can be called by clicking the ++"MENU ENCODER"++
 
 ![](images/NGEN_ACDGEN_Generate.jpeg)
 
@@ -77,11 +77,11 @@ Different sub-menus can contain different menu items such as parameters, toggle 
 
 Some menu items and parameters can display additional symbols on the bottom right corner such as:
 
-- **Beta** - The Beta label is used to indicate features that are still in beta / under development.
+- **Beta** - The Beta label is used to indicate features that are still in beta / under development
 
 ![](images/BetaIcon.jpeg)
 
-- **Next** - The Next label (represented by ```>>```) is used to indicate parameters that only affect the next pattern generation (non real-time).
+- **Next** - The Next label (represented by ```>>```) is used to indicate parameters that only affect the next pattern generation (non real-time)
   
 ![](images/NextIcon.jpeg)
 
@@ -119,6 +119,7 @@ The Param View dedicates a quadrant of the display to each of the first four par
 
 When a Param knob is adjusted in this view, its corresponding quadrant is highlighted for immediate visual feedback. Note that while the Param View is active, NGEN temporarily disables other displays, such as the standard Parameter view and any Idle Mode animations.
 
+The Param View can be disabled via the ```PARAM VIEW``` toggle available in [Settings / Display](settings.md#display).
 
 ## Idle Modes
 
@@ -157,79 +158,11 @@ These effects can be disabled via the ```UI Visual FXs``` setting available in [
 ## Screensaver
 
 ![](images/NGEN_Screensaver.gif){align=right}
-In order to prevent display burn-in, NGEN's display will go into screensaver mode after a certain period (determined by the [Screensaver Period setting](settings.md#display)) of no hadware interaction (unless it's displaying an animation). 
+In order to prevent display burn-in, NGEN's display will go into screensaver mode after a certain period (determined by the [Screensaver Period setting](settings.md#display)) of no hardware interaction (unless it's displaying an animation). 
 The screensaver does not affect other functions so NGEN will continue to work normally while in screensaver mode.
 
 To exit the screensaver mode, move any of the knobs or click on any of the buttons.
 
 
 <br><br>
-
----
-
-
-<div class="forced-pb"></div>
-
-
-## Shortcuts
- 
-### Track Shortcuts
-
-| **Action**                                            | **Shortcut**                                 |
-|:------------------------------------------------------|:---------------------------------------------|
-| Open Track Selector                                   | ++"TRACK/CLK"++                              |
-| Quick Track Selection                                 | ++"TRACK/CLK (hold)"++  + ++"MENU ENCODER"++ |
-| Toggle Track Active                                   | ++"TRACK/CLK"++ +  ++"MENU ENCODER (click)"++|
-| Open Track Settings                                   | ++"FUNCTION"++ + ++"TRACK/CLK"++             |
-| Open Track Edit (while in Track sub-menu)             | ++"FUNCTION"++ + ++"TRACK/CLK"++             |
-| Toggle Track Active (while in Track Selector)         | ++"FUNCTION"++ + ++"MENU ENCODER (click)"++  |
-| Reload Track settings from active pattern             | ++"TRACK/CLK"++ + ++"RETURN"++ |
-| Trigger the Generate action for the active Generator  | ++"GENERATE"++                               |
-| Trigger the secondary action for the active Generator | ++"FUNCTION"++ + ++"GENERATE"++              |
-
-
-### Pattern Shortcuts
-
-| **Action**                                                             | **Shortcut**                                       |
-|:-----------------------------------------------------------------------|:---------------------------------------------------|
-| Open Pattern Selector                                                  | ++"PATTERN"++                                      |
-| Quick Pattern Selection                                                | ++"PATTERN (hold)"++  + ++"MENU ENCODER"++         |
-| Save current pattern to selected pattern slot                          | ++"FUNCTION"++ + ++"MENU ENCODER (click)"++        |
-| Open Pattern Edit (while in Pattern sub-menu)                          | ++"FUNCTION"++ + ++"PATTERN"++                     |
-| Queue / Load next pattern                                              | ++"PATTERN"++ + ++"GENERATE"++                     |
-| Queue / Load previous pattern                                          | ++"PATTERN"++ + ++"FUNCTION"++ + ++"GENERATE"++    |
-| Reload active pattern                                                  | ++"PATTERN"++ + ++"RETURN"++                       |
-| Generate Pattern ([Pattern Generation](pattern.md#pattern-generation)) | ++"TRACK/CLK"++  + ++"GENERATE"++                  |
-| Variate Pattern                                                        | ++"TRACK/CLK"++  + ++"FUNCTION"++ + ++"GENERATE"++ |
-
-### Clock Shortcuts
-
-| **Action**                                      | **Shortcut**                                 |
-|:------------------------------------------------|:---------------------------------------------|
-| Quick Clock Selection (while in Clock sub-menu) | ++"TRACK/CLK (hold)"++  + ++"MENU ENCODER"++ |
-| Reset Clock                                     | ++"FUNCTION"++  + ++"GENERATE"++             |
-
-
-### Perform Shortcuts
-
-| **Action**                                        | **Shortcut**    |
-|:--------------------------------------------------|:----------------|
-| Toggle Track 1 Active (while in Perform sub-menu) | ++"TRACK/CLK"++ |
-| Toggle Track 2 Active (while in Perform sub-menu) | ++"PATTERN"++   |
-| Toggle Track 3 Active (while in Perform sub-menu) | ++"FUNCTION"++  |
-| Toggle Track 4 Active (while in Perform sub-menu) | ++"GENERATE"++  |
-
-### Song Mode Shortcuts
-
-| **Action**         | **Shortcut**                                |
-|:-------------------|:--------------------------------------------|
-| Open Track Mutes   | ++"TRACK/CLK"++                             |
-| Select next column | ++"MENU ENCODER (click)"++                  |
-| Select next row    | ++"FUNCTION"++ + ++"MENU ENCODER (click)"++ |
-| Move vertically (Column 1)<br>or Adjust Value    | ++"MENU ENCODER"++                          |
-| Move horizontally  | ++"FUNCTION"++ + ++"MENU ENCODER"++         |
-| Copy Event         | ++"FUNCTION"++ + ++"TRACK/CLK"++            |
-| Paste Event        | ++"FUNCTION"++ + ++"PATTERN"++              |
-| Clear Event        | ++"FUNCTION"++ + ++"RETURN"++               |
-| Insert Blank Event       | ++"FUNCTION"++ + ++"GENERATE"++             |
 

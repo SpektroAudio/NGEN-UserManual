@@ -10,7 +10,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw11.zip).
+1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw11.zip).
 
 2 - Connect NGEN to your computer via USB.
 
@@ -25,6 +25,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 7 - After rebooting, apply a Factory Reset (files will not be deleted).
 
 ??? "Firmware Archive for NGEN HW v1.1+"       
+      - [1.3.1 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw11.zip)
       - [1.3 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v13_hw11.zip)
       - [1.2 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v12_hw11.zip)
       - [1.1.2 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v112_hw11.zip)
@@ -51,7 +52,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -72,6 +73,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
         If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 
 ??? "Firmware Archive for NGEN HW v1.0" 
+      - [1.3.1 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw10.zip)      
       - [1.3 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v13_hw10.zip)      
       - [1.2 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v12_hw10.zip)
       - [1.1.2 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v112_hw10.zip)
@@ -82,6 +84,62 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 ## Change-Log
 
 ---
+
+
+### Version 1.4
+
+#### Added 
+- [CHORD](midifx.md#chord): New Expression parameter
+- [CLOCK GENERATORS](clockgen.md): Added Clock Reset (FN + Generate)
+- [CV OUT](settings.md#cv-out): New CV mode:  "CV1 Ext" 
+- [CV OUT](settings.md#cv-out): New CV mode:  "CV1+CLK" 
+- [GENERATORS](generators.md): New Looper generator
+- [GENERATORS](generators.md): Added variable variation per Generation (Generate + Menu Encoder Scroll)
+- [INPUT SEQUENCER](generators.md#input-sequencer-inseq): Added KB Shift parameter to Input Sequencer
+- [MENU SYSTEM](menunavigation.md): New UI icon to indicate parameters that only affect the next pattern generation
+- [MENU SYSTEM](menunavigation.md): Track | CLK + Menu Encoder (click) to Toggle Active Track
+- [MENU SYSTEM](menunavigation.md): New Params view: displays parameters mapped to Param 1-4
+- [MIDI FX](midifx.md): New Call MIDI FX
+- [PATTERNS](pattern.md): New Undo System
+- [SCALE](scale.md): New User Scale (stored via Projects)
+- [SONG MODE](tools.md#song-mode): Added new Song Mode actions for Scale and Clock Generators
+- Added initial support for the [NGEN Web Manager](https://github.com/SpektroAudio/NGEN-Web-Manager)
+
+#### Improved 
+- [ANIMATIONS](menunavigation.md#animations): Track number is now displayed during animations
+- [CHORD](midifx.md#chord): Improved Chord Expression randomization
+- [CHORD](midifx.md#chord): Upgraded to use the Chord framework
+- [FREE CLOCK](clockgen.md#free-clock): Improved clock accuracy
+- [FREE CLOCK](clockgen.md#free-clock): Re-enabled MIDI clock output for NGEN HW v1.1+
+- [MENU SYSTEM](menunavigation.md): Improved value display for list parameters
+- [MENU SYSTEM](menunavigation.md): Improved shortcut consistency in different views (Track / Pattern Selector)
+- [MENU SYSTEM](menunavigation.md): Improved Menu Encoder response when changing directions
+- [MENU SYSTEM](menunavigation.md): Animations for Non-Active Tracks are now dimmed / blurred (to indicate the track status)
+- [MENU SYSTEM](menunavigation.md): Improved Remote Display transmission (Display TX)
+- [MENU SYSTEM](menunavigation.md): Updated the Beta icon design
+- [MENU SYSTEM](menunavigation.md): Disabled Idle Mode while mapping Perform parameters
+- [MIDI I/O](setup.md#connecting-via-midi): Implemented buffer output for MIDI TRS outputs
+- [PROJECTS](projects.md): Reduced saving and loading times
+- [SCALE](scale.md): The Scale Editor now always edits the User scale
+- [TRACK](track.md): Added new "Selected" label to the Track Selector
+- [USB I/O](setup.md#connecting-via-cv): Updated serial commands
+- [USB I/O](setup.md#connecting-via-cv): Added timeout to serial commands
+- [TURING](generators.md#turing): Added support for Track States
+- Improved threader performance
+
+#### Fixed 
+- [ACDGEN](generators.md#acdgen): Enabled Perform mapping for ACDGEN Octave parameter
+- [GENERATORS](generators.md): Generators will now correctly use the global Variation Amount when generating new variations via MIDI CC
+- [MENU SYSTEM](menunavigation.md): Params 1-4 are now correctly mapped to Macro 1-8 while in the Macro Mapping sub-menu
+- [MENU SYSTEM](menunavigation.md): Pattern and Track Selectors now return the previous view
+- [MENU SYSTEM](menunavigation.md): Selecting different tracks via Track + Menu Encoder (Scroll) during an animation won't change the view mode
+- [MENU SYSTEM](menunavigation.md): Notifications now properly return to the previous view
+- [MENU SYSTEM](menunavigation.md): Generator / MIDI FX parameters (Track sub-menu) now revert to their active value if unconfirmed
+- [MIDI PLAYER](generators.md#midi-player): Idle animation now displays the name of the loaded MIDI file correctly
+- [POP](generators.md#pop): Expression and Dual E-SEQ Mode are now included in Track States
+- [TRACK](track.md): Track Output Channel is now properly assigned when Copying / Pasting between tracks with similar Generators
+
+
 
 ### Version 1.3.1
 
@@ -109,7 +167,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 - [SETTINGS](settings.md#display): New setting (```UI Visual FX```) for enabling / disabling UI Visual Effects.
 - [SETTINGS](settings.md#general): New setting (```Storage```) for switching between internal and microSD storage (HW v1.1 or newer).
 - [SHAPER](midifx.md#shaper): Added missing MIDI Mapping for parameters.
-- [SHORTCUT](menunavigation.md#shortcuts): New Active (track mute) shortcut from Track Selector (Function + Menu Encoder).
+- [SHORTCUT](shortcuts.md): New Active (track mute) shortcut from Track Selector (Function + Menu Encoder).
 - [TRACK](track.md): New Clear option in the Track Edit sub-menu.
 - [TRACK](track.md): New Clock Source selector in the Track sub-menu.
 
@@ -226,7 +284,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 
 #### Added
 
-- [CV OUT](setup.md#connecting-via-cv): Added new 4xTrig mode and Trigger 1-4 parameters.
+- [CV OUT](settings.md#cv-out): Added new 4xTrig mode and Trigger 1-4 parameters.
 - The [MENU SYSTEM](menunavigation.md) now retains the position of each menu during navigation.
 - AutoVari8 and CV Out settings are now stored as global settings on the device EEPROM (requires manual save via the Settings sub-menu).
 

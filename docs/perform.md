@@ -4,7 +4,7 @@
 
 ## About Performance Mode
 
-![](images/NGEN_MainMenu_Perform.png){align=right}
+![](images/NGEN_MainMenu_Perform.jpeg){align=right}
 
 NGEN includes a dedicated performance mode available under the **```PERFORM```** sub-menu.
 

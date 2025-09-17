@@ -1,5 +1,4 @@
 @media print {
-
   /* body {
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
@@ -24,36 +23,36 @@
     page-break-before: always;
   }
 
-
   .admonition {
     filter: grayscale(100%) contrast(1.2);
   }
 
-    .no-print {
-        display: none;
-        }
+  .no-print {
+    display: none;
+  }
 
-        .md-button{
-          display: none;
-        }
+  .md-button {
+    display: none;
+  }
 
-        .md-typeset table {
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 10px;
-        width: 80%;
-        table-layout: fixed;
-    }
+  .md-typeset table {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10px;
+    width: 80%;
+    table-layout: fixed;
+  }
 
-    .md-typeset td, .md-typeset tr {
-        /* border: 1px solid black; */
-        text-align: center;
-        font-size: 10px;
-        padding: 0px;
-        margin: 0px;
-    }
+  .md-typeset td,
+  .md-typeset tr {
+    /* border: 1px solid black; */
+    text-align: center;
+    font-size: 10px;
+    padding: 0px;
+    margin: 0px;
+  }
 
-    /* Reduce padding for the entire section */
+  /* Reduce padding for the entire section */
   .print-page {
     padding: 0px; /* Adjust padding as needed */
     page-break-before: always;
@@ -62,7 +61,6 @@
   .print-page h1 {
     padding: 10px 0; /* Reduce padding above and below headings, paragraphs, and horizontal lines */
     margin: 0px 0;
-    
   }
 
   .print-page h2 {
@@ -76,28 +74,31 @@
   }
 
   /* Optional: Reduce padding for specific elements inside the section */
-  .print-page h4, .print-page p, .print-page hr, .print-page ul {
-    padding: 4px 0; /* Reduce padding above and below headings, paragraphs, and horizontal lines */
-    margin: 0px 0;  /* Reduce margins as well to decrease spacing */
+  .print-page h4,
+  .print-page p,
+  .print-page hr,
+  .print-page ul {
+    padding: 2px 0; /* Reduce padding above and below headings, paragraphs, and horizontal lines */
+    margin: 0px 0; /* Reduce margins as well to decrease spacing */
   }
 
   /* Reduce padding for images */
   .print-page img {
     padding: 5px; /* Add small padding around images if needed */
     max-width: 100%; /* Ensure images don't overflow */
-    height: auto;    /* Maintain aspect ratio */
+    height: auto; /* Maintain aspect ratio */
     filter: grayscale(100%) contrast(1.2);
   }
 
-    .nav-section-title {
-        display: none;
-      }
+  .nav-section-title {
+    display: none;
+  }
 
-    .nav-section-title-end {
-      display: none;
-    }
+  .nav-section-title-end {
+    display: none;
+  }
 
-      /* Resize all images to 50% of their original width */
+  /* Resize all images to 50% of their original width */
   .md-typeset img {
     width: 30%;
     height: auto; /* Maintain aspect ratio */
@@ -107,37 +108,36 @@
     font-weight: bold;
   }
 
-    .md-typeset h1 {
-
-      font-size: 18pt; /* Adjust to your preferred size */
-    }
-  
-    .md-typeset h2 {
-      page-break-before: auto;
-      font-size: 16pt;
-    }
-  
-    h3 {
-      font-size: 14pt;
-    }
-  
-    h4 {
-      font-size: 12pt;
-    }
-  
-    h5 {
-      font-size: 12pt;
-    }
-  
-    h6 {
-      font-size: 12pt;
-    }
-
-    .md-typeset p, 
-    .md-typeset li,
-    .md-typeset blockquote {
-        font-size: 8pt; /* Adjust body text font size */
-        line-height: 1.5; /* Adjust line height for better readability */
-    }
+  .md-typeset h1 {
+    font-size: 18pt; /* Adjust to your preferred size */
   }
-  
+
+  .md-typeset h2 {
+    page-break-before: auto;
+    font-size: 16pt;
+  }
+
+  h3 {
+    font-size: 14pt;
+  }
+
+  h4 {
+    font-size: 12pt;
+  }
+
+  h5 {
+    font-size: 12pt;
+  }
+
+  h6 {
+    font-size: 12pt;
+  }
+
+  .md-typeset p,
+  .md-typeset li,
+  .md-typeset blockquote {
+    font-size: 8pt; /* Adjust body text font size */
+    line-height: 1.3; /* Adjust line height for better readability */
+  }
+}
+

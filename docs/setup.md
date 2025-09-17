@@ -4,7 +4,7 @@
 
 ## Connecting NGEN to other your setup
 
-NGEN can be connected to computers, drum machines and synthesizers via USB, MIDI and CV. These connections can also be used simultaniously.
+NGEN can be connected to computers, drum machines and synthesizers via USB, MIDI, and CV. These connections can also be used simultaneously.
 
 ### Connecting via USB
 

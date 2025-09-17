@@ -56,7 +56,9 @@ nav:
     - Hardware Setup: 'setup.md' 
     - Hardware Controls: 'hardwarecontrols.md'
     - Menu Navigation: 'menunavigation.md'
+    - Shortcuts: 'shortcuts.md'
     - File Management: 'filemanagement.md'
+    - Undo System: 'undo.md'
     - MIDI Mapping: 'midimapping.md'
     - NSL Programming: 'nsl.md'
   - Features:
@@ -69,10 +71,12 @@ nav:
     - Scale: 'scale.md'
     - Tools : 'tools.md'
     - Tracks: 'track.md'
+  - Quick Sheet: 'quicksheet.md'
   - Tips & Techniques: 'techniques.md'
   - Extra Guides:
     - Additional NGEN Resources: 'guides/resources.md'
     - Using NGEN with Elektron devices: 'guides/elektron.md'
+    - Troubleshooting: 'troubleshooting.md'
   - System:
     - Settings: 'settings.md'
     - Firmware Update: 'firmwareupdate.md'

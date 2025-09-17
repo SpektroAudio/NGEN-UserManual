@@ -5,7 +5,7 @@
 
 ## About Clock Generators
 
-![NGEN Generator Sub-menu](images/NGEN_MainMenu_Clock.png){align=right}
+![NGEN Generator Sub-menu](images/NGEN_MainMenu_Clock.jpeg){align=right}
 
 NGEN includes 3 clock generators that can be used for clocking all 16 [tracks](track.md). 
 

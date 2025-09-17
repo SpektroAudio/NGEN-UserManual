@@ -28,7 +28,7 @@ Press/Click the ++"MENU ENCODER"++ to select a sub-menu or file or switch betwee
 
 The ++"MENU ENCODER"++ can also be combined with other buttons to perform different operations.
 
-Please refer to the [shortcuts](menunavigation.md#shortcuts) table for more information.
+Please refer to the [shortcuts](shortcuts.md) table for more information.
 
 ---
 
@@ -67,7 +67,7 @@ The four hardware buttons included in ```NGEN``` perform specific functions when
 
 * ++"PATTERN"++ : Selects the active pattern.
 
-* ++"FUNCTION"++ : Modifies the behavior of the other buttons to enable access to additional functions (see [Shortcuts](menunavigation.md#shortcuts)).
+* ++"FUNCTION"++ : Modifies the behavior of the other buttons to enable access to additional functions (see [Shortcuts](shortcuts.md)).
 
 * ++"GENERATE"++ : Call the main function of the active **[Generator](generators.md)**, **[MIDI FX](midifx.md)** or **[Clock](clockgen.md)**.
 
@@ -78,7 +78,7 @@ The four hardware buttons included in ```NGEN``` perform specific functions when
 
 ## Shortcuts
 
-A list of shortcuts available is available on the [Menu Navigation](menunavigation.md#shortcuts) page.
+A list of shortcuts available is available on the [Shortcuts](shortcuts.md) page.
 
 ---
 

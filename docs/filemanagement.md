@@ -18,11 +18,11 @@ Before inserting a microSD card into NGEN, we recommend that you copy the Factor
 
 ## Factory Content
 
-The Factory Content for NGEN (including MIDI files, DrumGen templates, and NSL scripts) is available on the [NGEN Resources repository on Github](https://github.com/SpektroAudio/NGEN-Resources/).
+The Factory Content for NGEN (including MIDI files, DrumGen templates, and NSL scripts) is available on the [NGEN Resources repository on GitHub](https://github.com/SpektroAudio/NGEN-Resources/).
 
 If you'd like to download or update the Factory Content, follow these steps:
 
-1 - Download a copy of the Factory Content [available on the NGEN repository on Github](https://github.com/SpektroAudio/NGEN-Resources/archive/refs/heads/main.zip).
+1 - Download a copy of the Factory Content [available on the NGEN repository on GitHub](https://github.com/SpektroAudio/NGEN-Resources/archive/refs/heads/main.zip).
 
 2 - Navigate into the Factory Content folder and copy the contents to the root of your microSD card.
 
@@ -86,15 +86,15 @@ To copy files between different storage locations (internal x microSD):
 
 1. Select the source storage location via the [Storage parameter (Settings / General)](settings.md#general).
 
-2. Open the file selector according to the file type:
+2. Open the file selector according to the filetype:
 
     1. **Projects:** Navigate to ```Projects``` / ```Load```
 
-    2. **DrumGen Templates:** Load [DrumGen generator](generators.md#drumgen) and nagivate to ```Generator``` / ```Template```
+    2. **DrumGen Templates:** Load [DrumGen generator](generators.md#drumgen) and navigate to ```Generator``` / ```Template```
 
-    3. **MIDI Files:** Load [MIDI Player generator](generators.md#midi-player) and nagivate to ```Generator``` / ```Load File```
+    3. **MIDI Files:** Load [MIDI Player generator](generators.md#midi-player) and navigate to ```Generator``` / ```Load File```
 
-    4. **NSL Engine Scripts:** Load [NSL generator](generators.md#drumgen) and nagivate to ```Generator``` / ```Load```
+    4. **NSL Engine Scripts:** Load [NSL generator](generators.md#drumgen) and navigate to ```Generator``` / ```Load```
   
 3. Scroll to the file to be copied using the ++"MENU ENCODER (Scroll)"++
 

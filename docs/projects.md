@@ -6,7 +6,7 @@
 ## About Projects
 
 
-![](images/NGEN_MainMenu_Project.png){align=right}
+![](images/NGEN_MainMenu_Project.jpeg){align=right}
 
 Similarly to standard DAWs, NGEN can save and load entire sessions as project files. These files are stored in a microSD or directly to NGEN's internal memory (HW version 1.1 and above).
 

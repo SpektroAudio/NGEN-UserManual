@@ -66,10 +66,3 @@ This section contains step-by-step instructions on how to troubleshoot common is
 
 - When loading a file in NGEN (project, DrumGen template, etc), NGEN displays the location of the file on the right side of the display (```INTERNAL``` or ```MICROSD```). This can be used to check if NGEN has successfully identified the microSD card.
 
-<!-- ---
-
-## CV Outputs
-
-### NGEN not sending any CV
-
-- From the Main Menu, navigate to [Settings / CV Out](settings.md#cv-out),  -->

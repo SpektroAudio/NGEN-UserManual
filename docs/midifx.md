@@ -4,7 +4,11 @@
 
 ## About MIDI FXs:
 
+![](images/NGEN_MainMenu_MIDIFX.jpeg){align=right}
+
 NGEN features a number of different MIDI FX's that can be used to manipulate and enhance sequences played by the Generators non-distructively.
+
+<br><br><br>
 
 ---
 

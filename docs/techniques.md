@@ -24,7 +24,7 @@ Additionally, projects can be used to store different songs. For example, you ca
 NGEN is capable of loading projects and patterns while playing so you can use this to switch between songs and sections of a song while performing. Switching between different projects and patterns is always done in sync with the clock and it's designed to be as smooth as possible.
 
 #### Using shortcuts
-NGEN includes several shortcuts that can help you during your performance. A list of all shortcuts can be found in the [Menu Navigation](menunavigation.md#shortcuts) section of the manual.
+NGEN includes several shortcuts that can help you during your performance. A list of all shortcuts can be found in the [Shortcuts](shortcuts.md) section of the manual.
 
 #### Using the Performance Mode
 

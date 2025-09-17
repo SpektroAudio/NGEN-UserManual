@@ -118,7 +118,6 @@ For more information about projects, check the [Project](projects.md) section.
 ---
 
 
-<div class="forced-pb"></div>
 
 ## Flow Diagram
 

@@ -4,18 +4,19 @@
 
 ## About Tracks
 
-![](images/NGEN_MainMenu_Track.png){align=right}
+![](images/NGEN_MainMenu_Track.jpeg){align=right}
 
 The NGEN features 16 tracks that work similarly to MIDI tracks in standard DAWs. Each track contains different settings for active [Generator](generators.md), [MIDI FX](midifx.md), Program Change, routing, and more.  
 
-These settings can be accessed via the **TRACK** sub-menu (available in the **MAIN MENU**) or the ++"FUNCTION"++ + ++"TRACK"++ [shortcut](menunavigation.md#shortcuts).
+These settings can be accessed via the **TRACK** sub-menu (available in the **MAIN MENU**) or the ++"FUNCTION"++ + ++"TRACK"++ [shortcut](shortcuts.md).
 
+<br><br>
 
 --- 
 
 ## Track Selection
 
-![Track Selector](images/NGEN_TrackSelector.png){ align=right }
+![Track Selector](images/NGEN_TrackSelector.jpeg){ align=right }
 
 Because NGEN's controls are mapped to the selected track by default, it's important to be able to quickly switch between tracks.
 

@@ -4,7 +4,11 @@
 
 ## About Tools
 
+![](images/NGEN_MainMenu_Tools.jpeg){align=right}
+
 The Tools sub-menu contains different features that can be used to monitor, control, and configure NGEN's settings.
+
+<br><br><br>
 
 ---
 
