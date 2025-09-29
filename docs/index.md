@@ -25,4 +25,4 @@ NGEN also includes a variety of tools to let you explore this world of algorithm
 
 ## Firmware
 
-Current version: 1.4 ([Change-Log](firmwareupdate.md#change-log))
+Current version: 1.4.1 ([Change-Log](firmwareupdate.md#change-log))

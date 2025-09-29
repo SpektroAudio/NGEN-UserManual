@@ -43,7 +43,7 @@ To save the current pattern to one of the available slots, follow these steps:
 
 4 - Select the ```Save``` option to save the current pattern to the selected slot.
 
-It's also possible to use the shortcut ++"PATTERN"++ + ++"MENU ENCODER"++ to save the current pattern to the selected slot while in the Pattern Selector.
+It's also possible to use the shortcut ++"FUNCTION"++ + ++"MENU ENCODER"++ to save the current pattern to the selected slot while in the Pattern Selector.
 
 ---
 
@@ -69,7 +69,7 @@ It's also possible to generate variations of the current pattern by holding down
 
 ![](images/NGEN_PatternEdit.jpeg){align=right}
 
-The pattern edit menu can be accessed by holding down the ++"FUNCTION"++ button and pressing the ++"PATTERN"++ button (accessible from the Main Menu or from the Pattern Selector).
+The pattern edit menu can be accessed by holding down the ++"FUNCTION"++ button and pressing the ++"PATTERN"++ button while in the Pattern Selector.
 
 The menu includes options for saving, copying, pasting, and deleting the selected pattern.
 

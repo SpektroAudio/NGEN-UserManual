@@ -10,7 +10,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw11.zip).
+1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw11.zip).
 
 2 - Connect NGEN to your computer via USB.
 
@@ -25,6 +25,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 7 - After rebooting, apply a Factory Reset (files will not be deleted).
 
 ??? "Firmware Archive for NGEN HW v1.1+"       
+      - [1.4 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw11.zip)
       - [1.3.1 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw11.zip)
       - [1.3 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v13_hw11.zip)
       - [1.2 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v12_hw11.zip)
@@ -52,7 +53,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -73,6 +74,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
         If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 
 ??? "Firmware Archive for NGEN HW v1.0" 
+      - [1.4 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw10.zip)      
       - [1.3.1 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw10.zip)      
       - [1.3 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v13_hw10.zip)      
       - [1.2 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v12_hw10.zip)
@@ -84,6 +86,17 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 ## Change-Log
 
 ---
+
+### Version 1.4.1 
+
+#### Fixed 
+- [ACDGEN](generators.md#ACDGEN): ACDGEN now correctly generates new sequences after switching between generators
+- [MENU SYSTEM](menunavigation.md): Track sub-menu shortcut (FUNCTION + TRACK | CLK) now works correctly while in the Pattern Selector
+- [MENU SYSTEM](menunavigation.md): Disabled the Toggle Track Active shortcut (TRACK | CLK + Menu Encoder) while in the Clock and Perform sub-menus
+- [PROJECTS](projects.md): ```SAVE``` now correctly overwrites existing projects on HW v1.0
+- [TRACK](track.md): Fixed bug that caused inactive tracks to play notes when Track Source was set to a specific clock generator
+- Disabled leftover debug information
+
 
 
 ### Version 1.4
