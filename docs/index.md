@@ -16,7 +16,7 @@ NGEN also includes a variety of tools to let you explore this world of algorithm
 
 **Product Page:** [http://spektroaudio.com/ngen](http://spektroaudio.com/ngen)
 
-**Video Tutorials:** [NGEN Playlist on Youtube](http://spektroaudio.com/ngen)
+**Video Tutorials:** [NGEN Playlist on Youtube](https://www.youtube.com/playlist?list=PLYm9rCur1oeaZENsEh1JyEhozv81LQHK0)
 
 [Download PDF](https://dnjnjjoz9zg1x.cloudfront.net/usermanual/NGENUserManual1.4.pdf){ .md-button }
 
@@ -25,4 +25,4 @@ NGEN also includes a variety of tools to let you explore this world of algorithm
 
 ## Firmware
 
-Current version: 1.4.1 ([Change-Log](firmwareupdate.md#change-log))
+Current version: 1.4.3 ([Change-Log](firmwareupdate.md#change-log))

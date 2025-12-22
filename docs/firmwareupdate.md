@@ -10,7 +10,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw11.zip).
+1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw11.zip).
 
 2 - Connect NGEN to your computer via USB.
 
@@ -25,6 +25,8 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 7 - After rebooting, apply a Factory Reset (files will not be deleted).
 
 ??? "Firmware Archive for NGEN HW v1.1+"       
+      - [1.4.2 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v142_hw11.zip)
+      - [1.4.1 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw11.zip)
       - [1.4 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw11.zip)
       - [1.3.1 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw11.zip)
       - [1.3 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v13_hw11.zip)
@@ -53,7 +55,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -74,6 +76,8 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
         If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 
 ??? "Firmware Archive for NGEN HW v1.0" 
+      - [1.4.2 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v142_hw10.zip)      
+      - [1.4.1 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw10.zip)      
       - [1.4 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw10.zip)      
       - [1.3.1 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v131_hw10.zip)      
       - [1.3 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v13_hw10.zip)      
@@ -86,6 +90,19 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 ## Change-Log
 
 ---
+
+
+### Version 1.4.3
+
+#### Fixed 
+- Fixed bug that outputs extra bytes to MIDI output
+
+### Version 1.4.2
+
+#### Fixed 
+- [SONG MODE](tools.md#song-mode): The Song Mode Event list is now correctly saved to [Projects](projects.md)
+- [FREE CLOCK](clockgen.md#free-clock): The [MIDI assignment](midimapping.md) for Free Clock (Ch 16 / CC #20) now correctly starts / stops the clock generator
+
 
 ### Version 1.4.1 
 
