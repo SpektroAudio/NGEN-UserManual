@@ -95,7 +95,7 @@ For more information about tracks, check the [Track](track.md) section.
 NGEN allows you to create and store 8 patterns per project. In this section, you'll learn how to save and load patterns.
 
 1. Click the ++"PATTERN"++ button to open the **[Pattern](pattern.md)** selector.
-2. Use the ++"MENU ENCODER"++ to scroll through the list of available pattern slots.
+2. Use the ++"MENU ENCODER"++ to scroll through the list of available [pattern](pattern.md#patterns) slots.
 3. To quickly save your active sequence to a pattern slot, press ++"FUNCTION"++ + ++"PATTERN"++.
 4. To load a pattern, scroll to the desired pattern slot and click the ++"MENU ENCODER"++.
 5. To access the pattern slot settings, click ++"FUNCTION"++ + ++"PATTERN"++ while in the pattern selector. This sub-menu lets you save, delete, copy and paste patterns.
@@ -113,7 +113,7 @@ In this final section, you'll learn how to save your project for future use.
 2. Scroll to the **Save** parameter and click the ++"MENU ENCODER"++ to save your project.
 3. Edit the project name using the ++"MENU ENCODER"++ and confirm.
 
-For more information about projects, check the [Project](projects.md) section.
+For more information about [projects](projects.md#projects), check the [Project](projects.md) section.
 
 ---
 

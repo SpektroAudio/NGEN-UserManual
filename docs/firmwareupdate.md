@@ -10,7 +10,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw11.zip).
+1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v144_hw11.zip).
 
 2 - Connect NGEN to your computer via USB.
 
@@ -25,6 +25,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 7 - After rebooting, apply a Factory Reset (files will not be deleted).
 
 ??? "Firmware Archive for NGEN HW v1.1+"       
+      - [1.4.3 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw11.zip)
       - [1.4.2 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v142_hw11.zip)
       - [1.4.1 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw11.zip)
       - [1.4 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw11.zip)
@@ -55,7 +56,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v144_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -76,6 +77,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
         If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 
 ??? "Firmware Archive for NGEN HW v1.0" 
+      - [1.4.3 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw10.zip)      
       - [1.4.2 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v142_hw10.zip)      
       - [1.4.1 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw10.zip)      
       - [1.4 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v14_hw10.zip)      
@@ -90,6 +92,34 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 ## Change-Log
 
 ---
+
+
+### Version 1.4.4
+
+#### Improved
+- [MENU SYSTEM](menunavigation.md): Implemented atomic variables for multi-thread operations
+- [MENU SYSTEM](menunavigation.md): Improved memory handling during menu navigation
+- [MENU SYSTEM](menunavigation.md): Improved multi-threading safety and stability via new thread-safe locking FIFO buffers
+- [MENU SYSTEM](menunavigation.md): Improved busy checks during menu rendering
+- [MENU SYSTEM](menunavigation.md): Improved memory allocation during the glitch visual effect
+- [MIDI I/O](setup.md#connecting-via-midi): Updated voice management to improve tracking and velocity handling
+- [PROJECTS](projects.md): Optimized chunk sizes when writing files
+- [PROJECTS](projects.md): Improved asynchronous storage operations
+- [PROJECTS](projects.md): Improved file size check when receiving files via serial (NGEN Web Manager)
+- [PROJECTS](projects.md): Improved serial buffer management during file transfers
+
+#### Fixed
+- [CV OUT](settings.md#cv-out): Fixed maximum pitch range 
+- [MENU SYSTEM](menunavigation.md): Fixed potential out-of-bounds indexing while editing Project file names
+- [MENU SYSTEM](menunavigation.md): Fixed potential buffer overflow when drawing notifications
+- [MENU SYSTEM](menunavigation.md): Fixed potential memory leak when clearing undo items related to MIDI FXs and Clock.
+- [MENU SYSTEM](menunavigation.md): Fixed potential buffer overflow during list selection
+- [MIDI I/O](setup.md#connecting-via-midi): Fixed handling of Note Off MIDI messages in NGEN hw v1.0
+- [MIDI PLAYER](generators.md#midi-player) Fixed bug when parsing MIDI files with too many notes (>64)
+- [PROJECTS](projects.md): Fixed bug that could cause memory leaks when a project failed to load
+- [SHUFFLER](generators.md#shuffler): Improved fail handling for playback and animation
+- [SONG MODE](tools.md#song-mode): Fixed bug when checking song position during Jump events
+- [TRACK](track.md): Fixed potential buffer overflow when activating tracks
 
 
 ### Version 1.4.3

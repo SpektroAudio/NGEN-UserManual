@@ -10,7 +10,7 @@ Each generator employs a distinct algorithm to generate unique MIDI sequences ba
 
 The output from each generator is simultaneously routed to the [Track](track.md)'s MIDI Out and Aux Out ports. This dual routing capability allows MIDI notes to be transmitted from one track to another, enabling complex signal chaining and inter-track interaction.
 
-Each track within the system can independently load any available generator, providing flexibility in configuring individual tracks for different musical tasks.
+Each [track](track.md#tracks) within the system can independently load any available generator, providing flexibility in configuring individual tracks for different musical tasks.
 
 
 !!! info 
@@ -137,6 +137,30 @@ DrumGen is a 4-part drum sequencer that uses 3D probability templates to generat
 A new template can be selected via the **TEMPLATE** parameter or by pressing **SHIFT** + **Generate**. 
 
 The 4 parts are completely independent and can be set to individual sequence lengths, probability and MIDI notes.
+
+Factory Templates:
+
+- Boombap
+
+- Bossa (Bossa Nova)
+
+- Breaks
+
+- DnB (Drum'n Bass)
+
+- Electro
+
+- Funk BR (Brazilian Funk)
+
+- Garage
+
+- House
+
+- Jungle
+
+- Memphis
+
+- Techno
 
 New DrumGen templates can be created using the open-source [DrumGen Template Editor](https://github.com/SpektroAudio/DrumGenTemplateEditor).
 
