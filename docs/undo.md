@@ -4,7 +4,7 @@
 
 ## About Undo System
 ![NGEN Undo System](images/NGEN_UndoSystem.jpeg){align=right}
-The Undo System in NGEN allows users to quickly revert to previously generated sequences for [[Generators](generators.md#generator)](generators.md#generator), MIDI FXs, or Clocks by pressing ++"GENERATE"++ + ++"RETURN"++.
+The Undo System in NGEN allows users to quickly revert to previously generated sequences for [[Generators](generators.md#generator)](generators.md#generator), MIDI FXs, or Clocks by pressing ++"FUNCTION"++ + ++"RETURN"++.
 
 When a new sequence is generated, NGEN caches the current state of that component, including parameter values, prior to the new generation. To maintain reasonable memory usage, NGEN stores the last 16 generated sequences in memory.
 

@@ -60,3 +60,9 @@
 | Clear Event        | ++"FUNCTION"++ + ++"RETURN"++               |
 | Insert Blank Event       | ++"FUNCTION"++ + ++"GENERATE"++             |
 
+## [Undo](undo.md) Shortcuts
+
+| **Action**                        | **Shortcut**    |
+|:----------------------------------|:----------------|
+| Undo (revert last generation)     | ++"FUNCTION"++ + ++"RETURN"++  |
+
