@@ -75,23 +75,23 @@ The 8 different algorithms available in ACDGEN can generate sequences that vary 
 
 **Parameter List:**
 
-| **Parameter**                  |                          **Description**                           |            **Hardware Mapping** |
-|--------------------------------|:------------------------------------------------------------------:|--------------------------------:|
-| Generate                       |                     Generates a new sequence.                      |                  ++"GENERATE"++ |
-| Variate                        |  Generates a new variation of the previously generated sequence.   | ++"FUNCTION"++ + ++"GENERATE"++ |
-| Shift                          |               Transposes the sequence diatonically.                |                   ++"PARAM 1"++ |
-| Length                         |                  Sets the length of the sequence.                  |                   ++"PARAM 2"++ |
-| Density                        |                 Sets the sequence's note density.                  |                   ++"PARAM 3"++ |
-| Algorithm                      |        Selects the mode used to generate the next sequence.        |                   ++"PARAM 4"++ |
-| KB Shift                       | Toggles the keyboard shift feature (transposition via MIDI input). |                               – |
-| Note Len                       |       Sets the proportional note length of generated notes.        |  ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Random Vel                     |              Sets the amount of random MIDI velocity.              |  ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Hold Prob                      | Sets the hold probability (for generating notes longer than 1/16). |  ++"FUNCTION"++ + ++"PARAM 4"++ |
-| Octave                         |               Sets the base octave for the sequence.               |  ++"FUNCTION"++ + ++"PARAM 1"++ |
-| Slide Prob                     |           Sets the probability of generating slide steps           |                               – |
-| Base Velocity (```Base Vel```) |           Sets the base MIDI velocity of generated notes           |                               – |
-| Accent                         |                       Sets the accent amount                       |                               – |
-| Offset                         |    Sets a beat offset for the ACDGEN sequence (in 1/16 steps).     |                               – |
+| **Parameter** |                           **Description**                          |            **Hardware Mapping** |
+|---------------|:------------------------------------------------------------------:|--------------------------------:|
+| Generate      |                      Generates a new sequence.                     |                  ++"GENERATE"++ |
+| Variate       |   Generates a new variation of the previously generated sequence.  | ++"FUNCTION"++ + ++"GENERATE"++ |
+| Shift         |                Transposes the sequence diatonically.               |                   ++"PARAM 1"++ |
+| Length        |                  Sets the length of the sequence.                  |                   ++"PARAM 2"++ |
+| Density       |                  Sets the sequence's note density.                 |                   ++"PARAM 3"++ |
+| Accent        |                       Sets the accent amount                       |                   ++"PARAM 4"++ |
+| KB Shift      | Toggles the keyboard shift feature (transposition via MIDI input). |                               – |
+| Octave        |               Sets the base octave for the sequence.               |  ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Note Len      |        Sets the proportional note length of generated notes.       |  ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Random Vel    |              Sets the amount of random MIDI velocity.              |  ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Algorithm     |        Selects the mode used to generate the next sequence.        |  ++"FUNCTION"++ + ++"PARAM 4"++ |
+| Hold Prob     | Sets the hold probability (for generating notes longer than 1/16). |                               – |
+| Slide Prob    |           Sets the probability of generating slide steps           |                               – |
+| Velocity      |           Sets the base MIDI velocity of generated notes           |                               – |
+| Offset        |     Sets a beat offset for the ACDGEN sequence (in 1/16 steps).    |                               – |
 
 ---
 
@@ -166,23 +166,23 @@ New DrumGen templates can be created using the open-source [DrumGen Template Edi
 
 **Parameter List**
 
-| **Parameter** |         **Description**          |         **Hardware Mapping**|
+| **Parameter** |          **Description**         |            **Hardware Mapping** |
 |---------------|:--------------------------------:|--------------------------------:|
 | Generate      |     Generates a new sequence     |                  ++"GENERATE"++ |
-| Density 1     |    Sets part 1's probability     |                   ++"PARAM 1"++ |
-| Density 2     |    Sets part 2's probability     |                   ++"PARAM 2"++ |
-| Density 3     |    Sets part 3's probability     |                   ++"PARAM 3"++ |
-| Density 4     |    Sets part 4's probability     |                   ++"PARAM 4"++ |
-| Length 1      |  Sets part 1's sequence length   |  ++"FUNCTION"++ + ++"PARAM 1"++ |
-| Length 2      |  Sets part 2's sequence length   |  ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Length 3      |  Sets part 3's sequence length   |  ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Length 4      |  Sets part 4's sequence length   |  ++"FUNCTION"++ + ++"PARAM 4"++ |
-| Note 1        |      Set part 1's MIDI note      |                              –  |
-| Note 2        |      Set part 2's MIDI note      |                              –  |
-| Note 3        |      Set part 3's MIDI note      |                              –  |
-| Note 4        |      Set part 4's MIDI note      |                              –  |
+| Density 1     |     Sets part 1's probability    |                   ++"PARAM 1"++ |
+| Density 2     |     Sets part 2's probability    |                   ++"PARAM 2"++ |
+| Density 3     |     Sets part 3's probability    |                   ++"PARAM 3"++ |
+| Density 4     |     Sets part 4's probability    |                   ++"PARAM 4"++ |
+| Length 1      |   Sets part 1's sequence length  |  ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Length 2      |   Sets part 2's sequence length  |  ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Length 3      |   Sets part 3's sequence length  |  ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Length 4      |   Sets part 4's sequence length  |  ++"FUNCTION"++ + ++"PARAM 4"++ |
+| Note 1        |      Set part 1's MIDI note      |                               – |
+| Note 2        |      Set part 2's MIDI note      |                               – |
+| Note 3        |      Set part 3's MIDI note      |                               – |
+| Note 4        |      Set part 4's MIDI note      |                               – |
 | Template      |      Selects a new template      | ++"FUNCTION"++ + ++"GENERATE"++ |
-| Random        | Adds randomness to the sequence. |                              –  |
+| Random        | Adds randomness to the sequence. |                               – |
 
 ---
 
@@ -208,7 +208,7 @@ During recording, the ++"GENERATE"++ button adds a silent / mute step and the ++
 | Recording                    |                                      Toggles recording                                      |                              – |
 | Direction                    |                                 Sets the playback direction                                 |                  ++"PARAM 4"++ |
 | Shift                        |                            Transposes the sequence diatonically.                            |                  ++"PARAM 1"++ |
-| Length                       |                              Sets the length of the sequence.                               |                  ++"PARAM 2"++ |
+| Length                       |                               Sets the length of the sequence.                              |                  ++"PARAM 2"++ |
 | Probability (```Prob```)     |                 Sets the probability of playing back notes in the sequence.                 |                  ++"PARAM 3"++ |
 | Note Length (```Note Len```) |                    Sets the proportional note length of generated notes.                    | ++"FUNCTION"++ + ++"PARAM 2"++ |
 | Quantize                     | Toggles pitch quantization of the sequence (based on the active Key and [Scale](scale.md)). |                              – |
@@ -226,17 +226,17 @@ It uses two gate sequences (low and high) that, when combined, generate a chord.
 
 **Parameter List:**
 
-| **Parameter** |                    **Description**                     |           **Hardware Mapping** |
+| **Parameter** |                     **Description**                    |           **Hardware Mapping** |
 |---------------|:------------------------------------------------------:|-------------------------------:|
 | Generate      |                Generates a new sequence                |                 ++"GENERATE"++ |
-| Transpose     |               Transposes the sequence .                |                  ++"PARAM 1"++ |
+| Transpose     |                Transposes the sequence .               |                  ++"PARAM 1"++ |
 | Length        |         Sets the total length of the sequence.         |                  ++"PARAM 2"++ |
 | Density       |              Sets the sequence's density.              |                  ++"PARAM 3"++ |
 | Balance       |      Sets the balance between low and high notes.      |                  ++"PARAM 4"++ |
 | Octave        |                    Sets the octave.                    | ++"FUNCTION"++ + ++"PARAM 1"++ |
-| Interval      |          Sets the accent and pitch interval.           | ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Interval      |           Sets the accent and pitch interval.          | ++"FUNCTION"++ + ++"PARAM 2"++ |
 | Random        | Sets the random amount for step types (note x chords). | ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Bass Offset   |      Sets the beat offset for the bass sequence.       | ++"FUNCTION"++ + ++"PARAM 4"++ |
+| Bass Offset   |       Sets the beat offset for the bass sequence.      | ++"FUNCTION"++ + ++"PARAM 4"++ |
 | Express       |       Enables chord articulations / expressions.       |                              – |
 
 ---
@@ -262,13 +262,14 @@ Once recording is complete, the Looper automatically filters out any duplicate n
 
 **Parameter List:**
 
-| **Parameter** |             **Description**              | **Hardware Mapping** |
+| **Parameter** |              **Description**             | **Hardware Mapping** |
 |---------------|:----------------------------------------:|---------------------:|
 | Record        |          Start / Stop Recording          |       ++"GENERATE"++ |
-| Shift         |  Transposes the sequence diatonically.   |        ++"PARAM 1"++ |
+| Transpose     |   Transposes the sequence diatonically.  |        ++"PARAM 1"++ |
 | Length        |      Sets the playback loop length.      |        ++"PARAM 2"++ |
 | Density       |         Sets the density amount.         |        ++"PARAM 3"++ |
-| Quantize      |       Toggles pitch quantization.        |                      |
+| Offset        |      Sets the playback beat offset.      |        ++"PARAM 4"++ |
+| Quantize      |        Toggles pitch quantization.       |                      |
 | Beat Quant    | Toggles tempo / beat quantization (1/16) |                      |
 
 ---
@@ -287,16 +288,16 @@ Changing the individual length of each of the 4 parts can result in interesting 
 
 **Parameter List:**
 
-| **Parameter** |                **Description**                 |        **Hardware Mapping**|
+| **Parameter** |                 **Description**                |           **Hardware Mapping** |
 |---------------|:----------------------------------------------:|-------------------------------:|
 | Generate      |            Generates a new sequence            |                 ++"GENERATE"++ |
-| Shift         |     Transposes the sequence diatonically.      |                  ++"PARAM 1"++ |
-| Length        |     Sets the total length of the sequence.     |                  ++"PARAM 2"++ |
+| Shift         |      Transposes the sequence diatonically.     |                  ++"PARAM 1"++ |
+| Seq Len       |     Sets the total length of the sequence.     |                  ++"PARAM 2"++ |
 | Density       |          Sets the sequence's density.          |                  ++"PARAM 3"++ |
 | Offset        |        Sets the offset of the sequence.        |                  ++"PARAM 4"++ |
-| Length 1      | Sets the length of the first note's sequence.  | ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Length 1      |  Sets the length of the first note's sequence. | ++"FUNCTION"++ + ++"PARAM 1"++ |
 | Length 2      | Sets the length of the second note's sequence. | ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Length 3      | Sets the length of the third note's sequence.  | ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Length 3      |  Sets the length of the third note's sequence. | ++"FUNCTION"++ + ++"PARAM 3"++ |
 | Length 4      | Sets the length of the fourth note's sequence. | ++"FUNCTION"++ + ++"PARAM 4"++ |
 
 ---
@@ -323,7 +324,7 @@ Loops can be manipulated in real time by adjusting the Length, Direction, Shift 
 | Density       |             Sets the sequence's density.            |        ++"PARAM 3"++ |
 | Transpose     |               Transposes the sequence.              |        ++"PARAM 1"++ |
 | Direction     | Sets the playback direction: FRWRD, BCKWRD, RANDOM. |        ++"PARAM 4"++ |
-| Quantize      |        Shifts notes to active Key and Scale.        |                   -  |
+| Quantize      |        Shifts notes to active Key and Scale.        |                    - |
 
 
 ---
@@ -456,20 +457,20 @@ Note Length Modes:
 
 **Parameter List:**
 
-| **Parameter**            |             **Description**             |           **Hardware Mapping** |
-|--------------------------|:---------------------------------------:|-------------------------------:|
-| Generate                 |        Generates a new sequence         |                 ++"GENERATE"++ |
-| Spread                   |         Offsets all four parts.         |                  ++"PARAM 1"++ |
-| Length                   | Sets the total length of the sequence.  |                  ++"PARAM 2"++ |
-| Density                  |      Sets the sequence's density.       |                  ++"PARAM 3"++ |
-| Random                   |  Sets the probability of random hits.   |                  ++"PARAM 4"++ |
-| Rotate                   |   Rotates all four sequences forward.   | ++"FUNCTION"++ + ++"PARAM 1"++ |
-| Note Len                 |       Sets the note length mode.        | ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Probability (```Prob```) | Sets the probability of all four parts. | ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Note 1                   |         Set part 1's MIDI note          |                              – |
-| Note 2                   |         Set part 2's MIDI note          |                              – |
-| Note 3                   |         Set part 3's MIDI note          |                              – |
-| Note 4                   |         Set part 4's MIDI note          |                              – |
+| **Parameter**            |               **Description**              |           **Hardware Mapping** |
+|--------------------------|:------------------------------------------:|-------------------------------:|
+| Generate                 |          Generates a new sequence          |                 ++"GENERATE"++ |
+| Spread                   |           Offsets all four parts.          |                  ++"PARAM 1"++ |
+| Length                   |   Sets the total length of the sequence.   |                  ++"PARAM 2"++ |
+| Density                  |        Sets the sequence's density.        |                  ++"PARAM 3"++ |
+| Random                   |    Sets the probability of random hits.    |                  ++"PARAM 4"++ |
+| Rotate                   |     Rotates all four sequences forward.    | ++"FUNCTION"++ + ++"PARAM 1"++ |
+| Dynamic Length           | Sets the note length mode (FIXED/DYNAMIC). | ++"FUNCTION"++ + ++"PARAM 2"++ |
+| Probability (```Prob```) |   Sets the probability of all four parts.  | ++"FUNCTION"++ + ++"PARAM 3"++ |
+| Note 1                   |           Set part 1's MIDI note           |                              – |
+| Note 2                   |           Set part 2's MIDI note           |                              – |
+| Note 3                   |           Set part 3's MIDI note           |                              – |
+| Note 4                   |           Set part 4's MIDI note           |                              – |
 
 ---
 
@@ -495,14 +496,15 @@ The different modes available in Shuffler are capable of sequencing the slices i
 | **Parameter**                       |                    **Description**                    |            **Hardware Mapping** |
 |-------------------------------------|:-----------------------------------------------------:|--------------------------------:|
 | Generate                            |        Generates a new sequence (for SEQ mode)        |                  ++"GENERATE"++ |
-| Variate                             | Generates a variation based on the current sequence.  | ++"FUNCTION"++ + ++"GENERATE"++ |
-| Repeat                              |            Set the number of note repeats.            |                   ++"PARAM 1"++ |
-| Length                              |           Sets the length of the sequence.            |                   ++"PARAM 2"++ |
+| Variate                             |  Generates a variation based on the current sequence. | ++"FUNCTION"++ + ++"GENERATE"++ |
+| Repeats                             |            Set the number of note repeats.            |                   ++"PARAM 1"++ |
+| Length                              |            Sets the length of the sequence.           |                   ++"PARAM 2"++ |
 | Density                             |           Sets the sequence's note density.           |                   ++"PARAM 3"++ |
 | Mode                                |                Sets the playback mode.                |                   ++"PARAM 4"++ |
+| Offset                              |               Sets playback beat offset               |  ++"FUNCTION"++ + ++"PARAM 1"++ |
 | Note Length (```Note Len```)        | Sets the proportional note length of generated notes. |  ++"FUNCTION"++ + ++"PARAM 2"++ |
-| Random Probability (```Rnd Prob```) |    Sets the probability of playing a random note.     |  ++"FUNCTION"++ + ++"PARAM 4"++ |
-| Quantize                            |              Enables pitch quantization               |                               – |
+| Random Probability (```Rnd Prob```) |     Sets the probability of playing a random note.    |  ++"FUNCTION"++ + ++"PARAM 4"++ |
+| Quantize                            |               Enables pitch quantization              |                               – |
 | Start                               |           Sets the pitch of the first slice           |                               – |
 
 ---
@@ -520,14 +522,14 @@ The Thru generator is a simple pass-through generator that can be used for dupli
 **Parameter List:**
 
 
-| **Parameter**                   |                   **Description**                    |            **Hardware Mapping** |
+| **Parameter**                   |                    **Description**                   |            **Hardware Mapping** |
 |---------------------------------|:----------------------------------------------------:|--------------------------------:|
-| Shift                           |           Transposes incoming MIDI notes.            |                   ++"PARAM 1"++ |
-| Max Velocity (```Max Vel```)    |             Sets the max MIDI velocity.              |                   ++"PARAM 2"++ |
+| Shift                           |            Transposes incoming MIDI notes.           |                   ++"PARAM 1"++ |
+| Max Velocity (```Max Vel```)    |              Sets the max MIDI velocity.             |                   ++"PARAM 2"++ |
 | Probability                     | Sets the probability of playing back incoming notes. |                   ++"PARAM 3"++ |
-| Random Velocity (```Rnd Vel```) |         Sets the amount of random velocity.          |                   ++"PARAM 4"++ |
+| Random Velocity (```Rnd Vel```) |          Sets the amount of random velocity.         |                   ++"PARAM 4"++ |
 | Quantize                        |              Enables pitch quantization              |                               – |
-| Delay                           |           Delays incoming note by x beats            | ++"FUNCTION"++ +  ++"PARAM 4"++ |
+| Delay                           |            Delays incoming note by x beats           | ++"FUNCTION"++ +  ++"PARAM 4"++ |
 
 ---
 
@@ -541,16 +543,16 @@ Turing is an algorithm inspired by the [Music Thing's Turing Machine](https://ww
 
 **Parameter List:**
 
-| **Parameter**                 |                            **Description**                             |            **Hardware Mapping** |
+| **Parameter**                 |                             **Description**                            |            **Hardware Mapping** |
 |-------------------------------|:----------------------------------------------------------------------:|--------------------------------:|
 | Write                         |                          Flips the first bit.                          |                  ++"GENERATE"++ |
 | Clear                         |                       Clears the shift register.                       | ++"FUNCTION"++ + ++"GENERATE"++ |
-| Shift                         |                 Transposes the sequence diatonically.                  |                   ++"PARAM 1"++ |
+| Shift                         |                  Transposes the sequence diatonically.                 |                   ++"PARAM 1"++ |
 | Length                        |                    Sets the length of the sequence.                    |                   ++"PARAM 2"++ |
-| Probability (```Prob```)      |            Sets the probability of flipping the first bit.             |                   ++"PARAM 3"++ |
-| Loop                          | Sets the probability of copying the last bit back into the first bit.  |                   ++"PARAM 4"++ |
+| Probability (```Prob```)      |             Sets the probability of flipping the first bit.            |                   ++"PARAM 3"++ |
+| Loop                          |  Sets the probability of copying the last bit back into the first bit. |                   ++"PARAM 4"++ |
 | Octave                        |                 Sets the base octave for the sequence.                 |  ++"FUNCTION"++ + ++"PARAM 1"++ |
 | Spread                        | Spreads the shift register read position between the different voices. |  ++"FUNCTION"++ + ++"PARAM 2"++ |
 | Range                         |          Sets the pitch range of the sequence (in semitones).          |  ++"FUNCTION"++ + ++"PARAM 3"++ |
-| Clock Shift (```Clk Shift```) | Sets the clock shift (offset) for the shift register (in 1/16 steps).  |                               - |
+| Clock Shift (```Clk Shift```) |  Sets the clock shift (offset) for the shift register (in 1/16 steps). |                               - |
 | Voices                        |                       Sets the number of voices.                       |  ++"FUNCTION"++ + ++"PARAM 4"++ |
