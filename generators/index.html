@@ -1703,14 +1703,19 @@ Each generator employs a distinct algorithm to generate unique MIDI sequences ba
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 <tr>
-<td>Algorithm</td>
-<td style="text-align: center;">Selects the mode used to generate the next sequence.</td>
+<td>Accent</td>
+<td style="text-align: center;">Sets the accent amount</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 <tr>
 <td>KB Shift</td>
 <td style="text-align: center;">Toggles the keyboard shift feature (transposition via MIDI input).</td>
 <td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>Octave</td>
+<td style="text-align: center;">Sets the base octave for the sequence.</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
 <td>Note Len</td>
@@ -1723,14 +1728,14 @@ Each generator employs a distinct algorithm to generate unique MIDI sequences ba
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 <tr>
-<td>Hold Prob</td>
-<td style="text-align: center;">Sets the hold probability (for generating notes longer than 1/16).</td>
+<td>Algorithm</td>
+<td style="text-align: center;">Selects the mode used to generate the next sequence.</td>
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 <tr>
-<td>Octave</td>
-<td style="text-align: center;">Sets the base octave for the sequence.</td>
-<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+<td>Hold Prob</td>
+<td style="text-align: center;">Sets the hold probability (for generating notes longer than 1/16).</td>
+<td style="text-align: right;">–</td>
 </tr>
 <tr>
 <td>Slide Prob</td>
@@ -1738,13 +1743,8 @@ Each generator employs a distinct algorithm to generate unique MIDI sequences ba
 <td style="text-align: right;">–</td>
 </tr>
 <tr>
-<td>Base Velocity (<code>Base Vel</code>)</td>
+<td>Velocity</td>
 <td style="text-align: center;">Sets the base MIDI velocity of generated notes</td>
-<td style="text-align: right;">–</td>
-</tr>
-<tr>
-<td>Accent</td>
-<td style="text-align: center;">Sets the accent amount</td>
 <td style="text-align: right;">–</td>
 </tr>
 <tr>
@@ -2122,7 +2122,7 @@ The Looper operates with an internal resolution of 24 PPQN, which is the standar
 <td style="text-align: right;"><span class="keys"><kbd>GENERATE</kbd></span></td>
 </tr>
 <tr>
-<td>Shift</td>
+<td>Transpose</td>
 <td style="text-align: center;">Transposes the sequence diatonically.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
@@ -2135,6 +2135,11 @@ The Looper operates with an internal resolution of 24 PPQN, which is the standar
 <td>Density</td>
 <td style="text-align: center;">Sets the density amount.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Offset</td>
+<td style="text-align: center;">Sets the playback beat offset.</td>
+<td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 <tr>
 <td>Quantize</td>
@@ -2176,7 +2181,7 @@ The Looper operates with an internal resolution of 24 PPQN, which is the standar
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
-<td>Length</td>
+<td>Seq Len</td>
 <td style="text-align: center;">Sets the total length of the sequence.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 2</kbd></span></td>
 </tr>
@@ -2546,8 +2551,8 @@ Although named after a specific genre, Samba is capable of generating percussing
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
-<td>Note Len</td>
-<td style="text-align: center;">Sets the note length mode.</td>
+<td>Dynamic Length</td>
+<td style="text-align: center;">Sets the note length mode (FIXED/DYNAMIC).</td>
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
 </tr>
 <tr>
@@ -2607,7 +2612,7 @@ Although named after a specific genre, Samba is capable of generating percussing
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
 </tr>
 <tr>
-<td>Repeat</td>
+<td>Repeats</td>
 <td style="text-align: center;">Set the number of note repeats.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
@@ -2625,6 +2630,11 @@ Although named after a specific genre, Samba is capable of generating percussing
 <td>Mode</td>
 <td style="text-align: center;">Sets the playback mode.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Offset</td>
+<td style="text-align: center;">Sets playback beat offset</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
 <td>Note Length (<code>Note Len</code>)</td>
@@ -2788,7 +2798,7 @@ Although named after a specific genre, Samba is capable of generating percussing
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2026-04-23
+    2026-04-28
   </span>
 
     

@@ -4081,14 +4081,19 @@ Each generator employs a distinct algorithm to generate unique MIDI sequences ba
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 <tr>
-<td>Algorithm</td>
-<td style="text-align: center;">Selects the mode used to generate the next sequence.</td>
+<td>Accent</td>
+<td style="text-align: center;">Sets the accent amount</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 <tr>
 <td>KB Shift</td>
 <td style="text-align: center;">Toggles the keyboard shift feature (transposition via MIDI input).</td>
 <td style="text-align: right;">–</td>
+</tr>
+<tr>
+<td>Octave</td>
+<td style="text-align: center;">Sets the base octave for the sequence.</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
 <td>Note Len</td>
@@ -4101,14 +4106,14 @@ Each generator employs a distinct algorithm to generate unique MIDI sequences ba
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 <tr>
-<td>Hold Prob</td>
-<td style="text-align: center;">Sets the hold probability (for generating notes longer than 1/16).</td>
+<td>Algorithm</td>
+<td style="text-align: center;">Selects the mode used to generate the next sequence.</td>
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 <tr>
-<td>Octave</td>
-<td style="text-align: center;">Sets the base octave for the sequence.</td>
-<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
+<td>Hold Prob</td>
+<td style="text-align: center;">Sets the hold probability (for generating notes longer than 1/16).</td>
+<td style="text-align: right;">–</td>
 </tr>
 <tr>
 <td>Slide Prob</td>
@@ -4116,13 +4121,8 @@ Each generator employs a distinct algorithm to generate unique MIDI sequences ba
 <td style="text-align: right;">–</td>
 </tr>
 <tr>
-<td>Base Velocity (<code>Base Vel</code>)</td>
+<td>Velocity</td>
 <td style="text-align: center;">Sets the base MIDI velocity of generated notes</td>
-<td style="text-align: right;">–</td>
-</tr>
-<tr>
-<td>Accent</td>
-<td style="text-align: center;">Sets the accent amount</td>
 <td style="text-align: right;">–</td>
 </tr>
 <tr>
@@ -4500,7 +4500,7 @@ The Looper operates with an internal resolution of 24 PPQN, which is the standar
 <td style="text-align: right;"><span class="keys"><kbd>GENERATE</kbd></span></td>
 </tr>
 <tr>
-<td>Shift</td>
+<td>Transpose</td>
 <td style="text-align: center;">Transposes the sequence diatonically.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
@@ -4513,6 +4513,11 @@ The Looper operates with an internal resolution of 24 PPQN, which is the standar
 <td>Density</td>
 <td style="text-align: center;">Sets the density amount.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 3</kbd></span></td>
+</tr>
+<tr>
+<td>Offset</td>
+<td style="text-align: center;">Sets the playback beat offset.</td>
+<td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 <tr>
 <td>Quantize</td>
@@ -4554,7 +4559,7 @@ The Looper operates with an internal resolution of 24 PPQN, which is the standar
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
-<td>Length</td>
+<td>Seq Len</td>
 <td style="text-align: center;">Sets the total length of the sequence.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 2</kbd></span></td>
 </tr>
@@ -4924,8 +4929,8 @@ Although named after a specific genre, Samba is capable of generating percussing
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
-<td>Note Len</td>
-<td style="text-align: center;">Sets the note length mode.</td>
+<td>Dynamic Length</td>
+<td style="text-align: center;">Sets the note length mode (FIXED/DYNAMIC).</td>
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 2</kbd></span></td>
 </tr>
 <tr>
@@ -4985,7 +4990,7 @@ Although named after a specific genre, Samba is capable of generating percussing
 <td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>GENERATE</kbd></span></td>
 </tr>
 <tr>
-<td>Repeat</td>
+<td>Repeats</td>
 <td style="text-align: center;">Set the number of note repeats.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
@@ -5003,6 +5008,11 @@ Although named after a specific genre, Samba is capable of generating percussing
 <td>Mode</td>
 <td style="text-align: center;">Sets the playback mode.</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
+</tr>
+<tr>
+<td>Offset</td>
+<td style="text-align: center;">Sets playback beat offset</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
 <td>Note Length (<code>Note Len</code>)</td>
@@ -5242,19 +5252,14 @@ Each group's note probability can be adjusted using the two separate Probability
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 2</kbd></span></td>
 </tr>
 <tr>
-<td>Probability 1</td>
+<td>Probability 1 (<code>Prob 1</code>)</td>
 <td style="text-align: center;">Group 1 Probability</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 3</kbd></span></td>
 </tr>
 <tr>
-<td>Probability 2</td>
+<td>Probability 2 (<code>Prob 2</code>)</td>
 <td style="text-align: center;">Group 2 Probability</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
-</tr>
-<tr>
-<td>Offset</td>
-<td style="text-align: center;">Interval of the third chord note</td>
-<td style="text-align: right;">-</td>
 </tr>
 <tr>
 <td>Random</td>
@@ -5278,7 +5283,7 @@ Each group's note probability can be adjusted using the two separate Probability
 <tr>
 <td>Quantize</td>
 <td style="text-align: center;">Quantizes all intervals to the active key / scale</td>
-<td style="text-align: right;">–</td>
+<td style="text-align: right;"><span class="keys"><kbd>FUNCTION</kbd></span> + <span class="keys"><kbd>PARAM 1</kbd></span></td>
 </tr>
 <tr>
 <td>Chord Interval 1</td>
@@ -5297,7 +5302,7 @@ Each group's note probability can be adjusted using the two separate Probability
 </tr>
 <tr>
 <td>Chord Interval 4</td>
-<td style="text-align: center;">Interval of the third chord note</td>
+<td style="text-align: center;">Interval of the fourth chord note</td>
 <td style="text-align: right;"><span class="keys"><kbd>PARAM 4</kbd></span></td>
 </tr>
 <tr>
