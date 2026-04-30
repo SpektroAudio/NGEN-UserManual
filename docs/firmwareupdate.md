@@ -10,7 +10,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ### NGEN HW V1.1 and newer (Batch #2 and newer / USB-C)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v144_hw11.zip).
+1 - [Download the latest version of the NGEN firmware for HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v145_hw11.zip).
 
 2 - Connect NGEN to your computer via USB.
 
@@ -25,6 +25,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 7 - After rebooting, apply a Factory Reset (files will not be deleted).
 
 ??? "Firmware Archive for NGEN HW v1.1+"       
+      - [1.4.4 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v144_hw11.zip)
       - [1.4.3 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw11.zip)
       - [1.4.2 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v142_hw11.zip)
       - [1.4.1 Update for NGEN HW v1.1](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw11.zip)
@@ -56,7 +57,7 @@ If you have any questions or need help updating your NGEN, don't hesitate to get
 
 ###  NGEN HW v1.0 (Batch #1 / Micro USB / Serial #0001 - 0020)
 
-1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v144_hw10.zip)
+1 - [Download the latest version of the NGEN firmware for HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v145_hw10.zip)
 
 2 - Download and install TyTools: [https://github.com/Koromix/tytools/releases/](https://github.com/Koromix/tytools/releases/)
 
@@ -77,6 +78,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
         If you have any problems updating your unit, don't hesitate to get in touch with us via the Contact page on our website.
 
 ??? "Firmware Archive for NGEN HW v1.0" 
+      - [1.4.4 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v144_hw10.zip)      
       - [1.4.3 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v143_hw10.zip)      
       - [1.4.2 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v142_hw10.zip)      
       - [1.4.1 Update for NGEN HW v1.0](https://dnjnjjoz9zg1x.cloudfront.net/firmware/NGEN_FWUpdate_v141_hw10.zip)      
@@ -93,6 +95,12 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 
 ---
 
+### Version 1.4.5
+
+#### Fixed 
+- [MENU SYSTEM](menunavigation.md): Strum MIDI FX is now accessible from the MIDI FX selector in the Track sub-menu
+- [MENU SYSTEM](menunavigation.md): Turing generator can now be selected from the Track sub-menu
+- [USB I/O](setup.md#connecting-via-midi): Fixed file transfers / downloads from NGEN Web Manager
 
 ### Version 1.4.4
 
