@@ -1,6 +1,4 @@
-mkdocs>=1.5
-mkdocs
+mkdocs<=2.0.0
 mkdocs-material
 mkdocs-git-revision-date-plugin
 mkdocs-print-site-plugin
-# mkdocs-with-pdf # Uncomment if you plan to use the PDF plugin

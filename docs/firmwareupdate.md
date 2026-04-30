@@ -145,7 +145,7 @@ We highly recommend that you perform a Factory Reset (available in Settings) aft
 ### Version 1.4.1 
 
 #### Fixed 
-- [ACDGEN](generators.md#ACDGEN): ACDGEN now correctly generates new sequences after switching between generators
+- [ACDGEN](generators.md#acdgen): ACDGEN now correctly generates new sequences after switching between generators
 - [MENU SYSTEM](menunavigation.md): Track sub-menu shortcut (FUNCTION + TRACK | CLK) now works correctly while in the Pattern Selector
 - [MENU SYSTEM](menunavigation.md): Disabled the Toggle Track Active shortcut (TRACK | CLK + Menu Encoder) while in the Clock and Perform sub-menus
 - [PROJECTS](projects.md): ```SAVE``` now correctly overwrites existing projects on HW v1.0

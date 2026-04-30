@@ -10,23 +10,24 @@ For more information about NGEN, please visit [spektroaudio.com/ngen](https://sp
 
 ### Requirements
 
-- Python 3.7+
+- Python 3.11+
 - `pip` (Python package manager)
+- `uv` (Python package manager)
 
 ### Installation
 
 1. Clone the repository and navigate into the project directory.
 
-2. Install dependencies:
+2. Sync dependencies
 
 ```bash
-pip install -r requirements.txt
+uv sync
 ````
 
 3. Serve the documentation locally:
 
 ```bash
-mkdocs serve
+uv run mkdocs serve
 ```
 
 Then open [http://127.0.0.1:8000](http://127.0.0.1:8000) in your browser.
