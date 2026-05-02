@@ -91,7 +91,7 @@ extra:
       name: Spektro Audio on Twitter
   analytics:
     provider: google
-    property: G-348677531
+    property: G-YBRGD8SNBJ
 
 
 extra_css:
