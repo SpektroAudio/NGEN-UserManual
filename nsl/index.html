@@ -660,6 +660,19 @@
           
           
             <li class="md-nav__item">
+    <a href="#script-file-format" class="md-nav__link">
+      <span class="md-ellipsis">
+        Script File Format
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <li class="md-nav__item">
     <a href="#parameter-types" class="md-nav__link">
       <span class="md-ellipsis">
         Parameter Types
@@ -673,9 +686,35 @@
           
           
             <li class="md-nav__item">
+    <a href="#execution-limits" class="md-nav__link">
+      <span class="md-ellipsis">
+        Execution Limits
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <li class="md-nav__item">
     <a href="#list-of-commands" class="md-nav__link">
       <span class="md-ellipsis">
         List of Commands
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <li class="md-nav__item">
+    <a href="#script-playback" class="md-nav__link">
+      <span class="md-ellipsis">
+        Script Playback
       </span>
     </a>
   
@@ -1364,6 +1403,19 @@
           
           
             <li class="md-nav__item">
+    <a href="#script-file-format" class="md-nav__link">
+      <span class="md-ellipsis">
+        Script File Format
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <li class="md-nav__item">
     <a href="#parameter-types" class="md-nav__link">
       <span class="md-ellipsis">
         Parameter Types
@@ -1377,9 +1429,35 @@
           
           
             <li class="md-nav__item">
+    <a href="#execution-limits" class="md-nav__link">
+      <span class="md-ellipsis">
+        Execution Limits
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <li class="md-nav__item">
     <a href="#list-of-commands" class="md-nav__link">
       <span class="md-ellipsis">
         List of Commands
+      </span>
+    </a>
+  
+    <!-- Table of contents list -->
+    
+  </li>
+          
+          
+          
+            <li class="md-nav__item">
+    <a href="#script-playback" class="md-nav__link">
+      <span class="md-ellipsis">
+        Script Playback
       </span>
     </a>
   
@@ -1417,12 +1495,12 @@
 <p>The NSL Engine <a href="../generators/#nsl-engine">Generator</a> is a powerful tool that lets you create your own custom algorithms using a simple scripting language.</p>
 <p>At it's core, the NSL Engine features a 32-step sequence (with individual pitch, velocity, length (in beats) and density per step) and standard parameters such Shift, Length and Density to control playback.</p>
 <p>Instead of using a pre-defined algorithm to fill the 32-step sequence, the NSL Engine lets you load a script to generate it using your own custom algorithm. </p>
-<p>Each NSL script consists of a series of hex values that are parsed into commands and values. Hex values above 160 (0xA0) trigger new commands and values below 160 are assigned as values / parameters for these commands.
+<p>Each NSL script consists of a series of hex values that are parsed into commands and values. Hex values of 160 (0xA0) or higher trigger new commands and values below 160 are assigned as values / parameters for these commands.
 The engine also includes 32 registers (Memory Buffer) that can be used to store values and use them later in the script and 4 generic parameters (Param 1-4) with ranges from 0-100.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The NSL Engine is still in beta and it's not fully documented and implemented yet. This section of the manual will be updated as we continue to develop the NSL Engine.
-Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
+Scripts that run out of control are stopped by the engine's execution limits (see <a href="#execution-limits">Execution Limits</a>) instead of freezing the generator, but faulty scripts can still produce unexpected sequences.</p>
 </div>
 <hr />
 <h2 id="ngen_nsl-rust-library">ngen_nsl Rust Library</h2>
@@ -1431,6 +1509,36 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 <p>Documentation for ngen_nsl is available at <a href="https://docs.rs/ngen_nsl">https://docs.rs/ngen_nsl</a>.</p>
 <hr />
 <h2 id="nsl-programming-reference">NSL Programming Reference</h2>
+<h3 id="script-file-format">Script File Format</h3>
+<p>NSL scripts are stored as binary files in the <code>/NSL</code> folder of your microSD card (see <a href="../filemanagement/">File Management</a>). Each file starts with a 4 byte header followed by the program itself:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Position</strong></th>
+<th style="text-align: center;"><strong>Content</strong></th>
+<th style="text-align: left;"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">0 - 2</td>
+<td style="text-align: center;"><code>NSL</code></td>
+<td style="text-align: left;">File identifier (<code>0x4E 0x53 0x4C</code>)</td>
+</tr>
+<tr>
+<td style="text-align: center;">3</td>
+<td style="text-align: center;">Version</td>
+<td style="text-align: left;">NSL script version marker</td>
+</tr>
+<tr>
+<td style="text-align: center;">4 - end</td>
+<td style="text-align: center;">Program</td>
+<td style="text-align: left;">Series of commands and values</td>
+</tr>
+</tbody>
+</table>
+<p>A program can be up to 65535 bytes long and the file name is limited to 15 characters. Files shorter than 4 bytes or files that don't start with the <code>NSL</code> identifier are rejected and the previously loaded script is kept.</p>
+<hr />
 <h3 id="parameter-types">Parameter Types</h3>
 <p>NSL commands require set of different parameters to execute correctly and each parameter's value is used according to the list below:</p>
 <h4 id="value">VALUE</h4>
@@ -1495,7 +1603,7 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 <td style="text-align: center;">0-31</td>
 <td style="text-align: center;">✔︎</td>
 <td style="text-align: center;">✔︎</td>
-<td style="text-align: center;">0-32 (BEATS)</td>
+<td style="text-align: center;">0-7 (BEATS)</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Step Density</strong></td>
@@ -1509,7 +1617,7 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 <tr>
 <td style="text-align: center;"><strong>Memory Buffer</strong></td>
 <td style="text-align: center;">0x06</td>
-<td style="text-align: center;">Step Number (Zero-Indexed)</td>
+<td style="text-align: center;">Memory Index (Zero-Indexed)</td>
 <td style="text-align: center;">0-31</td>
 <td style="text-align: center;">✔︎</td>
 <td style="text-align: center;">✔︎</td>
@@ -1522,7 +1630,7 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 <td style="text-align: center;">0-3</td>
 <td style="text-align: center;">✔︎</td>
 <td style="text-align: center;">✔︎</td>
-<td style="text-align: center;">0-100</td>
+<td style="text-align: center;">0-99</td>
 </tr>
 <tr>
 <td style="text-align: center;"><strong>Scale</strong></td>
@@ -1542,6 +1650,15 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 <td style="text-align: center;">✕</td>
 <td style="text-align: center;">N/A</td>
 </tr>
+<tr>
+<td style="text-align: center;"><strong>Random Note</strong></td>
+<td style="text-align: center;">0x0A</td>
+<td style="text-align: center;">Probability (Root Note Chance)</td>
+<td style="text-align: center;">0-100</td>
+<td style="text-align: center;">✔︎</td>
+<td style="text-align: center;">✕</td>
+<td style="text-align: center;">N/A</td>
+</tr>
 </tbody>
 </table>
 <p>Some features such as Constant and Random use the second <code>VALUE</code> in the pair (<code>VALUE 2</code>) as the actual value while the other types use it as an index to indicate the location of the value in the NSL Engine's memory.</p>
@@ -1549,10 +1666,46 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 <ul>
 <li><code>0x00 0x05</code> : Returns a constant value (<code>ORIGIN</code> = <code>0x00</code>) of 5 (<code>VALUE</code> = <code>0x05</code>).</li>
 <li><code>0x02 0x10</code> : Returns the step pitch (<code>ORIGIN</code> = <code>0x02</code>) at index 16 (<code>VALUE</code> = <code>0x10</code>).</li>
-<li><code>0x07 0x20</code> : Returns a random value (<code>ORIGIN</code> = <code>0x07</code>) between 0 and 32 (VALUE = <code>0x20</code>).</li>
+<li><code>0x01 0x20</code> : Returns a random value (<code>ORIGIN</code> = <code>0x01</code>) between 0 and 31 (<code>VALUE</code> = <code>0x20</code>). The upper limit is exclusive, so the range is always <code>0</code> to <code>VALUE - 1</code>.</li>
+<li><code>0x07 0x02</code> : Returns the value of Param 3 (<code>ORIGIN</code> = <code>0x07</code>) at parameter index 2 (<code>VALUE</code> = <code>0x02</code>).</li>
 </ul>
 <h4 id="int16">INT16</h4>
 <p>The INT16 parameter type uses a pair (x and y) of 8-bit values (0-255) to create a 16-bit value (0-65535) by shifting the first value 8 bits to the left and adding the second value to it (<code>(x &lt;&lt; 8) + y</code>).</p>
+<hr />
+<h3 id="execution-limits">Execution Limits</h3>
+<p>Every time you run <code>Generate</code>, the NSL Engine clears all step sequences and the memory buffer before running the program. Scripts always start from an empty state, so a script must build the whole sequence by itself.</p>
+<p>To keep faulty scripts from locking up the generator, the engine stops the program when it reaches any of the limits below. The rest of the program is skipped and the sequence generated so far is kept.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Limit</strong></th>
+<th style="text-align: center;"><strong>Value</strong></th>
+<th style="text-align: left;"><strong>Behavior</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Instructions per generation</td>
+<td style="text-align: center;">20000</td>
+<td style="text-align: left;">Program stops (watchdog)</td>
+</tr>
+<tr>
+<td style="text-align: center;">Nested loops</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Program stops</td>
+</tr>
+<tr>
+<td style="text-align: center;">Nested conditions</td>
+<td style="text-align: center;">4</td>
+<td style="text-align: left;">Program stops</td>
+</tr>
+<tr>
+<td style="text-align: center;">JUMP position</td>
+<td style="text-align: center;">Must be smaller than the program size</td>
+<td style="text-align: left;">Program stops</td>
+</tr>
+</tbody>
+</table>
 <hr />
 <h3 id="list-of-commands">List of Commands</h3>
 <h4 id="0xa1-set"><strong><code>0xA1</code> SET</strong></h4>
@@ -1561,50 +1714,193 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
 <p><strong>Examples:</strong> </p>
 <ul>
 <li>
-<p><code>0xA1 0x02 0x00 0x01 0x10</code> : Sets the pitch of step 1 to a random value between 0 and 16.</p>
+<p><code>0xA1 0x02 0x00 0x01 0x10</code> : Sets the pitch of step 1 to a random value between 0 and 15.</p>
 </li>
 <li>
-<p><code>0xA1 0x03 0x00 0x03 0x01</code> : Sets the velocity of step 1 to the velocity of step 1.</p>
+<p><code>0xA1 0x03 0x00 0x03 0x01</code> : Sets the velocity of step 1 (<code>0x03 0x00</code>) to the velocity of step 2 (<code>0x03 0x01</code>).</p>
 </li>
 <li>
 <p><code>0xA1 0x06 0x00 0x05 0x04</code> : Sets the value of the memory buffer at index 0 to the density of step 5.</p>
 </li>
+</ul>
+<h4 id="0xa3-clear-track"><strong><code>0xA3</code> CLEAR TRACK</strong></h4>
+<p><strong>Description:</strong> Clears the pitch, velocity, length and density sequences (all 32 steps).  </p>
+<p><strong>Parameters:</strong> None</p>
+<p><strong>Examples:</strong> </p>
+<ul>
+<li><code>0xA3</code> : Clears the sequence of the current track.</li>
+</ul>
+<h4 id="0xa4-clear-memory"><strong><code>0xA4</code> CLEAR MEMORY</strong></h4>
+<p><strong>Description:</strong> Clears the memory buffer, setting all 32 registers to 0.  </p>
+<p><strong>Parameters:</strong> None</p>
+<p><strong>Examples:</strong> </p>
+<ul>
+<li><code>0xA4</code> : Clears the memory buffer.</li>
+</ul>
+<h4 id="0xa5-clear-all"><strong><code>0xA5</code> CLEAR ALL</strong></h4>
+<p><strong>Description:</strong> Clears the track and the memory buffer, returning the sequence to the same empty state used at the start of a generation.  </p>
+<p><strong>Parameters:</strong> None</p>
+<p><strong>Examples:</strong> </p>
+<ul>
+<li><code>0xA5</code> : Clears everything.</li>
 </ul>
 <h4 id="0xb0-add"><strong><code>0xB0</code> ADD</strong></h4>
 <p><strong>Description:</strong> Adds the value of a source to a destionation.</p>
 <p><strong>Parameters:</strong> <code>DESTINATION</code> <code>SOURCE</code> </p>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><code>0xB0 0x02 0x00 0x00 0x2</code> : Add 2 (<code>0x00 0x02</code>) to the pitch of the first step (<code>0x02 0x00</code>).</li>
+<li><code>0xB0 0x02 0x00 0x00 0x02</code> : Add 2 (<code>0x00 0x02</code>) to the pitch of the first step (<code>0x02 0x00</code>).</li>
 </ul>
 <h4 id="0xb1-subtract"><strong><code>0xB1</code> SUBTRACT</strong></h4>
 <p><strong>Description:</strong> Subtracts the value of a source from a destination.</p>
 <p><strong>Parameters:</strong> <code>DESTINATION</code> <code>SOURCE</code></p>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><code>0xB1 0x02 0x00 0x01 0x10</code> : Subtract a random value between 0 - 16 (<code>0x01 0x10</code>) from the pitch of the first step (<code>0x02 0x00</code>).</li>
+<li><code>0xB1 0x02 0x00 0x01 0x10</code> : Subtract a random value between 0 - 15 (<code>0x01 0x10</code>) from the pitch of the first step (<code>0x02 0x00</code>).</li>
+</ul>
+<h4 id="0xb2-multiply"><strong><code>0xB2</code> MULTIPLY</strong></h4>
+<p><strong>Description:</strong> Multiplies the value of a destination by the value of a source.</p>
+<p><strong>Parameters:</strong> <code>DESTINATION</code> <code>SOURCE</code></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xB2 0x03 0x00 0x00 0x02</code> : Doubles the velocity of the first step (<code>0x03 0x00</code>).</li>
+</ul>
+<h4 id="0xb3-divide"><strong><code>0xB3</code> DIVIDE</strong></h4>
+<p><strong>Description:</strong> Divides the value of a destination by the value of a source. If the source value is 0, the command is ignored to avoid division by zero.</p>
+<p><strong>Parameters:</strong> <code>DESTINATION</code> <code>SOURCE</code></p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xB3 0x02 0x00 0x00 0x02</code> : Halves the pitch of the first step (<code>0x02 0x00</code>).</li>
+</ul>
+<h4 id="0xb4-pitch-quantize"><strong><code>0xB4</code> PITCH QUANTIZE</strong></h4>
+<p><strong>Description:</strong> Quantizes the pitch of all 32 steps of the current track to the active scale.</p>
+<p><strong>Parameters:</strong> None</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xB4</code> : Snaps every pitch value of the current track to the nearest note of the active scale.</li>
+</ul>
+<h4 id="0xb5-generate-progression"><strong><code>0xB5</code> GENERATE PROGRESSION</strong></h4>
+<p><strong>Description:</strong> Generates a chord progression and stores its 4 degrees in the memory buffer at index 0 to 3. These are the same progression degrees used by the Arpeggiator, POP and LUAR generators.</p>
+<p>Each degree is a position in the active scale, so you read them back as a <code>Scale</code> source (<code>0x08</code>) combined with an indirect address from <code>0x80</code> to <code>0x83</code>.</p>
+<p><strong>Parameters:</strong> None</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xB5 0xA1 0x02 0x00 0x08 0x80</code> : Generates a progression and sets the pitch of the first step to the note of the first degree.</li>
+</ul>
+<h4 id="0xb6-generate-euclid"><strong><code>0xB6</code> GENERATE EUCLID</strong></h4>
+<p><strong>Description:</strong> Builds a Euclidean rhythm over the 32 steps of the current track and writes it as the velocity sequence. Steps that receive a hit get a velocity of 127, all other steps are set to 0.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Number of Pulses) <code>SOURCE</code> (Rotation Offset)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xB6 0x00 0x05 0x00 0x00</code> : Distributes 5 pulses evenly over the 32 steps of the current track.</li>
 </ul>
 <h4 id="0xc0-loop-set"><strong><code>0xC0</code> LOOP SET</strong></h4>
-<p><strong>Description:</strong> Enables looping and set the loop count to the value of a source.</p>
+<p><strong>Description:</strong> Starts a loop and sets the loop count to the value of a source. The first pass counts as one run, so a loop count of 3 executes the commands between <code>LOOP SET</code> and <code>LOOP END</code> 3 times in total.</p>
 <p><strong>Parameters:</strong> <code>SOURCE</code> (Loop Count)</p>
 <p><strong>Examples:</strong></p>
 <ul>
-<li><code>0xC0 0x00 0x03</code> : Enables looping and set the loop count to 3.</li>
+<li><code>0xC0 0x00 0x03</code> : Repeats the commands until the next <code>LOOP END</code> 3 times.</li>
 </ul>
+<p>Loops can be nested up to 4 levels deep. A <code>LOOP END</code> without a matching <code>LOOP SET</code> is ignored.</p>
 <h4 id="0xc1-loop-end"><strong><code>0xC1</code> LOOP END</strong></h4>
-<p><strong>Description:</strong> Ends the current loop.</p>
+<p><strong>Description:</strong> Ends the current loop and jumps back to the matching <code>LOOP SET</code> until the loop count is reached.</p>
 <p><strong>Parameters:</strong> None</p>
 <h4 id="0xc2-jump"><strong><code>0xC2</code> JUMP</strong></h4>
-<p><strong>Description:</strong> Jumps to a specific position in the program.</p>
+<p><strong>Description:</strong> Jumps to a specific position in the program. The jump position must be smaller than the size of the program, otherwise the program stops.</p>
 <p><strong>Parameters:</strong> <code>INT16</code> (Jump Position)</p>
 <p><strong>Examples:</strong></p>
 <ul>
 <li><code>0xC2 0x02 0x24</code> : Jumps to position 548.</li>
 </ul>
+<h4 id="0xd0-equal"><strong><code>0xD0</code> EQUAL</strong></h4>
+<p><strong>Description:</strong> Starts a condition that only runs the commands that follow when both values are equal. Both values are read again before each command, so a condition can react to changes made by the script itself. Conditions stay active until <code>END COND</code>.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Left Value) <code>SOURCE</code> (Right Value)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xD0 0x06 0x00 0x00 0x01 0xA1 0x02 0x00 0x00 0x42</code> : Sets the pitch of the first step to 66 only while the memory buffer at index 0 is equal to 1.</li>
+</ul>
+<h4 id="0xd1-not-equal"><strong><code>0xD1</code> NOT EQUAL</strong></h4>
+<p><strong>Description:</strong> Starts a condition that only runs the commands that follow when both values are different.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Left Value) <code>SOURCE</code> (Right Value)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xD1 0x06 0x00 0x00 0x00</code> : Runs the following commands while the memory buffer at index 0 is not 0.</li>
+</ul>
+<h4 id="0xd2-greater-than"><strong><code>0xD2</code> GREATER THAN</strong></h4>
+<p><strong>Description:</strong> Starts a condition that only runs the commands that follow when the left value is greater than the right value.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Left Value) <code>SOURCE</code> (Right Value)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xD2 0x03 0x00 0x00 0x64</code> : Runs the following commands while the velocity of the first step is greater than 100.</li>
+</ul>
+<h4 id="0xd3-less-than"><strong><code>0xD3</code> LESS THAN</strong></h4>
+<p><strong>Description:</strong> Starts a condition that only runs the commands that follow when the left value is smaller than the right value.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Left Value) <code>SOURCE</code> (Right Value)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xD3 0x03 0x00 0x00 0x64</code> : Runs the following commands while the velocity of the first step is smaller than 100.</li>
+</ul>
+<h4 id="0xd4-greater-or-equal"><strong><code>0xD4</code> GREATER OR EQUAL</strong></h4>
+<p><strong>Description:</strong> Starts a condition that only runs the commands that follow when the left value is greater than or equal to the right value.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Left Value) <code>SOURCE</code> (Right Value)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xD4 0x07 0x00 0x00 0x32</code> : Runs the following commands while Param 1 is greater than or equal to 50.</li>
+</ul>
+<h4 id="0xd5-less-or-equal"><strong><code>0xD5</code> LESS OR EQUAL</strong></h4>
+<p><strong>Description:</strong> Starts a condition that only runs the commands that follow when the left value is smaller than or equal to the right value.</p>
+<p><strong>Parameters:</strong> <code>SOURCE</code> (Left Value) <code>SOURCE</code> (Right Value)</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xD5 0x07 0x00 0x00 0x32</code> : Runs the following commands while Param 1 is smaller than or equal to 50.</li>
+</ul>
+<h4 id="0xd6-end-cond"><strong><code>0xD6</code> END COND</strong></h4>
+<p><strong>Description:</strong> Ends the current condition. When conditions are nested, <code>END COND</code> closes the innermost one and returns to the condition that contains it. Conditions can be nested up to 4 levels deep.</p>
+<p>Loop and condition commands always run, even when a condition is not met, so the structure of a script is never broken by a condition.</p>
+<p><strong>Parameters:</strong> None</p>
+<p><strong>Examples:</strong></p>
+<ul>
+<li><code>0xD6</code> : Ends the active condition.</li>
+</ul>
 <h4 id="0xff-end"><strong><code>0xFF</code> END</strong></h4>
 <p><strong>Description:</strong> Ends the program.</p>
 <p><strong>Parameters:</strong> None</p>
-<p>[ MORE INFORMATION COMING SOON ]</p>
+<hr />
+<h3 id="script-playback">Script Playback</h3>
+<p>A script only builds the sequence. The generator parameters decide how that sequence is played:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center;"><strong>Parameter</strong></th>
+<th style="text-align: left;"><strong>Effect during playback</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center;">Length</td>
+<td style="text-align: left;">Sets how many steps are played (1-32). Steps after the Length are never triggered.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Density</td>
+<td style="text-align: left;">Works as a threshold. A step only sounds when its own density value is smaller than the Density parameter, so higher values let more steps play.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Shift</td>
+<td style="text-align: left;">Transposes the pitch of every step by up to 12 semitones in each direction.</td>
+</tr>
+<tr>
+<td style="text-align: center;">Quantize</td>
+<td style="text-align: left;">When enabled, every pitch is quantized to the active scale during playback.</td>
+</tr>
+</tbody>
+</table>
+<p>A step is triggered when all of these are true:</p>
+<ul>
+<li>Velocity is greater than 0.</li>
+<li>Step length is greater than 0.</li>
+<li>The density value of the step is smaller than the Density parameter.</li>
+</ul>
+<p>The duration of each note is the step length multiplied by the note length of the track, reduced by 10% so that repeated notes are always separated.</p>
 
 
 
@@ -1625,7 +1921,7 @@ Faulty scripts can cause the NSL Engine to crash and require a reboot.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    2024-10-11
+    2026-10-16
   </span>
 
     
